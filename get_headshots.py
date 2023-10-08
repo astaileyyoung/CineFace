@@ -24,11 +24,10 @@ def get_cast(series):
 
 def main(args):
     ia = Cinemagoer()
-    series = ia.get_movie('0606035')
+    series = ia.get_movie(args.id)
     cast = get_cast(series)
     for character, person_id in tqdm(cast.items()):
         person = ia.get_person(person_id)
-        images = ia.get_person_images('Hugh Laurie')
         actor = person.data['name']
         google_Crawler = GoogleImageCrawler(storage = {'root_dir': f'./{args.dst}/{actor}'})
         google_Crawler.crawl(keyword = actor, max_num = 20)
@@ -36,6 +35,7 @@ def main(args):
 
 if __name__ == "__main__":
     ap = ArgumentParser()
+    ap.add_argument('id')
     ap.add_argument('--dst', default='./headshots')
     args = ap.parse_args()
     logging.basicConfig(level=50)
