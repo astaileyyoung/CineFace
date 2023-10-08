@@ -1,8 +1,10 @@
 import ast 
 import shutil
 from pathlib import Path 
+from argparse import ArgumentParser
 
 import cv2
+import dlib
 import numpy as np
 import pandas as pd
 import seaborn as sns
@@ -104,62 +106,96 @@ def save_fig(i,
     plt.savefig(str(fig_fp))
 
 
-def main():
-    df = pd.read_csv('./data/faces.csv', index_col=0)
-    episode_df = pd.read_csv('./data/episodes.csv', index_col=0)
-    df = df.merge(episode_df[['imdb_id', 'cast']],
-                  on='imdb_id',
-                  how='left'
-                 )
-    files = [x for x in Path('./data/images').iterdir()]
-
-    print('Getting images ...')
-    fp_df = get_images(files)
-    df_fp = df.merge(fp_df,
-                        on=['frame_num', 'face_num', 'season', 'episode'],
-                        how='inner')
-    
-    fig_dir = Path('./data/figures')
-    if not fig_dir.exists():
-        Path.mkdir(fig_dir)
-
-    clustered_dir = Path('./data/figures_clustered')
-    if not clustered_dir.exists():
-        Path.mkdir(clustered_dir)
-
-    total = 8 * 12
-    pb = tqdm(total=total, desc='Clustering')
-    for i in range(1, 9):
-        for j in range(1, 13):
-            name = f'S{str(i).zfill(2)}E{str(j).zfill(2)}'
-            dst = Path(f'./data/clustering/{name}')
-            if not dst.exists():
-                episode_fp = df_fp[(df_fp['season'] == i) & (df['episode'] == j)]
-
-                data = np.array([np.array(ast.literal_eval(x)) for x in episode_fp['encoding'].tolist()])
-                faces = episode_fp['fp'].tolist()
-
-                x = PCA(n_components='mle', svd_solver='full').fit_transform(data)
-                tsne = TSNE(perplexity=50,
-                            n_components=2,
-                            learning_rate=50,
-                            n_iter=10000,
-                            early_exaggeration=300,
-                            # method='exact',
-                            n_iter_without_progress=300
-                         )
-                x = tsne.fit_transform(x)
-                _ = scatter_thumbnails(x, faces, scale_factor=16, show_images=True)
-                save_fig(i, j, fig_dir)
-
-                labels, colors = get_clusters(x, cluster.DBSCAN, n_jobs=-1, eps=4, min_samples=15)
-                episode_fp['label'] = labels
-
-                _ = scatter_thumbnails(x, faces, colors=colors, scale_factor=16, show_images=True)
-                save_fig(i, j, clustered_dir)
-
-                save_images(episode_fp, dst)
-            pb.update()
+def cluster_dbscan(data):
+    x = PCA(n_components='mle', svd_solver='full').fit_transform(data)
+    tsne = TSNE(perplexity=50,
+                n_components=2,
+                learning_rate=50,
+                n_iter=10000,
+                early_exaggeration=300,
+                # method='exact',
+                n_iter_without_progress=300
+                )
+    x = tsne.fit_transform(x)
+    labels, colors = get_clusters(x, cluster.DBSCAN, n_jobs=-1, eps=4, min_samples=15)
+    return labels, colors, x
 
 
-main()
+# def cluster_episode(df_fp,
+#                     season,
+#                     episode,
+#                     method='dbscan',
+#                     figure_dir=None,
+#                     clustered_dir=None
+#                     ):
+#     name = f'S{str(season).zfill(2)}E{str(episode).zfill(2)}'
+#     dst = Path(f'./data/clustering/{name}')
+#     if not dst.exists():
+#         episode_fp = df_fp[(df_fp['season'] == season) & (df_fp['episode'] == episode)]
+#         data = np.array([np.array(ast.literal_eval(x)) for x in episode_fp['encoding'].tolist()])
+#         faces = episode_fp['fp'].tolist()
+#         labels = dlib.chinese_whispers_clustering(encodings, 0.5)
+#
+#         labels, colors, x = cluster_dbscan(data)
+#
+#         if figure_dir:
+#             _ = scatter_thumbnails(x, faces, scale_factor=16, show_images=True)
+#             save_fig(season,
+#                      episode,
+#                      figure_dir)
+#
+#         if clustered_dir:
+#             _ = scatter_thumbnails(x, faces, colors=colors, scale_factor=16, show_images=True)
+#             save_fig(season,
+#                      episode,
+#                      clustered_dir)
+#
+#         save_images(episode_fp, dst)
+
+
+def chinese_whisper(df_fp,
+                    season,
+                    episode,
+                    dst
+                    ):
+    name = f'S{str(season).zfill(2)}E{str(episode).zfill(2)}'
+    dst = Path(f'./data/clustering/{name}')
+    if not dst.exists():
+        episode_fp = df_fp[(df_fp['season'] == season) & (df_fp['episode'] == episode)]
+        encodings = [dlib.vector(ast.literal_eval(x)) for x in episode_fp['encoding']]
+        labels = dlib.chinese_whispers_clustering(encodings, 0.5)
+        episode_fp['labels'] = labels
+        save_images(episode_fp, dst)
+
+
+def main(args):
+    df = pd.read_csv(args.src, index_col=0)
+    episode_df = pd.read_csv(args.episode_df, index_col=0)
+    episode_df = episode_df[episode_df['series_id'] == args.series_id]
+    if args.episode_id is not None:
+        episode_df = episode_df[episode_df['episode_id'] == args.series_id]
+
+    df_fp = df.merge(episode_df[['series_id', 'cast']],
+                     on='series_id',
+                     how='left'
+                  )
+    seasons = df_fp['season'].nunique()
+    episodes = df_fp['episode'].nunique()
+    for season in seasons:
+        for episode in episodes:
+            chinese_whisper(df_fp,
+                            season,
+                            episode,
+                            args.dst)
+
+
+if __name__ == '__main__':
+    ap = ArgumentParser()
+    ap.add_argument('series_id')
+    ap.add_argument('--cluster_dir', default='./data/clustering')
+    ap.add_argument('--src', default='./data/faces.csv')
+    ap.add_argument('--episode_id', default=None)
+    ap.add_argument('--episode_df', default='./data/episodes.csv')
+    ap.add_argument('--image_dir', default='./data/images')
+    args = ap.parse_args()
+    main(args)
