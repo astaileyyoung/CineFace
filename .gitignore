@@ -1,4 +1,5 @@
 .i*
-./data/clustering
-./data/headshots
-./data/images
+./data/clustering/*
+./data/headshots/*
+./data/images/*
+./__pycache__
