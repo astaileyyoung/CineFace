@@ -153,45 +153,51 @@ def cluster_dbscan(data):
 #         save_images(episode_fp, dst)
 
 
-def chinese_whisper(df_fp,
-                    season,
-                    episode,
-                    dst
-                    ):
-    name = f'S{str(season).zfill(2)}E{str(episode).zfill(2)}'
-    dst = Path(f'./data/clustering/{name}')
-    if not dst.exists():
-        episode_fp = df_fp[(df_fp['season'] == season) & (df_fp['episode'] == episode)]
-        encodings = [dlib.vector(ast.literal_eval(x)) for x in episode_fp['encoding']]
-        labels = dlib.chinese_whispers_clustering(encodings, 0.5)
-        episode_fp['labels'] = labels
-        save_images(episode_fp, dst)
+def chinese_whisper(df,
+                    dst):
+    encodings = [dlib.vector(ast.literal_eval(x)) for x in df['encoding']]
+    labels = dlib.chinese_whispers_clustering(encodings, 0.5)
+    df['label'] = labels
+    g = df[['label', 'fp']].groupby('label').count()
+    top = g[g['fp'] > 15]
+    df_top = df.merge(top.rename({'fp': 'count'}, axis=1),
+                   how='inner',
+                   right_index=True,
+                   left_on='label')
+    save_images(df_top, dst)
 
 
 def main(args):
     df = pd.read_csv(args.src, index_col=0)
     episode_df = pd.read_csv(args.episode_df, index_col=0)
-    episode_df = episode_df[episode_df['series_id'] == args.series_id]
+    episode_df = episode_df[episode_df['series_id'] == int(args.series_id)]
     if args.episode_id is not None:
-        episode_df = episode_df[episode_df['episode_id'] == args.series_id]
-
-    df_fp = df.merge(episode_df[['series_id', 'cast']],
-                     on='series_id',
-                     how='left'
+        episode_df = episode_df[episode_df['episode_id'] == int(args.episode_id)]
+    df_ep = df.merge(episode_df[['episode_id', 'cast']],
+                     on='episode_id',
+                     how='inner'
                   )
-    seasons = df_fp['season'].nunique()
-    episodes = df_fp['episode'].nunique()
+    files = [x for x in Path(args.image_dir).iterdir()]
+    fp_df = get_images(files)
+    df_fp = df_ep.merge(fp_df,
+                        on=['frame_num', 'face_num', 'season', 'episode'],
+                        how='inner')
+    dst = Path(args.cluster_dir).joinpath(args.dst)
+    seasons = df_fp['season'].unique()
+    episodes = df_fp['episode'].unique()
     for season in seasons:
         for episode in episodes:
-            chinese_whisper(df_fp,
-                            season,
-                            episode,
-                            args.dst)
+            name = f'S{str(season).zfill(2)}E{str(episode).zfill(2)}'
+            dst = Path(dst).joinpath(name)
+            episode_fp = df_fp[(df_fp['season'] == season) & (df_fp['episode'] == episode)]
+            chinese_whisper(episode_fp,
+                            dst)
 
 
 if __name__ == '__main__':
     ap = ArgumentParser()
     ap.add_argument('series_id')
+    ap.add_argument('dst')
     ap.add_argument('--cluster_dir', default='./data/clustering')
     ap.add_argument('--src', default='./data/faces.csv')
     ap.add_argument('--episode_id', default=None)

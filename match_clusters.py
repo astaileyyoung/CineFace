@@ -146,6 +146,7 @@ def match_actors_to_clusters(cluster_dir,
         cluster, pct = match_actor(actor,
                                    cluster_dirs,
                                    headshot_dir)
+        print(actor['name'], cluster)
         i = d[cluster]
         cluster_dirs.remove(i)
         datum = {'character': actor['name'],
