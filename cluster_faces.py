@@ -21,7 +21,11 @@ from sklearn.manifold import TSNE
 def get_images(files):
     data = []
     for file in files:
-        temp, frame_num, face_num = file.stem.split('_')
+        try:
+            temp, frame_num, face_num = file.stem.split('_')
+        except:
+            print(file)
+            exit()
         s = int(temp[1:3])
         e = int(temp[4:6])
         datum = {'fp': str(file.absolute().resolve()),
@@ -157,7 +161,7 @@ def chinese_whisper(df,
                     dst):
     encodings = [dlib.vector(ast.literal_eval(x)) for x in df['encoding']]
     labels = dlib.chinese_whispers_clustering(encodings, 0.5)
-    df['label'] = labels
+    df = df.assign(label=labels)
     g = df[['label', 'fp']].groupby('label').count()
     top = g[g['fp'] > 15]
     df_top = df.merge(top.rename({'fp': 'count'}, axis=1),
@@ -185,8 +189,8 @@ def main(args):
     dst = Path(args.cluster_dir).joinpath(args.dst)
     seasons = df_fp['season'].unique()
     episodes = df_fp['episode'].unique()
-    for season in seasons:
-        for episode in episodes:
+    for season in tqdm(seasons):
+        for episode in tqdm(episodes):
             name = f'S{str(season).zfill(2)}E{str(episode).zfill(2)}'
             dst = Path(dst).joinpath(name)
             episode_fp = df_fp[(df_fp['season'] == season) & (df_fp['episode'] == episode)]
