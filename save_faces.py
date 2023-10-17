@@ -37,10 +37,13 @@ def main(args):
     files = list(sorted([x for x in d.iterdir()]))
     for file in tqdm(files):
         df = pd.read_csv(str(file), index_col=0)
-        video_src = df.iloc[0]['video_src']
+        video_src = Path(df.iloc[0]['video_src'])
+        if args.video_dir:
+            video_src = Path(args.video_dir).joinpath(video_src.parent.parts[-1]).joinpath(video_src.name)
+
         if not check_if_exists(df, existing):
             _ = extract_faces(df,
-                              video_src,
+                              str(video_src),
                               dst=args.dst)
 
 
@@ -48,5 +51,6 @@ if __name__ == '__main__':
     ap = ArgumentParser()
     ap.add_argument('src')
     ap.add_argument('dst')
+    ap.add_argument('--video_dir', default=None)
     args = ap.parse_args()
     main(args)
