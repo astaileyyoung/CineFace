@@ -27,24 +27,42 @@ def check_if_exists(df,
         return False
 
 
-def main(args):
-    dst = Path(args.dst)
+def faces_from_episode(file,
+                       dst,
+                       existing=(),
+                       video_dir=None):
+    df = pd.read_csv(str(file), index_col=0)
+    try:
+        video_src = Path(df.iloc[0]['video_src'])
+    except IndexError:
+        print(file)
+        
+    if video_dir is not None:
+        video_src = Path(video_dir).joinpath(video_src.parent.parts[-1]).joinpath(video_src.name)
+
+    if not check_if_exists(df, existing):
+        _ = extract_faces(df,
+                          str(video_src),
+                          dst=dst)
+
+
+def save_faces(src,
+               dst):
+    dst = Path(dst)
     if not dst.exists():
         Path.mkdir(dst)
 
-    existing = [x.name for x in Path(args.dst).iterdir()]
-    d = Path(args.src)
+    existing = [x.name for x in dst.iterdir()]
+    
+    d = Path(src)
     files = list(sorted([x for x in d.iterdir()]))
     for file in tqdm(files):
-        df = pd.read_csv(str(file), index_col=0)
-        video_src = Path(df.iloc[0]['video_src'])
-        if args.video_dir:
-            video_src = Path(args.video_dir).joinpath(video_src.parent.parts[-1]).joinpath(video_src.name)
+        faces_from_episode(file,
+                           existing=existing)
+    
 
-        if not check_if_exists(df, existing):
-            _ = extract_faces(df,
-                              str(video_src),
-                              dst=args.dst)
+def main(args):
+    save_faces(args.src, args.dst)
 
 
 if __name__ == '__main__':
