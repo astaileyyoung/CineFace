@@ -95,22 +95,22 @@ def get_headshots(actor,
     return str(dst)
 
 
-def match_cluster(cluster_dir,
-                  actor,
-                  headshot_dir):
-    size = len([x for x in Path(cluster_dir).iterdir()])
-    dst = get_headshots(actor,
-                        headshot_dir)
-    files = [x for x in Path(dst).iterdir() if x.suffix in ['.png', '.jpeg', '.jpg']]
-    data = []
-    for file in files:
-        try:
-            df = DeepFace.find(str(file), db_path=str(cluster_dir), enforce_detection=False, silent=True)
-        except AttributeError:
-            continue
-        pct = df[0].shape[0]/size
-        data.append(pct)
-    return np.mean(data)
+# def match_cluster_to_actor(cluster_dir,
+#                            actor,
+#                            headshot_dir):
+#     size = len([x for x in Path(cluster_dir).iterdir()])
+#     dst = get_headshots(actor,
+#                         headshot_dir)
+#     files = [x for x in Path(dst).iterdir() if x.suffix in ['.png', '.jpeg', '.jpg']]
+#     data = []
+#     for file in files:
+#         try:
+#             df = DeepFace.find(str(file), db_path=str(cluster_dir), enforce_detection=False, silent=True)
+#         except AttributeError:
+#             continue
+#         pct = df[0].shape[0]/size
+#         data.append(pct)
+#     return np.mean(data)
             
 
 def match_actor(actor,
@@ -126,9 +126,9 @@ def match_actor(actor,
     return max(data, key=lambda x: x[1])
 
 
-def match_actors_to_clusters(cluster_dir,
+def match_actors_to_clusters(episode_id,
                              episodes,
-                             episode_id,
+                             cluster_dir,
                              headshot_dir):
     if not Path(headshot_dir).exists():
         Path.mkdir(Path(headshot_dir), parents=True)
@@ -166,13 +166,26 @@ def format_headshot_dir(series):
     return name
 
 
-def main(args):
-    series = ia.get_movie(args.series_id)
-    headshot_dir = Path(args.headshot_dir).joinpath(format_headshot_dir(series))
-    df = match_actors_to_clusters(args.cluster_dir,
-                                  args.episodes,
-                                  args.episode_id,
+def match_clusters(series_id,
+                   episode_id,
+                   episodes,
+                   headshot_dir,
+                   cluster_dir):
+    series = ia.get_movie(series_id)
+    headshot_dir = Path(headshot_dir).joinpath(format_headshot_dir(series))
+    df = match_actors_to_clusters(episode_id,
+                                  episodes,
+                                  cluster_dir,
                                   headshot_dir)
+    return df
+    
+
+def main(args):
+    df = match_clusters(args.series_id,
+                        args.episode_id,
+                        args.episodes,
+                        args.headshot_dir,
+                        args.cluster_dir)
     df.to_csv(args.dst)
         
 

@@ -8,6 +8,7 @@ from find_faces import find_faces
 from save_faces import save_faces
 from encode_faces import encode_faces
 from get_episode_info import get_episode_info
+from cluster_series import cluster_series, join_episodes
 
 
 def get_info(series_id):
@@ -60,7 +61,6 @@ def join_images(df,
                   how='left',
                   on=['season', 'episode', 'frame_num', 'face_num'])
     return df
-    
     
     
 def main(args):
@@ -121,22 +121,32 @@ def main(args):
     ]
 
     df = df[[x for x in columns if x in df.columns.tolist()]]
-                     
+
+    df_ep = join_episodes(df, 
+                          args.series_id)
+    df_clustered = cluster_series(df_ep)
+
+    headshot_dir = Path(args.headshot_dir).joinpath(name)
+    episode_ids = df_clustered['episode_id'].unique()
+    dfs = [match_clusters(args.series_id,
+                          x,
+                          args.episodes,
+                          headshot_dir
+                          ) for x in episode_ids]
+    df = pd.concat(dfs)
+    df.to_csv(args.dst)
     
-
-    
-
-    
-
-
 
 if __name__ == '__main__':
     ap = ArgumentParser()
     ap.add_argument('series_id')
     ap.add_argument('video_dir')
+    ap.add_argument('dst')
     ap.add_argument('--face_dir', default='./data/faces')
     ap.add_argument('--image_dir', default='/home/amos/storage/datasets/CineFace/images')
     ap.add_argument('--encoding_dir', default='./data/encodings')
+    ap.add_argument('--cluster_dir', default='./data/clusters'
+    ap.add_argument('--headshot_dir', default='./data/headshots')
     ap.add_argument('--episodes', default='./data/episodes.csv')
     ap.add_argument('--ext', default=('.mp4', '.avi', '.m4v', '.mkv')
     ap.add_argument('--url', default=None)
