@@ -32,11 +32,7 @@ def faces_from_episode(file,
                        existing=(),
                        video_dir=None):
     df = pd.read_csv(str(file), index_col=0)
-    try:
-        video_src = Path(df.iloc[0]['video_src'])
-    except IndexError:
-        print(file)
-        
+    video_src = Path(df.iloc[0]['video_src'])
     if video_dir is not None:
         video_src = Path(video_dir).joinpath(video_src.parent.parts[-1]).joinpath(video_src.name)
 
@@ -47,22 +43,27 @@ def faces_from_episode(file,
 
 
 def save_faces(src,
-               dst):
-    dst = Path(dst)
-    if not dst.exists():
-        Path.mkdir(dst)
+               dst,
+               video_dir=None):
+    dst_dir = Path(dst).joinpath(Path(src).parts[-1])
+    if not dst_dir.exists():
+        Path.mkdir(dst_dir)
 
-    existing = [x.name for x in dst.iterdir()]
+    existing = [x.name for x in dst_dir.iterdir()]
     
     d = Path(src)
-    files = list(sorted([x for x in d.iterdir()]))
+    files = list(sorted([x for x in d.iterdir() if x.is_file()]))
     for file in tqdm(files):
         faces_from_episode(file,
-                           existing=existing)
+                           dst_dir,
+                           existing=existing,
+                           video_dir=video_dir)
     
 
 def main(args):
-    save_faces(args.src, args.dst)
+    save_faces(args.src, 
+               args.dst,
+               video_dir=args.video_dir)
 
 
 if __name__ == '__main__':

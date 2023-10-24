@@ -1,5 +1,6 @@
 import time
 import random
+import logging
 from pathlib import Path 
 from argparse import ArgumentParser
 
@@ -10,8 +11,10 @@ from imdb import Cinemagoer
 from deepface import DeepFace
 from icrawler.builtin import GoogleImageCrawler
 
+from utils import format_series_name
 
-ia = Cinemagoer()
+
+ia = Cinemagoer(loggingLevel=50)
 
 
 def get_role(cast_member):
@@ -77,6 +80,7 @@ def cast_from_series(episode_df,
 def get_headshots(actor,
                   headshot_dir):
     headshot_actors = [x.parts[-1] for x in Path(headshot_dir).iterdir()]
+
     cnt = 0
     while cnt < 5:
         try:
@@ -90,38 +94,43 @@ def get_headshots(actor,
         Path.mkdir(dst, parents=True)
         
     if name not in headshot_actors:
-        crawler = GoogleImageCrawler(storage={'root_dir': str(dst)}, log_level=50)
+        logging.debug(f'Downloading headshots for {name}')
+        crawler = GoogleImageCrawler(storage={'root_dir': str(dst)}, log_level=logging.CRITICAL)
         crawler.crawl(keyword=f'{actor["name"]} {name}', max_num=20)
     return str(dst)
 
 
-# def match_cluster_to_actor(cluster_dir,
-#                            actor,
-#                            headshot_dir):
-#     size = len([x for x in Path(cluster_dir).iterdir()])
-#     dst = get_headshots(actor,
-#                         headshot_dir)
-#     files = [x for x in Path(dst).iterdir() if x.suffix in ['.png', '.jpeg', '.jpg']]
-#     data = []
-#     for file in files:
-#         try:
-#             df = DeepFace.find(str(file), db_path=str(cluster_dir), enforce_detection=False, silent=True)
-#         except AttributeError:
-#             continue
-#         pct = df[0].shape[0]/size
-#         data.append(pct)
-#     return np.mean(data)
+def match_cluster_to_actor(actor,
+                           cluster_dir,
+                           headshot_dir):
+    size = len([x for x in Path(cluster_dir).iterdir()])
+    dst = get_headshots(actor,
+                        headshot_dir)
+    files = [x for x in Path(dst).iterdir() if x.suffix in ['.png', '.jpeg', '.jpg']]
+    
+    logging.debug(f'Matching headshots for {actor["name"]} to cluster {cluster_dir.parts[-1]}.')
+    data = []
+    for file in files:
+        try:
+            df = DeepFace.find(str(file), db_path=str(cluster_dir), enforce_detection=False, silent=True)
+        except AttributeError:
+            continue
+        pct = df[0].shape[0]/size
+        # logging.debug(f'Matched {file.name} to {actor["name"]} with {pct} confidence.')
+        data.append(pct)
+    return np.mean(data)
             
 
 def match_actor(actor,
                 cluster_dirs,
-                headshot_dir):
+                headshot_dir):    
     data = []
-    for cluster_dir in cluster_dirs:
+    for cluster_dir in tqdm(cluster_dirs, desc='Iterating over cluster dirs ...', leave=False):
         cluster = cluster_dir.parts[-1]
-        pct = match_cluster(cluster_dir,
-                            actor,
-                            headshot_dir)
+        pct = match_cluster_to_actor(actor,
+                                     cluster_dir,
+                                     headshot_dir)
+        logging.debug(f'Matched {actor["name"]} to cluster {cluster} with {round(pct, 2)}.')
         data.append((cluster, pct))
     return max(data, key=lambda x: x[1])
 
@@ -140,13 +149,14 @@ def match_actors_to_clusters(episode_id,
     episode_df = pd.read_csv(episodes, index_col=0)
     cast = cast_from_series(episode_df, count=2)
     actors = cast_from_episode(episode_id, cast=cast)
+    logging.debug(f'Found {len(actors)} actors. Matching to clusters ...')
 
     data = []
-    for actor in tqdm(actors, desc='Matching actors to clusters'):
+    for actor in tqdm(actors, desc='Matching actors to clusters', leave=False):
         cluster, pct = match_actor(actor,
                                    cluster_dirs,
                                    headshot_dir)
-        print(actor['name'], cluster)
+        logging.debug(f'{actor["name"]} matches {cluster} with {pct} confidence.')
         i = d[cluster]
         cluster_dirs.remove(i)
         datum = {'character': actor['name'],
@@ -158,45 +168,76 @@ def match_actors_to_clusters(episode_id,
     return df
 
 
-def format_headshot_dir(series):
-    title = series.data['title'].lower().replace(' ', '-')
-    year = series.data['year']
-    imdb_id = series['imdbID']
-    name = f'{title}_{year}_{imdb_id}'
-    return name
-
-
 def match_clusters(series_id,
                    episode_id,
                    episodes,
                    headshot_dir,
                    cluster_dir):
     series = ia.get_movie(series_id)
-    headshot_dir = Path(headshot_dir).joinpath(format_headshot_dir(series))
+    name = format_series_name(series)
+    headshot_dir = Path(headshot_dir).joinpath(name)
+    logging.debug(f'Clustering for episode {episode_id}.')
     df = match_actors_to_clusters(episode_id,
                                   episodes,
                                   cluster_dir,
                                   headshot_dir)
     return df
-    
+
+
+def get_episode_id(series_id,
+                   season,
+                   episode,
+                   episodes='./data/episodes.csv'):
+    episode_df = pd.read_csv(episodes, index_col=0)
+    episode_df = episode_df[(episode_df['series_id'] == series_id) &
+                            (episode_df['season'] == season) &
+                            (episode_df['episode'] == episode)
+                           ]
+    episode_id = episode_df['episode_id'].values[0]
+    return episode_id
+
 
 def main(args):
-    df = match_clusters(args.series_id,
-                        args.episode_id,
-                        args.episodes,
-                        args.headshot_dir,
-                        args.cluster_dir)
+    cluster_dir = Path(args.cluster_dir)
+    episodes = list(sorted([x for x in cluster_dir.iterdir()]))
+    
+    logging.debug(f'Found {len(episodes)} episode directories.')
+    
+    dfs = []
+    for episode in tqdm(episodes[1:3], leave=False):
+        name = episode.parts[-1]
+        s = int(name[1:3])
+        e = int(name[4:6])
+        episode_id = get_episode_id(args.series_id,
+                                    s,
+                                    e)
+        logging.debug(f'Matching clusters for episode_id {episode_id} (S{str(s).zfill(2)}E{str(e).zfill(2)})')
+        df = match_clusters(args.series_id,
+                            episode_id,
+                            args.episodes,
+                            args.headshot_dir,
+                            episode)
+        dfs.append(df)
+    df = pd.concat(dfs, axis=0)
     df.to_csv(args.dst)
         
 
 if __name__ == '__main__':
     ap = ArgumentParser()
+    ap.add_argument('series_id', type=int)
     ap.add_argument('dst')
     ap.add_argument('--episodes', default='./data/episodes.csv')
-    ap.add_argument('--cluster_dir', default='./data/clustering/house_2004_0412142/chinese_whisper')
-    ap.add_argument('--series_id', default='0412142')
+    ap.add_argument('--cluster_dir', default='./data/clusters/')
     ap.add_argument('--episode_id', default='606035')
-    ap.add_argument('--headshot_dir', default='./data/headshots/house_2004_0412142')
+    ap.add_argument('--headshot_dir', default='./data/headshots/')
+    ap.add_argument('--log_dir', default='./logs/match_clusters.log')
+    ap.add_argument('--verbosity', default=10)
     args = ap.parse_args()
+    
+    logging.basicConfig(level=args.verbosity,
+                        filename=args.log_dir,
+                        format='%(levelname)s  %(asctime)s  %(lineno)d:  %(message)s',
+                        filemode='w')
+    
     main(args)
 

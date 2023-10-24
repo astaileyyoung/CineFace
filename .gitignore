@@ -2,6 +2,7 @@
 data/clustering/*
 data/headshots/*
 data/images/*
+data/house_cluster.csv
 __pycache__
 archived/*
 Untitled*

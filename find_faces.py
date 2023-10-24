@@ -1,4 +1,5 @@
 import os 
+import traceback
 from pathlib import Path
 from argparse import ArgumentParser
 
@@ -23,7 +24,8 @@ def gather_files(d,
         for name in files:
             path = Path(root).joinpath(name)
             paths.append(path)
-    return paths if ext is None else [x for x in paths if x.suffix in ext]            
+    paths = paths if ext is None else [x for x in paths if x.suffix in ext]
+    return list(sorted(paths))
     
 
 def faces_from_video(src,
@@ -43,7 +45,7 @@ def find_faces(d,
         name = f'{file.stem}.csv'
         fp = dst.joinpath(name)
         if not fp.exists():
-            df = find_faces(file)
+            df = detect_faces(str(file))
             df.to_csv(str(fp))
     
 
