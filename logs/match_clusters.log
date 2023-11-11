@@ -1,174 +1,108 @@
-DEBUG  2023-10-22 19:13:07,994  204:  Found 176 episode directories.
-DEBUG  2023-10-22 19:13:08,002  214:  Matching clusters for episode_id 606034 (S01E02)
-DEBUG  2023-10-22 19:13:13,342  179:  Clustering for episode 606034.
-DEBUG  2023-10-22 19:13:19,195  152:  Found 6 actors. Matching to clusters ...
-DEBUG  2023-10-22 19:13:26,692  111:  Matching headshots for Dr. Gregory House to cluster 15.
-DEBUG  2023-10-22 19:13:28,365  78:  Creating converter from 3 to 5
-DEBUG  2023-10-22 19:14:01,073  133:  Matched Dr. Gregory House to cluster 15 with 0.71.
-DEBUG  2023-10-22 19:14:03,391  111:  Matching headshots for Dr. Gregory House to cluster 4.
-DEBUG  2023-10-22 19:15:39,982  133:  Matched Dr. Gregory House to cluster 4 with 0.24.
-DEBUG  2023-10-22 19:15:42,210  111:  Matching headshots for Dr. Gregory House to cluster 13.
-DEBUG  2023-10-22 19:16:55,436  133:  Matched Dr. Gregory House to cluster 13 with 0.06.
-DEBUG  2023-10-22 19:16:57,641  111:  Matching headshots for Dr. Gregory House to cluster 26.
-DEBUG  2023-10-22 19:18:07,314  133:  Matched Dr. Gregory House to cluster 26 with 0.16.
-DEBUG  2023-10-22 19:18:09,258  111:  Matching headshots for Dr. Gregory House to cluster 14.
-DEBUG  2023-10-22 19:18:57,522  133:  Matched Dr. Gregory House to cluster 14 with 0.31.
-DEBUG  2023-10-22 19:19:05,796  111:  Matching headshots for Dr. Gregory House to cluster 8.
-DEBUG  2023-10-22 19:20:02,994  133:  Matched Dr. Gregory House to cluster 8 with 0.18.
-DEBUG  2023-10-22 19:20:10,071  111:  Matching headshots for Dr. Gregory House to cluster 1.
-DEBUG  2023-10-22 19:20:49,715  133:  Matched Dr. Gregory House to cluster 1 with 0.56.
-DEBUG  2023-10-22 19:20:51,474  111:  Matching headshots for Dr. Gregory House to cluster 16.
-DEBUG  2023-10-22 19:21:16,377  133:  Matched Dr. Gregory House to cluster 16 with 0.35.
-DEBUG  2023-10-22 19:21:18,569  111:  Matching headshots for Dr. Gregory House to cluster 38.
-DEBUG  2023-10-22 19:21:43,050  133:  Matched Dr. Gregory House to cluster 38 with 0.5.
-DEBUG  2023-10-22 19:21:45,139  111:  Matching headshots for Dr. Gregory House to cluster 40.
-DEBUG  2023-10-22 19:22:04,906  133:  Matched Dr. Gregory House to cluster 40 with 0.15.
-DEBUG  2023-10-22 19:22:04,906  159:  Dr. Gregory House matches 15 with 0.7109333333333334 confidence.
-DEBUG  2023-10-22 19:22:08,912  111:  Matching headshots for Dr. Lisa Cuddy to cluster 4.
-DEBUG  2023-10-22 19:22:31,719  133:  Matched Dr. Lisa Cuddy to cluster 4 with 0.23.
-DEBUG  2023-10-22 19:22:33,516  111:  Matching headshots for Dr. Lisa Cuddy to cluster 13.
-DEBUG  2023-10-22 19:22:51,678  133:  Matched Dr. Lisa Cuddy to cluster 13 with 0.16.
-DEBUG  2023-10-22 19:22:53,538  111:  Matching headshots for Dr. Lisa Cuddy to cluster 26.
-DEBUG  2023-10-22 19:23:11,699  133:  Matched Dr. Lisa Cuddy to cluster 26 with 0.13.
-DEBUG  2023-10-22 19:23:13,748  111:  Matching headshots for Dr. Lisa Cuddy to cluster 14.
-DEBUG  2023-10-22 19:23:30,490  133:  Matched Dr. Lisa Cuddy to cluster 14 with 0.1.
-DEBUG  2023-10-22 19:23:32,501  111:  Matching headshots for Dr. Lisa Cuddy to cluster 8.
-DEBUG  2023-10-22 19:23:48,354  133:  Matched Dr. Lisa Cuddy to cluster 8 with 0.16.
-DEBUG  2023-10-22 19:23:50,514  111:  Matching headshots for Dr. Lisa Cuddy to cluster 1.
-DEBUG  2023-10-22 19:24:05,203  133:  Matched Dr. Lisa Cuddy to cluster 1 with 0.06.
-DEBUG  2023-10-22 19:24:07,263  111:  Matching headshots for Dr. Lisa Cuddy to cluster 16.
-DEBUG  2023-10-22 19:24:19,665  133:  Matched Dr. Lisa Cuddy to cluster 16 with 0.03.
-DEBUG  2023-10-22 19:24:21,702  111:  Matching headshots for Dr. Lisa Cuddy to cluster 38.
-DEBUG  2023-10-22 19:24:34,663  133:  Matched Dr. Lisa Cuddy to cluster 38 with 0.08.
-DEBUG  2023-10-22 19:24:37,642  111:  Matching headshots for Dr. Lisa Cuddy to cluster 40.
-DEBUG  2023-10-22 19:24:50,320  133:  Matched Dr. Lisa Cuddy to cluster 40 with 0.48.
-DEBUG  2023-10-22 19:24:50,320  159:  Dr. Lisa Cuddy matches 40 with 0.4845454545454545 confidence.
-DEBUG  2023-10-22 19:24:58,513  111:  Matching headshots for Dr. Eric Foreman to cluster 4.
-DEBUG  2023-10-22 19:25:18,753  133:  Matched Dr. Eric Foreman to cluster 4 with 0.31.
-DEBUG  2023-10-22 19:25:20,785  111:  Matching headshots for Dr. Eric Foreman to cluster 13.
-DEBUG  2023-10-22 19:25:36,389  133:  Matched Dr. Eric Foreman to cluster 13 with 0.15.
-DEBUG  2023-10-22 19:25:38,472  111:  Matching headshots for Dr. Eric Foreman to cluster 26.
-DEBUG  2023-10-22 19:25:53,991  133:  Matched Dr. Eric Foreman to cluster 26 with 0.6.
-DEBUG  2023-10-22 19:25:56,068  111:  Matching headshots for Dr. Eric Foreman to cluster 14.
-DEBUG  2023-10-22 19:26:08,880  133:  Matched Dr. Eric Foreman to cluster 14 with 0.22.
-DEBUG  2023-10-22 19:26:11,019  111:  Matching headshots for Dr. Eric Foreman to cluster 8.
-DEBUG  2023-10-22 19:26:23,007  133:  Matched Dr. Eric Foreman to cluster 8 with 0.25.
-DEBUG  2023-10-22 19:26:24,700  111:  Matching headshots for Dr. Eric Foreman to cluster 1.
-DEBUG  2023-10-22 19:26:35,734  133:  Matched Dr. Eric Foreman to cluster 1 with 0.18.
-DEBUG  2023-10-22 19:26:37,325  111:  Matching headshots for Dr. Eric Foreman to cluster 16.
-DEBUG  2023-10-22 19:26:47,049  133:  Matched Dr. Eric Foreman to cluster 16 with 0.15.
-DEBUG  2023-10-22 19:26:49,020  111:  Matching headshots for Dr. Eric Foreman to cluster 38.
-DEBUG  2023-10-22 19:26:58,735  133:  Matched Dr. Eric Foreman to cluster 38 with 0.3.
-DEBUG  2023-10-22 19:26:58,735  159:  Dr. Eric Foreman matches 26 with 0.5964944649446494 confidence.
-DEBUG  2023-10-22 19:27:01,361  111:  Matching headshots for Dr. James Wilson to cluster 4.
-DEBUG  2023-10-22 19:27:20,221  133:  Matched Dr. James Wilson to cluster 4 with 0.2.
-DEBUG  2023-10-22 19:27:24,456  111:  Matching headshots for Dr. James Wilson to cluster 13.
-DEBUG  2023-10-22 19:27:39,716  133:  Matched Dr. James Wilson to cluster 13 with 0.05.
-DEBUG  2023-10-22 19:27:41,396  111:  Matching headshots for Dr. James Wilson to cluster 14.
-DEBUG  2023-10-22 19:27:54,078  133:  Matched Dr. James Wilson to cluster 14 with 0.21.
-DEBUG  2023-10-22 19:27:55,712  111:  Matching headshots for Dr. James Wilson to cluster 8.
-DEBUG  2023-10-22 19:28:08,595  133:  Matched Dr. James Wilson to cluster 8 with 0.28.
-DEBUG  2023-10-22 19:28:10,645  111:  Matching headshots for Dr. James Wilson to cluster 1.
-DEBUG  2023-10-22 19:28:22,277  133:  Matched Dr. James Wilson to cluster 1 with 0.36.
-DEBUG  2023-10-22 19:28:23,936  111:  Matching headshots for Dr. James Wilson to cluster 16.
-DEBUG  2023-10-22 19:28:32,980  133:  Matched Dr. James Wilson to cluster 16 with 0.57.
-DEBUG  2023-10-22 19:28:34,563  111:  Matching headshots for Dr. James Wilson to cluster 38.
-DEBUG  2023-10-22 19:28:43,164  133:  Matched Dr. James Wilson to cluster 38 with 0.38.
-DEBUG  2023-10-22 19:28:43,164  159:  Dr. James Wilson matches 16 with 0.5709459459459458 confidence.
-DEBUG  2023-10-22 19:28:46,286  111:  Matching headshots for Dr. Allison Cameron to cluster 4.
-DEBUG  2023-10-22 19:29:03,548  133:  Matched Dr. Allison Cameron to cluster 4 with 0.06.
-DEBUG  2023-10-22 19:29:05,399  111:  Matching headshots for Dr. Allison Cameron to cluster 13.
-DEBUG  2023-10-22 19:29:19,562  133:  Matched Dr. Allison Cameron to cluster 13 with 0.4.
-DEBUG  2023-10-22 19:29:21,500  111:  Matching headshots for Dr. Allison Cameron to cluster 14.
-DEBUG  2023-10-22 19:29:32,384  133:  Matched Dr. Allison Cameron to cluster 14 with 0.01.
-DEBUG  2023-10-22 19:29:34,184  111:  Matching headshots for Dr. Allison Cameron to cluster 8.
-DEBUG  2023-10-22 19:29:44,561  133:  Matched Dr. Allison Cameron to cluster 8 with 0.03.
-DEBUG  2023-10-22 19:29:46,369  111:  Matching headshots for Dr. Allison Cameron to cluster 1.
-DEBUG  2023-10-22 19:29:56,149  133:  Matched Dr. Allison Cameron to cluster 1 with 0.01.
-DEBUG  2023-10-22 19:29:58,308  111:  Matching headshots for Dr. Allison Cameron to cluster 38.
-DEBUG  2023-10-22 19:30:06,655  133:  Matched Dr. Allison Cameron to cluster 38 with 0.02.
-DEBUG  2023-10-22 19:30:06,656  159:  Dr. Allison Cameron matches 13 with 0.39572953736654803 confidence.
-DEBUG  2023-10-22 19:30:10,366  111:  Matching headshots for Dr. Robert Chase to cluster 4.
-DEBUG  2023-10-22 19:30:27,529  133:  Matched Dr. Robert Chase to cluster 4 with 0.1.
-DEBUG  2023-10-22 19:30:29,892  111:  Matching headshots for Dr. Robert Chase to cluster 14.
-DEBUG  2023-10-22 19:30:40,297  133:  Matched Dr. Robert Chase to cluster 14 with 0.59.
-DEBUG  2023-10-22 19:30:42,131  111:  Matching headshots for Dr. Robert Chase to cluster 8.
-DEBUG  2023-10-22 19:30:52,567  133:  Matched Dr. Robert Chase to cluster 8 with 0.15.
-DEBUG  2023-10-22 19:30:54,865  111:  Matching headshots for Dr. Robert Chase to cluster 1.
-DEBUG  2023-10-22 19:31:04,025  133:  Matched Dr. Robert Chase to cluster 1 with 0.17.
-DEBUG  2023-10-22 19:31:05,757  111:  Matching headshots for Dr. Robert Chase to cluster 38.
-DEBUG  2023-10-22 19:31:13,253  133:  Matched Dr. Robert Chase to cluster 38 with 0.15.
-DEBUG  2023-10-22 19:31:13,253  159:  Dr. Robert Chase matches 14 with 0.5885869565217392 confidence.
-DEBUG  2023-10-22 19:31:13,259  214:  Matching clusters for episode_id 606033 (S01E03)
-DEBUG  2023-10-22 19:31:17,128  179:  Clustering for episode 606033.
-DEBUG  2023-10-22 19:31:24,062  152:  Found 8 actors. Matching to clusters ...
-DEBUG  2023-10-22 19:31:28,955  111:  Matching headshots for Dr. Gregory House to cluster 0.
-DEBUG  2023-10-22 19:36:24,159  133:  Matched Dr. Gregory House to cluster 0 with 0.48.
-DEBUG  2023-10-22 19:36:26,241  111:  Matching headshots for Dr. Gregory House to cluster 5.
-DEBUG  2023-10-22 19:37:26,963  133:  Matched Dr. Gregory House to cluster 5 with 0.07.
-DEBUG  2023-10-22 19:37:40,171  111:  Matching headshots for Dr. Gregory House to cluster 11.
-DEBUG  2023-10-22 19:38:37,403  133:  Matched Dr. Gregory House to cluster 11 with 0.15.
-DEBUG  2023-10-22 19:38:39,398  111:  Matching headshots for Dr. Gregory House to cluster 10.
-DEBUG  2023-10-22 19:39:33,233  133:  Matched Dr. Gregory House to cluster 10 with 0.23.
-DEBUG  2023-10-22 19:39:35,461  111:  Matching headshots for Dr. Gregory House to cluster 4.
-DEBUG  2023-10-22 19:40:11,774  133:  Matched Dr. Gregory House to cluster 4 with 0.13.
-DEBUG  2023-10-22 19:40:13,798  111:  Matching headshots for Dr. Gregory House to cluster 7.
-DEBUG  2023-10-22 19:40:46,996  133:  Matched Dr. Gregory House to cluster 7 with 0.32.
-DEBUG  2023-10-22 19:40:49,233  111:  Matching headshots for Dr. Gregory House to cluster 25.
-DEBUG  2023-10-22 19:41:18,335  133:  Matched Dr. Gregory House to cluster 25 with 0.08.
-DEBUG  2023-10-22 19:41:20,107  111:  Matching headshots for Dr. Gregory House to cluster 3.
-DEBUG  2023-10-22 19:41:52,063  133:  Matched Dr. Gregory House to cluster 3 with 0.11.
-DEBUG  2023-10-22 19:41:54,141  111:  Matching headshots for Dr. Gregory House to cluster 26.
-DEBUG  2023-10-22 19:42:14,496  133:  Matched Dr. Gregory House to cluster 26 with 0.46.
-DEBUG  2023-10-22 19:42:16,691  111:  Matching headshots for Dr. Gregory House to cluster 14.
-DEBUG  2023-10-22 19:42:35,532  133:  Matched Dr. Gregory House to cluster 14 with 0.09.
-DEBUG  2023-10-22 19:42:38,433  111:  Matching headshots for Dr. Gregory House to cluster 36.
-DEBUG  2023-10-22 19:42:56,286  133:  Matched Dr. Gregory House to cluster 36 with 0.24.
-DEBUG  2023-10-22 19:43:05,426  111:  Matching headshots for Dr. Gregory House to cluster 22.
-DEBUG  2023-10-22 19:43:22,480  133:  Matched Dr. Gregory House to cluster 22 with 0.06.
-DEBUG  2023-10-22 19:43:22,481  159:  Dr. Gregory House matches 0 with 0.4771417133706966 confidence.
-DEBUG  2023-10-22 19:43:25,533  111:  Matching headshots for Dr. Lisa Cuddy to cluster 5.
-DEBUG  2023-10-22 19:43:42,535  133:  Matched Dr. Lisa Cuddy to cluster 5 with 0.13.
-DEBUG  2023-10-22 19:43:44,985  111:  Matching headshots for Dr. Lisa Cuddy to cluster 11.
-DEBUG  2023-10-22 19:44:02,685  133:  Matched Dr. Lisa Cuddy to cluster 11 with 0.11.
-DEBUG  2023-10-22 19:44:04,622  111:  Matching headshots for Dr. Lisa Cuddy to cluster 10.
-DEBUG  2023-10-22 19:44:21,368  133:  Matched Dr. Lisa Cuddy to cluster 10 with 0.08.
-DEBUG  2023-10-22 19:44:23,151  111:  Matching headshots for Dr. Lisa Cuddy to cluster 4.
-DEBUG  2023-10-22 19:44:40,422  133:  Matched Dr. Lisa Cuddy to cluster 4 with 0.23.
-DEBUG  2023-10-22 19:44:42,436  111:  Matching headshots for Dr. Lisa Cuddy to cluster 7.
-DEBUG  2023-10-22 19:44:56,562  133:  Matched Dr. Lisa Cuddy to cluster 7 with 0.04.
-DEBUG  2023-10-22 19:44:58,432  111:  Matching headshots for Dr. Lisa Cuddy to cluster 25.
-DEBUG  2023-10-22 19:45:12,074  133:  Matched Dr. Lisa Cuddy to cluster 25 with 0.13.
-DEBUG  2023-10-22 19:45:13,963  111:  Matching headshots for Dr. Lisa Cuddy to cluster 3.
-DEBUG  2023-10-22 19:45:27,655  133:  Matched Dr. Lisa Cuddy to cluster 3 with 0.12.
-DEBUG  2023-10-22 19:45:29,464  111:  Matching headshots for Dr. Lisa Cuddy to cluster 26.
-DEBUG  2023-10-22 19:45:41,654  133:  Matched Dr. Lisa Cuddy to cluster 26 with 0.07.
-DEBUG  2023-10-22 19:45:43,563  111:  Matching headshots for Dr. Lisa Cuddy to cluster 14.
-DEBUG  2023-10-22 19:45:55,862  133:  Matched Dr. Lisa Cuddy to cluster 14 with 0.45.
-DEBUG  2023-10-22 19:45:57,752  111:  Matching headshots for Dr. Lisa Cuddy to cluster 36.
-DEBUG  2023-10-22 19:46:10,513  133:  Matched Dr. Lisa Cuddy to cluster 36 with 0.01.
-DEBUG  2023-10-22 19:46:12,329  111:  Matching headshots for Dr. Lisa Cuddy to cluster 22.
-DEBUG  2023-10-22 19:46:24,037  133:  Matched Dr. Lisa Cuddy to cluster 22 with 0.02.
-DEBUG  2023-10-22 19:46:24,037  159:  Dr. Lisa Cuddy matches 14 with 0.45099999999999996 confidence.
-DEBUG  2023-10-22 19:46:30,672  111:  Matching headshots for Dr. Eric Foreman to cluster 5.
-DEBUG  2023-10-22 19:46:44,866  133:  Matched Dr. Eric Foreman to cluster 5 with 0.14.
-DEBUG  2023-10-22 19:46:47,488  111:  Matching headshots for Dr. Eric Foreman to cluster 11.
-DEBUG  2023-10-22 19:47:01,331  133:  Matched Dr. Eric Foreman to cluster 11 with 0.6.
-DEBUG  2023-10-22 19:47:03,279  111:  Matching headshots for Dr. Eric Foreman to cluster 10.
-DEBUG  2023-10-22 19:47:16,691  133:  Matched Dr. Eric Foreman to cluster 10 with 0.18.
-DEBUG  2023-10-22 19:47:20,725  111:  Matching headshots for Dr. Eric Foreman to cluster 4.
-DEBUG  2023-10-22 19:47:32,076  133:  Matched Dr. Eric Foreman to cluster 4 with 0.26.
-DEBUG  2023-10-22 19:47:33,932  111:  Matching headshots for Dr. Eric Foreman to cluster 7.
-DEBUG  2023-10-22 19:47:44,270  133:  Matched Dr. Eric Foreman to cluster 7 with 0.16.
-DEBUG  2023-10-22 19:47:46,254  111:  Matching headshots for Dr. Eric Foreman to cluster 25.
-DEBUG  2023-10-22 19:47:56,772  133:  Matched Dr. Eric Foreman to cluster 25 with 0.12.
-DEBUG  2023-10-22 19:47:59,072  111:  Matching headshots for Dr. Eric Foreman to cluster 3.
-DEBUG  2023-10-22 19:48:09,273  133:  Matched Dr. Eric Foreman to cluster 3 with 0.18.
-DEBUG  2023-10-22 19:48:11,238  111:  Matching headshots for Dr. Eric Foreman to cluster 26.
-DEBUG  2023-10-22 19:48:20,112  133:  Matched Dr. Eric Foreman to cluster 26 with 0.22.
-DEBUG  2023-10-22 19:48:21,971  111:  Matching headshots for Dr. Eric Foreman to cluster 36.
-DEBUG  2023-10-22 19:48:31,306  133:  Matched Dr. Eric Foreman to cluster 36 with 0.06.
-DEBUG  2023-10-22 19:48:33,143  111:  Matching headshots for Dr. Eric Foreman to cluster 22.
-DEBUG  2023-10-22 19:48:41,700  133:  Matched Dr. Eric Foreman to cluster 22 with 0.08.
-DEBUG  2023-10-22 19:48:41,701  159:  Dr. Eric Foreman matches 11 with 0.5982222222222222 confidence.
-DEBUG  2023-10-22 19:48:44,188  111:  Matching headshots for Dr. James Wilson to cluster 5.
+DEBUG  2023-11-11 14:18:17,458  219:  Found 176 episode directories.
+DEBUG  2023-11-11 14:18:17,463  229:  Matching clusters for episode_id 606035 (S01E01)
+DEBUG  2023-11-11 14:18:19,903  192:  Clustering for episode 606035.
+DEBUG  2023-11-11 14:18:24,050  163:  Found 6 actors. Matching to clusters ...
+DEBUG  2023-11-11 14:18:25,869  116:  Matching headshots for Dr. Gregory House to cluster 20.
+DEBUG  2023-11-11 14:18:27,575  78:  Creating converter from 3 to 5
+DEBUG  2023-11-11 14:18:40,378  139:  Matched Dr. Gregory House to cluster 20 with 0.69.
+DEBUG  2023-11-11 14:18:40,379  171:  Dr. Gregory House matches 20 with 0.6866477272727274 confidence.
+DEBUG  2023-11-11 14:18:42,236  116:  Matching headshots for Dr. Lisa Cuddy to cluster 2.
+DEBUG  2023-11-11 14:18:49,333  139:  Matched Dr. Lisa Cuddy to cluster 2 with 0.19.
+DEBUG  2023-11-11 14:18:51,079  116:  Matching headshots for Dr. Lisa Cuddy to cluster 0.
+DEBUG  2023-11-11 14:18:54,839  139:  Matched Dr. Lisa Cuddy to cluster 0 with 0.24.
+DEBUG  2023-11-11 14:18:56,388  116:  Matching headshots for Dr. Lisa Cuddy to cluster 16.
+DEBUG  2023-11-11 14:19:01,629  139:  Matched Dr. Lisa Cuddy to cluster 16 with 0.2.
+DEBUG  2023-11-11 14:19:03,154  116:  Matching headshots for Dr. Lisa Cuddy to cluster 25.
+DEBUG  2023-11-11 14:19:07,410  139:  Matched Dr. Lisa Cuddy to cluster 25 with 0.51.
+DEBUG  2023-11-11 14:19:07,410  171:  Dr. Lisa Cuddy matches 25 with 0.5052325581395349 confidence.
+DEBUG  2023-11-11 14:19:09,021  116:  Matching headshots for Dr. Eric Foreman to cluster 2.
+DEBUG  2023-11-11 14:19:13,171  139:  Matched Dr. Eric Foreman to cluster 2 with 0.18.
+DEBUG  2023-11-11 14:19:14,740  116:  Matching headshots for Dr. Eric Foreman to cluster 0.
+DEBUG  2023-11-11 14:19:19,373  139:  Matched Dr. Eric Foreman to cluster 0 with 0.41.
+DEBUG  2023-11-11 14:19:20,795  116:  Matching headshots for Dr. Eric Foreman to cluster 16.
+DEBUG  2023-11-11 14:19:26,174  139:  Matched Dr. Eric Foreman to cluster 16 with 0.49.
+DEBUG  2023-11-11 14:19:27,766  116:  Matching headshots for Dr. Eric Foreman to cluster 23.
+DEBUG  2023-11-11 14:19:31,426  139:  Matched Dr. Eric Foreman to cluster 23 with 0.19.
+DEBUG  2023-11-11 14:19:33,319  116:  Matching headshots for Dr. Eric Foreman to cluster 22.
+DEBUG  2023-11-11 14:19:38,367  139:  Matched Dr. Eric Foreman to cluster 22 with 0.19.
+CRITICAL  2023-11-11 14:19:49,443  32:  IMDbDataAccessError exception raised; args: ({'errcode': None, 'errmsg': 'None', 'url': 'https://www.imdb.com/name/nm0004898/bio', 'proxy': '', 'exception type': 'IOError', 'original exception': <HTTPError 504: 'Gateway Time-out'>},); kwds: {}
+Traceback (most recent call last):
+  File "/home/amos/local/anaconda/envs/cf/lib/python3.9/site-packages/imdb/parser/http/__init__.py", line 233, in retrieve_unicode
+    response = uopener.open(url)
+  File "/home/amos/local/anaconda/envs/cf/lib/python3.9/urllib/request.py", line 523, in open
+    response = meth(req, response)
+  File "/home/amos/local/anaconda/envs/cf/lib/python3.9/urllib/request.py", line 632, in http_response
+    response = self.parent.error(
+  File "/home/amos/local/anaconda/envs/cf/lib/python3.9/urllib/request.py", line 561, in error
+    return self._call_chain(*args)
+  File "/home/amos/local/anaconda/envs/cf/lib/python3.9/urllib/request.py", line 494, in _call_chain
+    result = func(*args)
+  File "/home/amos/local/anaconda/envs/cf/lib/python3.9/urllib/request.py", line 641, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 504: Gateway Time-out
+CRITICAL  2023-11-11 14:19:49,444  850:  caught an exception retrieving or parsing "biography" info set for mopID "0004898" (accessSystem: http)
+Traceback (most recent call last):
+  File "/home/amos/local/anaconda/envs/cf/lib/python3.9/site-packages/imdb/parser/http/__init__.py", line 233, in retrieve_unicode
+    response = uopener.open(url)
+  File "/home/amos/local/anaconda/envs/cf/lib/python3.9/urllib/request.py", line 523, in open
+    response = meth(req, response)
+  File "/home/amos/local/anaconda/envs/cf/lib/python3.9/urllib/request.py", line 632, in http_response
+    response = self.parent.error(
+  File "/home/amos/local/anaconda/envs/cf/lib/python3.9/urllib/request.py", line 561, in error
+    return self._call_chain(*args)
+  File "/home/amos/local/anaconda/envs/cf/lib/python3.9/urllib/request.py", line 494, in _call_chain
+    result = func(*args)
+  File "/home/amos/local/anaconda/envs/cf/lib/python3.9/urllib/request.py", line 641, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 504: Gateway Time-out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/amos/local/anaconda/envs/cf/lib/python3.9/site-packages/imdb/__init__.py", line 848, in update
+    ret = method(mopID)
+  File "/home/amos/local/anaconda/envs/cf/lib/python3.9/site-packages/imdb/parser/http/__init__.py", line 706, in get_person_biography
+    cont = self._retrieve(self.urls['person_main'] % personID + 'bio')
+  File "/home/amos/local/anaconda/envs/cf/lib/python3.9/site-packages/imdb/parser/http/__init__.py", line 392, in _retrieve
+    ret = self.urlOpener.retrieve_unicode(url, size=size)
+  File "/home/amos/local/anaconda/envs/cf/lib/python3.9/site-packages/imdb/parser/http/__init__.py", line 261, in retrieve_unicode
+    raise IMDbDataAccessError(
+imdb._exceptions.IMDbDataAccessError: {'errcode': None, 'errmsg': 'None', 'url': 'https://www.imdb.com/name/nm0004898/bio', 'proxy': '', 'exception type': 'IOError', 'original exception': <HTTPError 504: 'Gateway Time-out'>}
+DEBUG  2023-11-11 14:19:51,760  116:  Matching headshots for Dr. Eric Foreman to cluster 19.
+DEBUG  2023-11-11 14:19:56,893  139:  Matched Dr. Eric Foreman to cluster 19 with 0.18.
+DEBUG  2023-11-11 14:19:58,374  116:  Matching headshots for Dr. Eric Foreman to cluster 4.
+DEBUG  2023-11-11 14:20:01,987  139:  Matched Dr. Eric Foreman to cluster 4 with 0.16.
+DEBUG  2023-11-11 14:20:01,988  171:  Dr. Eric Foreman matches 16 with 0.494170403587444 confidence.
+DEBUG  2023-11-11 14:20:03,463  116:  Matching headshots for Dr. James Wilson to cluster 2.
+DEBUG  2023-11-11 14:20:07,554  139:  Matched Dr. James Wilson to cluster 2 with 0.07.
+DEBUG  2023-11-11 14:20:09,380  116:  Matching headshots for Dr. James Wilson to cluster 0.
+DEBUG  2023-11-11 14:20:14,159  139:  Matched Dr. James Wilson to cluster 0 with 0.11.
+DEBUG  2023-11-11 14:20:15,721  116:  Matching headshots for Dr. James Wilson to cluster 23.
+DEBUG  2023-11-11 14:20:20,030  139:  Matched Dr. James Wilson to cluster 23 with 0.06.
+DEBUG  2023-11-11 14:20:21,736  116:  Matching headshots for Dr. James Wilson to cluster 22.
+DEBUG  2023-11-11 14:20:25,340  139:  Matched Dr. James Wilson to cluster 22 with 0.16.
+DEBUG  2023-11-11 14:20:27,000  116:  Matching headshots for Dr. James Wilson to cluster 19.
+DEBUG  2023-11-11 14:20:31,315  139:  Matched Dr. James Wilson to cluster 19 with 0.33.
+DEBUG  2023-11-11 14:20:32,863  116:  Matching headshots for Dr. James Wilson to cluster 4.
+DEBUG  2023-11-11 14:20:35,774  139:  Matched Dr. James Wilson to cluster 4 with 0.06.
+DEBUG  2023-11-11 14:20:35,775  171:  Dr. James Wilson matches 19 with 0.33495934959349594 confidence.
+DEBUG  2023-11-11 14:20:38,623  116:  Matching headshots for Dr. Allison Cameron to cluster 2.
+DEBUG  2023-11-11 14:20:42,861  139:  Matched Dr. Allison Cameron to cluster 2 with 0.06.
+DEBUG  2023-11-11 14:20:44,491  116:  Matching headshots for Dr. Allison Cameron to cluster 0.
+DEBUG  2023-11-11 14:20:48,597  139:  Matched Dr. Allison Cameron to cluster 0 with 0.07.
+DEBUG  2023-11-11 14:20:50,325  116:  Matching headshots for Dr. Allison Cameron to cluster 23.
+DEBUG  2023-11-11 14:20:53,857  139:  Matched Dr. Allison Cameron to cluster 23 with 0.4.
+DEBUG  2023-11-11 14:20:55,511  116:  Matching headshots for Dr. Allison Cameron to cluster 22.
+DEBUG  2023-11-11 14:20:59,115  139:  Matched Dr. Allison Cameron to cluster 22 with 0.06.
+DEBUG  2023-11-11 14:21:01,065  116:  Matching headshots for Dr. Allison Cameron to cluster 4.
+DEBUG  2023-11-11 14:21:03,395  139:  Matched Dr. Allison Cameron to cluster 4 with 0.0.
+DEBUG  2023-11-11 14:21:03,395  171:  Dr. Allison Cameron matches 23 with 0.4036585365853659 confidence.
+DEBUG  2023-11-11 14:21:08,940  116:  Matching headshots for Dr. Robert Chase to cluster 2.
+DEBUG  2023-11-11 14:21:13,361  139:  Matched Dr. Robert Chase to cluster 2 with 0.05.
+DEBUG  2023-11-11 14:21:14,878  116:  Matching headshots for Dr. Robert Chase to cluster 0.
+DEBUG  2023-11-11 14:21:18,885  139:  Matched Dr. Robert Chase to cluster 0 with 0.18.
+DEBUG  2023-11-11 14:21:20,982  116:  Matching headshots for Dr. Robert Chase to cluster 22.
+DEBUG  2023-11-11 14:21:24,300  139:  Matched Dr. Robert Chase to cluster 22 with 0.47.
+DEBUG  2023-11-11 14:21:25,682  116:  Matching headshots for Dr. Robert Chase to cluster 4.
+DEBUG  2023-11-11 14:21:28,105  139:  Matched Dr. Robert Chase to cluster 4 with 0.0.
+DEBUG  2023-11-11 14:21:28,105  171:  Dr. Robert Chase matches 22 with 0.46689189189189195 confidence.

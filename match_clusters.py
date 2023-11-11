@@ -1,6 +1,8 @@
 import time
+import shutil
 import random
 import logging
+import tempfile
 from pathlib import Path 
 from argparse import ArgumentParser
 
@@ -78,7 +80,8 @@ def cast_from_series(episode_df,
 
 
 def get_headshots(actor,
-                  headshot_dir):
+                  headshot_dir,
+                  n_samples=20):
     headshot_actors = [x.parts[-1] for x in Path(headshot_dir).iterdir()]
 
     cnt = 0
@@ -96,18 +99,20 @@ def get_headshots(actor,
     if name not in headshot_actors:
         logging.debug(f'Downloading headshots for {name}')
         crawler = GoogleImageCrawler(storage={'root_dir': str(dst)}, log_level=logging.CRITICAL)
-        crawler.crawl(keyword=f'{actor["name"]} {name}', max_num=20)
+        crawler.crawl(keyword=f'{actor["name"]} {name}', max_num=n_samples)
     return str(dst)
 
 
 def match_cluster_to_actor(actor,
                            cluster_dir,
-                           headshot_dir):
+                           headshot_dir,
+                           n_samples=20):
     size = len([x for x in Path(cluster_dir).iterdir()])
     dst = get_headshots(actor,
-                        headshot_dir)
-    files = [x for x in Path(dst).iterdir() if x.suffix in ['.png', '.jpeg', '.jpg']]
-    
+                        headshot_dir,
+                        n_samples=n_samples)
+    files = random.sample([x for x in Path(dst).iterdir() if x.suffix in ['.png', '.jpeg', '.jpg']], k=n_samples)
+
     logging.debug(f'Matching headshots for {actor["name"]} to cluster {cluster_dir.parts[-1]}.')
     data = []
     for file in files:
@@ -116,29 +121,36 @@ def match_cluster_to_actor(actor,
         except AttributeError:
             continue
         pct = df[0].shape[0]/size
-        # logging.debug(f'Matched {file.name} to {actor["name"]} with {pct} confidence.')
         data.append(pct)
     return np.mean(data)
             
 
 def match_actor(actor,
                 cluster_dirs,
-                headshot_dir):    
+                headshot_dir,
+                n_samples=20,
+                threshold=0.5):
     data = []
     for cluster_dir in tqdm(cluster_dirs, desc='Iterating over cluster dirs ...', leave=False):
         cluster = cluster_dir.parts[-1]
         pct = match_cluster_to_actor(actor,
                                      cluster_dir,
-                                     headshot_dir)
+                                     headshot_dir,
+                                     n_samples=n_samples)
         logging.debug(f'Matched {actor["name"]} to cluster {cluster} with {round(pct, 2)}.')
-        data.append((cluster, pct))
+        if pct > threshold:
+            return cluster, pct
+        else:
+            data.append((cluster, pct))
     return max(data, key=lambda x: x[1])
 
 
 def match_actors_to_clusters(episode_id,
                              episodes,
                              cluster_dir,
-                             headshot_dir):
+                             headshot_dir,
+                             n_samples=20,
+                             min_episodes=2):
     if not Path(headshot_dir).exists():
         Path.mkdir(Path(headshot_dir), parents=True)
 
@@ -147,7 +159,7 @@ def match_actors_to_clusters(episode_id,
     d = {x.parts[-1]: x for x in cluster_dirs}
 
     episode_df = pd.read_csv(episodes, index_col=0)
-    cast = cast_from_series(episode_df, count=2)
+    cast = cast_from_series(episode_df, count=min_episodes)
     actors = cast_from_episode(episode_id, cast=cast)
     logging.debug(f'Found {len(actors)} actors. Matching to clusters ...')
 
@@ -155,14 +167,16 @@ def match_actors_to_clusters(episode_id,
     for actor in tqdm(actors, desc='Matching actors to clusters', leave=False):
         cluster, pct = match_actor(actor,
                                    cluster_dirs,
-                                   headshot_dir)
+                                   headshot_dir,
+                                   n_samples=n_samples)
         logging.debug(f'{actor["name"]} matches {cluster} with {pct} confidence.')
         i = d[cluster]
         cluster_dirs.remove(i)
-        datum = {'character': actor['name'],
+        datum = {'episode_id': episode_id,
+                 'character': actor['name'],
                  'personID': actor['personID'],
                  'cluster': cluster,
-                 'confidence': pct}
+                 'confidence': round(pct, 3)}
         data.append(datum)
     df = pd.DataFrame(data)
     return df
@@ -172,7 +186,8 @@ def match_clusters(series_id,
                    episode_id,
                    episodes,
                    headshot_dir,
-                   cluster_dir):
+                   cluster_dir,
+                   n_samples=20):
     series = ia.get_movie(series_id)
     name = format_series_name(series)
     headshot_dir = Path(headshot_dir).joinpath(name)
@@ -180,7 +195,8 @@ def match_clusters(series_id,
     df = match_actors_to_clusters(episode_id,
                                   episodes,
                                   cluster_dir,
-                                  headshot_dir)
+                                  headshot_dir,
+                                  n_samples=n_samples)
     return df
 
 
@@ -198,13 +214,14 @@ def get_episode_id(series_id,
 
 
 def main(args):
+    t = time.time()
     cluster_dir = Path(args.cluster_dir)
     episodes = list(sorted([x for x in cluster_dir.iterdir()]))
     
     logging.debug(f'Found {len(episodes)} episode directories.')
     
     dfs = []
-    for episode in tqdm(episodes[1:3], leave=False):
+    for episode in tqdm(episodes[:1], leave=False):
         name = episode.parts[-1]
         s = int(name[1:3])
         e = int(name[4:6])
@@ -216,10 +233,12 @@ def main(args):
                             episode_id,
                             args.episodes,
                             args.headshot_dir,
-                            episode)
+                            episode,
+                            n_samples=args.n_samples)
         dfs.append(df)
     df = pd.concat(dfs, axis=0)
     df.to_csv(args.dst)
+    print(time.time() - t)
         
 
 if __name__ == '__main__':
@@ -231,6 +250,9 @@ if __name__ == '__main__':
     ap.add_argument('--episode_id', default='606035')
     ap.add_argument('--headshot_dir', default='./data/headshots/')
     ap.add_argument('--log_dir', default='./logs/match_clusters.log')
+    ap.add_argument('--n_samples', '-n', default=20, type=int)
+    ap.add_argument('--threshold', '-t', default=0.5, type=float)
+    ap.add_argument('--min_episodes', default=2, type=int)
     ap.add_argument('--verbosity', default=10)
     args = ap.parse_args()
     

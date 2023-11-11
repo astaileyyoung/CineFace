@@ -8,15 +8,6 @@ from tqdm import tqdm
 from videotools.detect_faces import detect_faces
 
 
-# def gather_files(d,
-#                  ext=None):
-#     paths = []
-#     for subdir in Path(d).iterdir():
-#         if ext is not None:
-#         files = [x for x in subdir.iterdir() if x.is_file()]
-#         paths.extend(files)
-#     return list(sorted(paths))
-
 def gather_files(d,
                  ext=None):
     paths = []
@@ -26,14 +17,6 @@ def gather_files(d,
             paths.append(path)
     paths = paths if ext is None else [x for x in paths if x.suffix in ext]
     return list(sorted(paths))
-    
-
-def faces_from_video(src,
-                     ext=None):
-    name = f'{file.stem}.csv'
-    fp = dst.joinpath(name)
-    df = detect_faces(str(file))
-    return df
 
 
 def find_faces(d,
