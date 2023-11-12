@@ -19,6 +19,11 @@ from utils import format_series_name
 ia = Cinemagoer(loggingLevel=50)
 
 
+def format_name(season,
+                episode):
+    return f'S{str(season).zfill(2)}E{str(episode).zfill(2)}'
+
+
 def get_role(cast_member):
     if len(cast_member.currentRole) > 1:
         r = cast_member.currentRole[0]
@@ -214,31 +219,30 @@ def get_episode_id(series_id,
 
 
 def main(args):
-    t = time.time()
+    if not Path(args.dst).exists():
+        Path.mkdir(Path(args.dst), parents=True)
+
     cluster_dir = Path(args.cluster_dir)
     episodes = list(sorted([x for x in cluster_dir.iterdir()]))
     
     logging.debug(f'Found {len(episodes)} episode directories.')
-    
-    dfs = []
-    for episode in tqdm(episodes[:1], leave=False):
+
+    for episode in tqdm(episodes, leave=False):
         name = episode.parts[-1]
         s = int(name[1:3])
         e = int(name[4:6])
         episode_id = get_episode_id(args.series_id,
                                     s,
                                     e)
-        logging.debug(f'Matching clusters for episode_id {episode_id} (S{str(s).zfill(2)}E{str(e).zfill(2)})')
+        logging.debug(f'Matching clusters for episode_id {episode_id} ({format_name(s, e)})')
         df = match_clusters(args.series_id,
                             episode_id,
                             args.episodes,
                             args.headshot_dir,
                             episode,
                             n_samples=args.n_samples)
-        dfs.append(df)
-    df = pd.concat(dfs, axis=0)
-    df.to_csv(args.dst)
-    print(time.time() - t)
+        dst = Path(args.dst).joinpath(format_name(s, e))
+        df.to_csv(dst)
         
 
 if __name__ == '__main__':
