@@ -1,0 +1,10 @@
+,episode_id,character,personID,cluster,confidence
+0,606040,Dr. Gregory House,0491402,10,0.656
+1,606040,Dr. Lisa Cuddy,0249046,30,0.525
+2,606040,Dr. Eric Foreman,0004898,36,0.608
+3,606040,Dr. James Wilson,0000494,43,0.491
+4,606040,Dr. Allison Cameron,0607185,28,0.414
+5,606040,Dr. Robert Chase,0817980,37,0.59
+6,606040,Stacy Warner,0000688,29,0.46
+7,606040,Mark Warner,0333982,20,0.231
+8,606040,Blind Guy,0306906,3,0.49

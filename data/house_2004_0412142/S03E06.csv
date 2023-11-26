@@ -1,0 +1,12 @@
+,episode_id,character,personID,cluster,confidence
+0,854514,Dr. Gregory House,0491402,22,0.671
+1,854514,Dr. Lisa Cuddy,0249046,19,0.499
+2,854514,Dr. Eric Foreman,0004898,12,0.653
+3,854514,Dr. James Wilson,0000494,10,0.4
+4,854514,Dr. Allison Cameron,0607185,18,0.18
+5,854514,Dr. Robert Chase,0817980,21,0.535
+6,854514,Michael Tritter,0001556,23,0.651
+7,854514,Lawyer Howard Gemeiner,0362429,1,0.276
+8,854514,Nurse Brenda Previn,0892956,3,0.333
+9,854514,Folman,0006687,39,0.362
+10,854514,Nurse,0075061,0,0.326

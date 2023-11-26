@@ -1,3 +1,4 @@
+from pathlib import Path
 from argparse import ArgumentParser
 
 import numpy as np
@@ -61,7 +62,12 @@ def join_images(df,
                   how='left',
                   on=['season', 'episode', 'frame_num', 'face_num'])
     return df
-    
+
+
+def pipeline(series_id,
+             face_dir):
+    pass
+
     
 def main(args):
     name = get_info(args.series_id)

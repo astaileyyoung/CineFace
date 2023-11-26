@@ -40,7 +40,7 @@ def get_episodes(url,
         id_ = imdb_ids.pop(0)
         try:
             datum = get_info(id_)
-            datum['series_id'] = args.series_id
+            datum['series_id'] = series_id
             data.append(datum)
         except _exceptions.IMDbDataAccessError:
             imdb_ids.append(id_)

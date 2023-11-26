@@ -1,0 +1,13 @@
+,episode_id,character,personID,cluster,confidence
+0,888858,Dr. Gregory House,0491402,7,0.659
+1,888858,Dr. Lisa Cuddy,0249046,12,0.522
+2,888858,Dr. Eric Foreman,0004898,18,0.645
+3,888858,Dr. James Wilson,0000494,25,0.562
+4,888858,Dr. Allison Cameron,0607185,9,0.163
+5,888858,Dr. Robert Chase,0817980,8,0.625
+6,888858,Michael Tritter,0001556,10,0.623
+7,888858,Neil,0533155,1,0.16
+8,888858,Lawyer Howard Gemeiner,0362429,0,0.428
+9,888858,"Dr. Chen, Anesthesiologist",1014366,2,0.137
+10,888858,Nurse,2161753,11,0.084
+11,888858,Nurse,0075061,,0.0

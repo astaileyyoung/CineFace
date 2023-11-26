@@ -1,0 +1,19 @@
+,episode_id,character,personID,cluster,confidence
+0,1104387,Dr. Gregory House,0491402,3,0.673
+1,1104387,Dr. Lisa Cuddy,0249046,30,0.618
+2,1104387,Dr. Eric Foreman,0004898,35,0.615
+3,1104387,Dr. James Wilson,0000494,42,0.551
+4,1104387,Dr. Allison Cameron,0607185,4,0.588
+5,1104387,Dr. Robert Chase,0817980,24,0.254
+6,1104387,Dr. Amber Volakis,0240043,17,0.434
+7,1104387,Dr. Jeffrey 'Big Love' Cole,1346230,0,0.241
+8,1104387,Dr. Chris Taub,0414772,23,0.637
+9,1104387,Dr. Lawrence Kutner,0671980,15,0.37
+10,1104387,Thirteen,1312575,22,0.483
+11,1104387,Henry Dobson,0034492,21,0.643
+12,1104387,Dr. Travis Brennan,0173688,,
+13,1104387,Dr. Jody Desai,0621244,26,0.27
+14,1104387,"Twin 1, a.k.a. #15A",1510060,7,0.483
+15,1104387,"Twin 2, a.k.a. #15B",1222256,,
+16,1104387,#23,1366009,11,0.12
+17,1104387,Nurse,0075061,8,0.3

@@ -1,0 +1,10 @@
+,episode_id,character,personID,cluster,confidence
+0,606030,Dr. Gregory House,0491402,6,0.658
+1,606030,Dr. Lisa Cuddy,0249046,13,0.364
+2,606030,Dr. Eric Foreman,0004898,15,0.652
+3,606030,Dr. James Wilson,0000494,7,0.472
+4,606030,Dr. Allison Cameron,0607185,5,0.38
+5,606030,Dr. Robert Chase,0817980,14,0.455
+6,606030,Dr. Lim,0158846,4,0.462
+7,606030,Ethan Hartig,0870794,2,0.366
+8,606030,Soap Patient,1667361,20,0.23
