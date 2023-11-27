@@ -182,7 +182,7 @@ def match_actors_to_clusters(episode_id,
         if eph[0] != '.':
             temp_dirs.append(i)
     cluster_dirs = list(sorted([x for x in temp if x.parts[-1][0] != '.' and x.is_dir()],
-                               key=lambda x: len([i for i in x.iterdir()]), reverse=True))
+                               key=lambda x: len([i for i in x.iterdir() if x.is_dir()]), reverse=True))
     d = {x.parts[-1]: x for x in cluster_dirs}
 
     episode_df = pd.read_csv(episodes, index_col=0)
