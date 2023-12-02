@@ -176,11 +176,6 @@ def match_actors_to_clusters(episode_id,
         Path.mkdir(Path(headshot_dir), parents=True)
 
     temp = [x for x in Path(cluster_dir).iterdir()]
-    temp_dirs = []
-    for i in temp:
-        eph = i.parts[-1]
-        if eph[0] != '.':
-            temp_dirs.append(i)
     cluster_dirs = list(sorted([x for x in temp if x.parts[-1][0] != '.' and x.is_dir()],
                                key=lambda x: len([i for i in x.iterdir() if x.is_dir()]), reverse=True))
     d = {x.parts[-1]: x for x in cluster_dirs}
@@ -243,7 +238,7 @@ def main(args):
     
     logging.debug(f'Found {len(episodes)} episode directories.')
 
-    for episode in tqdm(episodes, leave=False):
+    for episode in tqdm(episodes):
         name = episode.parts[-1]
         s = int(name[1:3])
         e = int(name[4:6])
@@ -265,7 +260,7 @@ def main(args):
                             min_episodes=args.min_episodes,
                             min_confidence=0.0)
         df.to_csv(dst)
-        
+
 
 if __name__ == '__main__':
     ap = ArgumentParser()
