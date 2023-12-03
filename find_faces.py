@@ -19,14 +19,6 @@ def gather_files(d,
     return list(sorted(paths))
 
 
-def find_faces(file,
-               dst):
-
-
-
-        df.to_csv(str(fp))
-    
-
 def main(args):
     dst = Path(args.dst)
     if dst.is_dir() and not dst.exists():
@@ -42,9 +34,9 @@ def main(args):
         fp = dst.joinpath(name)
         if not fp.exists():
             df = detect_faces(str(fp))
+            df.to_csv(str(fp))
 
 
-    
 if __name__ == "__main__":
     ap = ArgumentParser()
     ap.add_argument('src')

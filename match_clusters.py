@@ -1,11 +1,13 @@
 import time
 import random
 import logging
+import traceback
 from pathlib import Path 
 from argparse import ArgumentParser
 
 import numpy as np
 import pandas as pd
+import tensorflow as tf
 from tqdm import tqdm
 from imdb import Cinemagoer
 from deepface import DeepFace
@@ -13,6 +15,8 @@ from icrawler.builtin import GoogleImageCrawler
 
 from utils import format_series_name
 
+
+tf.get_logger().setLevel('ERROR')
 
 ia = Cinemagoer(loggingLevel=50)
 
@@ -91,6 +95,10 @@ def get_episode_id(series_id,
                             (episode_df['season'] == season) &
                             (episode_df['episode'] == episode)
                            ]
+    if episode_df.shape[0] == 0:
+        logging.error(f'Episode id not found for series {series_id} S{str(season).zfill(2)}E{str(episode).zfill(2)}')
+        exit()
+
     episode_id = episode_df['episode_id'].values[0]
     return episode_id
 
@@ -299,7 +307,7 @@ if __name__ == '__main__':
     logging.basicConfig(level=args.verbosity,
                         filename=args.log_dir,
                         format='%(levelname)s  %(asctime)s  %(lineno)d:  %(message)s',
-                        filemode='w')
+                        filemode='a')
     
     main(args)
 

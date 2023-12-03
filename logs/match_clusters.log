@@ -1,1 +1,1201 @@
-DEBUG  2023-12-02 20:36:22,673  239:  Found 176 episode directories.
+DEBUG  2023-12-02 20:47:35,067  245:  Found 176 episode directories.
+ERROR  2023-12-02 20:47:35,073  98:  Series([], Name: episode_id, dtype: int64)
+5
+, 12
+, Traceback (most recent call last):
+  File "/home/amos/programs/CineFace/match_clusters.py", line 96, in get_episode_id
+    episode_id = episode_df['episode_id'].values[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+DEBUG  2023-12-02 20:49:56,977  247:  Found 176 episode directories.
+DEBUG  2023-12-02 20:50:23,161  247:  Found 176 episode directories.
+DEBUG  2023-12-02 20:50:36,332  247:  Found 176 episode directories.
+ERROR  2023-12-02 20:50:36,337  96:  Episode id not found for series 41412 S05E12
+ERROR  2023-12-02 20:50:36,338  100:  Series([], Name: episode_id, dtype: int64)
+5
+, 12
+, Traceback (most recent call last):
+  File "/home/amos/programs/CineFace/match_clusters.py", line 98, in get_episode_id
+    episode_id = episode_df['episode_id'].values[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+DEBUG  2023-12-02 20:57:33,876  243:  Found 176 episode directories.
+ERROR  2023-12-02 20:57:33,881  96:  Episode id not found for series 41412 S05E12
+DEBUG  2023-12-02 20:57:45,662  243:  Found 176 episode directories.
+DEBUG  2023-12-02 20:57:45,669  257:  Matching clusters for episode_id 1273715 (S05E12)
+DEBUG  2023-12-02 20:57:49,853  225:  Clustering for episode 1273715.
+DEBUG  2023-12-02 20:57:54,547  190:  Found 12 actors. Matching to clusters ...
+DEBUG  2023-12-02 20:57:59,743  137:  Matching headshots for Dr. Gregory House to cluster 9.
+DEBUG  2023-12-02 20:58:00,487  78:  Creating converter from 3 to 5
+DEBUG  2023-12-02 20:58:24,380  164:  Matched Dr. Gregory House to cluster 9 with 0.68.
+DEBUG  2023-12-02 20:58:24,380  203:  Dr. Gregory House matches 9 with 0.6813883299798793 confidence.
+DEBUG  2023-12-02 20:58:27,795  137:  Matching headshots for Dr. Lisa Cuddy to cluster 4.
+DEBUG  2023-12-02 20:58:54,149  164:  Matched Dr. Lisa Cuddy to cluster 4 with 0.19.
+DEBUG  2023-12-02 20:58:56,205  137:  Matching headshots for Dr. Lisa Cuddy to cluster 7.
+DEBUG  2023-12-02 21:02:34,284  244:  Found 176 episode directories.
+DEBUG  2023-12-02 21:02:34,289  258:  Matching clusters for episode_id 1273715 (S05E12)
+DEBUG  2023-12-02 21:02:36,956  226:  Clustering for episode 1273715.
+DEBUG  2023-12-02 21:02:41,491  191:  Found 12 actors. Matching to clusters ...
+DEBUG  2023-12-02 21:02:43,276  138:  Matching headshots for Dr. Gregory House to cluster 9.
+DEBUG  2023-12-02 21:02:43,976  78:  Creating converter from 3 to 5
+DEBUG  2023-12-02 21:04:14,556  244:  Found 176 episode directories.
+DEBUG  2023-12-02 21:04:14,562  258:  Matching clusters for episode_id 1273715 (S05E12)
+DEBUG  2023-12-02 21:04:19,169  226:  Clustering for episode 1273715.
+DEBUG  2023-12-02 21:04:23,636  191:  Found 12 actors. Matching to clusters ...
+DEBUG  2023-12-02 21:04:34,025  138:  Matching headshots for Dr. Gregory House to cluster 9.
+DEBUG  2023-12-02 21:04:34,813  78:  Creating converter from 3 to 5
+DEBUG  2023-12-02 21:04:58,243  165:  Matched Dr. Gregory House to cluster 9 with 0.68.
+DEBUG  2023-12-02 21:04:58,243  204:  Dr. Gregory House matches 9 with 0.6813883299798793 confidence.
+DEBUG  2023-12-02 21:05:01,182  138:  Matching headshots for Dr. Lisa Cuddy to cluster 4.
+DEBUG  2023-12-02 21:05:27,282  165:  Matched Dr. Lisa Cuddy to cluster 4 with 0.19.
+DEBUG  2023-12-02 21:05:29,052  138:  Matching headshots for Dr. Lisa Cuddy to cluster 7.
+DEBUG  2023-12-02 21:07:56,300  165:  Matched Dr. Lisa Cuddy to cluster 7 with 0.06.
+DEBUG  2023-12-02 21:07:58,496  138:  Matching headshots for Dr. Lisa Cuddy to cluster 16.
+DEBUG  2023-12-02 21:10:13,487  165:  Matched Dr. Lisa Cuddy to cluster 16 with 0.16.
+DEBUG  2023-12-02 21:10:16,745  138:  Matching headshots for Dr. Lisa Cuddy to cluster 15.
+DEBUG  2023-12-02 21:12:25,173  165:  Matched Dr. Lisa Cuddy to cluster 15 with 0.08.
+DEBUG  2023-12-02 21:12:27,129  138:  Matching headshots for Dr. Lisa Cuddy to cluster 3.
+DEBUG  2023-12-02 21:14:14,020  165:  Matched Dr. Lisa Cuddy to cluster 3 with 0.33.
+DEBUG  2023-12-02 21:14:16,044  138:  Matching headshots for Dr. Lisa Cuddy to cluster 14.
+DEBUG  2023-12-02 21:16:02,149  165:  Matched Dr. Lisa Cuddy to cluster 14 with 0.06.
+DEBUG  2023-12-02 21:16:04,961  138:  Matching headshots for Dr. Lisa Cuddy to cluster 1.
+DEBUG  2023-12-02 21:17:32,052  165:  Matched Dr. Lisa Cuddy to cluster 1 with 0.25.
+DEBUG  2023-12-02 21:17:33,956  138:  Matching headshots for Dr. Lisa Cuddy to cluster 0.
+DEBUG  2023-12-02 21:18:58,052  165:  Matched Dr. Lisa Cuddy to cluster 0 with 0.06.
+DEBUG  2023-12-02 21:18:59,910  138:  Matching headshots for Dr. Lisa Cuddy to cluster 2.
+DEBUG  2023-12-02 21:20:05,678  165:  Matched Dr. Lisa Cuddy to cluster 2 with 0.13.
+DEBUG  2023-12-02 21:20:08,487  138:  Matching headshots for Dr. Lisa Cuddy to cluster 13.
+DEBUG  2023-12-02 21:20:49,584  165:  Matched Dr. Lisa Cuddy to cluster 13 with 0.14.
+DEBUG  2023-12-02 21:20:51,452  138:  Matching headshots for Dr. Lisa Cuddy to cluster 30.
+DEBUG  2023-12-02 21:21:32,022  165:  Matched Dr. Lisa Cuddy to cluster 30 with 0.04.
+DEBUG  2023-12-02 21:21:34,860  138:  Matching headshots for Dr. Lisa Cuddy to cluster 19.
+DEBUG  2023-12-02 21:22:08,190  165:  Matched Dr. Lisa Cuddy to cluster 19 with 0.14.
+DEBUG  2023-12-02 21:22:08,191  204:  Dr. Lisa Cuddy matches 3 with 0.3275147928994082 confidence.
+DEBUG  2023-12-02 21:22:12,333  138:  Matching headshots for Dr. Eric Foreman to cluster 4.
+DEBUG  2023-12-02 21:22:30,597  165:  Matched Dr. Eric Foreman to cluster 4 with 0.36.
+DEBUG  2023-12-02 21:22:33,794  138:  Matching headshots for Dr. Eric Foreman to cluster 7.
+DEBUG  2023-12-02 21:22:50,077  165:  Matched Dr. Eric Foreman to cluster 7 with 0.21.
+DEBUG  2023-12-02 21:22:52,100  138:  Matching headshots for Dr. Eric Foreman to cluster 16.
+DEBUG  2023-12-02 21:23:07,715  165:  Matched Dr. Eric Foreman to cluster 16 with 0.08.
+DEBUG  2023-12-02 21:23:10,084  138:  Matching headshots for Dr. Eric Foreman to cluster 15.
+DEBUG  2023-12-02 21:23:25,776  165:  Matched Dr. Eric Foreman to cluster 15 with 0.61.
+DEBUG  2023-12-02 21:23:25,777  204:  Dr. Eric Foreman matches 15 with 0.605609756097561 confidence.
+DEBUG  2023-12-02 21:23:28,240  138:  Matching headshots for Dr. James Wilson to cluster 4.
+DEBUG  2023-12-02 21:23:52,591  165:  Matched Dr. James Wilson to cluster 4 with 0.26.
+DEBUG  2023-12-02 21:23:54,529  138:  Matching headshots for Dr. James Wilson to cluster 7.
+DEBUG  2023-12-02 21:24:16,333  165:  Matched Dr. James Wilson to cluster 7 with 0.27.
+DEBUG  2023-12-02 21:24:18,131  138:  Matching headshots for Dr. James Wilson to cluster 16.
+DEBUG  2023-12-02 21:24:39,207  165:  Matched Dr. James Wilson to cluster 16 with 0.04.
+DEBUG  2023-12-02 21:24:41,342  138:  Matching headshots for Dr. James Wilson to cluster 14.
+DEBUG  2023-12-02 21:25:01,009  165:  Matched Dr. James Wilson to cluster 14 with 0.21.
+DEBUG  2023-12-02 21:25:03,278  138:  Matching headshots for Dr. James Wilson to cluster 1.
+DEBUG  2023-12-02 21:25:21,663  165:  Matched Dr. James Wilson to cluster 1 with 0.06.
+DEBUG  2023-12-02 21:25:23,557  138:  Matching headshots for Dr. James Wilson to cluster 0.
+DEBUG  2023-12-02 21:25:41,721  165:  Matched Dr. James Wilson to cluster 0 with 0.28.
+DEBUG  2023-12-02 21:25:43,559  138:  Matching headshots for Dr. James Wilson to cluster 2.
+DEBUG  2023-12-02 21:26:00,779  165:  Matched Dr. James Wilson to cluster 2 with 0.11.
+DEBUG  2023-12-02 21:26:02,773  138:  Matching headshots for Dr. James Wilson to cluster 13.
+DEBUG  2023-12-02 21:26:19,043  165:  Matched Dr. James Wilson to cluster 13 with 0.05.
+DEBUG  2023-12-02 21:26:20,796  138:  Matching headshots for Dr. James Wilson to cluster 30.
+DEBUG  2023-12-02 21:26:36,986  165:  Matched Dr. James Wilson to cluster 30 with 0.54.
+DEBUG  2023-12-02 21:26:36,986  204:  Dr. James Wilson matches 30 with 0.5447916666666666 confidence.
+DEBUG  2023-12-02 21:26:40,708  138:  Matching headshots for Dr. Allison Cameron to cluster 4.
+DEBUG  2023-12-02 21:27:07,095  165:  Matched Dr. Allison Cameron to cluster 4 with 0.07.
+DEBUG  2023-12-02 21:27:09,003  138:  Matching headshots for Dr. Allison Cameron to cluster 7.
+DEBUG  2023-12-02 21:27:32,836  165:  Matched Dr. Allison Cameron to cluster 7 with 0.05.
+DEBUG  2023-12-02 21:27:34,702  138:  Matching headshots for Dr. Allison Cameron to cluster 16.
+DEBUG  2023-12-02 21:27:57,813  165:  Matched Dr. Allison Cameron to cluster 16 with 0.07.
+DEBUG  2023-12-02 21:27:59,789  138:  Matching headshots for Dr. Allison Cameron to cluster 14.
+DEBUG  2023-12-02 21:28:25,055  165:  Matched Dr. Allison Cameron to cluster 14 with 0.04.
+DEBUG  2023-12-02 21:28:27,250  138:  Matching headshots for Dr. Allison Cameron to cluster 1.
+DEBUG  2023-12-02 21:28:48,477  165:  Matched Dr. Allison Cameron to cluster 1 with 0.08.
+DEBUG  2023-12-02 21:28:50,264  138:  Matching headshots for Dr. Allison Cameron to cluster 0.
+DEBUG  2023-12-02 21:29:11,149  165:  Matched Dr. Allison Cameron to cluster 0 with 0.01.
+DEBUG  2023-12-02 21:29:13,369  138:  Matching headshots for Dr. Allison Cameron to cluster 2.
+DEBUG  2023-12-02 21:29:33,383  165:  Matched Dr. Allison Cameron to cluster 2 with 0.05.
+DEBUG  2023-12-02 21:29:35,341  138:  Matching headshots for Dr. Allison Cameron to cluster 13.
+DEBUG  2023-12-02 21:29:53,645  165:  Matched Dr. Allison Cameron to cluster 13 with 0.4.
+DEBUG  2023-12-02 21:29:55,503  138:  Matching headshots for Dr. Allison Cameron to cluster 19.
+DEBUG  2023-12-02 21:30:14,424  165:  Matched Dr. Allison Cameron to cluster 19 with 0.08.
+DEBUG  2023-12-02 21:30:14,424  204:  Dr. Allison Cameron matches 13 with 0.403125 confidence.
+DEBUG  2023-12-02 21:30:23,010  138:  Matching headshots for Dr. Robert Chase to cluster 4.
+DEBUG  2023-12-02 21:30:47,182  165:  Matched Dr. Robert Chase to cluster 4 with 0.2.
+DEBUG  2023-12-02 21:30:51,695  138:  Matching headshots for Dr. Robert Chase to cluster 7.
+DEBUG  2023-12-02 21:31:11,040  165:  Matched Dr. Robert Chase to cluster 7 with 0.21.
+DEBUG  2023-12-02 21:31:13,023  138:  Matching headshots for Dr. Robert Chase to cluster 16.
+DEBUG  2023-12-02 21:31:30,887  165:  Matched Dr. Robert Chase to cluster 16 with 0.06.
+DEBUG  2023-12-02 21:31:33,020  138:  Matching headshots for Dr. Robert Chase to cluster 14.
+DEBUG  2023-12-02 21:31:49,882  165:  Matched Dr. Robert Chase to cluster 14 with 0.14.
+DEBUG  2023-12-02 21:31:51,683  138:  Matching headshots for Dr. Robert Chase to cluster 1.
+DEBUG  2023-12-02 21:32:07,552  165:  Matched Dr. Robert Chase to cluster 1 with 0.07.
+DEBUG  2023-12-02 21:32:09,434  138:  Matching headshots for Dr. Robert Chase to cluster 0.
+DEBUG  2023-12-02 21:32:25,235  165:  Matched Dr. Robert Chase to cluster 0 with 0.31.
+DEBUG  2023-12-02 21:32:27,093  138:  Matching headshots for Dr. Robert Chase to cluster 2.
+DEBUG  2023-12-02 21:32:42,136  165:  Matched Dr. Robert Chase to cluster 2 with 0.1.
+DEBUG  2023-12-02 21:32:44,051  138:  Matching headshots for Dr. Robert Chase to cluster 19.
+DEBUG  2023-12-02 21:32:59,252  165:  Matched Dr. Robert Chase to cluster 19 with 0.29.
+DEBUG  2023-12-02 21:32:59,253  204:  Dr. Robert Chase matches 0 with 0.3114754098360656 confidence.
+DEBUG  2023-12-02 21:33:02,558  138:  Matching headshots for Dr. Chris Taub to cluster 4.
+DEBUG  2023-12-02 21:33:20,922  165:  Matched Dr. Chris Taub to cluster 4 with 0.16.
+DEBUG  2023-12-02 21:33:23,070  138:  Matching headshots for Dr. Chris Taub to cluster 7.
+DEBUG  2023-12-02 21:33:41,255  165:  Matched Dr. Chris Taub to cluster 7 with 0.62.
+DEBUG  2023-12-02 21:33:41,255  204:  Dr. Chris Taub matches 7 with 0.6201612903225806 confidence.
+DEBUG  2023-12-02 21:33:49,247  138:  Matching headshots for Dr. Lawrence Kutner to cluster 4.
+DEBUG  2023-12-02 21:34:13,740  165:  Matched Dr. Lawrence Kutner to cluster 4 with 0.2.
+DEBUG  2023-12-02 21:34:15,715  138:  Matching headshots for Dr. Lawrence Kutner to cluster 16.
+DEBUG  2023-12-02 21:34:35,923  165:  Matched Dr. Lawrence Kutner to cluster 16 with 0.09.
+DEBUG  2023-12-02 21:34:37,909  138:  Matching headshots for Dr. Lawrence Kutner to cluster 14.
+DEBUG  2023-12-02 21:34:57,132  165:  Matched Dr. Lawrence Kutner to cluster 14 with 0.45.
+DEBUG  2023-12-02 21:34:58,963  138:  Matching headshots for Dr. Lawrence Kutner to cluster 1.
+DEBUG  2023-12-02 21:35:16,179  165:  Matched Dr. Lawrence Kutner to cluster 1 with 0.06.
+DEBUG  2023-12-02 21:35:18,983  138:  Matching headshots for Dr. Lawrence Kutner to cluster 2.
+DEBUG  2023-12-02 21:35:35,541  165:  Matched Dr. Lawrence Kutner to cluster 2 with 0.11.
+DEBUG  2023-12-02 21:35:37,653  138:  Matching headshots for Dr. Lawrence Kutner to cluster 19.
+DEBUG  2023-12-02 21:35:52,493  165:  Matched Dr. Lawrence Kutner to cluster 19 with 0.17.
+DEBUG  2023-12-02 21:35:52,493  204:  Dr. Lawrence Kutner matches 14 with 0.4538922155688622 confidence.
+DEBUG  2023-12-02 21:35:59,695  138:  Matching headshots for Thirteen to cluster 4.
+DEBUG  2023-12-02 21:36:22,166  165:  Matched Thirteen to cluster 4 with 0.18.
+DEBUG  2023-12-02 21:36:24,082  138:  Matching headshots for Thirteen to cluster 16.
+DEBUG  2023-12-02 21:36:43,384  165:  Matched Thirteen to cluster 16 with 0.53.
+DEBUG  2023-12-02 21:36:43,384  204:  Thirteen matches 16 with 0.5308219178082191 confidence.
+DEBUG  2023-12-02 21:36:52,443  121:  Downloading headshots for Alex Fernandez
+INFO  2023-12-02 21:36:52,444  162:  start crawling...
+INFO  2023-12-02 21:36:52,444  168:  starting 1 feeder threads...
+DEBUG  2023-12-02 21:36:52,445  59:  thread feeder-001 started
+DEBUG  2023-12-02 21:36:52,445  141:  put url to url_queue: https://www.google.com/search?q=Fernando+Alex+Fernandez&ijn=0&start=0&tbs=&tbm=isch
+INFO  2023-12-02 21:36:52,445  171:  starting 1 parser threads...
+INFO  2023-12-02 21:36:52,445  41:  thread feeder-001 exit
+DEBUG  2023-12-02 21:36:52,446  59:  thread parser-001 started
+DEBUG  2023-12-02 21:36:52,446  78:  start fetching page https://www.google.com/search?q=Fernando+Alex+Fernandez&ijn=0&start=0&tbs=&tbm=isch
+INFO  2023-12-02 21:36:52,446  174:  starting 1 downloader threads...
+DEBUG  2023-12-02 21:36:52,447  164:  thread downloader-001 started
+DEBUG  2023-12-02 21:36:52,449  1019:  Starting new HTTPS connection (1): www.google.com:443
+DEBUG  2023-12-02 21:36:52,603  474:  https://www.google.com:443 "GET /search?q=Fernando+Alex+Fernandez&ijn=0&start=0&tbs=&tbm=isch HTTP/1.1" 302 293
+DEBUG  2023-12-02 21:36:52,723  474:  https://www.google.com:443 "GET /search?q=Fernando+Alex+Fernandez&ijn=0&start=0&tbs=&udm=2 HTTP/1.1" 200 None
+INFO  2023-12-02 21:36:53,319  93:  parsing result page https://www.google.com/search?q=Fernando+Alex+Fernandez&ijn=0&start=0&tbs=&tbm=isch
+INFO  2023-12-02 21:36:57,447  191:  no more download task for thread downloader-001
+INFO  2023-12-02 21:36:57,447  201:  thread downloader-001 exit
+INFO  2023-12-02 21:36:57,448  193:  Crawling task done!
+DEBUG  2023-12-02 21:36:57,450  138:  Matching headshots for Fernando to cluster 4.
+DEBUG  2023-12-02 21:36:57,450  165:  Matched Fernando to cluster 4 with nan.
+DEBUG  2023-12-02 21:36:59,173  138:  Matching headshots for Fernando to cluster 1.
+DEBUG  2023-12-02 21:36:59,173  165:  Matched Fernando to cluster 1 with nan.
+DEBUG  2023-12-02 21:37:00,988  138:  Matching headshots for Fernando to cluster 2.
+DEBUG  2023-12-02 21:37:00,989  165:  Matched Fernando to cluster 2 with nan.
+DEBUG  2023-12-02 21:37:02,831  138:  Matching headshots for Fernando to cluster 19.
+DEBUG  2023-12-02 21:37:02,831  165:  Matched Fernando to cluster 19 with nan.
+DEBUG  2023-12-02 21:37:02,832  204:  Fernando matches 4 with nan confidence.
+DEBUG  2023-12-02 21:37:05,857  138:  Matching headshots for Janice Burke to cluster 1.
+DEBUG  2023-12-02 21:37:25,234  165:  Matched Janice Burke to cluster 1 with 0.14.
+DEBUG  2023-12-02 21:37:27,052  138:  Matching headshots for Janice Burke to cluster 2.
+DEBUG  2023-12-02 21:37:45,300  165:  Matched Janice Burke to cluster 2 with 0.14.
+DEBUG  2023-12-02 21:37:47,121  138:  Matching headshots for Janice Burke to cluster 19.
+DEBUG  2023-12-02 21:38:03,748  165:  Matched Janice Burke to cluster 19 with 0.24.
+DEBUG  2023-12-02 21:38:03,749  204:  Janice Burke matches 19 with 0.23787878787878788 confidence.
+DEBUG  2023-12-02 21:38:07,234  138:  Matching headshots for Nurse to cluster 1.
+DEBUG  2023-12-02 21:38:38,470  165:  Matched Nurse to cluster 1 with 0.09.
+DEBUG  2023-12-02 21:38:40,530  138:  Matching headshots for Nurse to cluster 2.
+DEBUG  2023-12-02 21:39:09,764  165:  Matched Nurse to cluster 2 with 0.2.
+DEBUG  2023-12-02 21:39:09,765  204:  Nurse matches 2 with 0.19510869565217392 confidence.
+DEBUG  2023-12-02 21:39:09,769  258:  Matching clusters for episode_id 1273716 (S05E13)
+DEBUG  2023-12-02 21:39:13,669  226:  Clustering for episode 1273716.
+DEBUG  2023-12-02 21:39:19,002  191:  Found 10 actors. Matching to clusters ...
+DEBUG  2023-12-02 21:39:22,613  138:  Matching headshots for Dr. Gregory House to cluster 12.
+DEBUG  2023-12-02 21:45:06,161  165:  Matched Dr. Gregory House to cluster 12 with 0.69.
+DEBUG  2023-12-02 21:45:06,162  204:  Dr. Gregory House matches 12 with 0.6885786802030457 confidence.
+DEBUG  2023-12-02 21:45:09,594  138:  Matching headshots for Dr. Lisa Cuddy to cluster 2.
+DEBUG  2023-12-02 21:48:11,407  165:  Matched Dr. Lisa Cuddy to cluster 2 with 0.24.
+DEBUG  2023-12-02 21:48:13,246  138:  Matching headshots for Dr. Lisa Cuddy to cluster 0.
+DEBUG  2023-12-02 21:51:04,540  165:  Matched Dr. Lisa Cuddy to cluster 0 with 0.19.
+DEBUG  2023-12-02 21:51:08,281  138:  Matching headshots for Dr. Lisa Cuddy to cluster 15.
+DEBUG  2023-12-02 21:53:47,490  165:  Matched Dr. Lisa Cuddy to cluster 15 with 0.05.
+DEBUG  2023-12-02 21:53:49,411  138:  Matching headshots for Dr. Lisa Cuddy to cluster 13.
+DEBUG  2023-12-02 21:56:13,824  165:  Matched Dr. Lisa Cuddy to cluster 13 with 0.14.
+DEBUG  2023-12-02 21:56:17,033  138:  Matching headshots for Dr. Lisa Cuddy to cluster 14.
+DEBUG  2023-12-02 21:58:34,180  165:  Matched Dr. Lisa Cuddy to cluster 14 with 0.07.
+DEBUG  2023-12-02 21:58:36,090  138:  Matching headshots for Dr. Lisa Cuddy to cluster 16.
+DEBUG  2023-12-02 22:00:58,909  165:  Matched Dr. Lisa Cuddy to cluster 16 with 0.14.
+DEBUG  2023-12-02 22:01:01,042  138:  Matching headshots for Dr. Lisa Cuddy to cluster 19.
+DEBUG  2023-12-02 22:02:28,109  165:  Matched Dr. Lisa Cuddy to cluster 19 with 0.03.
+DEBUG  2023-12-02 22:02:31,919  138:  Matching headshots for Dr. Lisa Cuddy to cluster 1.
+DEBUG  2023-12-02 22:03:57,820  165:  Matched Dr. Lisa Cuddy to cluster 1 with 0.14.
+DEBUG  2023-12-02 22:03:59,874  138:  Matching headshots for Dr. Lisa Cuddy to cluster 17.
+DEBUG  2023-12-02 22:05:15,790  165:  Matched Dr. Lisa Cuddy to cluster 17 with 0.1.
+DEBUG  2023-12-02 22:05:15,790  204:  Dr. Lisa Cuddy matches 2 with 0.23776595744680856 confidence.
+DEBUG  2023-12-02 22:05:19,219  138:  Matching headshots for Dr. Eric Foreman to cluster 0.
+DEBUG  2023-12-02 22:05:36,682  165:  Matched Dr. Eric Foreman to cluster 0 with 0.34.
+DEBUG  2023-12-02 22:05:38,921  138:  Matching headshots for Dr. Eric Foreman to cluster 15.
+DEBUG  2023-12-02 22:05:55,752  165:  Matched Dr. Eric Foreman to cluster 15 with 0.27.
+DEBUG  2023-12-02 22:05:57,652  138:  Matching headshots for Dr. Eric Foreman to cluster 13.
+DEBUG  2023-12-02 22:06:13,616  165:  Matched Dr. Eric Foreman to cluster 13 with 0.09.
+DEBUG  2023-12-02 22:06:15,768  138:  Matching headshots for Dr. Eric Foreman to cluster 14.
+DEBUG  2023-12-02 22:06:31,746  165:  Matched Dr. Eric Foreman to cluster 14 with 0.61.
+DEBUG  2023-12-02 22:06:31,746  204:  Dr. Eric Foreman matches 14 with 0.6078125 confidence.
+DEBUG  2023-12-02 22:06:33,990  138:  Matching headshots for Dr. James Wilson to cluster 0.
+DEBUG  2023-12-02 22:06:56,882  165:  Matched Dr. James Wilson to cluster 0 with 0.16.
+DEBUG  2023-12-02 22:07:01,635  138:  Matching headshots for Dr. James Wilson to cluster 15.
+DEBUG  2023-12-02 22:07:23,958  165:  Matched Dr. James Wilson to cluster 15 with 0.19.
+DEBUG  2023-12-02 22:07:25,933  138:  Matching headshots for Dr. James Wilson to cluster 13.
+DEBUG  2023-12-02 22:07:47,232  165:  Matched Dr. James Wilson to cluster 13 with 0.05.
+DEBUG  2023-12-02 22:07:49,046  138:  Matching headshots for Dr. James Wilson to cluster 16.
+DEBUG  2023-12-02 22:08:10,269  165:  Matched Dr. James Wilson to cluster 16 with 0.07.
+DEBUG  2023-12-02 22:08:12,236  138:  Matching headshots for Dr. James Wilson to cluster 19.
+DEBUG  2023-12-02 22:08:30,634  165:  Matched Dr. James Wilson to cluster 19 with 0.59.
+DEBUG  2023-12-02 22:08:30,634  204:  Dr. James Wilson matches 19 with 0.5936000000000001 confidence.
+DEBUG  2023-12-02 22:08:33,785  138:  Matching headshots for Dr. Allison Cameron to cluster 0.
+DEBUG  2023-12-02 22:08:58,850  165:  Matched Dr. Allison Cameron to cluster 0 with 0.12.
+DEBUG  2023-12-02 22:09:00,686  138:  Matching headshots for Dr. Allison Cameron to cluster 15.
+DEBUG  2023-12-02 22:09:24,917  165:  Matched Dr. Allison Cameron to cluster 15 with 0.04.
+DEBUG  2023-12-02 22:09:26,879  138:  Matching headshots for Dr. Allison Cameron to cluster 13.
+DEBUG  2023-12-02 22:09:50,101  165:  Matched Dr. Allison Cameron to cluster 13 with 0.46.
+DEBUG  2023-12-02 22:09:52,043  138:  Matching headshots for Dr. Allison Cameron to cluster 16.
+DEBUG  2023-12-02 22:10:15,509  165:  Matched Dr. Allison Cameron to cluster 16 with 0.1.
+DEBUG  2023-12-02 22:10:17,728  138:  Matching headshots for Dr. Allison Cameron to cluster 1.
+DEBUG  2023-12-02 22:10:37,480  165:  Matched Dr. Allison Cameron to cluster 1 with 0.06.
+DEBUG  2023-12-02 22:10:39,287  138:  Matching headshots for Dr. Allison Cameron to cluster 17.
+DEBUG  2023-12-02 22:10:58,877  165:  Matched Dr. Allison Cameron to cluster 17 with 0.06.
+DEBUG  2023-12-02 22:10:58,877  204:  Dr. Allison Cameron matches 13 with 0.459825327510917 confidence.
+DEBUG  2023-12-02 22:11:03,105  138:  Matching headshots for Dr. Robert Chase to cluster 0.
+DEBUG  2023-12-02 22:11:21,648  165:  Matched Dr. Robert Chase to cluster 0 with 0.18.
+DEBUG  2023-12-02 22:11:23,635  138:  Matching headshots for Dr. Robert Chase to cluster 15.
+DEBUG  2023-12-02 22:11:41,867  165:  Matched Dr. Robert Chase to cluster 15 with 0.11.
+DEBUG  2023-12-02 22:11:43,777  138:  Matching headshots for Dr. Robert Chase to cluster 16.
+DEBUG  2023-12-02 22:12:01,376  165:  Matched Dr. Robert Chase to cluster 16 with 0.06.
+DEBUG  2023-12-02 22:12:03,367  138:  Matching headshots for Dr. Robert Chase to cluster 1.
+DEBUG  2023-12-02 22:12:18,481  165:  Matched Dr. Robert Chase to cluster 1 with 0.09.
+DEBUG  2023-12-02 22:12:21,068  138:  Matching headshots for Dr. Robert Chase to cluster 17.
+DEBUG  2023-12-02 22:12:35,725  165:  Matched Dr. Robert Chase to cluster 17 with 0.21.
+DEBUG  2023-12-02 22:12:35,726  204:  Dr. Robert Chase matches 17 with 0.2077981651376147 confidence.
+DEBUG  2023-12-02 22:12:39,056  138:  Matching headshots for Dr. Chris Taub to cluster 0.
+DEBUG  2023-12-02 22:12:55,964  165:  Matched Dr. Chris Taub to cluster 0 with 0.13.
+DEBUG  2023-12-02 22:12:57,869  138:  Matching headshots for Dr. Chris Taub to cluster 15.
+DEBUG  2023-12-02 22:13:14,413  165:  Matched Dr. Chris Taub to cluster 15 with 0.13.
+DEBUG  2023-12-02 22:13:16,477  138:  Matching headshots for Dr. Chris Taub to cluster 16.
+DEBUG  2023-12-02 22:13:32,190  165:  Matched Dr. Chris Taub to cluster 16 with 0.02.
+DEBUG  2023-12-02 22:13:34,148  138:  Matching headshots for Dr. Chris Taub to cluster 1.
+DEBUG  2023-12-02 22:13:47,621  165:  Matched Dr. Chris Taub to cluster 1 with 0.04.
+DEBUG  2023-12-02 22:13:47,621  204:  Dr. Chris Taub matches 15 with 0.13243243243243247 confidence.
+DEBUG  2023-12-02 22:13:50,745  138:  Matching headshots for Dr. Lawrence Kutner to cluster 0.
+DEBUG  2023-12-02 22:14:11,490  165:  Matched Dr. Lawrence Kutner to cluster 0 with 0.19.
+DEBUG  2023-12-02 22:14:13,367  138:  Matching headshots for Dr. Lawrence Kutner to cluster 16.
+DEBUG  2023-12-02 22:14:32,687  165:  Matched Dr. Lawrence Kutner to cluster 16 with 0.08.
+DEBUG  2023-12-02 22:14:35,482  138:  Matching headshots for Dr. Lawrence Kutner to cluster 1.
+DEBUG  2023-12-02 22:14:51,852  165:  Matched Dr. Lawrence Kutner to cluster 1 with 0.08.
+DEBUG  2023-12-02 22:14:51,852  204:  Dr. Lawrence Kutner matches 0 with 0.19237588652482268 confidence.
+DEBUG  2023-12-02 22:14:55,002  138:  Matching headshots for Thirteen to cluster 16.
+DEBUG  2023-12-02 22:15:13,780  165:  Matched Thirteen to cluster 16 with 0.54.
+DEBUG  2023-12-02 22:15:13,780  204:  Thirteen matches 16 with 0.5356502242152466 confidence.
+DEBUG  2023-12-02 22:15:17,617  138:  Matching headshots for Nurse to cluster 1.
+DEBUG  2023-12-02 22:15:47,013  165:  Matched Nurse to cluster 1 with 0.25.
+DEBUG  2023-12-02 22:15:47,013  204:  Nurse matches 1 with 0.24541666666666667 confidence.
+DEBUG  2023-12-02 22:15:47,017  258:  Matching clusters for episode_id 1273717 (S05E14)
+DEBUG  2023-12-02 22:15:49,612  226:  Clustering for episode 1273717.
+DEBUG  2023-12-02 22:15:55,410  191:  Found 12 actors. Matching to clusters ...
+DEBUG  2023-12-02 22:16:00,846  138:  Matching headshots for Dr. Gregory House to cluster 11.
+DEBUG  2023-12-02 22:21:04,068  165:  Matched Dr. Gregory House to cluster 11 with 0.69.
+DEBUG  2023-12-02 22:21:04,068  204:  Dr. Gregory House matches 11 with 0.6911710037174722 confidence.
+DEBUG  2023-12-02 22:21:07,227  138:  Matching headshots for Dr. Lisa Cuddy to cluster 0.
+DEBUG  2023-12-02 22:24:26,366  165:  Matched Dr. Lisa Cuddy to cluster 0 with 0.2.
+DEBUG  2023-12-02 22:24:30,486  138:  Matching headshots for Dr. Lisa Cuddy to cluster 9.
+DEBUG  2023-12-02 22:27:25,763  165:  Matched Dr. Lisa Cuddy to cluster 9 with 0.07.
+DEBUG  2023-12-02 22:27:28,666  138:  Matching headshots for Dr. Lisa Cuddy to cluster 13.
+DEBUG  2023-12-02 22:30:18,464  165:  Matched Dr. Lisa Cuddy to cluster 13 with 0.07.
+DEBUG  2023-12-02 22:30:21,588  138:  Matching headshots for Dr. Lisa Cuddy to cluster 14.
+DEBUG  2023-12-02 22:33:08,336  165:  Matched Dr. Lisa Cuddy to cluster 14 with 0.15.
+DEBUG  2023-12-02 22:33:11,120  138:  Matching headshots for Dr. Lisa Cuddy to cluster 12.
+DEBUG  2023-12-02 22:35:10,921  165:  Matched Dr. Lisa Cuddy to cluster 12 with 0.02.
+DEBUG  2023-12-02 22:35:13,551  138:  Matching headshots for Dr. Lisa Cuddy to cluster 15.
+DEBUG  2023-12-02 22:36:51,444  165:  Matched Dr. Lisa Cuddy to cluster 15 with 0.04.
+DEBUG  2023-12-02 22:36:53,272  138:  Matching headshots for Dr. Lisa Cuddy to cluster 4.
+DEBUG  2023-12-02 22:38:30,055  165:  Matched Dr. Lisa Cuddy to cluster 4 with 0.19.
+DEBUG  2023-12-02 22:38:33,395  138:  Matching headshots for Dr. Lisa Cuddy to cluster 1.
+DEBUG  2023-12-02 22:40:01,569  165:  Matched Dr. Lisa Cuddy to cluster 1 with 0.34.
+DEBUG  2023-12-02 22:40:03,768  138:  Matching headshots for Dr. Lisa Cuddy to cluster 23.
+DEBUG  2023-12-02 22:40:45,137  165:  Matched Dr. Lisa Cuddy to cluster 23 with 0.3.
+DEBUG  2023-12-02 22:40:45,138  204:  Dr. Lisa Cuddy matches 1 with 0.34060150375939846 confidence.
+DEBUG  2023-12-02 22:40:49,031  138:  Matching headshots for Dr. Eric Foreman to cluster 0.
+DEBUG  2023-12-02 22:41:07,644  165:  Matched Dr. Eric Foreman to cluster 0 with 0.36.
+DEBUG  2023-12-02 22:41:09,656  138:  Matching headshots for Dr. Eric Foreman to cluster 9.
+DEBUG  2023-12-02 22:41:27,092  165:  Matched Dr. Eric Foreman to cluster 9 with 0.66.
+DEBUG  2023-12-02 22:41:27,092  204:  Dr. Eric Foreman matches 9 with 0.6603092783505156 confidence.
+DEBUG  2023-12-02 22:41:29,861  138:  Matching headshots for Dr. James Wilson to cluster 0.
+DEBUG  2023-12-02 22:41:54,707  165:  Matched Dr. James Wilson to cluster 0 with 0.24.
+DEBUG  2023-12-02 22:41:56,994  138:  Matching headshots for Dr. James Wilson to cluster 13.
+DEBUG  2023-12-02 22:42:19,964  165:  Matched Dr. James Wilson to cluster 13 with 0.26.
+DEBUG  2023-12-02 22:42:21,870  138:  Matching headshots for Dr. James Wilson to cluster 14.
+DEBUG  2023-12-02 22:42:44,721  165:  Matched Dr. James Wilson to cluster 14 with 0.04.
+DEBUG  2023-12-02 22:42:46,728  138:  Matching headshots for Dr. James Wilson to cluster 12.
+DEBUG  2023-12-02 22:43:07,067  165:  Matched Dr. James Wilson to cluster 12 with 0.55.
+DEBUG  2023-12-02 22:43:07,067  204:  Dr. James Wilson matches 12 with 0.553157894736842 confidence.
+DEBUG  2023-12-02 22:43:10,831  138:  Matching headshots for Dr. Allison Cameron to cluster 0.
+DEBUG  2023-12-02 22:43:37,689  165:  Matched Dr. Allison Cameron to cluster 0 with 0.07.
+DEBUG  2023-12-02 22:43:40,514  138:  Matching headshots for Dr. Allison Cameron to cluster 13.
+DEBUG  2023-12-02 22:44:05,486  165:  Matched Dr. Allison Cameron to cluster 13 with 0.04.
+DEBUG  2023-12-02 22:44:07,564  138:  Matching headshots for Dr. Allison Cameron to cluster 14.
+DEBUG  2023-12-02 22:44:32,208  165:  Matched Dr. Allison Cameron to cluster 14 with 0.08.
+DEBUG  2023-12-02 22:44:34,131  138:  Matching headshots for Dr. Allison Cameron to cluster 15.
+DEBUG  2023-12-02 22:44:55,317  165:  Matched Dr. Allison Cameron to cluster 15 with 0.01.
+DEBUG  2023-12-02 22:44:57,263  138:  Matching headshots for Dr. Allison Cameron to cluster 4.
+DEBUG  2023-12-02 22:45:18,269  165:  Matched Dr. Allison Cameron to cluster 4 with 0.06.
+DEBUG  2023-12-02 22:45:20,188  138:  Matching headshots for Dr. Allison Cameron to cluster 23.
+DEBUG  2023-12-02 22:45:38,231  165:  Matched Dr. Allison Cameron to cluster 23 with 0.16.
+DEBUG  2023-12-02 22:45:38,232  204:  Dr. Allison Cameron matches 23 with 0.1627659574468085 confidence.
+DEBUG  2023-12-02 22:45:45,041  138:  Matching headshots for Dr. Robert Chase to cluster 0.
+DEBUG  2023-12-02 22:46:05,131  165:  Matched Dr. Robert Chase to cluster 0 with 0.19.
+DEBUG  2023-12-02 22:46:07,407  138:  Matching headshots for Dr. Robert Chase to cluster 13.
+DEBUG  2023-12-02 22:46:26,063  165:  Matched Dr. Robert Chase to cluster 13 with 0.21.
+DEBUG  2023-12-02 22:46:28,005  138:  Matching headshots for Dr. Robert Chase to cluster 14.
+DEBUG  2023-12-02 22:46:46,261  165:  Matched Dr. Robert Chase to cluster 14 with 0.04.
+DEBUG  2023-12-02 22:46:48,340  138:  Matching headshots for Dr. Robert Chase to cluster 15.
+DEBUG  2023-12-02 22:47:04,153  165:  Matched Dr. Robert Chase to cluster 15 with 0.12.
+DEBUG  2023-12-02 22:47:06,314  138:  Matching headshots for Dr. Robert Chase to cluster 4.
+DEBUG  2023-12-02 22:47:21,764  165:  Matched Dr. Robert Chase to cluster 4 with 0.08.
+DEBUG  2023-12-02 22:47:21,765  204:  Dr. Robert Chase matches 13 with 0.20771929824561403 confidence.
+DEBUG  2023-12-02 22:47:24,832  138:  Matching headshots for Dr. Chris Taub to cluster 0.
+DEBUG  2023-12-02 22:47:43,213  165:  Matched Dr. Chris Taub to cluster 0 with 0.14.
+DEBUG  2023-12-02 22:47:44,958  138:  Matching headshots for Dr. Chris Taub to cluster 14.
+DEBUG  2023-12-02 22:48:01,670  165:  Matched Dr. Chris Taub to cluster 14 with 0.01.
+DEBUG  2023-12-02 22:48:03,472  138:  Matching headshots for Dr. Chris Taub to cluster 15.
+DEBUG  2023-12-02 22:48:17,377  165:  Matched Dr. Chris Taub to cluster 15 with 0.15.
+DEBUG  2023-12-02 22:48:19,279  138:  Matching headshots for Dr. Chris Taub to cluster 4.
+DEBUG  2023-12-02 22:48:33,092  165:  Matched Dr. Chris Taub to cluster 4 with 0.07.
+DEBUG  2023-12-02 22:48:33,092  204:  Dr. Chris Taub matches 15 with 0.14554140127388535 confidence.
+DEBUG  2023-12-02 22:48:37,599  138:  Matching headshots for Dr. Lawrence Kutner to cluster 0.
+DEBUG  2023-12-02 22:49:00,049  165:  Matched Dr. Lawrence Kutner to cluster 0 with 0.19.
+DEBUG  2023-12-02 22:49:01,873  138:  Matching headshots for Dr. Lawrence Kutner to cluster 14.
+DEBUG  2023-12-02 22:49:22,361  165:  Matched Dr. Lawrence Kutner to cluster 14 with 0.06.
+DEBUG  2023-12-02 22:49:24,992  138:  Matching headshots for Dr. Lawrence Kutner to cluster 4.
+DEBUG  2023-12-02 22:49:42,165  165:  Matched Dr. Lawrence Kutner to cluster 4 with 0.09.
+DEBUG  2023-12-02 22:49:42,166  204:  Dr. Lawrence Kutner matches 0 with 0.19060693641618498 confidence.
+DEBUG  2023-12-02 22:49:46,218  138:  Matching headshots for Thirteen to cluster 14.
+DEBUG  2023-12-02 22:50:06,359  165:  Matched Thirteen to cluster 14 with 0.49.
+DEBUG  2023-12-02 22:50:08,515  138:  Matching headshots for Thirteen to cluster 4.
+DEBUG  2023-12-02 22:50:25,587  165:  Matched Thirteen to cluster 4 with 0.12.
+DEBUG  2023-12-02 22:50:25,587  204:  Thirteen matches 14 with 0.49438405797101437 confidence.
+DEBUG  2023-12-02 22:50:28,841  138:  Matching headshots for Rachel Taub to cluster 4.
+DEBUG  2023-12-02 22:50:48,189  165:  Matched Rachel Taub to cluster 4 with 0.19.
+DEBUG  2023-12-02 22:50:48,189  204:  Rachel Taub matches 4 with 0.18614864864864866 confidence.
+DEBUG  2023-12-02 22:50:48,189  204:  Nurse matches nan with 0.0 confidence.
+DEBUG  2023-12-02 22:50:48,189  204:  Connor Allen matches nan with 0.0 confidence.
+DEBUG  2023-12-02 22:50:48,193  258:  Matching clusters for episode_id 1273718 (S05E15)
+DEBUG  2023-12-02 22:50:50,856  226:  Clustering for episode 1273718.
+DEBUG  2023-12-02 22:50:56,553  191:  Found 10 actors. Matching to clusters ...
+DEBUG  2023-12-02 22:50:59,862  138:  Matching headshots for Dr. Gregory House to cluster 5.
+DEBUG  2023-12-02 22:57:08,188  165:  Matched Dr. Gregory House to cluster 5 with 0.68.
+DEBUG  2023-12-02 22:57:08,189  204:  Dr. Gregory House matches 5 with 0.6789915966386555 confidence.
+DEBUG  2023-12-02 22:57:12,027  138:  Matching headshots for Dr. Lisa Cuddy to cluster 0.
+DEBUG  2023-12-02 23:01:12,101  165:  Matched Dr. Lisa Cuddy to cluster 0 with 0.17.
+DEBUG  2023-12-02 23:01:13,964  138:  Matching headshots for Dr. Lisa Cuddy to cluster 1.
+DEBUG  2023-12-02 23:03:56,895  165:  Matched Dr. Lisa Cuddy to cluster 1 with 0.13.
+DEBUG  2023-12-02 23:04:00,574  138:  Matching headshots for Dr. Lisa Cuddy to cluster 11.
+DEBUG  2023-12-02 23:06:25,495  165:  Matched Dr. Lisa Cuddy to cluster 11 with 0.03.
+DEBUG  2023-12-02 23:06:27,976  138:  Matching headshots for Dr. Lisa Cuddy to cluster 10.
+DEBUG  2023-12-02 23:08:52,345  165:  Matched Dr. Lisa Cuddy to cluster 10 with 0.14.
+DEBUG  2023-12-02 23:08:54,541  138:  Matching headshots for Dr. Lisa Cuddy to cluster 12.
+DEBUG  2023-12-02 23:10:45,933  165:  Matched Dr. Lisa Cuddy to cluster 12 with 0.06.
+DEBUG  2023-12-02 23:10:48,181  138:  Matching headshots for Dr. Lisa Cuddy to cluster 13.
+DEBUG  2023-12-02 23:12:38,535  165:  Matched Dr. Lisa Cuddy to cluster 13 with 0.05.
+DEBUG  2023-12-02 23:12:41,424  138:  Matching headshots for Dr. Lisa Cuddy to cluster 6.
+DEBUG  2023-12-02 23:14:11,845  165:  Matched Dr. Lisa Cuddy to cluster 6 with 0.36.
+DEBUG  2023-12-02 23:14:13,990  138:  Matching headshots for Dr. Lisa Cuddy to cluster 14.
+DEBUG  2023-12-02 23:15:40,622  165:  Matched Dr. Lisa Cuddy to cluster 14 with 0.03.
+DEBUG  2023-12-02 23:15:43,860  138:  Matching headshots for Dr. Lisa Cuddy to cluster 33.
+DEBUG  2023-12-02 23:16:38,091  165:  Matched Dr. Lisa Cuddy to cluster 33 with 0.02.
+DEBUG  2023-12-02 23:16:40,024  138:  Matching headshots for Dr. Lisa Cuddy to cluster 4.
+DEBUG  2023-12-02 23:17:25,881  165:  Matched Dr. Lisa Cuddy to cluster 4 with 0.17.
+DEBUG  2023-12-02 23:17:25,882  204:  Dr. Lisa Cuddy matches 6 with 0.3560606060606061 confidence.
+DEBUG  2023-12-02 23:17:29,625  138:  Matching headshots for Dr. Eric Foreman to cluster 0.
+DEBUG  2023-12-02 23:17:49,519  165:  Matched Dr. Eric Foreman to cluster 0 with 0.32.
+DEBUG  2023-12-02 23:17:51,434  138:  Matching headshots for Dr. Eric Foreman to cluster 1.
+DEBUG  2023-12-02 23:18:08,046  165:  Matched Dr. Eric Foreman to cluster 1 with 0.2.
+DEBUG  2023-12-02 23:18:10,071  138:  Matching headshots for Dr. Eric Foreman to cluster 11.
+DEBUG  2023-12-02 23:18:26,251  165:  Matched Dr. Eric Foreman to cluster 11 with 0.19.
+DEBUG  2023-12-02 23:18:28,205  138:  Matching headshots for Dr. Eric Foreman to cluster 10.
+DEBUG  2023-12-02 23:18:44,200  165:  Matched Dr. Eric Foreman to cluster 10 with 0.1.
+DEBUG  2023-12-02 23:18:46,198  138:  Matching headshots for Dr. Eric Foreman to cluster 12.
+DEBUG  2023-12-02 23:19:01,151  165:  Matched Dr. Eric Foreman to cluster 12 with 0.3.
+DEBUG  2023-12-02 23:19:03,265  138:  Matching headshots for Dr. Eric Foreman to cluster 13.
+DEBUG  2023-12-02 23:19:17,870  165:  Matched Dr. Eric Foreman to cluster 13 with 0.61.
+DEBUG  2023-12-02 23:19:17,871  204:  Dr. Eric Foreman matches 13 with 0.6054487179487179 confidence.
+DEBUG  2023-12-02 23:19:20,463  138:  Matching headshots for Dr. James Wilson to cluster 0.
+DEBUG  2023-12-02 23:19:47,219  165:  Matched Dr. James Wilson to cluster 0 with 0.24.
+DEBUG  2023-12-02 23:19:49,004  138:  Matching headshots for Dr. James Wilson to cluster 1.
+DEBUG  2023-12-02 23:20:11,613  165:  Matched Dr. James Wilson to cluster 1 with 0.15.
+DEBUG  2023-12-02 23:20:13,481  138:  Matching headshots for Dr. James Wilson to cluster 11.
+DEBUG  2023-12-02 23:20:35,031  165:  Matched Dr. James Wilson to cluster 11 with 0.32.
+DEBUG  2023-12-02 23:20:37,453  138:  Matching headshots for Dr. James Wilson to cluster 10.
+DEBUG  2023-12-02 23:20:58,901  165:  Matched Dr. James Wilson to cluster 10 with 0.05.
+DEBUG  2023-12-02 23:21:00,750  138:  Matching headshots for Dr. James Wilson to cluster 12.
+DEBUG  2023-12-02 23:21:20,775  165:  Matched Dr. James Wilson to cluster 12 with 0.2.
+DEBUG  2023-12-02 23:21:22,733  138:  Matching headshots for Dr. James Wilson to cluster 14.
+DEBUG  2023-12-02 23:21:41,055  165:  Matched Dr. James Wilson to cluster 14 with 0.51.
+DEBUG  2023-12-02 23:21:41,056  204:  Dr. James Wilson matches 14 with 0.5115999999999999 confidence.
+DEBUG  2023-12-02 23:21:47,216  138:  Matching headshots for Dr. Allison Cameron to cluster 0.
+DEBUG  2023-12-02 23:22:16,438  165:  Matched Dr. Allison Cameron to cluster 0 with 0.06.
+DEBUG  2023-12-03 08:50:42,975  244:  Found 176 episode directories.
+DEBUG  2023-12-03 08:50:42,988  258:  Matching clusters for episode_id 1273718 (S05E15)
+DEBUG  2023-12-03 08:50:47,843  226:  Clustering for episode 1273718.
+DEBUG  2023-12-03 08:50:56,792  191:  Found 10 actors. Matching to clusters ...
+DEBUG  2023-12-03 08:51:02,015  138:  Matching headshots for Dr. Gregory House to cluster 5.
+DEBUG  2023-12-03 08:51:03,055  78:  Creating converter from 3 to 5
+DEBUG  2023-12-03 08:51:31,397  165:  Matched Dr. Gregory House to cluster 5 with 0.68.
+DEBUG  2023-12-03 08:51:31,398  204:  Dr. Gregory House matches 5 with 0.6778523489932885 confidence.
+DEBUG  2023-12-03 08:51:36,413  138:  Matching headshots for Dr. Lisa Cuddy to cluster 0.
+DEBUG  2023-12-03 08:52:06,375  165:  Matched Dr. Lisa Cuddy to cluster 0 with 0.17.
+DEBUG  2023-12-03 08:52:09,228  138:  Matching headshots for Dr. Lisa Cuddy to cluster 1.
+DEBUG  2023-12-03 08:52:33,640  165:  Matched Dr. Lisa Cuddy to cluster 1 with 0.13.
+DEBUG  2023-12-03 08:52:35,578  138:  Matching headshots for Dr. Lisa Cuddy to cluster 11.
+DEBUG  2023-12-03 08:52:59,304  165:  Matched Dr. Lisa Cuddy to cluster 11 with 0.03.
+DEBUG  2023-12-03 08:53:02,968  138:  Matching headshots for Dr. Lisa Cuddy to cluster 10.
+DEBUG  2023-12-03 08:53:26,776  165:  Matched Dr. Lisa Cuddy to cluster 10 with 0.14.
+DEBUG  2023-12-03 08:53:28,664  138:  Matching headshots for Dr. Lisa Cuddy to cluster 12.
+DEBUG  2023-12-03 08:53:50,473  165:  Matched Dr. Lisa Cuddy to cluster 12 with 0.06.
+DEBUG  2023-12-03 08:53:52,582  138:  Matching headshots for Dr. Lisa Cuddy to cluster 13.
+DEBUG  2023-12-03 08:54:14,305  165:  Matched Dr. Lisa Cuddy to cluster 13 with 0.04.
+DEBUG  2023-12-03 08:54:16,268  138:  Matching headshots for Dr. Lisa Cuddy to cluster 6.
+DEBUG  2023-12-03 08:54:37,443  165:  Matched Dr. Lisa Cuddy to cluster 6 with 0.35.
+DEBUG  2023-12-03 08:54:39,645  138:  Matching headshots for Dr. Lisa Cuddy to cluster 14.
+DEBUG  2023-12-03 08:55:06,514  165:  Matched Dr. Lisa Cuddy to cluster 14 with 0.03.
+DEBUG  2023-12-03 08:55:08,327  138:  Matching headshots for Dr. Lisa Cuddy to cluster 33.
+DEBUG  2023-12-03 08:55:29,288  165:  Matched Dr. Lisa Cuddy to cluster 33 with 0.02.
+DEBUG  2023-12-03 08:55:31,273  138:  Matching headshots for Dr. Lisa Cuddy to cluster 4.
+DEBUG  2023-12-03 08:55:52,923  165:  Matched Dr. Lisa Cuddy to cluster 4 with 0.16.
+DEBUG  2023-12-03 08:55:52,924  204:  Dr. Lisa Cuddy matches 6 with 0.3533834586466165 confidence.
+DEBUG  2023-12-03 08:55:56,858  138:  Matching headshots for Dr. Eric Foreman to cluster 0.
+DEBUG  2023-12-03 08:56:19,239  165:  Matched Dr. Eric Foreman to cluster 0 with 0.32.
+DEBUG  2023-12-03 08:56:21,187  138:  Matching headshots for Dr. Eric Foreman to cluster 1.
+DEBUG  2023-12-03 08:56:41,211  165:  Matched Dr. Eric Foreman to cluster 1 with 0.2.
+DEBUG  2023-12-03 08:56:43,047  138:  Matching headshots for Dr. Eric Foreman to cluster 11.
+DEBUG  2023-12-03 08:57:03,518  165:  Matched Dr. Eric Foreman to cluster 11 with 0.19.
+DEBUG  2023-12-03 08:57:05,496  138:  Matching headshots for Dr. Eric Foreman to cluster 10.
+DEBUG  2023-12-03 08:57:22,924  165:  Matched Dr. Eric Foreman to cluster 10 with 0.1.
+DEBUG  2023-12-03 08:57:24,811  138:  Matching headshots for Dr. Eric Foreman to cluster 12.
+DEBUG  2023-12-03 08:57:40,760  165:  Matched Dr. Eric Foreman to cluster 12 with 0.3.
+DEBUG  2023-12-03 08:57:42,865  138:  Matching headshots for Dr. Eric Foreman to cluster 13.
+DEBUG  2023-12-03 08:57:58,358  165:  Matched Dr. Eric Foreman to cluster 13 with 0.61.
+DEBUG  2023-12-03 08:57:58,358  204:  Dr. Eric Foreman matches 13 with 0.605448717948718 confidence.
+DEBUG  2023-12-03 08:58:01,234  138:  Matching headshots for Dr. James Wilson to cluster 0.
+DEBUG  2023-12-03 08:58:29,916  165:  Matched Dr. James Wilson to cluster 0 with 0.23.
+DEBUG  2023-12-03 08:58:31,740  138:  Matching headshots for Dr. James Wilson to cluster 1.
+DEBUG  2023-12-03 08:58:55,742  165:  Matched Dr. James Wilson to cluster 1 with 0.15.
+DEBUG  2023-12-03 08:58:57,854  138:  Matching headshots for Dr. James Wilson to cluster 11.
+DEBUG  2023-12-03 08:59:21,093  165:  Matched Dr. James Wilson to cluster 11 with 0.32.
+DEBUG  2023-12-03 08:59:23,061  138:  Matching headshots for Dr. James Wilson to cluster 10.
+DEBUG  2023-12-03 08:59:45,756  165:  Matched Dr. James Wilson to cluster 10 with 0.06.
+DEBUG  2023-12-03 08:59:47,737  138:  Matching headshots for Dr. James Wilson to cluster 12.
+DEBUG  2023-12-03 09:00:08,895  165:  Matched Dr. James Wilson to cluster 12 with 0.2.
+DEBUG  2023-12-03 09:00:10,888  138:  Matching headshots for Dr. James Wilson to cluster 14.
+DEBUG  2023-12-03 09:00:30,391  165:  Matched Dr. James Wilson to cluster 14 with 0.52.
+DEBUG  2023-12-03 09:00:30,392  204:  Dr. James Wilson matches 14 with 0.5172 confidence.
+DEBUG  2023-12-03 09:00:34,713  138:  Matching headshots for Dr. Allison Cameron to cluster 0.
+DEBUG  2023-12-03 09:01:06,104  165:  Matched Dr. Allison Cameron to cluster 0 with 0.06.
+DEBUG  2023-12-03 09:01:08,890  138:  Matching headshots for Dr. Allison Cameron to cluster 1.
+DEBUG  2023-12-03 09:01:34,770  165:  Matched Dr. Allison Cameron to cluster 1 with 0.08.
+DEBUG  2023-12-03 09:01:36,659  138:  Matching headshots for Dr. Allison Cameron to cluster 11.
+DEBUG  2023-12-03 09:02:01,687  165:  Matched Dr. Allison Cameron to cluster 11 with 0.01.
+DEBUG  2023-12-03 09:02:03,603  138:  Matching headshots for Dr. Allison Cameron to cluster 10.
+DEBUG  2023-12-03 09:02:28,462  165:  Matched Dr. Allison Cameron to cluster 10 with 0.11.
+DEBUG  2023-12-03 09:02:30,317  138:  Matching headshots for Dr. Allison Cameron to cluster 12.
+DEBUG  2023-12-03 09:02:53,335  165:  Matched Dr. Allison Cameron to cluster 12 with 0.05.
+DEBUG  2023-12-03 09:02:55,304  138:  Matching headshots for Dr. Allison Cameron to cluster 33.
+DEBUG  2023-12-03 09:03:14,769  165:  Matched Dr. Allison Cameron to cluster 33 with 0.01.
+DEBUG  2023-12-03 09:03:16,753  138:  Matching headshots for Dr. Allison Cameron to cluster 4.
+DEBUG  2023-12-03 09:03:35,659  165:  Matched Dr. Allison Cameron to cluster 4 with 0.36.
+DEBUG  2023-12-03 09:03:35,662  204:  Dr. Allison Cameron matches 4 with 0.35769230769230764 confidence.
+DEBUG  2023-12-03 09:03:42,725  138:  Matching headshots for Dr. Robert Chase to cluster 0.
+DEBUG  2023-12-03 09:04:06,430  165:  Matched Dr. Robert Chase to cluster 0 with 0.21.
+DEBUG  2023-12-03 09:04:08,638  138:  Matching headshots for Dr. Robert Chase to cluster 1.
+DEBUG  2023-12-03 09:04:28,006  165:  Matched Dr. Robert Chase to cluster 1 with 0.13.
+DEBUG  2023-12-03 09:04:30,203  138:  Matching headshots for Dr. Robert Chase to cluster 11.
+DEBUG  2023-12-03 09:04:49,053  165:  Matched Dr. Robert Chase to cluster 11 with 0.22.
+DEBUG  2023-12-03 09:04:51,059  138:  Matching headshots for Dr. Robert Chase to cluster 10.
+DEBUG  2023-12-03 09:05:09,734  165:  Matched Dr. Robert Chase to cluster 10 with 0.06.
+DEBUG  2023-12-03 09:05:11,702  138:  Matching headshots for Dr. Robert Chase to cluster 12.
+DEBUG  2023-12-03 09:05:29,220  165:  Matched Dr. Robert Chase to cluster 12 with 0.15.
+DEBUG  2023-12-03 09:05:31,116  138:  Matching headshots for Dr. Robert Chase to cluster 33.
+DEBUG  2023-12-03 09:05:45,579  165:  Matched Dr. Robert Chase to cluster 33 with 0.14.
+DEBUG  2023-12-03 09:05:45,579  204:  Dr. Robert Chase matches 11 with 0.21793248945147684 confidence.
+DEBUG  2023-12-03 09:05:48,859  138:  Matching headshots for Dr. Chris Taub to cluster 0.
+DEBUG  2023-12-03 09:06:10,060  165:  Matched Dr. Chris Taub to cluster 0 with 0.17.
+DEBUG  2023-12-03 09:06:13,564  138:  Matching headshots for Dr. Chris Taub to cluster 1.
+DEBUG  2023-12-03 09:06:30,917  165:  Matched Dr. Chris Taub to cluster 1 with 0.07.
+DEBUG  2023-12-03 09:06:32,762  138:  Matching headshots for Dr. Chris Taub to cluster 10.
+DEBUG  2023-12-03 09:06:49,769  165:  Matched Dr. Chris Taub to cluster 10 with 0.02.
+DEBUG  2023-12-03 09:06:51,631  138:  Matching headshots for Dr. Chris Taub to cluster 12.
+DEBUG  2023-12-03 09:07:07,220  165:  Matched Dr. Chris Taub to cluster 12 with 0.12.
+DEBUG  2023-12-03 09:07:09,347  138:  Matching headshots for Dr. Chris Taub to cluster 33.
+DEBUG  2023-12-03 09:07:22,168  165:  Matched Dr. Chris Taub to cluster 33 with 0.02.
+DEBUG  2023-12-03 09:07:22,169  204:  Dr. Chris Taub matches 0 with 0.16502403846153849 confidence.
+DEBUG  2023-12-03 09:07:29,695  138:  Matching headshots for Dr. Lawrence Kutner to cluster 1.
+DEBUG  2023-12-03 09:07:51,110  165:  Matched Dr. Lawrence Kutner to cluster 1 with 0.11.
+DEBUG  2023-12-03 09:07:53,359  138:  Matching headshots for Dr. Lawrence Kutner to cluster 10.
+DEBUG  2023-12-03 09:08:14,612  165:  Matched Dr. Lawrence Kutner to cluster 10 with 0.09.
+DEBUG  2023-12-03 09:08:16,784  138:  Matching headshots for Dr. Lawrence Kutner to cluster 12.
+DEBUG  2023-12-03 09:08:38,466  165:  Matched Dr. Lawrence Kutner to cluster 12 with 0.38.
+DEBUG  2023-12-03 09:09:00,564  244:  Found 176 episode directories.
+DEBUG  2023-12-03 09:09:00,576  258:  Matching clusters for episode_id 1273718 (S05E15)
+DEBUG  2023-12-03 09:09:03,781  226:  Clustering for episode 1273718.
+DEBUG  2023-12-03 09:09:12,255  191:  Found 10 actors. Matching to clusters ...
+DEBUG  2023-12-03 09:09:16,738  138:  Matching headshots for Dr. Gregory House to cluster 5.
+DEBUG  2023-12-03 09:09:17,696  78:  Creating converter from 3 to 5
+DEBUG  2023-12-03 09:09:54,673  165:  Matched Dr. Gregory House to cluster 5 with 0.68.
+DEBUG  2023-12-03 09:09:54,674  204:  Dr. Gregory House matches 5 with 0.6778523489932886 confidence.
+DEBUG  2023-12-03 09:10:31,773  244:  Found 176 episode directories.
+DEBUG  2023-12-03 09:10:31,786  258:  Matching clusters for episode_id 1273718 (S05E15)
+DEBUG  2023-12-03 09:10:36,968  226:  Clustering for episode 1273718.
+DEBUG  2023-12-03 09:10:45,259  191:  Found 10 actors. Matching to clusters ...
+DEBUG  2023-12-03 09:10:47,424  138:  Matching headshots for Dr. Gregory House to cluster 5.
+DEBUG  2023-12-03 09:10:48,418  78:  Creating converter from 3 to 5
+DEBUG  2023-12-03 09:11:18,179  165:  Matched Dr. Gregory House to cluster 5 with 0.68.
+DEBUG  2023-12-03 09:11:18,180  204:  Dr. Gregory House matches 5 with 0.6778523489932886 confidence.
+DEBUG  2023-12-03 09:11:21,970  138:  Matching headshots for Dr. Lisa Cuddy to cluster 0.
+DEBUG  2023-12-03 09:13:42,704  247:  Found 176 episode directories.
+DEBUG  2023-12-03 09:13:42,723  261:  Matching clusters for episode_id 1273718 (S05E15)
+DEBUG  2023-12-03 09:13:45,678  229:  Clustering for episode 1273718.
+DEBUG  2023-12-03 09:13:53,782  194:  Found 10 actors. Matching to clusters ...
+DEBUG  2023-12-03 09:13:55,897  141:  Matching headshots for Dr. Gregory House to cluster 5.
+DEBUG  2023-12-03 09:13:56,862  78:  Creating converter from 3 to 5
+DEBUG  2023-12-03 09:14:26,468  168:  Matched Dr. Gregory House to cluster 5 with 0.68.
+DEBUG  2023-12-03 09:14:26,468  207:  Dr. Gregory House matches 5 with 0.6778523489932885 confidence.
+DEBUG  2023-12-03 09:14:28,453  141:  Matching headshots for Dr. Lisa Cuddy to cluster 0.
+DEBUG  2023-12-03 09:15:00,911  168:  Matched Dr. Lisa Cuddy to cluster 0 with 0.17.
+DEBUG  2023-12-03 09:15:02,799  141:  Matching headshots for Dr. Lisa Cuddy to cluster 1.
+DEBUG  2023-12-03 09:15:27,735  168:  Matched Dr. Lisa Cuddy to cluster 1 with 0.13.
+DEBUG  2023-12-03 09:15:29,665  141:  Matching headshots for Dr. Lisa Cuddy to cluster 11.
+DEBUG  2023-12-03 09:15:53,565  168:  Matched Dr. Lisa Cuddy to cluster 11 with 0.03.
+DEBUG  2023-12-03 09:15:55,576  141:  Matching headshots for Dr. Lisa Cuddy to cluster 10.
+DEBUG  2023-12-03 09:16:19,338  168:  Matched Dr. Lisa Cuddy to cluster 10 with 0.14.
+DEBUG  2023-12-03 09:16:22,204  141:  Matching headshots for Dr. Lisa Cuddy to cluster 12.
+DEBUG  2023-12-03 09:16:44,250  168:  Matched Dr. Lisa Cuddy to cluster 12 with 0.06.
+DEBUG  2023-12-03 09:16:46,253  141:  Matching headshots for Dr. Lisa Cuddy to cluster 13.
+DEBUG  2023-12-03 09:17:07,631  168:  Matched Dr. Lisa Cuddy to cluster 13 with 0.04.
+DEBUG  2023-12-03 09:17:09,687  141:  Matching headshots for Dr. Lisa Cuddy to cluster 6.
+DEBUG  2023-12-03 09:17:30,383  168:  Matched Dr. Lisa Cuddy to cluster 6 with 0.35.
+DEBUG  2023-12-03 09:17:32,593  141:  Matching headshots for Dr. Lisa Cuddy to cluster 14.
+DEBUG  2023-12-03 09:17:53,269  168:  Matched Dr. Lisa Cuddy to cluster 14 with 0.03.
+DEBUG  2023-12-03 09:17:55,308  141:  Matching headshots for Dr. Lisa Cuddy to cluster 33.
+DEBUG  2023-12-03 09:18:14,325  168:  Matched Dr. Lisa Cuddy to cluster 33 with 0.02.
+DEBUG  2023-12-03 09:18:16,238  141:  Matching headshots for Dr. Lisa Cuddy to cluster 4.
+DEBUG  2023-12-03 09:18:34,325  168:  Matched Dr. Lisa Cuddy to cluster 4 with 0.16.
+DEBUG  2023-12-03 09:18:34,333  207:  Dr. Lisa Cuddy matches 6 with 0.3533834586466166 confidence.
+DEBUG  2023-12-03 09:18:39,549  141:  Matching headshots for Dr. Eric Foreman to cluster 0.
+DEBUG  2023-12-03 09:19:01,158  168:  Matched Dr. Eric Foreman to cluster 0 with 0.32.
+DEBUG  2023-12-03 09:19:04,240  141:  Matching headshots for Dr. Eric Foreman to cluster 1.
+DEBUG  2023-12-03 09:19:21,998  168:  Matched Dr. Eric Foreman to cluster 1 with 0.2.
+DEBUG  2023-12-03 09:19:24,173  141:  Matching headshots for Dr. Eric Foreman to cluster 11.
+DEBUG  2023-12-03 09:19:41,662  168:  Matched Dr. Eric Foreman to cluster 11 with 0.19.
+DEBUG  2023-12-03 09:19:43,463  141:  Matching headshots for Dr. Eric Foreman to cluster 10.
+DEBUG  2023-12-03 09:20:00,672  168:  Matched Dr. Eric Foreman to cluster 10 with 0.1.
+DEBUG  2023-12-03 09:20:02,929  141:  Matching headshots for Dr. Eric Foreman to cluster 12.
+DEBUG  2023-12-03 09:20:18,842  168:  Matched Dr. Eric Foreman to cluster 12 with 0.3.
+DEBUG  2023-12-03 09:20:21,723  141:  Matching headshots for Dr. Eric Foreman to cluster 13.
+DEBUG  2023-12-03 09:20:37,054  168:  Matched Dr. Eric Foreman to cluster 13 with 0.61.
+DEBUG  2023-12-03 09:20:37,055  207:  Dr. Eric Foreman matches 13 with 0.6054487179487179 confidence.
+DEBUG  2023-12-03 09:20:40,023  141:  Matching headshots for Dr. James Wilson to cluster 0.
+DEBUG  2023-12-03 09:21:09,277  168:  Matched Dr. James Wilson to cluster 0 with 0.23.
+DEBUG  2023-12-03 09:21:11,390  141:  Matching headshots for Dr. James Wilson to cluster 1.
+DEBUG  2023-12-03 09:21:35,521  168:  Matched Dr. James Wilson to cluster 1 with 0.17.
+DEBUG  2023-12-03 09:21:38,582  141:  Matching headshots for Dr. James Wilson to cluster 11.
+DEBUG  2023-12-03 09:22:01,715  168:  Matched Dr. James Wilson to cluster 11 with 0.32.
+DEBUG  2023-12-03 09:22:03,793  141:  Matching headshots for Dr. James Wilson to cluster 10.
+DEBUG  2023-12-03 09:22:27,210  168:  Matched Dr. James Wilson to cluster 10 with 0.05.
+DEBUG  2023-12-03 09:22:29,083  141:  Matching headshots for Dr. James Wilson to cluster 12.
+DEBUG  2023-12-03 09:22:50,265  168:  Matched Dr. James Wilson to cluster 12 with 0.2.
+DEBUG  2023-12-03 09:22:52,170  141:  Matching headshots for Dr. James Wilson to cluster 14.
+DEBUG  2023-12-03 09:23:11,769  168:  Matched Dr. James Wilson to cluster 14 with 0.49.
+DEBUG  2023-12-03 09:23:13,799  141:  Matching headshots for Dr. James Wilson to cluster 33.
+DEBUG  2023-12-03 09:23:31,623  168:  Matched Dr. James Wilson to cluster 33 with 0.05.
+DEBUG  2023-12-03 09:23:33,682  141:  Matching headshots for Dr. James Wilson to cluster 4.
+DEBUG  2023-12-03 09:23:51,100  168:  Matched Dr. James Wilson to cluster 4 with 0.05.
+DEBUG  2023-12-03 09:23:51,103  207:  Dr. James Wilson matches 14 with 0.4924000000000001 confidence.
+DEBUG  2023-12-03 09:23:54,715  141:  Matching headshots for Dr. Allison Cameron to cluster 0.
+DEBUG  2023-12-03 09:24:26,156  168:  Matched Dr. Allison Cameron to cluster 0 with 0.14.
+DEBUG  2023-12-03 09:24:28,081  141:  Matching headshots for Dr. Allison Cameron to cluster 1.
+DEBUG  2023-12-03 09:24:54,148  168:  Matched Dr. Allison Cameron to cluster 1 with 0.08.
+DEBUG  2023-12-03 09:24:56,150  141:  Matching headshots for Dr. Allison Cameron to cluster 11.
+DEBUG  2023-12-03 09:25:21,339  168:  Matched Dr. Allison Cameron to cluster 11 with 0.03.
+DEBUG  2023-12-03 09:25:23,287  141:  Matching headshots for Dr. Allison Cameron to cluster 10.
+DEBUG  2023-12-03 09:25:48,249  168:  Matched Dr. Allison Cameron to cluster 10 with 0.11.
+DEBUG  2023-12-03 09:25:50,316  141:  Matching headshots for Dr. Allison Cameron to cluster 12.
+DEBUG  2023-12-03 09:26:13,318  168:  Matched Dr. Allison Cameron to cluster 12 with 0.03.
+DEBUG  2023-12-03 09:26:15,340  141:  Matching headshots for Dr. Allison Cameron to cluster 33.
+DEBUG  2023-12-03 09:26:35,169  168:  Matched Dr. Allison Cameron to cluster 33 with 0.01.
+DEBUG  2023-12-03 09:26:37,185  141:  Matching headshots for Dr. Allison Cameron to cluster 4.
+DEBUG  2023-12-03 09:26:56,063  168:  Matched Dr. Allison Cameron to cluster 4 with 0.35.
+DEBUG  2023-12-03 09:26:56,064  207:  Dr. Allison Cameron matches 4 with 0.3471153846153846 confidence.
+DEBUG  2023-12-03 09:27:00,171  141:  Matching headshots for Dr. Robert Chase to cluster 0.
+DEBUG  2023-12-03 09:27:21,911  168:  Matched Dr. Robert Chase to cluster 0 with 0.21.
+DEBUG  2023-12-03 09:27:23,966  141:  Matching headshots for Dr. Robert Chase to cluster 1.
+DEBUG  2023-12-03 09:27:39,614  168:  Matched Dr. Robert Chase to cluster 1 with 0.13.
+DEBUG  2023-12-03 09:27:41,509  141:  Matching headshots for Dr. Robert Chase to cluster 11.
+DEBUG  2023-12-03 09:27:56,690  168:  Matched Dr. Robert Chase to cluster 11 with 0.22.
+DEBUG  2023-12-03 09:27:58,718  141:  Matching headshots for Dr. Robert Chase to cluster 10.
+DEBUG  2023-12-03 09:28:14,260  168:  Matched Dr. Robert Chase to cluster 10 with 0.06.
+DEBUG  2023-12-03 09:28:17,098  141:  Matching headshots for Dr. Robert Chase to cluster 12.
+DEBUG  2023-12-03 09:28:30,990  168:  Matched Dr. Robert Chase to cluster 12 with 0.15.
+DEBUG  2023-12-03 09:28:32,851  141:  Matching headshots for Dr. Robert Chase to cluster 33.
+DEBUG  2023-12-03 09:28:45,121  168:  Matched Dr. Robert Chase to cluster 33 with 0.14.
+DEBUG  2023-12-03 09:28:45,122  207:  Dr. Robert Chase matches 11 with 0.21793248945147678 confidence.
+DEBUG  2023-12-03 09:28:48,312  141:  Matching headshots for Dr. Chris Taub to cluster 0.
+DEBUG  2023-12-03 09:29:09,583  168:  Matched Dr. Chris Taub to cluster 0 with 0.17.
+DEBUG  2023-12-03 09:29:11,539  141:  Matching headshots for Dr. Chris Taub to cluster 1.
+DEBUG  2023-12-03 09:29:28,972  168:  Matched Dr. Chris Taub to cluster 1 with 0.07.
+DEBUG  2023-12-03 09:29:32,086  141:  Matching headshots for Dr. Chris Taub to cluster 10.
+DEBUG  2023-12-03 09:29:46,784  168:  Matched Dr. Chris Taub to cluster 10 with 0.02.
+DEBUG  2023-12-03 09:29:48,729  141:  Matching headshots for Dr. Chris Taub to cluster 12.
+DEBUG  2023-12-03 09:30:01,089  168:  Matched Dr. Chris Taub to cluster 12 with 0.12.
+DEBUG  2023-12-03 09:30:02,918  141:  Matching headshots for Dr. Chris Taub to cluster 33.
+DEBUG  2023-12-03 09:30:13,247  168:  Matched Dr. Chris Taub to cluster 33 with 0.02.
+DEBUG  2023-12-03 09:30:13,248  207:  Dr. Chris Taub matches 0 with 0.16502403846153846 confidence.
+DEBUG  2023-12-03 09:30:19,838  141:  Matching headshots for Dr. Lawrence Kutner to cluster 1.
+DEBUG  2023-12-03 09:30:37,778  168:  Matched Dr. Lawrence Kutner to cluster 1 with 0.11.
+DEBUG  2023-12-03 09:30:39,806  141:  Matching headshots for Dr. Lawrence Kutner to cluster 10.
+DEBUG  2023-12-03 09:30:59,419  168:  Matched Dr. Lawrence Kutner to cluster 10 with 0.07.
+DEBUG  2023-12-03 09:31:01,565  141:  Matching headshots for Dr. Lawrence Kutner to cluster 12.
+DEBUG  2023-12-03 09:31:20,598  168:  Matched Dr. Lawrence Kutner to cluster 12 with 0.38.
+DEBUG  2023-12-03 09:31:22,734  141:  Matching headshots for Dr. Lawrence Kutner to cluster 33.
+DEBUG  2023-12-03 09:31:38,723  168:  Matched Dr. Lawrence Kutner to cluster 33 with 0.02.
+DEBUG  2023-12-03 09:31:38,725  207:  Dr. Lawrence Kutner matches 12 with 0.38305084745762713 confidence.
+DEBUG  2023-12-03 09:31:42,912  141:  Matching headshots for Thirteen to cluster 1.
+DEBUG  2023-12-03 09:32:03,906  168:  Matched Thirteen to cluster 1 with 0.09.
+DEBUG  2023-12-03 09:32:05,987  141:  Matching headshots for Thirteen to cluster 10.
+DEBUG  2023-12-03 09:32:26,209  168:  Matched Thirteen to cluster 10 with 0.57.
+DEBUG  2023-12-03 09:32:26,209  207:  Thirteen matches 10 with 0.5677489177489179 confidence.
+DEBUG  2023-12-03 09:32:30,055  141:  Matching headshots for Nurse to cluster 1.
+DEBUG  2023-12-03 09:33:08,432  168:  Matched Nurse to cluster 1 with 0.23.
+DEBUG  2023-12-03 09:33:10,371  141:  Matching headshots for Nurse to cluster 33.
+DEBUG  2023-12-03 09:33:38,915  168:  Matched Nurse to cluster 33 with 0.06.
+DEBUG  2023-12-03 09:33:38,915  207:  Nurse matches 1 with 0.23115384615384618 confidence.
+DEBUG  2023-12-03 09:33:38,923  261:  Matching clusters for episode_id 1273719 (S05E16)
+DEBUG  2023-12-03 09:33:43,136  229:  Clustering for episode 1273719.
+DEBUG  2023-12-03 09:33:52,498  194:  Found 12 actors. Matching to clusters ...
+DEBUG  2023-12-03 09:33:56,709  141:  Matching headshots for Dr. Gregory House to cluster 26.
+DEBUG  2023-12-03 09:39:01,494  168:  Matched Dr. Gregory House to cluster 26 with 0.04.
+DEBUG  2023-12-03 09:39:11,314  141:  Matching headshots for Dr. Gregory House to cluster 25.
+DEBUG  2023-12-03 09:43:26,370  168:  Matched Dr. Gregory House to cluster 25 with 0.66.
+DEBUG  2023-12-03 09:43:26,370  207:  Dr. Gregory House matches 25 with 0.6581185567010308 confidence.
+DEBUG  2023-12-03 09:43:29,796  141:  Matching headshots for Dr. Lisa Cuddy to cluster 26.
+DEBUG  2023-12-03 09:44:00,799  168:  Matched Dr. Lisa Cuddy to cluster 26 with 0.11.
+DEBUG  2023-12-03 09:44:02,777  141:  Matching headshots for Dr. Lisa Cuddy to cluster 31.
+DEBUG  2023-12-03 09:46:40,759  168:  Matched Dr. Lisa Cuddy to cluster 31 with 0.31.
+DEBUG  2023-12-03 09:46:42,885  141:  Matching headshots for Dr. Lisa Cuddy to cluster 14.
+DEBUG  2023-12-03 09:49:13,786  168:  Matched Dr. Lisa Cuddy to cluster 14 with 0.08.
+DEBUG  2023-12-03 09:49:16,913  141:  Matching headshots for Dr. Lisa Cuddy to cluster 27.
+DEBUG  2023-12-03 09:51:37,202  168:  Matched Dr. Lisa Cuddy to cluster 27 with 0.02.
+DEBUG  2023-12-03 09:51:39,258  141:  Matching headshots for Dr. Lisa Cuddy to cluster 11.
+DEBUG  2023-12-03 09:54:03,822  168:  Matched Dr. Lisa Cuddy to cluster 11 with 0.1.
+DEBUG  2023-12-03 09:54:05,852  141:  Matching headshots for Dr. Lisa Cuddy to cluster 0.
+DEBUG  2023-12-03 09:56:15,001  168:  Matched Dr. Lisa Cuddy to cluster 0 with 0.25.
+DEBUG  2023-12-03 09:56:19,348  141:  Matching headshots for Dr. Lisa Cuddy to cluster 12.
+DEBUG  2023-12-03 09:58:23,932  168:  Matched Dr. Lisa Cuddy to cluster 12 with 0.23.
+DEBUG  2023-12-03 09:58:26,188  141:  Matching headshots for Dr. Lisa Cuddy to cluster 1.
+DEBUG  2023-12-03 10:00:10,484  168:  Matched Dr. Lisa Cuddy to cluster 1 with 0.02.
+DEBUG  2023-12-03 10:00:12,742  141:  Matching headshots for Dr. Lisa Cuddy to cluster 34.
+DEBUG  2023-12-03 10:01:39,413  168:  Matched Dr. Lisa Cuddy to cluster 34 with 0.05.
+DEBUG  2023-12-03 10:01:42,211  141:  Matching headshots for Dr. Lisa Cuddy to cluster 18.
+DEBUG  2023-12-03 10:03:07,440  168:  Matched Dr. Lisa Cuddy to cluster 18 with 0.18.
+DEBUG  2023-12-03 10:03:09,512  141:  Matching headshots for Dr. Lisa Cuddy to cluster 33.
+DEBUG  2023-12-03 10:04:22,871  168:  Matched Dr. Lisa Cuddy to cluster 33 with 0.06.
+DEBUG  2023-12-03 10:04:25,663  141:  Matching headshots for Dr. Lisa Cuddy to cluster 7.
+DEBUG  2023-12-03 10:05:03,937  168:  Matched Dr. Lisa Cuddy to cluster 7 with 0.17.
+DEBUG  2023-12-03 10:05:03,938  207:  Dr. Lisa Cuddy matches 31 with 0.3134199134199135 confidence.
+DEBUG  2023-12-03 10:05:08,500  141:  Matching headshots for Dr. Eric Foreman to cluster 26.
+DEBUG  2023-12-03 10:05:31,774  168:  Matched Dr. Eric Foreman to cluster 26 with 0.08.
+DEBUG  2023-12-03 10:05:33,712  141:  Matching headshots for Dr. Eric Foreman to cluster 14.
+DEBUG  2023-12-03 10:05:50,710  168:  Matched Dr. Eric Foreman to cluster 14 with 0.62.
+DEBUG  2023-12-03 10:05:50,711  207:  Dr. Eric Foreman matches 14 with 0.6210176991150441 confidence.
+DEBUG  2023-12-03 10:05:53,345  141:  Matching headshots for Dr. James Wilson to cluster 26.
+DEBUG  2023-12-03 10:06:24,320  168:  Matched Dr. James Wilson to cluster 26 with 0.04.
+DEBUG  2023-12-03 10:06:26,428  141:  Matching headshots for Dr. James Wilson to cluster 27.
+DEBUG  2023-12-03 10:06:48,577  168:  Matched Dr. James Wilson to cluster 27 with 0.58.
+DEBUG  2023-12-03 10:06:48,577  207:  Dr. James Wilson matches 27 with 0.583252427184466 confidence.
+DEBUG  2023-12-03 10:06:54,335  141:  Matching headshots for Dr. Allison Cameron to cluster 26.
+DEBUG  2023-12-03 10:07:27,993  168:  Matched Dr. Allison Cameron to cluster 26 with 0.09.
+DEBUG  2023-12-03 10:07:30,130  141:  Matching headshots for Dr. Allison Cameron to cluster 11.
+DEBUG  2023-12-03 10:07:54,500  168:  Matched Dr. Allison Cameron to cluster 11 with 0.04.
+DEBUG  2023-12-03 10:07:56,341  141:  Matching headshots for Dr. Allison Cameron to cluster 0.
+DEBUG  2023-12-03 10:08:19,936  168:  Matched Dr. Allison Cameron to cluster 0 with 0.11.
+DEBUG  2023-12-03 10:08:22,102  141:  Matching headshots for Dr. Allison Cameron to cluster 12.
+DEBUG  2023-12-03 10:08:45,433  168:  Matched Dr. Allison Cameron to cluster 12 with 0.18.
+DEBUG  2023-12-03 10:08:47,494  141:  Matching headshots for Dr. Allison Cameron to cluster 1.
+DEBUG  2023-12-03 10:09:09,437  168:  Matched Dr. Allison Cameron to cluster 1 with 0.02.
+DEBUG  2023-12-03 10:09:11,579  141:  Matching headshots for Dr. Allison Cameron to cluster 34.
+DEBUG  2023-12-03 10:09:32,644  168:  Matched Dr. Allison Cameron to cluster 34 with 0.04.
+DEBUG  2023-12-03 10:09:34,780  141:  Matching headshots for Dr. Allison Cameron to cluster 18.
+DEBUG  2023-12-03 10:09:55,867  168:  Matched Dr. Allison Cameron to cluster 18 with 0.07.
+DEBUG  2023-12-03 10:09:58,512  141:  Matching headshots for Dr. Allison Cameron to cluster 33.
+DEBUG  2023-12-03 10:10:19,050  168:  Matched Dr. Allison Cameron to cluster 33 with 0.05.
+DEBUG  2023-12-03 10:10:21,242  141:  Matching headshots for Dr. Allison Cameron to cluster 7.
+DEBUG  2023-12-03 10:10:39,278  168:  Matched Dr. Allison Cameron to cluster 7 with 0.03.
+DEBUG  2023-12-03 10:10:39,282  207:  Dr. Allison Cameron matches 12 with 0.17786885245901637 confidence.
+DEBUG  2023-12-03 10:10:48,023  141:  Matching headshots for Dr. Robert Chase to cluster 26.
+DEBUG  2023-12-03 10:11:08,613  168:  Matched Dr. Robert Chase to cluster 26 with 0.05.
+DEBUG  2023-12-03 10:11:10,435  141:  Matching headshots for Dr. Robert Chase to cluster 11.
+DEBUG  2023-12-03 10:11:25,020  168:  Matched Dr. Robert Chase to cluster 11 with 0.07.
+DEBUG  2023-12-03 10:11:27,096  141:  Matching headshots for Dr. Robert Chase to cluster 0.
+DEBUG  2023-12-03 10:11:41,368  168:  Matched Dr. Robert Chase to cluster 0 with 0.05.
+DEBUG  2023-12-03 10:11:43,383  141:  Matching headshots for Dr. Robert Chase to cluster 1.
+DEBUG  2023-12-03 10:11:56,857  168:  Matched Dr. Robert Chase to cluster 1 with 0.32.
+DEBUG  2023-12-03 10:11:58,805  141:  Matching headshots for Dr. Robert Chase to cluster 34.
+DEBUG  2023-12-03 10:12:11,666  168:  Matched Dr. Robert Chase to cluster 34 with 0.11.
+DEBUG  2023-12-03 10:12:13,554  141:  Matching headshots for Dr. Robert Chase to cluster 18.
+DEBUG  2023-12-03 10:12:26,496  168:  Matched Dr. Robert Chase to cluster 18 with 0.22.
+DEBUG  2023-12-03 10:12:28,406  141:  Matching headshots for Dr. Robert Chase to cluster 33.
+DEBUG  2023-12-03 10:12:40,773  168:  Matched Dr. Robert Chase to cluster 33 with 0.2.
+DEBUG  2023-12-03 10:12:42,647  141:  Matching headshots for Dr. Robert Chase to cluster 7.
+DEBUG  2023-12-03 10:12:53,659  168:  Matched Dr. Robert Chase to cluster 7 with 0.19.
+DEBUG  2023-12-03 10:12:53,661  207:  Dr. Robert Chase matches 1 with 0.3155405405405405 confidence.
+DEBUG  2023-12-03 10:12:56,755  141:  Matching headshots for Dr. Chris Taub to cluster 26.
+DEBUG  2023-12-03 10:13:15,333  168:  Matched Dr. Chris Taub to cluster 26 with 0.02.
+DEBUG  2023-12-03 10:13:17,393  141:  Matching headshots for Dr. Chris Taub to cluster 11.
+DEBUG  2023-12-03 10:13:31,153  168:  Matched Dr. Chris Taub to cluster 11 with 0.04.
+DEBUG  2023-12-03 10:13:33,171  141:  Matching headshots for Dr. Chris Taub to cluster 0.
+DEBUG  2023-12-03 10:13:45,930  168:  Matched Dr. Chris Taub to cluster 0 with 0.02.
+DEBUG  2023-12-03 10:13:48,190  141:  Matching headshots for Dr. Chris Taub to cluster 34.
+DEBUG  2023-12-03 10:13:59,675  168:  Matched Dr. Chris Taub to cluster 34 with 0.13.
+DEBUG  2023-12-03 10:14:01,615  141:  Matching headshots for Dr. Chris Taub to cluster 18.
+DEBUG  2023-12-03 10:14:13,025  168:  Matched Dr. Chris Taub to cluster 18 with 0.16.
+DEBUG  2023-12-03 10:14:14,844  141:  Matching headshots for Dr. Chris Taub to cluster 33.
+DEBUG  2023-12-03 10:14:25,975  168:  Matched Dr. Chris Taub to cluster 33 with 0.55.
+DEBUG  2023-12-03 10:14:25,975  207:  Dr. Chris Taub matches 33 with 0.548 confidence.
+DEBUG  2023-12-03 10:14:29,874  141:  Matching headshots for Dr. Lawrence Kutner to cluster 26.
+DEBUG  2023-12-03 10:14:52,898  168:  Matched Dr. Lawrence Kutner to cluster 26 with 0.09.
+DEBUG  2023-12-03 10:14:54,809  141:  Matching headshots for Dr. Lawrence Kutner to cluster 11.
+DEBUG  2023-12-03 10:15:11,071  168:  Matched Dr. Lawrence Kutner to cluster 11 with 0.08.
+DEBUG  2023-12-03 10:15:13,187  141:  Matching headshots for Dr. Lawrence Kutner to cluster 0.
+DEBUG  2023-12-03 10:15:29,070  168:  Matched Dr. Lawrence Kutner to cluster 0 with 0.08.
+DEBUG  2023-12-03 10:15:31,006  141:  Matching headshots for Dr. Lawrence Kutner to cluster 34.
+DEBUG  2023-12-03 10:15:45,095  168:  Matched Dr. Lawrence Kutner to cluster 34 with 0.43.
+DEBUG  2023-12-03 10:15:47,137  141:  Matching headshots for Dr. Lawrence Kutner to cluster 18.
+DEBUG  2023-12-03 10:16:01,230  168:  Matched Dr. Lawrence Kutner to cluster 18 with 0.18.
+DEBUG  2023-12-03 10:16:03,314  141:  Matching headshots for Dr. Lawrence Kutner to cluster 7.
+DEBUG  2023-12-03 10:16:15,399  168:  Matched Dr. Lawrence Kutner to cluster 7 with 0.17.
+DEBUG  2023-12-03 10:16:15,400  207:  Dr. Lawrence Kutner matches 34 with 0.43483606557377047 confidence.
+DEBUG  2023-12-03 10:16:18,904  141:  Matching headshots for Thirteen to cluster 26.
+DEBUG  2023-12-03 10:16:40,934  168:  Matched Thirteen to cluster 26 with 0.55.
+DEBUG  2023-12-03 10:16:40,934  207:  Thirteen matches 26 with 0.5452577319587629 confidence.
+DEBUG  2023-12-03 10:16:43,945  141:  Matching headshots for Nurse Helen to cluster 11.
+DEBUG  2023-12-03 10:17:10,811  168:  Matched Nurse Helen to cluster 11 with 0.09.
+DEBUG  2023-12-03 10:17:12,713  141:  Matching headshots for Nurse Helen to cluster 0.
+DEBUG  2023-12-03 10:17:39,023  168:  Matched Nurse Helen to cluster 0 with 0.1.
+DEBUG  2023-12-03 10:17:40,786  141:  Matching headshots for Nurse Helen to cluster 18.
+DEBUG  2023-12-03 10:18:04,627  168:  Matched Nurse Helen to cluster 18 with 0.16.
+DEBUG  2023-12-03 10:18:06,465  141:  Matching headshots for Nurse Helen to cluster 7.
+DEBUG  2023-12-03 10:18:27,248  168:  Matched Nurse Helen to cluster 7 with 0.14.
+DEBUG  2023-12-03 10:18:27,250  207:  Nurse Helen matches 18 with 0.16282051282051282 confidence.
+DEBUG  2023-12-03 10:18:33,286  141:  Matching headshots for Nurse to cluster 11.
+DEBUG  2023-12-03 10:19:02,475  168:  Matched Nurse to cluster 11 with 0.21.
+DEBUG  2023-12-03 10:19:05,289  141:  Matching headshots for Nurse to cluster 0.
+DEBUG  2023-12-03 10:19:33,680  168:  Matched Nurse to cluster 0 with 0.14.
+DEBUG  2023-12-03 10:19:36,080  141:  Matching headshots for Nurse to cluster 7.
+DEBUG  2023-12-03 10:19:57,926  168:  Matched Nurse to cluster 7 with 0.4.
+DEBUG  2023-12-03 10:19:57,927  207:  Nurse matches 7 with 0.39594594594594595 confidence.
+DEBUG  2023-12-03 10:20:01,122  124:  Downloading headshots for Bob Ross
+INFO  2023-12-03 10:20:01,123  162:  start crawling...
+INFO  2023-12-03 10:20:01,123  168:  starting 1 feeder threads...
+DEBUG  2023-12-03 10:20:01,123  59:  thread feeder-001 started
+DEBUG  2023-12-03 10:20:01,124  141:  put url to url_queue: https://www.google.com/search?q=Connor+Allen+Bob+Ross&ijn=0&start=0&tbs=&tbm=isch
+INFO  2023-12-03 10:20:01,124  41:  thread feeder-001 exit
+INFO  2023-12-03 10:20:01,124  171:  starting 1 parser threads...
+DEBUG  2023-12-03 10:20:01,124  59:  thread parser-001 started
+DEBUG  2023-12-03 10:20:01,125  78:  start fetching page https://www.google.com/search?q=Connor+Allen+Bob+Ross&ijn=0&start=0&tbs=&tbm=isch
+INFO  2023-12-03 10:20:01,126  174:  starting 1 downloader threads...
+DEBUG  2023-12-03 10:20:01,127  164:  thread downloader-001 started
+DEBUG  2023-12-03 10:20:01,129  1019:  Starting new HTTPS connection (1): www.google.com:443
+DEBUG  2023-12-03 10:20:01,391  474:  https://www.google.com:443 "GET /search?q=Connor+Allen+Bob+Ross&ijn=0&start=0&tbs=&tbm=isch HTTP/1.1" 200 None
+INFO  2023-12-03 10:20:01,983  93:  parsing result page https://www.google.com/search?q=Connor+Allen+Bob+Ross&ijn=0&start=0&tbs=&tbm=isch
+DEBUG  2023-12-03 10:20:02,032  1019:  Starting new HTTPS connection (1): pyxis.nymag.com:443
+DEBUG  2023-12-03 10:20:02,170  474:  https://pyxis.nymag.com:443 "GET /v1/imgs/e80/6d3/e06763ebafa86815aeadf051c4ae43b2c9-30-bob-ross-curly-hair.rsquare.w400.jpg HTTP/1.1" 200 27711
+INFO  2023-12-03 10:20:02,217  138:  image #1	https://pyxis.nymag.com/v1/imgs/e80/6d3/e06763ebafa86815aeadf051c4ae43b2c9-30-bob-ross-curly-hair.rsquare.w400.jpg
+DEBUG  2023-12-03 10:20:02,220  1019:  Starting new HTTPS connection (1): www.sportscollectorsdaily.com:443
+DEBUG  2023-12-03 10:20:02,523  474:  https://www.sportscollectorsdaily.com:443 "GET /wp-content/uploads/2023/10/BOX_Collectors_1-e1696438813463.jpg HTTP/1.1" 403 None
+ERROR  2023-12-03 10:20:02,527  131:  Response status code 403, file https://www.sportscollectorsdaily.com/wp-content/uploads/2023/10/BOX_Collectors_1-e1696438813463.jpg
+DEBUG  2023-12-03 10:20:02,648  474:  https://www.sportscollectorsdaily.com:443 "GET /wp-content/uploads/2023/10/PARALLELS-All.png HTTP/1.1" 403 None
+ERROR  2023-12-03 10:20:02,651  131:  Response status code 403, file https://www.sportscollectorsdaily.com/wp-content/uploads/2023/10/PARALLELS-All.png
+DEBUG  2023-12-03 10:20:02,664  1019:  Starting new HTTPS connection (1): cdn8.openculture.com:443
+DEBUG  2023-12-03 10:20:03,128  474:  https://cdn8.openculture.com:443 "GET /2021/06/06204904/Auroras-Dance-open-culture-1024x592.png HTTP/1.1" 200 279321
+DEBUG  2023-12-03 10:20:03,264  190:  STREAM b'IHDR' 16 13
+DEBUG  2023-12-03 10:20:03,265  190:  STREAM b'IDAT' 41 32768
+INFO  2023-12-03 10:20:03,265  138:  image #2	https://cdn8.openculture.com/2021/06/06204904/Auroras-Dance-open-culture-1024x592.png
+DEBUG  2023-12-03 10:20:03,280  1019:  Starting new HTTPS connection (1): cdn-az.allevents.in:443
+DEBUG  2023-12-03 10:20:04,294  474:  https://cdn-az.allevents.in:443 "GET /events7/banners/97179666cb67739a3a06e544a9f7bfa756ef4ea0ea3b0f0c9e6911ffe8d99873-rimg-w768-h960-gmir.jpg HTTP/1.1" 200 118752
+INFO  2023-12-03 10:20:04,341  138:  image #3	https://cdn-az.allevents.in/events7/banners/97179666cb67739a3a06e544a9f7bfa756ef4ea0ea3b0f0c9e6911ffe8d99873-rimg-w768-h960-gmir.jpg
+DEBUG  2023-12-03 10:20:04,355  1019:  Starting new HTTPS connection (1): variety.com:443
+DEBUG  2023-12-03 10:20:04,532  474:  https://variety.com:443 "GET /wp-content/uploads/2022/12/Amir-El-Masry-Alfie-Allen.jpg HTTP/1.1" 200 481311
+INFO  2023-12-03 10:20:04,645  138:  image #4	https://variety.com/wp-content/uploads/2022/12/Amir-El-Masry-Alfie-Allen.jpg
+DEBUG  2023-12-03 10:20:04,651  1019:  Starting new HTTPS connection (1): images.sidearmdev.com:443
+DEBUG  2023-12-03 10:20:04,789  474:  https://images.sidearmdev.com:443 "GET /resize?url%5Cu003dhttps%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fragincajuns.com%2Fimages%2F2023%2F9%2F12%2F040_FB___ODU_20230909_D5M_3635_ZVII2.jpg HTTP/1.1" 400 84
+ERROR  2023-12-03 10:20:04,791  131:  Response status code 400, file https://images.sidearmdev.com/resize?url\u003dhttps%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fragincajuns.com%2Fimages%2F2023%2F9%2F12%2F040_FB___ODU_20230909_D5M_3635_ZVII2.jpg
+DEBUG  2023-12-03 10:20:04,803  1019:  Starting new HTTPS connection (1): www.bradfordallen.com:443
+DEBUG  2023-12-03 10:20:05,265  474:  https://www.bradfordallen.com:443 "GET /wp-content/uploads/2021/08/jbernstein-360.jpg HTTP/1.1" 200 90070
+INFO  2023-12-03 10:20:05,301  138:  image #5	https://www.bradfordallen.com/wp-content/uploads/2021/08/jbernstein-360.jpg
+DEBUG  2023-12-03 10:20:05,314  1019:  Starting new HTTPS connection (1): www.tompkinsweekly.com:443
+DEBUG  2023-12-03 10:20:05,674  474:  https://www.tompkinsweekly.com:443 "GET /wp-content/uploads/2023/10/10.18-groton-scaled.jpg HTTP/1.1" 200 605457
+INFO  2023-12-03 10:20:05,807  138:  image #6	https://www.tompkinsweekly.com/wp-content/uploads/2023/10/10.18-groton-scaled.jpg
+DEBUG  2023-12-03 10:20:05,823  1019:  Starting new HTTPS connection (1): www.hollywoodreporter.com:443
+DEBUG  2023-12-03 10:20:05,992  474:  https://www.hollywoodreporter.com:443 "GET /wp-content/uploads/2023/01/Donald-Glover-and-Taron-Egerton-Split-Getty-H-2023.jpg HTTP/1.1" 200 68850
+INFO  2023-12-03 10:20:06,039  138:  image #7	https://www.hollywoodreporter.com/wp-content/uploads/2023/01/Donald-Glover-and-Taron-Egerton-Split-Getty-H-2023.jpg
+DEBUG  2023-12-03 10:20:06,052  1019:  Starting new HTTPS connection (1): m.media-amazon.com:443
+DEBUG  2023-12-03 10:20:06,187  474:  https://m.media-amazon.com:443 "GET /images/M/MV5BYzFlMDJiZDMtMjA1OS00ZTY1LTgwNGMtNzdiYmRmNDkyNzQ3XkEyXkFqcGdeQXVyMTIzMjg4Mzgx._V1_FMjpg_UX1000_.jpg HTTP/1.1" 200 107723
+INFO  2023-12-03 10:20:06,240  138:  image #8	https://m.media-amazon.com/images/M/MV5BYzFlMDJiZDMtMjA1OS00ZTY1LTgwNGMtNzdiYmRmNDkyNzQ3XkEyXkFqcGdeQXVyMTIzMjg4Mzgx._V1_FMjpg_UX1000_.jpg
+DEBUG  2023-12-03 10:20:06,301  474:  https://m.media-amazon.com:443 "GET /images/M/MV5BN2VjYmM0OTktYmVhMS00OGM1LTlhODQtZmNhNzE3MWQwZTIxXkEyXkFqcGdeQXVyNDUzNzgxODE@._V1_UY1200_CR85,0,630,1200_AL_.jpg HTTP/1.1" 200 97881
+INFO  2023-12-03 10:20:06,312  138:  image #9	https://m.media-amazon.com/images/M/MV5BN2VjYmM0OTktYmVhMS00OGM1LTlhODQtZmNhNzE3MWQwZTIxXkEyXkFqcGdeQXVyNDUzNzgxODE@._V1_UY1200_CR85,0,630,1200_AL_.jpg
+DEBUG  2023-12-03 10:20:06,328  1019:  Starting new HTTPS connection (1): www.caa.com:443
+DEBUG  2023-12-03 10:20:06,760  474:  https://www.caa.com:443 "GET /caaspeakers/partyHeadshot/connor-franta.png HTTP/1.1" 200 27740
+INFO  2023-12-03 10:20:06,789  138:  image #10	https://www.caa.com/caaspeakers/partyHeadshot/connor-franta.png
+DEBUG  2023-12-03 10:20:06,806  1019:  Starting new HTTPS connection (1): michaelfairmantv.com:443
+DEBUG  2023-12-03 10:20:07,113  474:  https://michaelfairmantv.com:443 "GET /wp-content/uploads/2022/12/54476716-FE25-4BFA-B772-840B118F0298-e1670818898981.jpg HTTP/1.1" 200 94399
+INFO  2023-12-03 10:20:07,186  138:  image #11	https://michaelfairmantv.com/wp-content/uploads/2022/12/54476716-FE25-4BFA-B772-840B118F0298-e1670818898981.jpg
+DEBUG  2023-12-03 10:20:07,203  1019:  Starting new HTTPS connection (1): crazydiscostu.files.wordpress.com:443
+DEBUG  2023-12-03 10:20:07,500  474:  https://crazydiscostu.files.wordpress.com:443 "GET /2021/09/bob-ross-netflix-happy-accidents-review-crazydiscostu-nerd.jpg HTTP/1.1" 200 78096
+INFO  2023-12-03 10:20:07,551  138:  image #12	https://crazydiscostu.files.wordpress.com/2021/09/bob-ross-netflix-happy-accidents-review-crazydiscostu-nerd.jpg
+DEBUG  2023-12-03 10:20:07,568  1019:  Starting new HTTPS connection (1): www.williamrossmusic.com:443
+DEBUG  2023-12-03 10:20:08,074  474:  https://www.williamrossmusic.com:443 "GET /wordpress/wp-content/uploads/2019/04/Van-Helsing.jpg HTTP/1.1" 200 136509
+INFO  2023-12-03 10:20:08,257  138:  image #13	https://www.williamrossmusic.com/wordpress/wp-content/uploads/2019/04/Van-Helsing.jpg
+DEBUG  2023-12-03 10:20:08,332  474:  https://m.media-amazon.com:443 "GET /images/M/MV5BZTZiMWY4NDEtZjdmMy00ZGVkLTlhZTctOTBhMjA3NDQ2Y2VhXkEyXkFqcGdeQXVyMTE0MzQwMjgz._V1_QL75_UX500_CR0,0,500,281_.jpg HTTP/1.1" 200 29087
+INFO  2023-12-03 10:20:08,336  138:  image #14	https://m.media-amazon.com/images/M/MV5BZTZiMWY4NDEtZjdmMy00ZGVkLTlhZTctOTBhMjA3NDQ2Y2VhXkEyXkFqcGdeQXVyMTE0MzQwMjgz._V1_QL75_UX500_CR0,0,500,281_.jpg
+DEBUG  2023-12-03 10:20:08,355  1019:  Starting new HTTPS connection (1): www.politico.com:443
+DEBUG  2023-12-03 10:20:08,542  474:  https://www.politico.com:443 "GET /dims4/default/bee1d54/2147483647/resize/1160x%3E/quality/90/?url%5Cu003dhttps%3A%2F%2Fstatic.politico.com%2Fd7%2F95%2Fe0ee12614229bb652911a46190d4%2Fhp-image-for-wh-records.png HTTP/1.1" 404 None
+ERROR  2023-12-03 10:20:08,547  131:  Response status code 404, file https://www.politico.com/dims4/default/bee1d54/2147483647/resize/1160x%3E/quality/90/?url\u003dhttps%3A%2F%2Fstatic.politico.com%2Fd7%2F95%2Fe0ee12614229bb652911a46190d4%2Fhp-image-for-wh-records.png
+DEBUG  2023-12-03 10:20:08,645  474:  https://crazydiscostu.files.wordpress.com:443 "GET /2021/09/netflix-bob-ross-happy-accidents-review-crazydiscostu.jpg HTTP/1.1" 200 50325
+DEBUG  2023-12-03 10:20:08,654  860:  tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+DEBUG  2023-12-03 10:20:08,655  860:  tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 74 - value: b'\x00\x00\x00H\x00\x00\x00\x01'
+DEBUG  2023-12-03 10:20:08,655  860:  tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 82 - value: b'\x00\x00\x00H\x00\x00\x00\x01'
+DEBUG  2023-12-03 10:20:08,655  860:  tag: Software (305) - type: string (2) Tag Location: 58 - Data Location: 90 - value: b'Adobe Photoshop CC 2018 Windows\x00'
+DEBUG  2023-12-03 10:20:08,656  860:  tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00z'
+INFO  2023-12-03 10:20:08,656  138:  image #15	https://crazydiscostu.files.wordpress.com/2021/09/netflix-bob-ross-happy-accidents-review-crazydiscostu.jpg
+DEBUG  2023-12-03 10:20:08,674  1019:  Starting new HTTPS connection (1): inkwellmanagement.com:443
+DEBUG  2023-12-03 10:20:09,047  474:  https://inkwellmanagement.com:443 "GET /images/authors/hari_conner.jpg HTTP/1.1" 200 50637
+INFO  2023-12-03 10:20:09,180  138:  image #16	https://inkwellmanagement.com/images/authors/hari_conner.jpg
+DEBUG  2023-12-03 10:20:09,184  1019:  Starting new HTTPS connection (1): snworksceo.imgix.net:443
+DEBUG  2023-12-03 10:20:09,449  474:  https://snworksceo.imgix.net:443 "GET /ids-hsn/ca98c5de-f3b1-4d51-b53b-bc0690289510.sized-1000x1000.jpg HTTP/1.1" 200 424572
+INFO  2023-12-03 10:20:09,535  138:  image #17	https://snworksceo.imgix.net/ids-hsn/ca98c5de-f3b1-4d51-b53b-bc0690289510.sized-1000x1000.jpg
+DEBUG  2023-12-03 10:20:09,550  1019:  Starting new HTTPS connection (1): www.bradfordallen.com:443
+DEBUG  2023-12-03 10:20:09,658  474:  https://www.bradfordallen.com:443 "GET /images/professionalsheadermob.jpg HTTP/1.1" 200 580735
+DEBUG  2023-12-03 10:20:09,771  860:  tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+DEBUG  2023-12-03 10:20:09,771  860:  tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00-\xc6\xc0\x00\x00'\x10"
+DEBUG  2023-12-03 10:20:09,772  860:  tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00-\xc6\xc0\x00\x00'\x10"
+DEBUG  2023-12-03 10:20:09,772  860:  tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+DEBUG  2023-12-03 10:20:09,772  860:  tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 33 bytes>
+DEBUG  2023-12-03 10:20:09,772  860:  tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 147 - value: b'2021:08:30 10:48:37\x00'
+DEBUG  2023-12-03 10:20:09,772  860:  tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+INFO  2023-12-03 10:20:09,772  138:  image #18	https://www.bradfordallen.com/images/professionalsheadermob.jpg
+DEBUG  2023-12-03 10:20:09,776  1019:  Starting new HTTPS connection (1): townsquare.media:443
+DEBUG  2023-12-03 10:20:10,018  474:  https://townsquare.media:443 "GET /site/366/files/2023/07/attachment-sinead_morrissey.jpg HTTP/1.1" 200 196225
+INFO  2023-12-03 10:20:10,085  138:  image #19	https://townsquare.media/site/366/files/2023/07/attachment-sinead_morrissey.jpg
+DEBUG  2023-12-03 10:20:10,090  1019:  Starting new HTTPS connection (1): alumni.moreheadstate.edu:443
+DEBUG  2023-12-03 10:20:10,496  474:  https://alumni.moreheadstate.edu:443 "GET /s/1869/images/content_images/allen_perry_638339889289769799.jpg HTTP/1.1" 200 52093
+INFO  2023-12-03 10:20:10,502  138:  image #20	https://alumni.moreheadstate.edu/s/1869/images/content_images/allen_perry_638339889289769799.jpg
+DEBUG  2023-12-03 10:20:10,521  1019:  Starting new HTTPS connection (1): images.sidearmdev.com:443
+DEBUG  2023-12-03 10:20:10,674  474:  https://images.sidearmdev.com:443 "GET /resize?url%5Cu003dhttps%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fragincajuns.com%2Fimages%2F2023%2F9%2F19%2F071_FB___UAB_20230916_A1_D00wl.jpg HTTP/1.1" 400 84
+INFO  2023-12-03 10:20:10,677  183:  downloaded images reach max num, thread downloader-001 is ready to exit
+INFO  2023-12-03 10:20:10,677  201:  thread downloader-001 exit
+INFO  2023-12-03 10:20:11,129  193:  Crawling task done!
+DEBUG  2023-12-03 10:20:11,131  141:  Matching headshots for Connor Allen to cluster 11.
+INFO  2023-12-03 10:20:11,504  60:  downloaded image reached max num, thread parser-001 is ready to exit
+INFO  2023-12-03 10:20:11,504  118:  thread parser-001 exit
+DEBUG  2023-12-03 10:20:37,862  168:  Matched Connor Allen to cluster 11 with 0.14.
+DEBUG  2023-12-03 10:20:39,527  141:  Matching headshots for Connor Allen to cluster 0.
+DEBUG  2023-12-03 10:21:05,695  168:  Matched Connor Allen to cluster 0 with 0.1.
+DEBUG  2023-12-03 10:21:05,695  207:  Connor Allen matches 11 with 0.13658536585365857 confidence.
+DEBUG  2023-12-03 10:21:05,702  261:  Matching clusters for episode_id 1273720 (S05E17)
+DEBUG  2023-12-03 10:21:08,669  229:  Clustering for episode 1273720.
+DEBUG  2023-12-03 10:21:16,502  194:  Found 12 actors. Matching to clusters ...
+DEBUG  2023-12-03 10:21:26,403  141:  Matching headshots for Dr. Gregory House to cluster 7.
+DEBUG  2023-12-03 10:26:12,368  168:  Matched Dr. Gregory House to cluster 7 with 0.68.
+DEBUG  2023-12-03 10:26:12,369  207:  Dr. Gregory House matches 7 with 0.6787587412587415 confidence.
+DEBUG  2023-12-03 10:26:15,739  141:  Matching headshots for Dr. Lisa Cuddy to cluster 5.
+DEBUG  2023-12-03 10:29:35,859  168:  Matched Dr. Lisa Cuddy to cluster 5 with 0.16.
+DEBUG  2023-12-03 10:29:37,722  141:  Matching headshots for Dr. Lisa Cuddy to cluster 2.
+DEBUG  2023-12-03 10:32:36,065  168:  Matched Dr. Lisa Cuddy to cluster 2 with 0.07.
+DEBUG  2023-12-03 10:32:39,668  141:  Matching headshots for Dr. Lisa Cuddy to cluster 15.
+DEBUG  2023-12-03 10:35:21,294  168:  Matched Dr. Lisa Cuddy to cluster 15 with 0.03.
+DEBUG  2023-12-03 10:35:23,847  141:  Matching headshots for Dr. Lisa Cuddy to cluster 13.
+DEBUG  2023-12-03 10:37:37,518  168:  Matched Dr. Lisa Cuddy to cluster 13 with 0.04.
+DEBUG  2023-12-03 10:37:40,444  141:  Matching headshots for Dr. Lisa Cuddy to cluster 10.
+DEBUG  2023-12-03 10:39:11,241  168:  Matched Dr. Lisa Cuddy to cluster 10 with 0.04.
+DEBUG  2023-12-03 10:39:13,227  141:  Matching headshots for Dr. Lisa Cuddy to cluster 3.
+DEBUG  2023-12-03 10:40:34,427  168:  Matched Dr. Lisa Cuddy to cluster 3 with 0.16.
+DEBUG  2023-12-03 10:40:36,246  141:  Matching headshots for Dr. Lisa Cuddy to cluster 11.
+DEBUG  2023-12-03 10:41:52,934  168:  Matched Dr. Lisa Cuddy to cluster 11 with 0.05.
+DEBUG  2023-12-03 10:41:54,774  141:  Matching headshots for Dr. Lisa Cuddy to cluster 12.
+DEBUG  2023-12-03 10:42:40,847  168:  Matched Dr. Lisa Cuddy to cluster 12 with 0.18.
+DEBUG  2023-12-03 10:42:43,976  141:  Matching headshots for Dr. Lisa Cuddy to cluster 0.
+DEBUG  2023-12-03 10:43:18,885  168:  Matched Dr. Lisa Cuddy to cluster 0 with 0.02.
+DEBUG  2023-12-03 10:43:20,890  141:  Matching headshots for Dr. Lisa Cuddy to cluster 14.
+DEBUG  2023-12-03 10:43:52,207  168:  Matched Dr. Lisa Cuddy to cluster 14 with 0.12.
+DEBUG  2023-12-03 10:43:52,209  207:  Dr. Lisa Cuddy matches 12 with 0.17642857142857143 confidence.
+DEBUG  2023-12-03 10:43:55,370  141:  Matching headshots for Dr. Eric Foreman to cluster 5.
+DEBUG  2023-12-03 10:44:12,753  168:  Matched Dr. Eric Foreman to cluster 5 with 0.34.
+DEBUG  2023-12-03 10:44:14,543  141:  Matching headshots for Dr. Eric Foreman to cluster 2.
+DEBUG  2023-12-03 10:44:30,731  168:  Matched Dr. Eric Foreman to cluster 2 with 0.15.
+DEBUG  2023-12-03 10:44:32,532  141:  Matching headshots for Dr. Eric Foreman to cluster 15.
+DEBUG  2023-12-03 10:44:48,350  168:  Matched Dr. Eric Foreman to cluster 15 with 0.17.
+DEBUG  2023-12-03 10:44:50,358  141:  Matching headshots for Dr. Eric Foreman to cluster 13.
+DEBUG  2023-12-03 10:45:05,050  168:  Matched Dr. Eric Foreman to cluster 13 with 0.19.
+DEBUG  2023-12-03 10:45:06,933  141:  Matching headshots for Dr. Eric Foreman to cluster 10.
+DEBUG  2023-12-03 10:45:19,623  168:  Matched Dr. Eric Foreman to cluster 10 with 0.34.
+DEBUG  2023-12-03 10:45:23,590  141:  Matching headshots for Dr. Eric Foreman to cluster 3.
+DEBUG  2023-12-03 10:45:35,760  168:  Matched Dr. Eric Foreman to cluster 3 with 0.16.
+DEBUG  2023-12-03 10:45:38,343  141:  Matching headshots for Dr. Eric Foreman to cluster 11.
+DEBUG  2023-12-03 10:45:50,493  168:  Matched Dr. Eric Foreman to cluster 11 with 0.62.
+DEBUG  2023-12-03 10:45:50,493  207:  Dr. Eric Foreman matches 11 with 0.6198529411764706 confidence.
+DEBUG  2023-12-03 10:45:53,147  141:  Matching headshots for Dr. James Wilson to cluster 5.
+DEBUG  2023-12-03 10:46:16,344  168:  Matched Dr. James Wilson to cluster 5 with 0.25.
+DEBUG  2023-12-03 10:46:18,137  141:  Matching headshots for Dr. James Wilson to cluster 2.
+DEBUG  2023-12-03 10:46:39,680  168:  Matched Dr. James Wilson to cluster 2 with 0.37.
+DEBUG  2023-12-03 10:46:41,476  141:  Matching headshots for Dr. James Wilson to cluster 15.
+DEBUG  2023-12-03 10:47:02,416  168:  Matched Dr. James Wilson to cluster 15 with 0.52.
+DEBUG  2023-12-03 10:47:02,417  207:  Dr. James Wilson matches 15 with 0.5159163987138263 confidence.
+DEBUG  2023-12-03 10:47:06,408  141:  Matching headshots for Dr. Allison Cameron to cluster 5.
+DEBUG  2023-12-03 10:47:31,456  168:  Matched Dr. Allison Cameron to cluster 5 with 0.1.
+DEBUG  2023-12-03 10:47:33,528  141:  Matching headshots for Dr. Allison Cameron to cluster 2.
+DEBUG  2023-12-03 10:47:57,078  168:  Matched Dr. Allison Cameron to cluster 2 with 0.05.
+DEBUG  2023-12-03 10:47:58,899  141:  Matching headshots for Dr. Allison Cameron to cluster 13.
+DEBUG  2023-12-03 10:48:20,177  168:  Matched Dr. Allison Cameron to cluster 13 with 0.04.
+DEBUG  2023-12-03 10:48:22,012  141:  Matching headshots for Dr. Allison Cameron to cluster 10.
+DEBUG  2023-12-03 10:48:40,275  168:  Matched Dr. Allison Cameron to cluster 10 with 0.03.
+DEBUG  2023-12-03 10:48:42,150  141:  Matching headshots for Dr. Allison Cameron to cluster 3.
+DEBUG  2023-12-03 10:49:00,117  168:  Matched Dr. Allison Cameron to cluster 3 with 0.08.
+DEBUG  2023-12-03 10:49:01,991  141:  Matching headshots for Dr. Allison Cameron to cluster 0.
+DEBUG  2023-12-03 10:49:16,993  168:  Matched Dr. Allison Cameron to cluster 0 with 0.0.
+DEBUG  2023-12-03 10:49:18,786  141:  Matching headshots for Dr. Allison Cameron to cluster 14.
+DEBUG  2023-12-03 10:49:33,533  168:  Matched Dr. Allison Cameron to cluster 14 with 0.04.
+DEBUG  2023-12-03 10:49:33,535  207:  Dr. Allison Cameron matches 5 with 0.10201005025125628 confidence.
+DEBUG  2023-12-03 10:49:39,522  141:  Matching headshots for Dr. Robert Chase to cluster 2.
+DEBUG  2023-12-03 10:49:57,143  168:  Matched Dr. Robert Chase to cluster 2 with 0.2.
+DEBUG  2023-12-03 10:49:58,937  141:  Matching headshots for Dr. Robert Chase to cluster 13.
+DEBUG  2023-12-03 10:50:14,788  168:  Matched Dr. Robert Chase to cluster 13 with 0.24.
+DEBUG  2023-12-03 10:50:16,602  141:  Matching headshots for Dr. Robert Chase to cluster 10.
+DEBUG  2023-12-03 10:50:30,367  168:  Matched Dr. Robert Chase to cluster 10 with 0.1.
+DEBUG  2023-12-03 10:50:32,143  141:  Matching headshots for Dr. Robert Chase to cluster 3.
+DEBUG  2023-12-03 10:50:45,543  168:  Matched Dr. Robert Chase to cluster 3 with 0.07.
+DEBUG  2023-12-03 10:50:47,744  141:  Matching headshots for Dr. Robert Chase to cluster 0.
+DEBUG  2023-12-03 10:50:58,840  168:  Matched Dr. Robert Chase to cluster 0 with 0.08.
+DEBUG  2023-12-03 10:51:00,608  141:  Matching headshots for Dr. Robert Chase to cluster 14.
+DEBUG  2023-12-03 10:51:11,645  168:  Matched Dr. Robert Chase to cluster 14 with 0.08.
+DEBUG  2023-12-03 10:51:11,646  207:  Dr. Robert Chase matches 13 with 0.2368725868725869 confidence.
+DEBUG  2023-12-03 10:51:14,651  141:  Matching headshots for Dr. Chris Taub to cluster 2.
+DEBUG  2023-12-03 10:51:30,564  168:  Matched Dr. Chris Taub to cluster 2 with 0.15.
+DEBUG  2023-12-03 10:51:32,305  141:  Matching headshots for Dr. Chris Taub to cluster 10.
+DEBUG  2023-12-03 10:51:44,609  168:  Matched Dr. Chris Taub to cluster 10 with 0.14.
+DEBUG  2023-12-03 10:51:46,657  141:  Matching headshots for Dr. Chris Taub to cluster 3.
+DEBUG  2023-12-03 10:51:58,698  168:  Matched Dr. Chris Taub to cluster 3 with 0.05.
+DEBUG  2023-12-03 10:52:00,917  141:  Matching headshots for Dr. Chris Taub to cluster 0.
+DEBUG  2023-12-03 10:52:11,013  168:  Matched Dr. Chris Taub to cluster 0 with 0.29.
+DEBUG  2023-12-03 10:52:12,778  141:  Matching headshots for Dr. Chris Taub to cluster 14.
+DEBUG  2023-12-03 10:52:22,631  168:  Matched Dr. Chris Taub to cluster 14 with 0.03.
+DEBUG  2023-12-03 10:52:22,633  207:  Dr. Chris Taub matches 0 with 0.28804347826086957 confidence.
+DEBUG  2023-12-03 10:52:28,133  141:  Matching headshots for Dr. Lawrence Kutner to cluster 2.
+DEBUG  2023-12-03 10:52:47,685  168:  Matched Dr. Lawrence Kutner to cluster 2 with 0.1.
+DEBUG  2023-12-03 10:52:49,683  141:  Matching headshots for Dr. Lawrence Kutner to cluster 10.
+DEBUG  2023-12-03 10:53:04,856  168:  Matched Dr. Lawrence Kutner to cluster 10 with 0.44.
+DEBUG  2023-12-03 10:53:06,631  141:  Matching headshots for Dr. Lawrence Kutner to cluster 3.
+DEBUG  2023-12-03 10:53:21,377  168:  Matched Dr. Lawrence Kutner to cluster 3 with 0.09.
+DEBUG  2023-12-03 10:53:23,363  141:  Matching headshots for Dr. Lawrence Kutner to cluster 14.
+DEBUG  2023-12-03 10:53:35,475  168:  Matched Dr. Lawrence Kutner to cluster 14 with 0.07.
+DEBUG  2023-12-03 10:53:35,477  207:  Dr. Lawrence Kutner matches 10 with 0.4386503067484663 confidence.
+DEBUG  2023-12-03 10:53:39,447  141:  Matching headshots for Thirteen to cluster 2.
+DEBUG  2023-12-03 10:53:58,288  168:  Matched Thirteen to cluster 2 with 0.06.
+DEBUG  2023-12-03 10:54:00,006  141:  Matching headshots for Thirteen to cluster 3.
+DEBUG  2023-12-03 10:54:14,385  168:  Matched Thirteen to cluster 3 with 0.07.
+DEBUG  2023-12-03 10:54:16,406  141:  Matching headshots for Thirteen to cluster 14.
+DEBUG  2023-12-03 10:54:28,407  168:  Matched Thirteen to cluster 14 with 0.09.
+DEBUG  2023-12-03 10:54:28,408  207:  Thirteen matches 14 with 0.0858974358974359 confidence.
+DEBUG  2023-12-03 10:54:31,223  124:  Downloading headshots for Susan Egan
+INFO  2023-12-03 10:54:31,224  162:  start crawling...
+INFO  2023-12-03 10:54:31,224  168:  starting 1 feeder threads...
+DEBUG  2023-12-03 10:54:31,224  59:  thread feeder-001 started
+DEBUG  2023-12-03 10:54:31,225  141:  put url to url_queue: https://www.google.com/search?q=Audrey+Greenwald+Susan+Egan&ijn=0&start=0&tbs=&tbm=isch
+INFO  2023-12-03 10:54:31,225  41:  thread feeder-001 exit
+INFO  2023-12-03 10:54:31,225  171:  starting 1 parser threads...
+DEBUG  2023-12-03 10:54:31,225  59:  thread parser-001 started
+DEBUG  2023-12-03 10:54:31,225  78:  start fetching page https://www.google.com/search?q=Audrey+Greenwald+Susan+Egan&ijn=0&start=0&tbs=&tbm=isch
+INFO  2023-12-03 10:54:31,228  174:  starting 1 downloader threads...
+DEBUG  2023-12-03 10:54:31,228  1019:  Starting new HTTPS connection (1): www.google.com:443
+DEBUG  2023-12-03 10:54:31,228  164:  thread downloader-001 started
+DEBUG  2023-12-03 10:54:31,528  474:  https://www.google.com:443 "GET /search?q=Audrey+Greenwald+Susan+Egan&ijn=0&start=0&tbs=&tbm=isch HTTP/1.1" 200 None
+INFO  2023-12-03 10:54:32,136  93:  parsing result page https://www.google.com/search?q=Audrey+Greenwald+Susan+Egan&ijn=0&start=0&tbs=&tbm=isch
+DEBUG  2023-12-03 10:54:32,181  1019:  Starting new HTTPS connection (1): static.tvmaze.com:443
+DEBUG  2023-12-03 10:54:32,537  474:  https://static.tvmaze.com:443 "GET /uploads/images/large_landscape/57/144648.jpg HTTP/1.1" 200 8213
+INFO  2023-12-03 10:54:32,541  138:  image #1	https://static.tvmaze.com/uploads/images/large_landscape/57/144648.jpg
+DEBUG  2023-12-03 10:54:32,554  1019:  Starting new HTTPS connection (1): upload.wikimedia.org:443
+DEBUG  2023-12-03 10:54:32,714  474:  https://upload.wikimedia.org:443 "GET /wikipedia/commons/0/07/Susan_Egan_9-2007.jpg HTTP/1.1" 200 420057
+DEBUG  2023-12-03 10:54:32,829  860:  tag: ImageWidth (256) - type: short (3) - value: b'\x88\x02'
+DEBUG  2023-12-03 10:54:32,829  860:  tag: ImageLength (257) - type: short (3) - value: b'\xe8\x03'
+DEBUG  2023-12-03 10:54:32,829  860:  tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 218 - value: b'\x08\x00\x08\x00\x08\x00'
+DEBUG  2023-12-03 10:54:32,829  860:  tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x02\x00'
+DEBUG  2023-12-03 10:54:32,829  860:  tag: ImageDescription (270) - type: string (2) Tag Location: 70 - Data Location: 224 - value: b'OLYMPUS DIGITAL CAMERA         \x00'
+DEBUG  2023-12-03 10:54:32,829  860:  tag: Make (271) - type: string (2) Tag Location: 82 - Data Location: 256 - value: b'OLYMPUS IMAGING CORP.\x00'
+DEBUG  2023-12-03 10:54:32,829  860:  tag: Model (272) - type: string (2) Tag Location: 94 - Data Location: 278 - value: b'D595Z,C500Z\x00'
+DEBUG  2023-12-03 10:54:32,829  860:  tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+DEBUG  2023-12-03 10:54:32,829  860:  tag: SamplesPerPixel (277) - type: short (3) - value: b'\x03\x00'
+DEBUG  2023-12-03 10:54:32,829  860:  tag: XResolution (282) - type: rational (5) Tag Location: 130 - Data Location: 290 - value: b"\x80\x84\x1e\x00\x10'\x00\x00"
+DEBUG  2023-12-03 10:54:32,829  860:  tag: YResolution (283) - type: rational (5) Tag Location: 142 - Data Location: 298 - value: b"\x80\x84\x1e\x00\x10'\x00\x00"
+DEBUG  2023-12-03 10:54:32,829  860:  tag: ResolutionUnit (296) - type: short (3) - value: b'\x02\x00'
+DEBUG  2023-12-03 10:54:32,830  860:  tag: Software (305) - type: string (2) Tag Location: 166 - Data Location: 306 - value: b'Adobe Photoshop CS6 (Windows)\x00'
+DEBUG  2023-12-03 10:54:32,830  860:  tag: DateTime (306) - type: string (2) Tag Location: 178 - Data Location: 336 - value: b'2021:11:11 18:40:16\x00'
+DEBUG  2023-12-03 10:54:32,830  860:  tag: YCbCrPositioning (531) - type: short (3) - value: b'\x02\x00'
+DEBUG  2023-12-03 10:54:32,830  860:  tag: unknown (50341) - type: undefined (7) Tag Location: 202 - Data Location: 356 - value: <table: 690 bytes>
+DEBUG  2023-12-03 10:54:32,830  860:  tag: ExifIFD (34665) - type: long (4) - value: b'\x18\x04\x00\x00'
+INFO  2023-12-03 10:54:32,830  138:  image #2	https://upload.wikimedia.org/wikipedia/commons/0/07/Susan_Egan_9-2007.jpg
+DEBUG  2023-12-03 10:54:32,833  1019:  Starting new HTTPS connection (1): m.media-amazon.com:443
+DEBUG  2023-12-03 10:54:32,957  474:  https://m.media-amazon.com:443 "GET /images/M/MV5BMTAzMjYzODI5ODJeQTJeQWpwZ15BbWU3MDI3MTM0Mzk@._V1_FMjpg_UX1000_.jpg HTTP/1.1" 200 97571
+INFO  2023-12-03 10:54:32,997  138:  image #3	https://m.media-amazon.com/images/M/MV5BMTAzMjYzODI5ODJeQTJeQWpwZ15BbWU3MDI3MTM0Mzk@._V1_FMjpg_UX1000_.jpg
+DEBUG  2023-12-03 10:54:33,000  1019:  Starting new HTTPS connection (1): ntvb.tmsimg.com:443
+DEBUG  2023-12-03 10:54:33,367  474:  https://ntvb.tmsimg.com:443 "GET /assets/assets/82639_v9_ba.jpg HTTP/1.1" 200 273612
+INFO  2023-12-03 10:54:33,450  138:  image #4	https://ntvb.tmsimg.com/assets/assets/82639_v9_ba.jpg
+DEBUG  2023-12-03 10:54:33,456  1019:  Starting new HTTPS connection (1): static.wikia.nocookie.net:443
+DEBUG  2023-12-03 10:54:33,747  474:  https://static.wikia.nocookie.net:443 "GET /onetreehill/images/1/1a/Darby.jpg HTTP/1.1" 200 31761
+INFO  2023-12-03 10:54:33,772  138:  image #5	https://static.wikia.nocookie.net/onetreehill/images/1/1a/Darby.jpg
+DEBUG  2023-12-03 10:54:33,786  1019:  Starting new HTTPS connection (1): www.themoviedb.org:443
+DEBUG  2023-12-03 10:54:33,942  474:  https://www.themoviedb.org:443 "GET /t/p/w235_and_h235_face/kJnBjeUAQqc9LbPaoqs1khGedUi.jpg HTTP/1.1" 301 0
+DEBUG  2023-12-03 10:54:33,959  1019:  Starting new HTTPS connection (1): image.tmdb.org:443
+DEBUG  2023-12-03 10:54:34,136  474:  https://image.tmdb.org:443 "GET /t/p/w235_and_h235_face/kJnBjeUAQqc9LbPaoqs1khGedUi.jpg HTTP/1.1" 200 14868
+INFO  2023-12-03 10:54:34,140  138:  image #6	https://www.themoviedb.org/t/p/w235_and_h235_face/kJnBjeUAQqc9LbPaoqs1khGedUi.jpg
+DEBUG  2023-12-03 10:54:34,153  1019:  Starting new HTTPS connection (1): static.tvtropes.org:443
+DEBUG  2023-12-03 10:54:34,475  474:  https://static.tvtropes.org:443 "GET /pmwiki/pub/images/susan_egan.jpg HTTP/1.1" 200 197528
+INFO  2023-12-03 10:54:34,549  138:  image #7	https://static.tvtropes.org/pmwiki/pub/images/susan_egan.jpg
+DEBUG  2023-12-03 10:54:34,563  246:  Starting new HTTP connection (1): media.baselineresearch.com:80
+DEBUG  2023-12-03 10:54:35,216  474:  http://media.baselineresearch.com:80 "GET /images/325448/325448_full.jpg HTTP/1.1" 200 102531
+INFO  2023-12-03 10:54:35,349  138:  image #8	http://media.baselineresearch.com/images/325448/325448_full.jpg
+DEBUG  2023-12-03 10:54:35,362  1019:  Starting new HTTPS connection (1): www.tvinsider.com:443
+DEBUG  2023-12-03 10:54:35,557  474:  https://www.tvinsider.com:443 "GET /wp-content/uploads/2022/10/susan-egan-450x289.jpg HTTP/1.1" 200 32355
+DEBUG  2023-12-03 10:54:35,564  860:  tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+DEBUG  2023-12-03 10:54:35,564  860:  tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b'\x00\x00\x00\x1c\x00\x00\x00\x01'
+DEBUG  2023-12-03 10:54:35,565  860:  tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b'\x00\x00\x00\x1c\x00\x00\x00\x01'
+DEBUG  2023-12-03 10:54:35,565  860:  tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x03'
+DEBUG  2023-12-03 10:54:35,566  860:  tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: b'Adobe Photoshop 7.0\x00'
+DEBUG  2023-12-03 10:54:35,566  860:  tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 134 - value: b'2022:10:07 13:11:32\x00'
+DEBUG  2023-12-03 10:54:35,566  860:  tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\x9c'
+INFO  2023-12-03 10:54:35,568  138:  image #9	https://www.tvinsider.com/wp-content/uploads/2022/10/susan-egan-450x289.jpg
+DEBUG  2023-12-03 10:54:35,961  474:  https://static.tvmaze.com:443 "GET /uploads/images/medium_portrait/52/130716.jpg HTTP/1.1" 200 16535
+INFO  2023-12-03 10:54:35,964  138:  image #10	https://static.tvmaze.com/uploads/images/medium_portrait/52/130716.jpg
+DEBUG  2023-12-03 10:54:36,010  474:  https://static.wikia.nocookie.net:443 "GET /amphibiapedia/images/9/94/Susan_Egan_Pic.jpg HTTP/1.1" 200 149571
+DEBUG  2023-12-03 10:54:36,069  860:  tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+DEBUG  2023-12-03 10:54:36,070  860:  tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 74 - value: b'\x00\x00\x00H\x00\x00\x00\x01'
+DEBUG  2023-12-03 10:54:36,070  860:  tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 82 - value: b'\x00\x00\x00H\x00\x00\x00\x01'
+DEBUG  2023-12-03 10:54:36,070  860:  tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+DEBUG  2023-12-03 10:54:36,070  860:  tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00Z'
+INFO  2023-12-03 10:54:36,070  138:  image #11	https://static.wikia.nocookie.net/amphibiapedia/images/9/94/Susan_Egan_Pic.jpg
+DEBUG  2023-12-03 10:54:36,122  474:  https://m.media-amazon.com:443 "GET /images/M/MV5BMTMxNzU4NDMyMl5BMl5BanBnXkFtZTcwMTI5MDkzMg@@._V1_UY1200_CR585,0,630,1200_AL_.jpg HTTP/1.1" 200 46820
+INFO  2023-12-03 10:54:36,135  138:  image #12	https://m.media-amazon.com/images/M/MV5BMTMxNzU4NDMyMl5BMl5BanBnXkFtZTcwMTI5MDkzMg@@._V1_UY1200_CR585,0,630,1200_AL_.jpg
+DEBUG  2023-12-03 10:54:36,139  1019:  Starting new HTTPS connection (1): people.com:443
+DEBUG  2023-12-03 10:54:36,395  474:  https://people.com:443 "GET /thmb/IrOHAp7O42LxEGgLc3FFc3LZtY0%5Cu003d/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/Susan-Egan-Ultimate-Disney-Fan-Event72-11092022-2f534169295d4989bdd25a4e84f826a5.jpg HTTP/1.1" 400 0
+ERROR  2023-12-03 10:54:36,397  131:  Response status code 400, file https://people.com/thmb/IrOHAp7O42LxEGgLc3FFc3LZtY0\u003d/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/Susan-Egan-Ultimate-Disney-Fan-Event72-11092022-2f534169295d4989bdd25a4e84f826a5.jpg
+DEBUG  2023-12-03 10:54:36,568  474:  https://static.wikia.nocookie.net:443 "GET /house/images/b/bf/Changes.jpg HTTP/1.1" 200 489372
+INFO  2023-12-03 10:54:36,701  138:  image #13	https://static.wikia.nocookie.net/house/images/b/bf/Changes.jpg
+DEBUG  2023-12-03 10:54:36,719  1019:  Starting new HTTPS connection (1): 3.bp.blogspot.com:443
+DEBUG  2023-12-03 10:54:37,076  474:  https://3.bp.blogspot.com:443 "GET /-xmw24zDVR9c/UwvzTgCYbxI/AAAAAAAARNg/GmG70qonvlg/s1600/Susan_Egan_Picture2.jpg HTTP/1.1" 200 45001
+DEBUG  2023-12-03 10:54:37,116  860:  tag: Software (305) - type: string (2) Tag Location: 22 - Data Location: 50 - value: b'Google\x00'
+DEBUG  2023-12-03 10:54:37,116  860:  tag: YCbCrSubSampling (530) - type: short (3) - value: b'\x02\x00\x02\x00'
+DEBUG  2023-12-03 10:54:37,117  860:  tag: ExifIFD (34665) - type: long (4) - value: b':\x00\x00\x00'
+INFO  2023-12-03 10:54:37,118  138:  image #14	https://3.bp.blogspot.com/-xmw24zDVR9c/UwvzTgCYbxI/AAAAAAAARNg/GmG70qonvlg/s1600/Susan_Egan_Picture2.jpg
+DEBUG  2023-12-03 10:54:37,134  1019:  Starting new HTTPS connection (1): orangecoast.com:443
+DEBUG  2023-12-03 10:54:37,416  474:  https://orangecoast.com:443 "GET /.image/t_share/MTk3NjY1NjYxNzQ0OTE2Mjc0/susan-eagen.jpg HTTP/1.1" 200 242662
+INFO  2023-12-03 10:54:37,482  138:  image #15	https://orangecoast.com/.image/t_share/MTk3NjY1NjYxNzQ0OTE2Mjc0/susan-eagen.jpg
+DEBUG  2023-12-03 10:54:37,485  1019:  Starting new HTTPS connection (1): lezwatchtv.com:443
+DEBUG  2023-12-03 10:54:37,733  474:  https://lezwatchtv.com:443 "GET /wp-content/uploads/2017/12/Susan-Egan.jpg HTTP/1.1" 200 256901
+INFO  2023-12-03 10:54:37,819  138:  image #16	https://lezwatchtv.com/wp-content/uploads/2017/12/Susan-Egan.jpg
+DEBUG  2023-12-03 10:54:37,822  1019:  Starting new HTTPS connection (1): walter.trakt.tv:443
+DEBUG  2023-12-03 10:54:38,064  474:  https://walter.trakt.tv:443 "GET /images/movies/000/100/611/posters/thumb/981f23db01.jpg HTTP/1.1" 200 29173
+INFO  2023-12-03 10:54:38,068  138:  image #17	https://walter.trakt.tv/images/movies/000/100/611/posters/thumb/981f23db01.jpg
+DEBUG  2023-12-03 10:54:38,086  1019:  Starting new HTTPS connection (1): resizing.flixster.com:443
+DEBUG  2023-12-03 10:54:38,687  474:  https://resizing.flixster.com:443 "GET /9VFXUkPK_nXh6sjsqrtdQghlIXU%5Cu003d/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak%5Cu003d/v3/t/assets/p83711_v_v7_aa.jpg HTTP/1.1" 200 25007
+INFO  2023-12-03 10:54:38,748  138:  image #18	https://resizing.flixster.com/9VFXUkPK_nXh6sjsqrtdQghlIXU\u003d/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak\u003d/v3/t/assets/p83711_v_v7_aa.jpg
+DEBUG  2023-12-03 10:54:39,027  474:  https://resizing.flixster.com:443 "GET /3ODpvPg8jCN094tXZ4p19MFSJXY%5Cu003d/300x300/v2/http://media.baselineresearch.com/images/300704/300704_full.jpg HTTP/1.1" 200 16884
+INFO  2023-12-03 10:54:39,030  138:  image #19	https://resizing.flixster.com/3ODpvPg8jCN094tXZ4p19MFSJXY\u003d/300x300/v2/http://media.baselineresearch.com/images/300704/300704_full.jpg
+DEBUG  2023-12-03 10:54:39,047  1019:  Starting new HTTPS connection (1): cloudimages.broadwayworld.com:443
+DEBUG  2023-12-03 10:54:39,357  474:  https://cloudimages.broadwayworld.com:443 "GET /upload13/1993644/tn-500_12.jpg HTTP/1.1" 200 363779
+INFO  2023-12-03 10:54:39,427  138:  image #20	https://cloudimages.broadwayworld.com/upload13/1993644/tn-500_12.jpg
+DEBUG  2023-12-03 10:54:39,529  474:  https://cloudimages.broadwayworld.com:443 "GET /headshots/154sm.jpg HTTP/1.1" 200 27041
+INFO  2023-12-03 10:54:39,530  183:  downloaded images reach max num, thread downloader-001 is ready to exit
+INFO  2023-12-03 10:54:39,530  201:  thread downloader-001 exit
+INFO  2023-12-03 10:54:40,231  193:  Crawling task done!
+DEBUG  2023-12-03 10:54:40,233  141:  Matching headshots for Audrey Greenwald to cluster 2.
+INFO  2023-12-03 10:54:40,436  60:  downloaded image reached max num, thread parser-001 is ready to exit
+INFO  2023-12-03 10:54:40,437  118:  thread parser-001 exit
+DEBUG  2023-12-03 10:54:56,615  168:  Matched Audrey Greenwald to cluster 2 with 0.07.
+DEBUG  2023-12-03 10:54:58,503  141:  Matching headshots for Audrey Greenwald to cluster 3.
+DEBUG  2023-12-03 10:55:10,787  168:  Matched Audrey Greenwald to cluster 3 with 0.24.
+DEBUG  2023-12-03 10:55:10,788  207:  Audrey Greenwald matches 3 with 0.2444827586206897 confidence.
+DEBUG  2023-12-03 10:55:13,548  124:  Downloading headshots for Cyrus Deboo
+INFO  2023-12-03 10:55:13,549  162:  start crawling...
+INFO  2023-12-03 10:55:13,549  168:  starting 1 feeder threads...
+DEBUG  2023-12-03 10:55:13,549  59:  thread feeder-001 started
+DEBUG  2023-12-03 10:55:13,550  141:  put url to url_queue: https://www.google.com/search?q=Dr.+Kapur+Cyrus+Deboo&ijn=0&start=0&tbs=&tbm=isch
+INFO  2023-12-03 10:55:13,550  41:  thread feeder-001 exit
+INFO  2023-12-03 10:55:13,550  171:  starting 1 parser threads...
+DEBUG  2023-12-03 10:55:13,550  59:  thread parser-001 started
+DEBUG  2023-12-03 10:55:13,550  78:  start fetching page https://www.google.com/search?q=Dr.+Kapur+Cyrus+Deboo&ijn=0&start=0&tbs=&tbm=isch
+INFO  2023-12-03 10:55:13,551  174:  starting 1 downloader threads...
+DEBUG  2023-12-03 10:55:13,554  1019:  Starting new HTTPS connection (1): www.google.com:443
+DEBUG  2023-12-03 10:55:13,554  164:  thread downloader-001 started
+DEBUG  2023-12-03 10:55:13,765  474:  https://www.google.com:443 "GET /search?q=Dr.+Kapur+Cyrus+Deboo&ijn=0&start=0&tbs=&tbm=isch HTTP/1.1" 200 None
+INFO  2023-12-03 10:55:14,505  93:  parsing result page https://www.google.com/search?q=Dr.+Kapur+Cyrus+Deboo&ijn=0&start=0&tbs=&tbm=isch
+DEBUG  2023-12-03 10:55:14,573  1019:  Starting new HTTPS connection (1): www.themoviedb.org:443
+DEBUG  2023-12-03 10:55:14,660  474:  https://www.themoviedb.org:443 "GET /t/p/w500/5rQ7CDPdbchjmMtqJAQ5pnQ2hxI.jpg HTTP/1.1" 301 0
+DEBUG  2023-12-03 10:55:14,676  1019:  Starting new HTTPS connection (1): image.tmdb.org:443
+DEBUG  2023-12-03 10:55:15,077  474:  https://image.tmdb.org:443 "GET /t/p/w500/5rQ7CDPdbchjmMtqJAQ5pnQ2hxI.jpg HTTP/1.1" 200 67226
+INFO  2023-12-03 10:55:15,153  138:  image #1	https://www.themoviedb.org/t/p/w500/5rQ7CDPdbchjmMtqJAQ5pnQ2hxI.jpg
+DEBUG  2023-12-03 10:55:15,168  1019:  Starting new HTTPS connection (1): m.media-amazon.com:443
+DEBUG  2023-12-03 10:55:15,313  474:  https://m.media-amazon.com:443 "GET /images/M/MV5BZmRkYmY3YmMtZTUzMi00YWU1LWI4ODAtYTkxZDg1NzFkZmI4XkEyXkFqcGdeQXVyMTM2ODg0MDMx._V1_.jpg HTTP/1.1" 200 152127
+INFO  2023-12-03 10:55:15,381  138:  image #2	https://m.media-amazon.com/images/M/MV5BZmRkYmY3YmMtZTUzMi00YWU1LWI4ODAtYTkxZDg1NzFkZmI4XkEyXkFqcGdeQXVyMTM2ODg0MDMx._V1_.jpg
+DEBUG  2023-12-03 10:55:15,395  1019:  Starting new HTTPS connection (1): static.wikia.nocookie.net:443
+DEBUG  2023-12-03 10:55:15,707  474:  https://static.wikia.nocookie.net:443 "GET /house/images/b/b6/4_changes.jpg HTTP/1.1" 200 9358
+INFO  2023-12-03 10:55:15,710  138:  image #3	https://static.wikia.nocookie.net/house/images/b/b6/4_changes.jpg
+DEBUG  2023-12-03 10:55:15,808  474:  https://m.media-amazon.com:443 "GET /images/M/MV5BYmE2OGZkZmQtMjBjYS00M2MyLWJhYWQtZGQyZDQxOTQwZGMzXkEyXkFqcGdeQXVyMTM2ODg0MDMx._V1_.jpg HTTP/1.1" 200 1819177
+INFO  2023-12-03 10:55:15,906  138:  image #4	https://m.media-amazon.com/images/M/MV5BYmE2OGZkZmQtMjBjYS00M2MyLWJhYWQtZGQyZDQxOTQwZGMzXkEyXkFqcGdeQXVyMTM2ODg0MDMx._V1_.jpg
+DEBUG  2023-12-03 10:55:15,917  1019:  Starting new HTTPS connection (1): upload.wikimedia.org:443
+DEBUG  2023-12-03 10:55:16,055  474:  https://upload.wikimedia.org:443 "GET /wikipedia/commons/e/e4/Kurush_Deboo.jpg HTTP/1.1" 200 83472
+INFO  2023-12-03 10:55:16,104  138:  image #5	https://upload.wikimedia.org/wikipedia/commons/e/e4/Kurush_Deboo.jpg
+DEBUG  2023-12-03 10:55:16,117  1019:  Starting new HTTPS connection (1): stifelinstitutional.com:443
+DEBUG  2023-12-03 10:55:16,430  474:  https://stifelinstitutional.com:443 "GET /wp-content/uploads/2021/02/STF_headshot_Cyrus_Deboo.jpg HTTP/1.1" 200 118566
+INFO  2023-12-03 10:55:16,474  138:  image #6	https://stifelinstitutional.com/wp-content/uploads/2021/02/STF_headshot_Cyrus_Deboo.jpg
+DEBUG  2023-12-03 10:55:16,524  474:  https://m.media-amazon.com:443 "GET /images/M/MV5BOTI4OTc3YWItY2E3MS00YmMxLWFiM2ItNzU3YjhkNjk5NGQ4XkEyXkFqcGdeQXVyMTM2ODg0MDMx._V1_.jpg HTTP/1.1" 200 288876
+INFO  2023-12-03 10:55:16,529  138:  image #7	https://m.media-amazon.com/images/M/MV5BOTI4OTc3YWItY2E3MS00YmMxLWFiM2ItNzU3YjhkNjk5NGQ4XkEyXkFqcGdeQXVyMTM2ODg0MDMx._V1_.jpg
+DEBUG  2023-12-03 10:55:16,724  474:  https://m.media-amazon.com:443 "GET /images/M/MV5BMzlhYjQ1NjEtMDg5My00ZWJmLWJhZGYtZGU4ZjAzMDJmM2VhXkEyXkFqcGdeQXVyMTM2ODg0MDMx._V1_.jpg HTTP/1.1" 200 237427
+INFO  2023-12-03 10:55:16,731  138:  image #8	https://m.media-amazon.com/images/M/MV5BMzlhYjQ1NjEtMDg5My00ZWJmLWJhZGYtZGU4ZjAzMDJmM2VhXkEyXkFqcGdeQXVyMTM2ODg0MDMx._V1_.jpg
+DEBUG  2023-12-03 10:55:16,778  474:  https://m.media-amazon.com:443 "GET /images/M/MV5BZjMxZWNjYjYtOWU0Mi00MjJlLWI2YjQtYTIxYTNkNzc1Y2JkXkEyXkFqcGdeQXVyMTM2ODg0MDMx._V1_UX280_CR0,0,280,280_.jpg HTTP/1.1" 200 15020
+INFO  2023-12-03 10:55:16,781  138:  image #9	https://m.media-amazon.com/images/M/MV5BZjMxZWNjYjYtOWU0Mi00MjJlLWI2YjQtYTIxYTNkNzc1Y2JkXkEyXkFqcGdeQXVyMTM2ODg0MDMx._V1_UX280_CR0,0,280,280_.jpg
+DEBUG  2023-12-03 10:55:16,828  474:  https://m.media-amazon.com:443 "GET /images/M/MV5BYzBiODYzM2UtMjY2NS00Y2JmLTkzM2YtOWY1NDQ3Yzg2YjNlXkEyXkFqcGdeQXVyMTM2ODg0MDMx._V1_UX280_CR0,0,280,280_.jpg HTTP/1.1" 200 13673
+INFO  2023-12-03 10:55:16,831  138:  image #10	https://m.media-amazon.com/images/M/MV5BYzBiODYzM2UtMjY2NS00Y2JmLTkzM2YtOWY1NDQ3Yzg2YjNlXkEyXkFqcGdeQXVyMTM2ODg0MDMx._V1_UX280_CR0,0,280,280_.jpg
+DEBUG  2023-12-03 10:55:16,945  474:  https://m.media-amazon.com:443 "GET /images/M/MV5BMDVlMTVlMDMtMDk5MS00OWZkLWIyMDUtYWM3YjU0Zjc0ZjdmXkEyXkFqcGdeQXVyMTM2ODg0MDMx._V1_.jpg HTTP/1.1" 200 1694875
+INFO  2023-12-03 10:55:16,976  138:  image #11	https://m.media-amazon.com/images/M/MV5BMDVlMTVlMDMtMDk5MS00OWZkLWIyMDUtYWM3YjU0Zjc0ZjdmXkEyXkFqcGdeQXVyMTM2ODg0MDMx._V1_.jpg
+DEBUG  2023-12-03 10:55:17,008  474:  https://m.media-amazon.com:443 "GET /images/M/MV5BMzEzZTNhNTUtMTBlMi00MDBmLTkwZjgtZDY4N2M3OTE5NDRiXkEyXkFqcGdeQXVyMTM2ODg0MDMx._V1_UX280_CR0,0,280,280_.jpg HTTP/1.1" 200 15874
+INFO  2023-12-03 10:55:17,009  138:  image #12	https://m.media-amazon.com/images/M/MV5BMzEzZTNhNTUtMTBlMi00MDBmLTkwZjgtZDY4N2M3OTE5NDRiXkEyXkFqcGdeQXVyMTM2ODg0MDMx._V1_UX280_CR0,0,280,280_.jpg
+DEBUG  2023-12-03 10:55:17,012  1019:  Starting new HTTPS connection (1): fwcdn.pl:443
+DEBUG  2023-12-03 10:55:17,611  474:  https://fwcdn.pl:443 "GET /ppo/47/41/764741/343170.1.jpg HTTP/1.1" 200 9499
+INFO  2023-12-03 10:55:17,614  138:  image #13	https://fwcdn.pl/ppo/47/41/764741/343170.1.jpg
+DEBUG  2023-12-03 10:55:17,629  246:  Starting new HTTP connection (1): kurushdeboo.com:80
+DEBUG  2023-12-03 10:55:17,855  474:  http://kurushdeboo.com:80 "GET /wordpress/wp-content/uploads/2017/04/cropped-Kurush-Deboo-6.jpg HTTP/1.1" 200 470344
+INFO  2023-12-03 10:55:18,477  138:  image #14	http://kurushdeboo.com/wordpress/wp-content/uploads/2017/04/cropped-Kurush-Deboo-6.jpg
+DEBUG  2023-12-03 10:55:18,482  1019:  Starting new HTTPS connection (1): static.toiimg.com:443
+DEBUG  2023-12-03 10:55:19,238  474:  https://static.toiimg.com:443 "GET /thumb/msid-16723441,width-1070,height-580,imgsize-10127,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg HTTP/1.1" 200 28544
+INFO  2023-12-03 10:55:19,260  138:  image #15	https://static.toiimg.com/thumb/msid-16723441,width-1070,height-580,imgsize-10127,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg
+DEBUG  2023-12-03 10:55:19,266  1019:  Starting new HTTPS connection (1): pbs.twimg.com:443
+DEBUG  2023-12-03 10:55:19,442  474:  https://pbs.twimg.com:443 "GET /profile_images/753401637893353472/kgyInrM3_400x400.jpg HTTP/1.1" 200 23726
+INFO  2023-12-03 10:55:19,452  138:  image #16	https://pbs.twimg.com/profile_images/753401637893353472/kgyInrM3_400x400.jpg
+DEBUG  2023-12-03 10:55:19,591  474:  https://upload.wikimedia.org:443 "GET /wikipedia/commons/thumb/8/81/IIFA_2017_Green_Carpet_%2836349841166%29_%28cropped%29.jpg HTTP/1.1" 404 69
+ERROR  2023-12-03 10:55:19,594  131:  Response status code 404, file https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/IIFA_2017_Green_Carpet_%2836349841166%29_%28cropped%29.jpg
+DEBUG  2023-12-03 10:55:19,607  1019:  Starting new HTTPS connection (1): static.lostfilm.top:443
+DEBUG  2023-12-03 10:55:20,780  474:  https://static.lostfilm.top:443 "GET /Names/1/0/0/m10070.jpg HTTP/1.1" 200 29290
+INFO  2023-12-03 10:55:20,911  138:  image #17	https://static.lostfilm.top/Names/1/0/0/m10070.jpg
+DEBUG  2023-12-03 10:55:21,429  474:  https://static.toiimg.com:443 "GET /thumb/msid-16589338,imgsize-10476,width-400,resizemode-4/16589338.jpg HTTP/1.1" 200 13545
+INFO  2023-12-03 10:55:21,433  138:  image #18	https://static.toiimg.com/thumb/msid-16589338,imgsize-10476,width-400,resizemode-4/16589338.jpg
+DEBUG  2023-12-03 10:55:21,598  474:  https://m.media-amazon.com:443 "GET /images/M/MV5BMzUxNTM5OTctNGNiNy00MTc2LThkMTctMzBjOTZjZTc0MGY4XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_QL75_UX500_CR0,0,500,281_.jpg HTTP/1.1" 200 15165
+INFO  2023-12-03 10:55:21,601  138:  image #19	https://m.media-amazon.com/images/M/MV5BMzUxNTM5OTctNGNiNy00MTc2LThkMTctMzBjOTZjZTc0MGY4XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_QL75_UX500_CR0,0,500,281_.jpg
+DEBUG  2023-12-03 10:55:21,654  474:  https://static.wikia.nocookie.net:443 "GET /house/images/6/63/Lisa-Edelstein.jpg HTTP/1.1" 200 31788
+INFO  2023-12-03 10:55:21,665  138:  image #20	https://static.wikia.nocookie.net/house/images/6/63/Lisa-Edelstein.jpg
+DEBUG  2023-12-03 10:55:21,703  474:  https://www.themoviedb.org:443 "GET /t/p/w500/3Cz7ySOQJmqiuTdrc6CY0r65yDI.jpg HTTP/1.1" 301 0
+DEBUG  2023-12-03 10:55:21,758  474:  https://image.tmdb.org:443 "GET /t/p/w500/3Cz7ySOQJmqiuTdrc6CY0r65yDI.jpg HTTP/1.1" 200 25229
+INFO  2023-12-03 10:55:21,766  183:  downloaded images reach max num, thread downloader-001 is ready to exit
+INFO  2023-12-03 10:55:21,767  201:  thread downloader-001 exit
+INFO  2023-12-03 10:55:22,556  193:  Crawling task done!
+DEBUG  2023-12-03 10:55:22,558  141:  Matching headshots for Dr. Kapur to cluster 2.
+INFO  2023-12-03 10:55:22,673  60:  downloaded image reached max num, thread parser-001 is ready to exit
+INFO  2023-12-03 10:55:22,673  118:  thread parser-001 exit
+DEBUG  2023-12-03 10:55:39,200  168:  Matched Dr. Kapur to cluster 2 with 0.13.
+DEBUG  2023-12-03 10:55:39,200  207:  Dr. Kapur matches 2 with 0.12707100591715975 confidence.
