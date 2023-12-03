@@ -19,27 +19,30 @@ def gather_files(d,
     return list(sorted(paths))
 
 
-def find_faces(d,
-               dst,
-               ext=None):
-    files = gather_files(d,
-                         ext=ext)
-    for file in tqdm(files):
-        name = f'{file.stem}.csv'
-        fp = dst.joinpath(name)
-        if not fp.exists():
-            df = detect_faces(str(file))
-            df.to_csv(str(fp))
+def find_faces(file,
+               dst):
+
+
+
+        df.to_csv(str(fp))
     
 
 def main(args):
     dst = Path(args.dst)
-    if not dst.exists():
+    if dst.is_dir() and not dst.exists():
         Path.mkdir(dst)
 
-    find_faces(args.src,
-               dst,
-               ext=args.ext)
+    if Path(args.src).is_dir():
+        files = gather_files(args.src, ext=args.ext)
+    else:
+        files = [args.src]
+
+    for file in files:
+        name = f'{file.stem}.csv'
+        fp = dst.joinpath(name)
+        if not fp.exists():
+            df = detect_faces(str(fp))
+
 
     
 if __name__ == "__main__":
