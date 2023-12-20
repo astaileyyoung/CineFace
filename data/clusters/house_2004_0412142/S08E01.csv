@@ -1,0 +1,5 @@
+,episode_id,character,personID,cluster,confidence
+0,2006450,Dr. Gregory House,0491402,1,0.546
+1,2006450,Dr. Jessica Adams,0951148,28,0.405
+2,2006450,C.O. Alvarez,1484129,16,0.4
+3,2006450,Nurse,0075061,12,0.249

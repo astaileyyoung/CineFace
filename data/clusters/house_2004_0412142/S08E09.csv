@@ -1,0 +1,11 @@
+,episode_id,character,personID,cluster,confidence
+0,2092629,Dr. Gregory House,0491402,7,0.66
+1,2092629,Dr. Eric Foreman,0004898,10,0.637
+2,2092629,Dr. James Wilson,0000494,11,0.599
+3,2092629,Dr. Robert Chase,0817980,9,0.635
+4,2092629,Dr. Chris Taub,0414772,3,0.151
+5,2092629,Dr. Jessica Adams,0951148,6,0.438
+6,2092629,Dr. Chi Park,2304722,8,0.526
+7,2092629,Nurse Regina,0897400,2,0.194
+8,2092629,EMT Coumont,1665358,24,0.245
+9,2092629,Nurse,0075061,26,0.186

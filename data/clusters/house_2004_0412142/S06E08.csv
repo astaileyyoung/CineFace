@@ -1,0 +1,14 @@
+,episode_id,character,personID,cluster,confidence
+0,1503414,Dr. Gregory House,0491402,7,0.682
+1,1503414,Dr. Lisa Cuddy,0249046,11,0.556
+2,1503414,Dr. Eric Foreman,0004898,15,0.633
+3,1503414,Dr. James Wilson,0000494,20,0.517
+4,1503414,Dr. Allison Cameron,0607185,14,0.104
+5,1503414,Dr. Robert Chase,0817980,9,0.637
+6,1503414,Dr. Chris Taub,0414772,13,0.541
+7,1503414,Thirteen,1312575,32,0.295
+8,1503414,Lucas Douglas,0922995,29,0.437
+9,1503414,Rachel Taub,0190571,2,0.333
+10,1503414,Nurse Jeffrey Sparkman,0697082,1,0.298
+11,1503414,Cashier,0470188,0,0.251
+12,1503414,Nurse,0075061,39,0.13
