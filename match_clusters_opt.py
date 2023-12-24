@@ -163,7 +163,7 @@ def get_headshots(actor,
             break
         except imdb.IMDbError as e:
             time.sleep(1)
-            cnt += 1
+            cnt +=1
     name = p.data['name']
     dst = Path(headshot_dir).joinpath(name)
     if not dst.exists():
@@ -184,22 +184,28 @@ def match_cluster_to_actor(actor,
     dst = get_headshots(actor,
                         headshot_dir,
                         n_samples=n_samples)
-    files = [x for x in Path(dst).iterdir() if x.suffix in ['.png', '.jpeg', '.jpg']]
-    files = random.sample(files, k=min(n_samples, len(files)))
+    headshots = [x for x in Path(dst).iterdir() if x.suffix in ['.png', '.jpeg', '.jpg']]
+    headshots = random.sample(headshots, k=min(n_samples, len(headshots)))
+
+    cluster_images = [x for x in Path(cluster_dir).iterdir()]
 
     logging.debug(f'Matching headshots for {actor["name"]} to cluster {cluster_dir.parts[-1]}.')
     data = []
-    for file in files:
-        try:
-            df = DeepFace.find(str(file),
-                               db_path=str(cluster_dir),
-                               enforce_detection=False,
-                               silent=True)
-        except AttributeError:      # Why this?
-            continue
-        pct = df[0].shape[0]/size
-        data.append(pct)
-    return np.mean(data)
+    for img in cluster_images:
+        headshot = random.choice(headshots)
+        result = DeepFace.verify(str(img), str(headshot))
+
+    # for file in files:
+    #     try:
+    #         df = DeepFace.find(str(file),
+    #                            db_path=str(cluster_dir),
+    #                            enforce_detection=False,
+    #                            silent=True)
+    #     except AttributeError:      # Why this?
+    #         continue
+    #     pct = df[0].shape[0]/size
+    #     data.append(pct)
+    # return np.mean(data)
             
 
 def match_actor(actor,

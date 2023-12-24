@@ -46,27 +46,6 @@ def get_cast_member(cast_member):
                 'personID': cast_member.personID}
 
 
-# def cast_from_episode(episode_id,
-#                       cast=None):
-#     series = ia.get_movie(episode_id)
-#
-#     data = []
-#     cast_members = series.data['cast'] if cast is None else [x for x in series.data['cast'] if x.personID in cast]
-#     for cast_member in cast_members:
-#         cnt = 0
-#         while cnt < 5:
-#             try:
-#                 datum = get_cast_member(cast_member)
-#                 if datum is not None:
-#                     datum['actor'] = cast_member.data['name']
-#                     data.append(datum)
-#                 break
-#             except Exception as e:
-#                 print(e)
-#                 time.sleep(1)
-#                 cnt += 1
-#                 continue
-#     return data
 def cast_from_episode(episode_id,
                       conn,
                       cast=None):
@@ -75,11 +54,6 @@ def cast_from_episode(episode_id,
     episode = ia.get_movie(episode_id)
     cast_members = [x for x in episode.data['cast'] if int(x.personID) in cast_ids]
     cast_members = cast_members if not cast else [x for x in cast_members if int(x.personID) in cast]
-    # cast_members = []
-    # for cast_member in episode.data['cast']:
-    #     id_ = int(cast_member.personID)
-    #     if id_ in cast_ids:
-    #         cast_members.append(cast_member)
     actors = [get_cast_member(x) for x in cast_members if int(x.personID)]
     return [x for x in actors if x]
 
@@ -104,15 +78,7 @@ def count_cast(episode_df,
 
 
 def cast_to_database(new,
-                     conn,
-                     count=2):
-    # temp_df = pd.read_sql_query(f"""
-    #     SELECT episode_id
-    #     FROM episodes
-    #     WHERE series_id = {series_id}
-    #         AND cast IS NULL
-    #     ;
-    # """, conn)
+                     conn):
     series_id = new.iloc[0]['series_id']
     columns = new.columns.tolist()
 

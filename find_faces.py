@@ -46,12 +46,12 @@ def main(args):
         name = f'{file.stem}.csv'
         fp = dst.joinpath(name)
         if not fp.exists():
-            size = get_frame_size(file)
-            if size[1] > 1080:
-                resize = (1080, calc_height(size))
-            else:
-                resize = None
-            df = detect_faces(str(file), target_size=resize)
+            # size = get_frame_size(file)
+            # if size[1] > 1080:
+            #     resize = (1080, calc_height(size))
+            # else:
+            #     resize = None
+            df = detect_faces(str(file))
             df.to_csv(str(fp))
 
 
