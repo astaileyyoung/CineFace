@@ -3,6 +3,7 @@ from pathlib import Path
 from functools import partial
 
 import cv2
+import numpy as np
 import pandas as pd
 import sqlalchemy as db
 from tqdm import tqdm
@@ -72,14 +73,12 @@ def validate_sample(row):
     cv2.imshow('img', img)
     w = cv2.waitKey(0)
     if (w & 0xff) == ord('q'):
-        r = 0
+        return 0
     elif (w & 0xff) == ord('f'):
         return None
     else:
-        r = 1
+        return 1
 
-    row['correct'] = r
-    return row
 
 def main(args):
     user = 'amos'
@@ -91,23 +90,41 @@ def main(args):
     engine = db.create_engine(connection_string)
     conn = engine.connect()
     episode_df = pd.read_sql_query('SELECT * FROM episodes;', conn)
-    faces_df = get_face_df(args.src,
-                           episode_df)
-    all_faces = pd.read_sql_query("""SELECT
-                                        episode_id,
-                                        frame_num,
-                                        face_num,
-                                        pct_of_frame
-                                     FROM faces;""", conn)
-    faces_df = faces_df.merge(all_faces,
-                              how='left',
-                              on=['episode_id', 'frame_num', 'face_num'])
-    faces_df.to_csv('./data/cluster_faces.csv')
-    # sample = faces_df.sample(n=385)
-    #
-    #
-    # validated = sample.apply(validate_sample, axis=1)
-    # validated.to_csv(args.dst)
+    if Path(args.src).is_file() and Path(args.src).suffix == '.csv':
+        faces_df = pd.read_csv(args.src, index_col=0)
+    else:
+        faces_df = get_face_df(args.src,
+                               episode_df)
+        all_faces = pd.read_sql_query("""SELECT
+                                            episode_id,
+                                            frame_num,
+                                            face_num,
+                                            pct_of_frame
+                                         FROM faces;""", conn)
+        faces_df = faces_df.merge(all_faces,
+                                  how='left',
+                                  on=['episode_id', 'frame_num', 'face_num'])
+        faces_df.to_csv('./data/cluster_faces.csv')
+
+    if 'valid' in faces_df.columns.tolist():
+        temp = faces_df[faces_df['valid'].isna()]
+    else:
+        temp = faces_df
+
+    sample = temp.sample(n=385)
+    sample['valid'] = np.nan
+    try:
+        for idx, row in sample.iterrows():
+            r = validate_sample(row)
+            faces_df.at[idx, 'valid'] = r
+    except KeyboardInterrupt:
+        faces_df.to_csv(args.dst)
+    except:
+        faces_df.to_csv(args.dst)
+        return
+    finally:
+        faces_df.to_csv(args.dst)
+
 
 
 if __name__ == '__main__':
