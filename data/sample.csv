@@ -1,0 +1,386 @@
+,filepath,episode_id,frame_num,face_num,cluster,character
+286483,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E17/45/S06E17_49512_1.png,1503401,49512,1,45,Dr. Gregory House
+6511,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E20/18/S08E20_22632_0.png,2121963,22632,0,18,Dr. Chris Taub
+1638,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E18/17/S08E18_52680_0.png,2121961,52680,0,17,Dominika House
+320270,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E12/47/S04E12_15168_0.png,1178841,15168,0,47,Dr. Gregory House
+184388,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E15/13/S05E15_45312_0.png,1273718,45312,0,13,Dr. Eric Foreman
+57772,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E22/13/S03E22_9288_0.png,994244,9288,0,13,Dr. Robert Chase
+360669,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E02/40/S05E02_12888_2.png,1273723,12888,2,40,Thirteen
+177957,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E19/17/S01E19_24792_0.png,606028,24792,0,17,Dr. Gregory House
+266898,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E05/3/S03E05_47784_0.png,873021,47784,0,3,Dr. Gregory House
+273934,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E18/7/S05E18_15576_0.png,1273721,15576,0,7,Dr. Allison Cameron
+197367,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E04/20/S06E04_24456_0.png,1503409,24456,0,20,Dr. Eric Foreman
+65684,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E14/13/S02E14_30672_1.png,606038,30672,1,13,Dr. Allison Cameron
+303727,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E15/1/S08E15_41952_5.png,2121958,41952,5,1,Daria
+200292,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E23/15/S05E23_24144_0.png,1399759,24144,0,15,Dr. Amber Volakis
+217228,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E14/10/S06E14_61728_1.png,1503398,61728,1,10,Dr. James Wilson
+373149,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E24/2/S02E24_10008_0.png,787373,10008,0,2,Dr. Gregory House
+223950,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E10/3/S03E10_54336_0.png,882414,54336,0,3,Dr. Gregory House
+119269,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E20/7/S05E20_11064_0.png,1273724,11064,0,7,Thirteen
+345155,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E11/2/S01E11_2136_0.png,606020,2136,0,2,Dr. Hourani
+11142,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E05/0/S07E05_34056_1.png,1726379,34056,1,0,Thirteen
+99881,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E01/16/S01E01_37968_0.png,606035,37968,0,16,Dr. Eric Foreman
+210484,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E24/15/S03E24_45888_0.png,1023643,45888,0,15,Dr. Gregory House
+35323,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E16/0/S04E16_55368_0.png,1216109,55368,0,0,Dr. Gregory House
+206211,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E09/22/S02E09_34320_0.png,606019,34320,0,22,Dr. Allison Cameron
+70282,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E01/0/S06E01_32088_1.png,1462220,32088,1,0,Dr. Gregory House
+199782,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E23/21/S05E23_11760_0.png,1399759,11760,0,21,Dr. James Wilson
+111293,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E06/26/S08E06_55056_1.png,2084392,55056,1,26,Dr. Chris Taub
+14703,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E05/33/S08E05_54432_1.png,2063276,54432,1,33,Dr. Gregory House
+195804,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E21/4/S02E21_41592_0.png,799143,41592,0,4,Dr. Eric Foreman
+75378,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E11/48/S05E11_23208_0.png,1273714,23208,0,48,Dr. Gregory House
+86683,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E13/0/S02E13_21672_0.png,606039,21672,0,0,Brady
+193571,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E14/21/S01E14_14376_0.png,606014,14376,0,21,Dr. Lisa Cuddy
+9705,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E05/5/S07E05_56808_1.png,1726379,56808,1,5,Dr. Gregory House
+157873,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E08/24/S03E08_43800_0.png,866187,43800,0,24,Dr. Gregory House
+378000,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E06/39/S03E06_38544_0.png,854514,38544,0,39,Folman
+216726,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E14/50/S06E14_47880_1.png,1503398,47880,1,50,Dr. Lisa Cuddy
+200631,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E23/0/S05E23_35088_0.png,1399759,35088,0,0,Corps Dancer #18
+178305,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E19/24/S01E19_40032_0.png,606028,40032,0,24,Dr. Eric Foreman
+390353,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E23/18/S07E23_30024_0.png,1919895,30024,0,18,Dr. Eric Foreman
+101096,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E13/8/S03E13_26952_0.png,897691,26952,0,8,Dr. Eric Foreman
+300387,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E22/11/S07E22_39384_0.png,1900094,39384,0,11,Dr. Robert Chase
+277365,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E07/13/S06E07_25080_0.png,1503412,25080,0,13,Dr. Gregory House
+21751,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E03/0/S03E03_57432_0.png,834715,57432,0,0,Nurse
+70371,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E01/0/S06E01_67200_0.png,1462220,67200,0,0,Dr. Gregory House
+95923,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E13/49/S04E13_6936_0.png,1216106,6936,0,49,Dr. Lawrence Kutner
+260426,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E04/22/S02E04_6624_1.png,606042,6624,1,22,Dr. Allison Cameron
+158133,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E08/29/S03E08_14832_0.png,866187,14832,0,29,Dr. Lisa Cuddy
+67225,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E21/3/S03E21_34440_0.png,994241,34440,0,3,Dr. James Wilson
+317049,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E12/17/S06E12_51432_0.png,1503396,51432,0,17,Thirteen
+267893,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E05/11/S03E05_3600_0.png,873021,3600,0,11,Dr. Allison Cameron
+157561,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E08/24/S03E08_36384_0.png,866187,36384,0,24,Dr. Gregory House
+375263,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E09/7/S03E09_9144_0.png,871152,9144,0,7,Dr. Eric Foreman
+362171,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E02/5/S08E02_4440_0.png,2015677,4440,0,5,Dr. Eric Foreman
+21830,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E03/0/S03E03_51624_0.png,834715,51624,0,0,Nurse
+246643,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E22/4/S02E22_31632_0.png,777001,31632,0,4,Dr. Allison Cameron
+41858,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E07/21/S04E07_36672_0.png,1136646,36672,0,21,Dr. Chris Taub
+3604,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E09/45/S07E09_23448_1.png,1726382,23448,1,45,Dr. Chris Taub
+177216,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E08/1/S05E08_50928_0.png,1273732,50928,0,1,Nurse
+360059,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E02/5/S05E02_5112_0.png,1273723,5112,0,5,Dr. Allison Cameron
+365504,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E15/2/S07E15_4392_1.png,1726376,4392,1,2,Julia Cuddy
+230803,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E07/2/S02E07_20136_0.png,606027,20136,0,2,Dr. Gregory House
+196196,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E21/3/S02E21_49392_0.png,799143,49392,0,3,Dr. Allison Cameron
+228192,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E10/12/S07E10_53256_0.png,1726371,53256,0,12,Dr. Gregory House
+149237,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E06/13/S06E06_19656_0.png,1503411,19656,0,13,Nurse
+233604,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E24/7/S05E24_18480_0.png,1413129,18480,0,7,Dr. Gregory House
+335872,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E06/11/S07E06_18408_0.png,1708695,18408,0,11,Dr. Chris Taub
+261170,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E14/12/S07E14_58056_0.png,1726375,58056,0,12,Dr. Gregory House
+106948,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E04/1/S03E04_1176_0.png,836216,1176,0,1,Dr. Ron Simpson
+356560,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E13/2/S07E13_51048_7.png,1726374,51048,7,2,Worried Patient
+149521,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E06/5/S01E06_48504_0.png,606045,48504,0,5,Dr. Gregory House
+366672,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E08/4/S01E08_11664_0.png,606036,11664,0,4,Dr. Lisa Cuddy
+180950,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E13/0/S06E13_57648_0.png,1503397,57648,0,0,Dr. Lisa Cuddy
+198809,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E23/16/S05E23_16176_1.png,1399759,16176,1,16,Dr. Gregory House
+282754,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E12/14/S02E12_56712_1.png,606023,56712,1,14,Dr. Eric Foreman
+263994,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E09/15/S05E09_47592_2.png,1273733,47592,2,15,Dr. Gregory House
+264733,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E09/7/S05E09_66336_0.png,1273733,66336,0,7,Dr. James Wilson
+11459,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E05/9/S07E05_15624_0.png,1726379,15624,0,9,Nurse Smits
+25585,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E02/29/S07E02_13584_1.png,1685104,13584,1,29,Dr. Gregory House
+202594,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E01/17/S02E01_13416_0.png,606011,13416,0,17,Stacy Warner
+30088,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E17/24/S08E17_31680_1.png,2121960,31680,1,24,Dominika House
+80086,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E17/12/S07E17_40224_0.png,1842081,40224,0,12,Dr. Gregory House
+16364,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E05/64/S08E05_36768_2.png,2063276,36768,2,64,Dr. Jessica Adams
+126595,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E09/22/S04E09_30768_0.png,1144658,30768,0,22,Dr. Lisa Cuddy
+237549,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E18/9/S06E18_41952_1.png,1503402,41952,1,9,Nurse Anne
+112082,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E06/16/S08E06_54288_2.png,2084392,54288,2,16,Dr. Chi Park
+125009,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E12/12/S01E12_8928_1.png,606041,8928,1,12,Dr. Allison Cameron
+545,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E18/4/S08E18_3552_0.png,2121961,3552,0,4,Dr. Eric Foreman
+253046,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E06/13/S04E06_17232_2.png,1123416,17232,2,13,Thirteen
+340768,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E19/18/S03E19_26880_0.png,976557,26880,0,18,Eddie
+2469,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E09/44/S07E09_40416_0.png,1726382,40416,0,44,Dr. Gregory House
+375566,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E09/19/S03E09_55608_0.png,871152,55608,0,19,Dr. Robert Chase
+143379,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E15/6/S02E15_22752_0.png,763992,22752,0,6,Dr. Gregory House
+335764,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E06/10/S07E06_1680_0.png,1708695,1680,0,10,Dr. James Wilson
+241233,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E03/16/S08E03_52800_0.png,2016511,52800,0,16,Thirteen
+13457,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E19/7/S06E19_28896_0.png,1503403,28896,0,7,Dr. Chris Taub
+234260,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E24/6/S05E24_47016_0.png,1413129,47016,0,6,Dr. Allison Cameron
+68697,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E01/0/S06E01_4584_0.png,1462220,4584,0,0,Dr. Gregory House
+119816,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E05/18/S02E05_15696_0.png,606017,15696,0,18,Dr. Gregory House
+227456,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E21/9/S08E21_34920_0.png,2121964,34920,0,9,Dr. Jessica Adams
+175243,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E08/10/S05E08_26952_0.png,1273732,26952,0,10,Dr. Gregory House
+282552,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E12/11/S02E12_15816_0.png,606023,15816,0,11,Dr. Gregory House
+36372,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E16/2/S04E16_43992_0.png,1216109,43992,0,2,Dr. James Wilson
+68404,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E01/0/S06E01_93792_1.png,1462220,93792,1,0,Dr. Gregory House
+302787,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E15/3/S08E15_22968_1.png,2121958,22968,1,3,Dr. Chris Taub
+243773,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E05/14/S04E05_34632_0.png,1117789,34632,0,14,Dr. Eric Foreman
+18544,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E21/4/S07E21_22968_0.png,1902562,22968,0,4,Thirteen
+306133,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E10/2/S05E10_21624_0.png,1273713,21624,0,2,Dr. Chris Taub
+172954,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E10/10/S08E10_5112_0.png,2121953,5112,0,10,Anita
+70313,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E01/0/S06E01_53448_0.png,1462220,53448,0,0,Dr. Gregory House
+235365,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E24/5/S05E24_59664_0.png,1413129,59664,0,5,Nurse
+91427,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E09/4/S06E09_3600_0.png,1503394,3600,0,4,Dr. Robert Chase
+68249,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E01/0/S06E01_40248_0.png,1462220,40248,0,0,Dr. Gregory House
+70727,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E01/0/S06E01_20304_0.png,1462220,20304,0,0,Dr. Gregory House
+234212,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E24/6/S05E24_30480_0.png,1413129,30480,0,6,Dr. Allison Cameron
+338806,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E05/7/S06E05_39576_1.png,1503410,39576,1,7,Nurse Felicia
+382955,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E20/26/S06E20_17688_0.png,1503405,17688,0,26,Dr. Robert Chase
+25922,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E02/29/S07E02_43488_0.png,1685104,43488,0,29,Dr. Gregory House
+341585,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E10/11/S01E10_57264_0.png,606025,57264,0,11,Dr. Eric Foreman
+315643,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E12/14/S06E12_37032_0.png,1503396,37032,0,14,Dr. Gregory House
+364899,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E15/7/S07E15_4680_0.png,1726376,4680,0,7,Dr. Chris Taub
+325311,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E19/21/S02E19_54600_0.png,774237,54600,0,21,Dr. James Wilson
+349181,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E04/22/S04E04_43656_0.png,1117788,43656,0,22,Dr. Jeffrey 'Big Love' Cole
+390076,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E23/0/S07E23_14424_1.png,1919895,14424,1,0,Dr. Lisa Cuddy
+307187,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E02/10/S06E02_60000_1.png,1503404,60000,1,10,Dr. Gregory House
+180775,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E13/0/S06E13_58800_0.png,1503397,58800,0,0,Dr. Lisa Cuddy
+239194,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E02/8/S03E02_45648_1.png,834714,45648,1,8,Dr. Allison Cameron
+232631,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E07/10/S02E07_36552_0.png,606027,36552,0,10,Stacy Warner
+335443,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E06/18/S07E06_36288_0.png,1708695,36288,0,18,Dr. Lisa Cuddy
+117324,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E09/26/S08E09_52968_0.png,2092629,52968,0,26,Nurse
+187201,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E11/12/S02E11_26280_1.png,606032,26280,1,12,Dr. Allison Cameron
+320426,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E12/55/S04E12_38640_0.png,1178841,38640,0,55,Dr. Lisa Cuddy
+24613,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E01/1/S08E01_55800_0.png,2006450,55800,0,1,Dr. Gregory House
+3224,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E09/43/S07E09_14616_1.png,1726382,14616,1,43,Dr. Robert Chase
+33362,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E17/13/S03E17_15624_1.png,987017,15624,1,13,Dr. Gregory House
+206418,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E07/0/S01E07_14472_0.png,606022,14472,0,0,Dr. Gregory House
+357569,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E23/5/S02E23_16944_0.png,784412,16944,0,5,Dr. Gregory House
+198397,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E04/2/S06E04_52104_0.png,1503409,52104,0,2,Nurse Anne
+379121,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E01/22/S05E01_4776_0.png,1274484,4776,0,22,Dr. Eric Foreman
+265215,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E09/3/S05E09_18504_1.png,1273733,18504,1,3,Dr. Allison Cameron
+69490,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E01/0/S06E01_61080_1.png,1462220,61080,1,0,Dr. Gregory House
+124456,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E12/21/S01E12_58728_0.png,606041,58728,0,21,Dr. Lisa Cuddy
+221722,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E17/12/S01E17_48864_0.png,606037,48864,0,12,Dr. Gregory House
+382582,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E20/3/S06E20_33240_0.png,1503405,33240,0,3,Dr. Eric Foreman
+165354,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E06/10/S05E06_45072_0.png,1273730,45072,0,10,Dr. Lisa Cuddy
+14096,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E19/1/S06E19_2952_0.png,1503403,2952,0,1,Nicole Murray
+120182,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E05/2/S02E05_28944_0.png,606017,28944,0,2,Dr. Eric Foreman
+238445,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E02/4/S03E02_23352_1.png,834714,23352,1,4,Dr. Gregory House
+268287,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E05/1/S03E05_43560_0.png,873021,43560,0,1,Nurse Wendy
+354759,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E13/11/S07E13_20160_0.png,1726374,20160,0,11,Dr. Gregory House
+264778,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E09/7/S05E09_47928_0.png,1273733,47928,0,7,Dr. James Wilson
+61275,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E04/13/S08E04_15864_0.png,2021267,15864,0,13,Dr. Jessica Adams
+116262,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E09/9/S08E09_32328_0.png,2092629,32328,0,9,Dr. Robert Chase
+259585,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E04/6/S02E04_7368_0.png,606042,7368,0,6,Dr. Gregory House
+305329,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E10/0/S05E10_40488_0.png,1273713,40488,0,0,Dr. Allison Cameron
+143009,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E15/6/S02E15_45552_1.png,763992,45552,1,6,Dr. Gregory House
+377729,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E06/1/S03E06_144_0.png,854514,144,0,1,Lawyer Howard Gemeiner
+88004,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E11/3/S06E11_17184_0.png,1503395,17184,0,3,Dr. Allison Cameron
+258521,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E03/4/S02E03_31128_0.png,606026,31128,0,4,Dr. Allison Cameron
+105460,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E04/9/S03E04_30024_0.png,836216,30024,0,9,Dr. Gregory House
+124803,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E12/5/S01E12_48216_0.png,606041,48216,0,5,Dr. James Wilson
+119268,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E20/7/S05E20_14760_0.png,1273724,14760,0,7,Thirteen
+207971,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E03/11/S06E03_45528_0.png,1503408,45528,0,11,Dr. Gregory House
+109887,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E19/3/S07E19_35064_0.png,1880571,35064,0,3,Nurse Ellen Hoffner
+83591,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E07/4/S03E07_15912_0.png,859366,15912,0,4,Dr. Gregory House
+145280,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E21/1/S01E21_1080_0.png,606046,1080,0,1,Dr. Lisa Cuddy
+213283,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E20/31/S03E20_8640_0.png,994243,8640,0,31,Dr. James Wilson
+288716,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E17/48/S06E17_9072_0.png,1503401,9072,0,48,Sam Carr
+41284,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E07/15/S04E07_10944_0.png,1136646,10944,0,15,Dr. Eric Foreman
+252244,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E06/12/S04E06_11424_0.png,1123416,11424,0,12,Dr. Eric Foreman
+210043,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E24/15/S03E24_30456_0.png,1023643,30456,0,15,Dr. Gregory House
+190968,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E03/8/S07E03_61104_0.png,1726377,61104,0,8,Dr. Gregory House
+32248,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E20/11/S01E20_19848_0.png,606029,19848,0,11,Dr. Robert Chase
+320743,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E12/46/S04E12_61920_0.png,1178841,61920,0,46,Dr. James Wilson
+312643,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E10/1/S06E10_47520_1.png,1564666,47520,1,1,Dr. Allison Cameron
+158013,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E08/24/S03E08_56352_0.png,866187,56352,0,24,Dr. Gregory House
+312604,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E10/1/S06E10_24912_1.png,1564666,24912,1,1,Dr. Allison Cameron
+248707,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E10/42/S02E10_32328_0.png,606021,32328,0,42,Stacy Warner
+100535,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E13/7/S03E13_5784_0.png,897691,5784,0,7,Dr. Gregory House
+272327,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E16/4/S06E16_49680_0.png,1623399,49680,0,4,Nash
+225354,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E10/6/S03E10_2616_0.png,882414,2616,0,6,Michael Tritter
+66775,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E21/5/S03E21_32496_0.png,994241,32496,0,5,Dr. Gregory House
+68118,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E01/0/S06E01_84312_0.png,1462220,84312,0,0,Dr. Gregory House
+283563,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E12/0/S02E12_56712_0.png,606023,56712,0,0,Nurse Brenda Previn
+285993,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E08/21/S08E08_47160_0.png,2084394,47160,0,21,Nurse Anne
+284277,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E08/12/S08E08_53952_0.png,2084394,53952,0,12,Dr. Gregory House
+175634,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E08/3/S05E08_53016_0.png,1273732,53016,0,3,Dr. Lisa Cuddy
+217704,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E14/8/S06E14_25344_0.png,1503398,25344,0,8,Dr. Robert Chase
+83327,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E07/4/S03E07_9816_0.png,859366,9816,0,4,Dr. Gregory House
+25053,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E01/1/S08E01_37680_0.png,2006450,37680,0,1,Dr. Gregory House
+266820,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E05/3/S03E05_3288_0.png,873021,3288,0,3,Dr. Gregory House
+240791,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E03/1/S08E03_52080_1.png,2016511,52080,1,1,Dr. Gregory House
+305079,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E10/18/S05E10_18624_0.png,1273713,18624,0,18,Dr. Eric Foreman
+8289,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E02/8/S02E02_40896_0.png,606012,40896,0,8,Dr. James Wilson
+21963,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E03/0/S03E03_48648_0.png,834715,48648,0,0,Nurse
+112697,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E06/24/S08E06_18936_0.png,2084392,18936,0,24,Nurse
+136953,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E08/19/S04E08_6264_2.png,1134258,6264,2,19,Dr. Amber Volakis
+349672,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E04/12/S04E04_31008_2.png,1117788,31008,2,12,Thirteen
+372129,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E13/16/S05E13_61296_0.png,1273716,61296,0,16,Thirteen
+26917,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E02/30/S07E02_20760_0.png,1685104,20760,0,30,Dr. James Wilson
+189322,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E22/81/S05E22_21984_0.png,1273726,21984,0,81,Dr. James Wilson
+163119,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E11/8/S04E11_46800_0.png,1168087,46800,0,8,Dr. Gregory House
+185909,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E11/15/S02E11_61608_0.png,606032,61608,0,15,Dr. Gregory House
+4751,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E09/51/S07E09_51648_0.png,1726382,51648,0,51,Arlene Cuddy
+249552,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E12/13/S07E12_24840_0.png,1726373,24840,0,13,Dr. Eric Foreman
+159251,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E08/0/S03E08_8808_0.png,866187,8808,0,0,Lorraine
+264216,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E09/15/S05E09_36360_0.png,1273733,36360,0,15,Dr. Gregory House
+167118,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E21/4/S05E21_49416_0.png,1273725,49416,0,4,Dr. Gregory House
+278370,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E07/14/S06E07_13224_1.png,1503412,13224,1,14,Dr. Robert Chase
+130164,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E03/3/S04E03_52056_0.png,1117787,52056,0,3,Thirteen
+98696,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E12/19/S05E12_53664_1.png,1273715,53664,1,19,Janice Burke
+251884,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E06/6/S04E06_21744_0.png,1123416,21744,0,6,Dr. Gregory House
+203370,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E01/9/S03E01_45696_0.png,828219,45696,0,9,Dr. Lisa Cuddy
+43394,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E03/9/S05E03_17304_1.png,1273727,17304,1,9,Dr. Gregory House
+324492,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E19/2/S02E19_18120_1.png,774237,18120,1,2,Dr. Lisa Cuddy
+85268,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E13/24/S02E13_18120_0.png,606039,18120,0,24,Dr. Gregory House
+323931,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E19/4/S02E19_61584_0.png,774237,61584,0,4,Dr. Gregory House
+307120,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E02/10/S06E02_18120_0.png,1503404,18120,0,10,Dr. Gregory House
+306680,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E10/13/S05E10_15240_0.png,1273713,15240,0,13,Dr. Lawrence Kutner
+294366,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E02/26/S01E02_15864_0.png,606034,15864,0,26,Dr. Eric Foreman
+140218,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E20/7/S07E20_18528_0.png,1883788,18528,0,7,Nurse Laura
+303397,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E15/23/S08E15_42720_4.png,2121958,42720,4,23,Dr. Chi Park
+16049,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E05/45/S08E05_53040_0.png,2063276,53040,0,45,Dr. Chris Taub
+98335,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E12/14/S05E12_17592_0.png,1273715,17592,0,14,Dr. Lawrence Kutner
+336220,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E06/2/S07E06_27192_1.png,1708695,27192,1,2,Thirteen
+18741,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E21/4/S07E21_1896_1.png,1902562,1896,1,4,Thirteen
+22720,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E13/24/S01E13_15888_0.png,606015,15888,0,24,Dr. James Wilson
+212793,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E20/7/S03E20_25488_0.png,994243,25488,0,7,Dr. Eric Foreman
+383800,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E14/10/S03E14_40704_0.png,917153,40704,0,10,Dr. Gregory House
+339064,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E05/35/S06E05_13176_0.png,1503410,13176,0,35,Dibala
+308565,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E02/15/S06E02_42552_0.png,1503404,42552,0,15,Dr. Robert Chase
+363482,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E15/4/S07E15_12384_0.png,1726376,12384,0,4,Dr. Gregory House
+30244,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E17/0/S08E17_48600_0.png,2121960,48600,0,0,Nurse
+101872,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E13/22/S03E13_36816_0.png,897691,36816,0,22,Franklin Lipa
+364332,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E15/1/S07E15_56808_0.png,1726376,56808,0,1,Dr. Lisa Cuddy
+162427,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E11/8/S04E11_32712_0.png,1168087,32712,0,8,Dr. Gregory House
+56289,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E22/4/S03E22_17064_0.png,994244,17064,0,4,Dr. Gregory House
+315705,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E12/14/S06E12_34560_0.png,1503396,34560,0,14,Dr. Gregory House
+67436,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E21/3/S03E21_45888_0.png,994241,45888,0,3,Dr. James Wilson
+41128,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E07/10/S04E07_58152_0.png,1136646,58152,0,10,Dr. Gregory House
+179274,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E19/0/S01E19_15624_1.png,606028,15624,1,0,Nurse Brenda Previn
+120843,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E05/15/S02E05_8472_2.png,606017,8472,2,15,Dr. Allison Cameron
+350181,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E01/0/S07E01_46080_0.png,1697219,46080,0,0,Dr. Gregory House
+293824,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E02/15/S01E02_11784_0.png,606034,11784,0,15,Dr. Gregory House
+61269,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E04/13/S08E04_60648_0.png,2021267,60648,0,13,Dr. Jessica Adams
+348648,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E04/13/S04E04_52416_2.png,1117788,52416,2,13,Dr. Robert Chase
+165372,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E06/10/S05E06_5280_0.png,1273730,5280,0,10,Dr. Lisa Cuddy
+327050,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E18/2/S03E18_43560_8.png,994242,43560,8,2,Nurse
+138544,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E20/9/S07E20_41736_0.png,1883788,41736,0,9,Dr. Eric Foreman
+123472,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E17/7/S02E17_13464_0.png,774235,13464,0,7,Sarah Alston
+292975,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E18/4/S07E18_36912_1.png,1878391,36912,1,4,Martha M. Masters
+331231,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E14/20/S04E14_30120_0.png,1216107,30120,0,20,Dr. Eric Foreman
+332366,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E14/3/S04E14_13488_2.png,1216107,13488,2,3,Evan Greer
+315755,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E12/14/S06E12_5544_0.png,1503396,5544,0,14,Dr. Gregory House
+258668,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E03/8/S02E03_15960_1.png,606026,15960,1,8,Dr. Robert Chase
+156907,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E14/9/S08E14_45384_0.png,2121957,45384,0,9,Dr. Jessica Adams
+13048,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E19/0/S06E19_49344_1.png,1503403,49344,1,0,Dr. Allison Cameron
+161856,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E02/22/S04E02_45360_0.png,1104387,45360,0,22,Thirteen
+153265,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E14/4/S05E14_20808_0.png,1273717,20808,0,4,Rachel Taub
+138460,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E20/9/S07E20_4848_0.png,1883788,4848,0,9,Dr. Eric Foreman
+327308,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E08/11/S07E08_54240_1.png,1726381,54240,1,11,Dr. Gregory House
+269711,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E17/15/S05E17_7800_0.png,1273720,7800,0,15,Dr. James Wilson
+267600,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E05/9/S03E05_56400_1.png,873021,56400,1,9,Dr. Eric Foreman
+154093,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E07/14/S05E07_10032_0.png,1273731,10032,0,14,Dr. James Wilson
+33919,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E17/2/S03E17_10968_0.png,987017,10968,0,2,Dr. Lisa Cuddy
+152882,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E14/0/S05E14_12504_0.png,1273717,12504,0,0,Dr. Lawrence Kutner
+219731,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E16/1/S08E16_24288_0.png,2121959,24288,0,1,Dr. Eric Foreman
+265451,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E09/3/S05E09_21984_2.png,1273733,21984,2,3,Dr. Allison Cameron
+368481,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E16/56/S07E16_6960_0.png,1842688,6960,0,56,Dr. James Wilson
+46997,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E15/16/S03E15_36024_1.png,942528,36024,1,16,Dr. Allison Cameron
+61225,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E04/13/S08E04_47544_0.png,2021267,47544,0,13,Dr. Jessica Adams
+86152,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E13/26/S02E13_6792_0.png,606039,6792,0,26,Dr. James Wilson
+231422,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E07/1/S02E07_20232_1.png,606027,20232,1,1,Dr. Lisa Cuddy
+371690,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E13/15/S05E13_6576_0.png,1273716,6576,0,15,Dr. Chris Taub
+175199,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E08/10/S05E08_7416_0.png,1273732,7416,0,10,Dr. Gregory House
+36688,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E16/5/S04E16_41736_2.png,1216109,41736,2,5,Dr. Allison Cameron
+4666,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E09/51/S07E09_51456_0.png,1726382,51456,0,51,Arlene Cuddy
+298063,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E22/0/S01E22_36768_0.png,606043,36768,0,0,Dr. Gregory House
+105827,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E04/9/S03E04_24744_0.png,836216,24744,0,9,Dr. Gregory House
+228505,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E10/2/S07E10_4272_2.png,1726371,4272,2,2,Dr. Eric Foreman
+164379,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E11/0/S04E11_38160_0.png,1168087,38160,0,0,Dr. Cate Milton
+194555,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E14/3/S01E14_27552_0.png,606014,27552,0,3,Dr. Ron Simpson
+189914,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E22/78/S05E22_30024_0.png,1273726,30024,0,78,Dr. Amber Volakis
+154072,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E07/14/S05E07_21912_0.png,1273731,21912,0,14,Dr. James Wilson
+89382,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E11/0/S06E11_8088_0.png,1503395,8088,0,0,Nurse
+275739,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E20/6/S02E20_50688_0.png,774236,50688,0,6,Dr. Gregory House
+231451,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E07/1/S02E07_51960_0.png,606027,51960,0,1,Dr. Lisa Cuddy
+70806,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E01/0/S06E01_44712_0.png,1462220,44712,0,0,Dr. Gregory House
+313743,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E10/0/S06E10_50808_0.png,1564666,50808,0,0,Nurse Yvette
+203586,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E01/19/S03E01_8544_0.png,828219,8544,0,19,Dr. Eric Foreman
+218935,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E16/3/S08E16_47112_0.png,2121959,47112,0,3,Dr. Gregory House
+380322,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E01/23/S05E01_9984_0.png,1274484,9984,0,23,Thirteen
+262340,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E14/1/S07E14_57312_0.png,1726375,57312,0,1,Thirteen
+50731,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E09/1/S01E09_40896_0.png,606016,40896,0,1,Dr. Gregory House
+253585,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E15/9/S06E15_50976_0.png,1503399,50976,0,9,Dr. Gregory House
+353434,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E15/9/S01E15_20184_0.png,606031,20184,0,9,Dr. Eric Foreman
+339182,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E19/10/S03E19_30048_0.png,976557,30048,0,10,Dr. Gregory House
+22374,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E13/15/S01E13_5592_0.png,606015,5592,0,15,Dr. Gregory House
+230536,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E07/2/S02E07_21744_0.png,606027,21744,0,2,Dr. Gregory House
+272873,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E18/0/S05E18_9624_0.png,1273721,9624,0,0,Dr. Gregory House
+321334,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E12/3/S04E12_37416_0.png,1178841,37416,0,3,Dr. Lawrence Kutner
+226468,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E21/0/S08E21_40512_1.png,2121964,40512,1,0,Dr. James Wilson
+238007,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E02/4/S03E02_8976_0.png,834714,8976,0,4,Dr. Gregory House
+384697,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E14/9/S03E14_17088_0.png,917153,17088,0,9,Dr. Allison Cameron
+12181,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E19/36/S06E19_26016_0.png,1503403,26016,0,36,Dr. Gregory House
+108413,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E19/0/S07E19_39456_0.png,1880571,39456,0,0,Martha M. Masters
+186074,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E11/15/S02E11_56400_0.png,606032,56400,0,15,Dr. Gregory House
+236567,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E18/0/S06E18_61896_0.png,1503402,61896,0,0,Dr. Allison Cameron
+174820,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E04/4/S01E04_4200_1.png,606030,4200,1,4,Dr. Lim
+306465,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E10/13/S05E10_29376_1.png,1273713,29376,1,13,Dr. Lawrence Kutner
+287804,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E17/2/S06E17_15816_0.png,1503401,15816,0,2,Dr. Allison Cameron
+83063,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E07/4/S03E07_672_0.png,859366,672,0,4,Dr. Gregory House
+292536,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E18/3/S07E18_35664_0.png,1878391,35664,0,3,Thirteen
+200583,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E23/0/S05E23_25440_1.png,1399759,25440,1,0,Corps Dancer #18
+134282,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E11/7/S07E11_27888_0.png,1726372,27888,0,7,Martha M. Masters
+382919,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E20/2/S06E20_7944_0.png,1503405,7944,0,2,Dr. Allison Cameron
+41927,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E07/21/S04E07_19128_0.png,1136646,19128,0,21,Dr. Chris Taub
+177039,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E08/14/S05E08_12264_1.png,1273732,12264,1,14,Thirteen
+295841,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E18/35/S01E18_24936_0.png,606013,24936,0,35,Dr. Lisa Cuddy
+11107,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E05/0/S07E05_31032_2.png,1726379,31032,2,0,Thirteen
+299051,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E22/1/S01E22_36096_0.png,606043,36096,0,1,Dr. Allison Cameron
+67945,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E01/0/S06E01_85512_0.png,1462220,85512,0,0,Dr. Gregory House
+21444,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E03/9/S03E03_11976_0.png,834715,11976,0,9,Ali
+221797,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E17/12/S01E17_35496_0.png,606037,35496,0,12,Dr. Gregory House
+17361,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E21/15/S07E21_6024_0.png,1902562,6024,0,15,Dr. Gregory House
+343048,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E10/0/S01E10_37776_0.png,606025,37776,0,0,Chris Dewey
+326925,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E18/25/S03E18_17784_0.png,994242,17784,0,25,Dr. Robert Chase
+360447,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E02/6/S05E02_6840_0.png,1273723,6840,0,6,Dr. Chris Taub
+344022,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E11/13/S01E11_37368_1.png,606020,37368,1,13,Dr. Lisa Cuddy
+150320,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E06/10/S01E06_27600_0.png,606045,27600,0,10,Dr. Eric Foreman
+39517,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E13/34/S08E13_36096_1.png,2121956,36096,1,34,Dr. Chi Park
+340324,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E19/9/S03E19_40728_0.png,976557,40728,0,9,Dr. Allison Cameron
+291079,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E11/12/S08E11_51504_0.png,2121954,51504,0,12,Nurse Anne
+373613,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E24/4/S02E24_23088_0.png,787373,23088,0,4,Dr. Eric Foreman
+127566,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E09/28/S04E09_15672_1.png,1144658,15672,1,28,Dr. Chris Taub
+242645,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E05/11/S04E05_38328_0.png,1117789,38328,0,11,Dr. Gregory House
+236497,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E18/0/S06E18_59088_0.png,1503402,59088,0,0,Dr. Allison Cameron
+160812,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E02/30/S04E02_50304_0.png,1104387,50304,0,30,Dr. Lisa Cuddy
+180088,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E13/0/S06E13_32976_0.png,1503397,32976,0,0,Dr. Lisa Cuddy
+169252,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E07/11/S07E07_22128_0.png,1726380,22128,0,11,Dr. Gregory House
+121640,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E05/1/S02E05_30504_0.png,606017,30504,0,1,O.R. Nurse
+287307,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E17/52/S06E17_33600_1.png,1503401,33600,1,52,Dr. James Wilson
+255760,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E15/18/S06E15_54672_0.png,1503399,54672,0,18,Nurse
+279109,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E07/0/S06E07_36336_0.png,1503412,36336,0,0,Rachel Taub
+362223,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E02/5/S08E02_5112_1.png,2015677,5112,1,5,Dr. Eric Foreman
+336703,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E06/12/S07E06_6792_1.png,1708695,6792,1,12,Martha M. Masters
+172398,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E10/5/S08E10_5328_0.png,2121953,5328,0,5,Dr. Chris Taub
+337219,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E06/9/S07E06_56232_0.png,1708695,56232,0,9,Nurse Regina
+255245,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E15/6/S06E15_38568_0.png,1503399,38568,0,6,Dr. Chris Taub
+44972,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E03/3/S05E03_16656_2.png,1273727,16656,2,3,Dr. Chris Taub
+78110,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E16/6/S03E16_59424_0.png,979558,59424,0,6,Dr. Gregory House
+72839,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E15/13/S04E15_60456_0.png,1216108,60456,0,13,Dr. James Wilson
+53128,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E08/18/S02E08_43728_0.png,606044,43728,0,18,Stacy Warner
+305754,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E10/12/S05E10_26448_0.png,1273713,26448,0,12,Dr. Robert Chase
+29670,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E17/12/S08E17_9096_0.png,2121960,9096,0,12,Dr. Jessica Adams
+271590,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E16/9/S06E16_49224_0.png,1623399,49224,0,9,Dr. Allison Cameron
+258180,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E03/0/S02E03_8064_0.png,606026,8064,0,0,Dr. Lisa Cuddy
+328884,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E08/1/S07E08_40200_2.png,1726381,40200,2,1,Thirteen
+324153,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E19/4/S02E19_44376_0.png,774237,44376,0,4,Dr. Gregory House
+64199,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E05/1/S05E05_57144_0.png,1273729,57144,0,1,Thirteen
+375145,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E09/7/S03E09_28152_0.png,871152,28152,0,7,Dr. Eric Foreman
+36698,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E16/5/S04E16_18744_1.png,1216109,18744,1,5,Dr. Allison Cameron
+336587,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S07E06/12/S07E06_17376_0.png,1708695,17376,0,12,Martha M. Masters
+224743,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E10/5/S03E10_16128_0.png,882414,16128,0,5,Dr. James Wilson
+29051,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E17/10/S08E17_12552_0.png,2121960,12552,0,10,Dr. Robert Chase
+386432,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E19/10/S08E19_27600_0.png,2121962,27600,0,10,Dr. James Wilson
+202377,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E01/19/S02E01_17928_0.png,606011,17928,0,19,Dr. Robert Chase
+220667,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E16/54/S08E16_53496_0.png,2121959,53496,0,54,Dr. Chris Taub
+338547,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E05/32/S06E05_8352_0.png,1503410,8352,0,32,Dr. Robert Chase
+232035,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E07/7/S02E07_15216_0.png,606027,15216,0,7,Dr. Allison Cameron
+115235,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E09/7/S08E09_14736_0.png,2092629,14736,0,7,Dr. Gregory House
+56010,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S05E04/2/S05E04_2808_0.png,1273728,2808,0,2,Thirteen
+353599,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E15/5/S01E15_36696_0.png,606031,36696,0,5,Dr. Allison Cameron
+242007,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E03/3/S08E03_60840_1.png,2016511,60840,1,3,Dr. Ron Simpson
+321880,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E12/0/S04E12_50472_0.png,1178841,50472,0,0,Nurse
+193130,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E14/18/S01E14_59760_0.png,606014,59760,0,18,Dr. Gregory House
+382763,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E20/2/S06E20_53112_0.png,1503405,53112,0,2,Dr. Allison Cameron
+242312,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E03/0/S08E03_56808_0.png,2016511,56808,0,0,Amy
+79898,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S03E16/1/S03E16_50352_0.png,979558,50352,0,1,Nurse
+231233,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E07/2/S02E07_48432_0.png,606027,48432,0,2,Dr. Gregory House
+236359,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S06E18/0/S06E18_43656_0.png,1503402,43656,0,0,Dr. Allison Cameron
+103264,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E10/13/S04E10_22392_0.png,1172357,22392,0,13,Dr. Lisa Cuddy
+179418,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S01E19/5/S01E19_3696_0.png,606028,3696,0,5,Nurse
+72397,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S04E15/0/S04E15_26760_0.png,1216108,26760,0,0,Dr. Gregory House
+372993,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S02E24/2/S02E24_23976_0.png,787373,23976,0,2,Dr. Gregory House
+16691,/home/amos/datasets/CineFace/clusters/house_2004_0412142/S08E05/4/S08E05_22704_2.png,2063276,22704,2,4,Nurse
