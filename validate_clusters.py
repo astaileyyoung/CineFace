@@ -39,7 +39,8 @@ def match_cluster_to_faces(row,
 
 
 def get_face_df(src,
-                episode_df):
+                episode_df,
+                base_dir):
     files = [x for x in Path(src).iterdir() if x.suffix == '.csv']
     dfs = [pd.read_csv(x, index_col=0) for x in files]
     df = pd.concat(dfs, axis=0)
@@ -48,7 +49,7 @@ def get_face_df(src,
                   how='left',
                   on='episode_id')
     f = partial(match_cluster_to_faces,
-                base_dir='/home/amos/datasets/CineFace/clusters/house_2004_0412142')
+                base_dir=base_dir)
     tqdm().pandas()
     data = df.progress_apply(f, axis=1).tolist()
     flat = [x for y in data for x in y]
@@ -56,8 +57,9 @@ def get_face_df(src,
     return faces_df
 
 
-def validate_sample(row):
-    img = cv2.imread(row['filepath'])
+def validate_sample(row,
+                    path_column='filepath'):
+    img = cv2.imread(row[path_column])
     if img is None:
         return
 
@@ -90,11 +92,15 @@ def main(args):
     engine = db.create_engine(connection_string)
     conn = engine.connect()
     episode_df = pd.read_sql_query('SELECT * FROM episodes;', conn)
-    if Path(args.src).is_file() and Path(args.src).suffix == '.csv':
+    if not Path(args.src).exists():
+        print(f'{args.src} if not a valid filepath. Exiting')
+        exit()
+    elif Path(args.src).is_file() and Path(args.src).suffix == '.csv':
         faces_df = pd.read_csv(args.src, index_col=0)
     else:
         faces_df = get_face_df(args.src,
-                               episode_df)
+                               episode_df,
+                               base_dir=args.image_dir)
         all_faces = pd.read_sql_query("""SELECT
                                             episode_id,
                                             frame_num,
@@ -115,7 +121,8 @@ def main(args):
     sample['valid'] = np.nan
     try:
         for idx, row in sample.iterrows():
-            r = validate_sample(row)
+            r = validate_sample(row,
+                                path_column=args.path_column)
             faces_df.at[idx, 'valid'] = r
     except KeyboardInterrupt:
         faces_df.to_csv(args.dst)
@@ -126,10 +133,11 @@ def main(args):
         faces_df.to_csv(args.dst)
 
 
-
 if __name__ == '__main__':
     ap = ArgumentParser()
     ap.add_argument('src')
     ap.add_argument('dst')
+    ap.add_argument('--path_column', default='filepath')
+    ap.add_argument('--image_dir', default='/home/amos/datasets/CineFace/clusters/house_2004_0412142')
     args = ap.parse_args()
     main(args)
