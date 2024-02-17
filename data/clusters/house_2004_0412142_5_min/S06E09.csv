@@ -1,0 +1,10 @@
+,episode_id,character,personID,cluster,confidence
+0,1503394,Dr. Gregory House,0491402,2,0.647
+1,1503394,Dr. Lisa Cuddy,0249046,17,0.562
+2,1503394,Dr. Eric Foreman,0004898,1,0.362
+3,1503394,Dr. James Wilson,0000494,0,0.521
+4,1503394,Dr. Allison Cameron,0607185,43,0.109
+5,1503394,Dr. Robert Chase,0817980,4,0.173
+6,1503394,Dr. Chris Taub,0414772,7,0.036
+7,1503394,Thirteen,1312575,21,0.218
+8,1503394,Nurse,0075061,22,0.117

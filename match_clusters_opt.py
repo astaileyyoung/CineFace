@@ -193,7 +193,8 @@ def match_cluster_to_actor(actor,
     data = []
     for img in cluster_images:
         headshot = random.choice(headshots)
-        result = DeepFace.verify(str(img), str(headshot))
+        result = DeepFace.verify(str(img), str(headshot), enforce_detection=False)
+        a = 1
 
     # for file in files:
     #     try:
@@ -206,7 +207,7 @@ def match_cluster_to_actor(actor,
     #     pct = df[0].shape[0]/size
     #     data.append(pct)
     # return np.mean(data)
-            
+
 
 def match_actor(actor,
                 cluster_dirs,
