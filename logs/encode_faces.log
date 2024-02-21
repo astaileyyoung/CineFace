@@ -1,0 +1,62 @@
+ERROR 2024-02-18 14:37:12,776: OpenCV(4.8.1) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+ERROR 2024-02-18 14:37:12,845: OpenCV(4.8.1) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+ERROR 2024-02-18 14:37:26,564: OpenCV(4.8.1) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+ERROR 2024-02-18 14:37:26,636: OpenCV(4.8.1) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+ERROR 2024-02-18 14:38:23,468: OpenCV(4.8.1) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+ERROR 2024-02-18 14:38:23,468: /home/amos/media/tv/The.X.Files.S01.1080p.BluRay.x264-OFT/The.X.Files.S01E02.Deep.Throat.1080p.BluRay.x264.OFT.mkv
+ERROR 2024-02-18 14:38:23,537: OpenCV(4.8.1) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+ERROR 2024-02-18 14:38:23,537: /home/amos/media/tv/The.X.Files.S01.1080p.BluRay.x264-OFT/The.X.Files.S01E01.Pilot.1080p.BluRay.x264.OFT.mkv
+ERROR 2024-02-18 14:38:55,835: OpenCV(4.8.1) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+ERROR 2024-02-18 14:38:55,836: /home/amos/media/tv/Party.Down.S03.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTb/Party.Down.S03E05.Once.Upon.a.Time.Proms.Away.Prom-otional.Event.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTb.mkv
+ERROR 2024-02-18 14:38:56,326: OpenCV(4.8.1) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+ERROR 2024-02-18 14:38:56,326: /home/amos/media/tv/Party.Down.S03.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTb/Party.Down.S03E02.Jack.Bottys.Delayed.Post-Pandemic.Surprise.Party.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTb.mkv
+ERROR 2024-02-18 14:38:56,644: OpenCV(4.8.1) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+ERROR 2024-02-18 14:38:56,644: /home/amos/media/tv/Party.Down.S03.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTb/Party.Down.S03E06.Sepulveda.Basin.High.School.Spring.Play.Opening.Night.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTb.mkv
+ERROR 2024-02-18 14:38:56,989: OpenCV(4.8.1) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+ERROR 2024-02-18 14:38:56,989: /home/amos/media/tv/Party.Down.S03.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTb/Party.Down.S03E03.First.Annual.PI2A.Symposium.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTb.mkv
+ERROR 2024-02-18 14:38:57,242: OpenCV(4.8.1) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+ERROR 2024-02-18 14:38:57,242: /home/amos/media/tv/Party.Down.S03.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTb/Party.Down.S03E01.Kyle.Bradway.is.Nitromancer.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTb.mkv
+ERROR 2024-02-18 14:38:57,647: OpenCV(4.8.1) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+ERROR 2024-02-18 14:38:57,647: /home/amos/media/tv/Party.Down.S03.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTb/Party.Down.S03E04.KSGY-95.Prizewinners.Luau.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTb.mkv
+ERROR 2024-02-19 14:40:24,806: OpenCV(4.8.1) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+ERROR 2024-02-19 14:40:24,806: /home/amos/media/tv/Silo.S01.2160p.ATVP.WEB-DL.DDP5.1.HDR.H.265-NTb/Silo.S01E07.The.Flamekeepers.2160p.ATVP.WEB-DL.DDP5.1.HDR.H.265-NTb.mkv
+ERROR 2024-02-19 14:40:26,134: OpenCV(4.8.1) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+ERROR 2024-02-19 14:40:26,134: /home/amos/media/tv/Silo.S01.2160p.ATVP.WEB-DL.DDP5.1.HDR.H.265-NTb/Silo.S01E04.Truth.2160p.ATVP.WEB-DL.DDP5.1.HDR.H.265-NTb.mkv
+ERROR 2024-02-19 14:40:26,910: OpenCV(4.8.1) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+ERROR 2024-02-19 14:40:26,910: /home/amos/media/tv/Silo.S01.2160p.ATVP.WEB-DL.DDP5.1.HDR.H.265-NTb/Silo.S01E05.The.Janitors.Boy.2160p.ATVP.WEB-DL.DDP5.1.HDR.H.265-NTb.mkv
+ERROR 2024-02-19 14:40:27,809: OpenCV(4.8.1) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+ERROR 2024-02-19 14:40:27,810: /home/amos/media/tv/Silo.S01.2160p.ATVP.WEB-DL.DDP5.1.HDR.H.265-NTb/Silo.S01E03.Machines.REPACK.2160p.ATVP.WEB-DL.DDP5.1.HDR.H.265-NTb.mkv
+ERROR 2024-02-19 14:40:29,051: OpenCV(4.8.1) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+ERROR 2024-02-19 14:40:29,051: /home/amos/media/tv/Silo.S01.2160p.ATVP.WEB-DL.DDP5.1.HDR.H.265-NTb/Silo.S01E06.The.Relic.2160p.ATVP.WEB-DL.DDP5.1.HDR.H.265-NTb.mkv
+ERROR 2024-02-19 14:40:29,810: OpenCV(4.8.1) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+ERROR 2024-02-19 14:40:29,810: /home/amos/media/tv/Silo.S01.2160p.ATVP.WEB-DL.DDP5.1.HDR.H.265-NTb/Silo.S01E08.Hanna.2160p.ATVP.WEB-DL.DDP5.1.HDR.H.265-NTb.mkv
+ERROR 2024-02-19 14:40:30,951: OpenCV(4.8.1) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+ERROR 2024-02-19 14:40:30,951: /home/amos/media/tv/Silo.S01.2160p.ATVP.WEB-DL.DDP5.1.HDR.H.265-NTb/Silo.S01E02.Holstons.Pick.2160p.ATVP.WEB-DL.DDP5.1.HDR.H.265-NTb.mkv
+ERROR 2024-02-19 14:40:31,816: OpenCV(4.8.1) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+ERROR 2024-02-19 14:40:31,816: /home/amos/media/tv/Silo.S01.2160p.ATVP.WEB-DL.DDP5.1.HDR.H.265-NTb/Silo.S01E01.Freedom.Day.2160p.ATVP.WEB-DL.DDP5.1.HDR.H.265-NTb.mkv
+ERROR 2024-02-19 14:40:33,467: OpenCV(4.8.1) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+ERROR 2024-02-19 14:40:33,467: /home/amos/media/tv/Silo.S01.2160p.ATVP.WEB-DL.DDP5.1.HDR.H.265-NTb/Silo.S01E10.Outside.2160p.ATVP.WEB-DL.DDP5.1.HDR.H.265-NTb.mkv
+ERROR 2024-02-19 14:40:34,031: OpenCV(4.8.1) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+ERROR 2024-02-19 14:40:34,032: /home/amos/media/tv/Silo.S01.2160p.ATVP.WEB-DL.DDP5.1.HDR.H.265-NTb/Silo.S01E09.The.Getaway.2160p.ATVP.WEB-DL.DDP5.1.HDR.H.265-NTb.mkv

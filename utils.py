@@ -10,6 +10,12 @@ def format_series_name(data,
     return name
 
 
+def episode_from_name(name):
+    s = int(name[1:3])
+    e = int(name[4:6])
+    return s, e
+
+
 def format_episode_name(info):
     s = int(info['season'])
     e = int(info['episode'])
@@ -37,8 +43,8 @@ def parse_filename(row):
     row['series_id'] = int(series_id)
     row['season'] = s 
     row['episode'] = e
-    row['frame_num'] = frame_num
-    row['face_num'] = face_num
+    row['frame_num'] = int(frame_num)
+    row['face_num'] = int(face_num)
     return row
 
 

@@ -1,0 +1,24 @@
+ERROR 2024-02-18 12:23:02,972: Failed to extract faces for /home/amos/programs/CineFace/data/faces_new/106179/106179_S01E01.csv. cv2 error.
+OpenCV(4.8.1) /io/opencv/modules/imgcodecs/src/loadsave.cpp:787: error: (-215:Assertion failed) !_img.empty() in function 'imwrite'
+
+ERROR 2024-02-18 12:23:07,028: Failed to extract faces for /home/amos/programs/CineFace/data/faces_new/106179/106179_S01E02.csv. cv2 error.
+OpenCV(4.8.1) /io/opencv/modules/imgcodecs/src/loadsave.cpp:787: error: (-215:Assertion failed) !_img.empty() in function 'imwrite'
+
+ERROR 2024-02-18 12:28:46,595: Failed to extract faces for data/faces/1073507/1073507_S03E01.csv.
+OpenCV(4.8.1) /io/opencv/modules/imgcodecs/src/loadsave.cpp:787: error: (-215:Assertion failed) !_img.empty() in function 'imwrite'
+
+ERROR 2024-02-18 12:28:51,002: Failed to extract faces for data/faces/1073507/1073507_S03E02.csv.
+OpenCV(4.8.1) /io/opencv/modules/imgcodecs/src/loadsave.cpp:787: error: (-215:Assertion failed) !_img.empty() in function 'imwrite'
+
+ERROR 2024-02-18 12:29:09,245: Failed to extract faces for data/faces/1073507/1073507_S03E03.csv.
+OpenCV(4.8.1) /io/opencv/modules/imgcodecs/src/loadsave.cpp:787: error: (-215:Assertion failed) !_img.empty() in function 'imwrite'
+
+ERROR 2024-02-18 12:29:11,983: Failed to extract faces for data/faces/1073507/1073507_S03E04.csv.
+OpenCV(4.8.1) /io/opencv/modules/imgcodecs/src/loadsave.cpp:787: error: (-215:Assertion failed) !_img.empty() in function 'imwrite'
+
+ERROR 2024-02-18 12:29:31,300: Failed to extract faces for data/faces/1073507/1073507_S03E05.csv.
+OpenCV(4.8.1) /io/opencv/modules/imgcodecs/src/loadsave.cpp:787: error: (-215:Assertion failed) !_img.empty() in function 'imwrite'
+
+ERROR 2024-02-18 12:30:06,535: Failed to extract faces for data/faces/1073507/1073507_S03E06.csv.
+OpenCV(4.8.1) /io/opencv/modules/imgcodecs/src/loadsave.cpp:787: error: (-215:Assertion failed) !_img.empty() in function 'imwrite'
+

@@ -6,3 +6,4 @@ data/house_cluster.csv
 __pycache__
 archived/*
 Untitled*
+.vs*

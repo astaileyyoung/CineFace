@@ -1,7 +1,10 @@
 import re
+import logging
+import traceback
 from pathlib import Path
 from argparse import ArgumentParser
 
+import cv2
 import pandas as pd
 from tqdm import tqdm
 
@@ -37,9 +40,12 @@ def faces_from_episode(file,
         video_src = Path(video_dir).joinpath(video_src.parent.parts[-1]).joinpath(video_src.name)
 
     if not check_if_exists(df, existing):
-        _ = extract_faces(df,
-                          str(video_src),
-                          dst=dst)
+        try:
+            _ = extract_faces(df,
+                              str(video_src),
+                              dst=dst)
+        except cv2.error as e:
+            logging.error(f'Failed to extract faces for {str(file)}.\n{e}')
 
 
 def save_faces(src,
@@ -69,7 +75,17 @@ def main(args):
 if __name__ == '__main__':
     ap = ArgumentParser()
     ap.add_argument('src')
-    ap.add_argument('dst')
+    ap.add_argument('--dst',
+                    default='/home/amos/datasets/CineFace/images/')
+    ap.add_argument('--verbosity', '-v', default=10, type=int)
+    ap.add_argument('--log', default='./logs/save_faces.log')
     ap.add_argument('--video_dir', default=None)
     args = ap.parse_args()
+
+    logging.basicConfig(level=args.verbosity,
+                        filename=args.log,
+                        format='%(levelname)s %(asctime)s: %(message)s',
+                        filemode='a')
+    
+
     main(args)

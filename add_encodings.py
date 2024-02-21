@@ -43,7 +43,8 @@ def inject_encodings(encodings):
             batch = []
 
 
-def add_encodings(d):
+def add_encodings(d,
+                  cnt=0):
     base_dir = Path('/home/amos/programs/CineFace/data/faces_new')
     subdirs = [x for x in base_dir.iterdir()]
     for subdir in tqdm(subdirs, leave=True):
@@ -59,6 +60,18 @@ def add_encodings(d):
                
 
 def main(args):
+    username = 'amos'
+    password = 'M0$hicat'
+    host = '192.168.0.131'
+    port = '3306'
+    database = 'CineFace'
+
+    connection_string = f'mysql+pymysql://{username}:{password}@{host}:{port}/{database}'
+    engine = db.create_engine(connection_string)
+    conn = engine.connect()
+
+    cnt = conn.execute(db.text('SELECT MAX(uid)'))
+
     CLIENT.recreate_collection(collection_name='FacialEmbeddings',
                            vectors_config=VectorParams(size=128, distance=Distance.COSINE))
 
