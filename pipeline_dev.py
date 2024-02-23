@@ -27,6 +27,8 @@ def main(args):
     I think the second option may be better. The SQL Server repo will probably keep growing in size and complexity, so submodules may be necessary eventually anyway.
 
     The way the SQL Server watch.py works requires some thought. Currently, the script directly uploads the face file to GitHub, which is then pulled when it runs the server update script. 
+
+    I just thought of a big problem with the SQL-Server idea, which is that the face detection has to run on my PC because of the GPU. Perhaps I use ssh to send the command from the server to the PC?
     """
     pass 
 
