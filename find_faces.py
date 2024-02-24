@@ -1,4 +1,5 @@
 import os 
+import logging
 import traceback
 from pathlib import Path
 from argparse import ArgumentParser
@@ -45,7 +46,7 @@ def main(args):
     for file in files:
         name = f'{file.stem}.csv'
         fp = dst.joinpath(name)
-        if not fp.exists():
+        if not fp.exists() or args.overwrite:
             # size = get_frame_size(file)
             # if size[1] > 1080:
             #     resize = (1080, calc_height(size))
@@ -60,5 +61,17 @@ if __name__ == "__main__":
     ap.add_argument('src')
     ap.add_argument('dst')
     ap.add_argument('--ext', default=('.mp4', '.avi', '.m4v', '.mkv'))
+    ap.add_argument('--log',
+                default='./logs/find_faces.log')
+    ap.add_argument('--verbosity', '-v',
+                default=10,
+                type=int)
+    ap.add_argument('--overwrite', '-o', action='store_true')
     args = ap.parse_args()
+
+    logging.basicConfig(filename=str(Path(__file__).parent.joinpath(args.log).absolute()),
+                    filemode='a',
+                    format='%(levelname)s  %(asctime)s: %(message)s',
+                    datefmt='%Y-%m-%d_%H:%M:%S',
+                    level=args.verbosity)
     main(args)
