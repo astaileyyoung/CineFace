@@ -57,22 +57,45 @@ funcs = [('dlib', 'dlib_accuracy.py'),
          ('retina', 'retina_accuracy.py')]
 base = Path('/home/amos/programs/CineFace/research/test_scripts')
 df = pd.read_csv('/home/amos/programs/CineFace/research/data/faces.csv', index_col=0)
-for idx, row in tqdm(df.iterrows(), total=df.shape[0]):
-    dfs = []
-    for env, f in tqdm(funcs, leave=False):
-        fp = Path('/home/amos/programs/CineFace/research/test_images').joinpath(row['name'])
-        dst = Path('/home/amos/programs/CineFace/research/test_scripts/temp').joinpath(f'{Path(row["name"]).stem}.csv')
-        sp.run(['conda', 'run', '-n', env, 'python', str(base.joinpath(f)), str(fp), str(dst)])
-        face = pd.read_csv(str(dst), index_col=0)
-        if face.shape[0] < 1:
-            face = empty_df(face) 
-        else:
-            face = measure_diff(face, row)
-        face['id'] = idx
-        face['detector'] = f
-        dfs.append(face)
-    face_df = pd.concat(dfs)
-    face_df.reset_index(inplace=True)
-    face_df.to_csv(Path('./results/').joinpath(f'{Path(row["name"]).stem}.csv'))
+df['path'] = df['name'].map(lambda x: str(Path('/home/amos/programs/CineFace/research/test_images').joinpath(x)))
+df.to_csv('./images.csv')
+for env, f in funcs:
+    dst = Path('/home/amos/programs/CineFace/research/test_results').joinpath(f'{env}.csv')
+    command = ['conda', 'run', '-n', env, 'python', str(base.joinpath(f)), './images.csv', str(dst)]
+    sp.run(command)
+    face = pd.read_csv(str(dst), index_col=0)
+    # data = []
+    # for idx, row in face.iterrows():
+    #     temp = df.iloc[idx]
+    #     eph = measure_diff(row, temp)
+    #     data.append(eph)
+    # face_df = pd.concat(data)
+    face.to_csv(f'/home/amos/programs/CineFace/research/test_results/{env}.csv')
+
+    # if face.shape[0] < 1:
+    #     face = empty_df(face) 
+    # else:
+    #     face = measure_diff(face, row)
+    # face['id'] = idx
+    # face['detector'] = f
+    # dfs.append(face)
+# for idx, row in tqdm(df.iterrows(), total=df.shape[0]):
+#     dfs = []
+#     for env, f in tqdm(funcs, leave=False):
+#         fp = Path('/home/amos/programs/CineFace/research/test_images').joinpath(row['name'])
+#         dst = Path('/home/amos/programs/CineFace/research/test_scripts/temp').joinpath(f'{Path(row["name"]).stem}.csv')
+#         command = ['conda', 'run', '-n', env, 'python', str(base.joinpath(f)), str(fp), str(dst)]
+#         sp.run(command)
+#         face = pd.read_csv(str(dst), index_col=0)
+#         if face.shape[0] < 1:
+#             face = empty_df(face) 
+#         else:
+#             face = measure_diff(face, row)
+#         face['id'] = idx
+#         face['detector'] = f
+#         dfs.append(face)
+#     face_df = pd.concat(dfs)
+#     face_df.reset_index(inplace=True)
+#     face_df.to_csv(Path('./results/').joinpath(f'{Path(row["name"]).stem}.csv'))
 
 
