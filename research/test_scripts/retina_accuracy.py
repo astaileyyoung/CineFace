@@ -1,4 +1,5 @@
 import os 
+import time 
 from pathlib import Path
 from argparse import ArgumentParser
 
@@ -55,14 +56,20 @@ def detect_image(fp):
 
 def main(args):
     images = pd.read_csv(args.src)
+    names = images['name'].unique().tolist()
     data = []
-    for idx, row in tqdm(images.iterrows(), total=images.shape[0]):
-        fp = Path('/home/amos/programs/CineFace/research/test_images').joinpath(row['name'])
-        d = detect_image(str(fp))
-        for i in d:
-            i['id'] = idx
-            i['name'] = row['name']
-        data.extend(d)
+    for name in tqdm(names):
+        fp = Path('/home/amos/programs/CineFace/research/test_images').joinpath(name)
+        t = time.time()
+        preds = detect_image(str(fp))
+        d = time.time() - t
+    # for idx, row in tqdm(images.iterrows(), total=images.shape[0]):
+    #     fp = Path('/home/amos/programs/CineFace/research/test_images').joinpath(row['name'])
+    #     d = detect_image(str(fp))
+        for i in preds:
+            i['name'] = name
+            i['duration'] = round(d, 3)
+        data.extend(preds)
     df = pd.DataFrame(data)
     df.to_csv(args.dst)
 

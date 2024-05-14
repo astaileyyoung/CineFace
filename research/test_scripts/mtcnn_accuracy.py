@@ -29,14 +29,15 @@ def get_box(face, face_num):
     return datum
 
 
-def format_data(img, data):
+def format_data(img, fp, data):
     new = []
     for datum in data:
         h, w = img.shape[:2]
         pct = datum['area']/(h * w)
         datum.update({'img_width': w,
                       'img_height': h,
-                      'pct_of_frame': pct})
+                      'pct_of_frame': pct,
+                      'name': Path(fp).name})
         new.append(datum)
     return new
 
@@ -46,7 +47,7 @@ def detect_image(fp):
     faces = mtcnn.detect(img)
     if faces[0] is not None:
         data = [get_box(x, num) for num, x in enumerate(faces[0])]
-        data = format_data(img, data)
+        data = format_data(img, fp, data)
         return data
     else:
         return []

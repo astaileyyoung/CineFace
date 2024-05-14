@@ -9,7 +9,6 @@ from tqdm import tqdm
 
 det = dlib.cnn_face_detection_model_v1('/home/amos/programs/CineFace/research/data/mmod_human_face_detector.dat')
 
-
 def get_box(face, face_num):
     x1, y1, x2, y2 = face.rect.left(), face.rect.top(), face.rect.right(), face.rect.bottom()
     width = x2 - x1
@@ -39,9 +38,22 @@ def format_data(img, data):
     return new
 
 
+def remove_bad_faces(faces):
+    new_faces = []
+    for face in faces:
+        for f in faces:
+            x, y, w, h = face.rect.left(), face.rect.top(), face.rect.right(), face.rect.bottom()
+            x2, y2, w2, h2 = f.rect.left(), f.rect.top(), f.rect.right(), f.rect.bottom()
+            if x2 > x and w2 < w:
+                continue
+            new_faces.append(face)
+    return new_faces
+
+
 def detect_image(fp):
     img = cv2.imread(str(fp))
     faces = det(img)
+    # faces = remove_bad_faces(faces)
     data = [get_box(x, num) for num, x in enumerate(faces)]
     data = format_data(img, data)
     return data
@@ -49,14 +61,23 @@ def detect_image(fp):
 
 def main(args):
     images = pd.read_csv(args.src)
+    names = images['name'].unique()
     data = []
-    for idx, row in tqdm(images.iterrows(), total=images.shape[0]):
-        fp = Path('/home/amos/programs/CineFace/research/test_images').joinpath(row['name'])
+    for name in tqdm(names):
+        fp = Path('/home/amos/programs/CineFace/research/test_images').joinpath(name)
         d = detect_image(str(fp))
         for i in d:
-            i['id'] = idx
-            i['name'] = row['name']
+            i['name'] = name
         data.extend(d)
+
+    # for idx, row in tqdm(images.iterrows(), total=images.shape[0]):
+    #     fp = Path('/home/amos/programs/CineFace/research/test_images').joinpath(row['name'])
+    #     d = detect_image(str(fp))
+    #     for i in d:
+    #         i['id'] = idx
+    #         i['name'] = row['name']
+    #     data.extend(d)
+
     df = pd.DataFrame(data)
     df.to_csv(args.dst)
 

@@ -60,3 +60,28 @@ def format_sql_insert(datum):
                 ON DUPLICATE KEY UPDATE cast = "{datum['cast']}"
             """
     return db.text(query)
+
+
+def get_frame_size(file):
+    import cv2 
+    
+    cap = cv2.VideoCapture(str(file))
+    ret, frame = cap.read()
+    return frame.shape[:2]
+
+
+def calc_height(size):
+    f = (1080 / size[1])
+    h = int(f * size[0])
+    return h
+
+
+def gather_files(d,
+                 ext=None):
+    paths = []
+    for root, dirs, files in os.walk(d):
+        for name in files:
+            path = Path(root).joinpath(name)
+            paths.append(path)
+    paths = paths if ext is None else [x for x in paths if x.suffix in ext]
+    return list(sorted(paths))
