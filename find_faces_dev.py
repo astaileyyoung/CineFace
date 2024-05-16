@@ -2,6 +2,8 @@ import os
 
 os.environ["TF_USE_LEGACY_KERAS"] = "1"
 
+import logging 
+import traceback
 from pathlib import Path
 from argparse import ArgumentParser 
 
@@ -199,7 +201,8 @@ def batch_predict_video(src,
     for frame_num in range(framecount):
         ret, frame = cap.read()
         if not ret or frame is None:
-            break 
+            logging.error(f'Failed to read {src}') 
+            return 
         elif frame_num % frameskip == 0:
             frames.append((frame_num, frame))
         
@@ -224,9 +227,11 @@ def detect_faces(src, batch_size=64, scales=(720, 1080)):
 
 
 def main(args):
+    print('test')
     dst = Path(args.dst)
     if dst.is_dir() and not dst.exists():
         Path.mkdir(dst)
+        logging.debug(f'Created destination directory at {args.dst}')
 
     if Path(args.src).is_dir():
         files = gather_files(args.src, ext=args.ext)
@@ -237,14 +242,19 @@ def main(args):
         name = f'{file.stem}.csv'
         fp = dst.joinpath(name)
         # if not fp.exists():
-        df = detect_faces(str(file), 
-                          batch_size=args.batch_size,
-                          scales=args.scales)
+        try:
+            df = detect_faces(str(file), 
+                            batch_size=args.batch_size,
+                            scales=args.scales)
+        except:
+            traceback.print_exc()
+            logging.error(traceback.format_exc())
+            exit()
         df['filename'] = Path(file).name
-        df['video_src'] = str(Path(file).absolute().resolve())
         if args.imdb_id:
             df['series_id'] = args.imdb_id
         df.to_csv(str(fp))
+        logging.debug(f'Saved detected faces to {str(fp)}')
 
 
 if __name__ == "__main__":
@@ -255,8 +265,16 @@ if __name__ == "__main__":
     ap.add_argument('--imdb_id', default=None)
     ap.add_argument('--scales', default=(720, 1080), type=int, nargs='+')
     ap.add_argument('--batch_size', '-bs', default=64, type=int)
+    ap.add_argument('--log_path', default='./find_faces.log')
+    ap.add_argument('--verbosity', '-v', default=10, type=int)
     args = ap.parse_args()
 
+    logging.basicConfig(filename=args.log_path,
+                        filemode='w',
+                        format='%(levelname)s  %(asctime)s: %(message)s',
+                        datefmt='%Y-%m-%d_%H:%M:%S',
+                        level=args.verbosity)
+    
     detector = build_model()
     
     main(args)
