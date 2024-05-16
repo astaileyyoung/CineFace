@@ -60,3 +60,7 @@ ERROR 2024-02-19 14:40:33,467: /home/amos/media/tv/Silo.S01.2160p.ATVP.WEB-DL.DD
 ERROR 2024-02-19 14:40:34,031: OpenCV(4.8.1) /io/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
 
 ERROR 2024-02-19 14:40:34,032: /home/amos/media/tv/Silo.S01.2160p.ATVP.WEB-DL.DDP5.1.HDR.H.265-NTb/Silo.S01E09.The.Getaway.2160p.ATVP.WEB-DL.DDP5.1.HDR.H.265-NTb.mkv
+ERROR 2024-05-14 16:21:52,035: [Errno 2] No such file or directory: 'data/shining_bat.mp4'
+ERROR 2024-05-14 16:22:16,758: [Errno 2] No such file or directory: 'data/shining_bat.mp4'
+ERROR 2024-05-14 16:22:41,820: [Errno 2] No such file or directory: 'data/shining_bat.mp4'
+ERROR 2024-05-14 16:23:19,270: [Errno 2] No such file or directory: 'data/shining_bat.mp4'

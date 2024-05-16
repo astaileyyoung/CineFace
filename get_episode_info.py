@@ -2,20 +2,24 @@ from argparse import ArgumentParser
 
 import pandas as pd
 import requests
+import sqlalchemy as db
 from bs4 import BeautifulSoup
 from imdb import Cinemagoer, _exceptions
 from tqdm import tqdm
 
 
 def get_ids(url):
-    page = requests.get(url)
+    headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'}
+    page = requests.get(url, headers=headers)
     content = BeautifulSoup(page.content, 'lxml')
-    spans = content.find_all('span', class_='lister-item-header')
+    divs = content.find_all('div', class_='ipc-title ipc-title--base ipc-title--title ipc-title-link-no-icon ipc-title--on-textPrimary sc-b189961a-9 iALATN dli-ep-title ep-title')
 
     imdb_ids = []
-    for span in spans:
-        link = span.find_all('a')[-1]['href']
-        imdb_id = link[9:-1]
+    for div in divs:
+        link = div.find_all('a')[-1]['href']
+        temp = link.split('/')
+        imdb_id = int(temp[2][2:])
         imdb_ids.append(imdb_id)
     return imdb_ids
     
@@ -47,32 +51,32 @@ def get_episodes(url,
     return data    
 
 
-def get_episode_info(episodes,
-                     url,
+def get_episode_info(url,
                      series_id):
-    episode_df = pd.read_csv(episodes, index_col=0)
-
+    data = []
     imdb_ids = get_ids(url)
     while imdb_ids:
         id_ = imdb_ids.pop(0)
         try:
             datum = get_info(id_)
-            datum['series_id'] = args.series_id
+            datum['series_id'] = series_id
             data.append(datum)
         except _exceptions.IMDbDataAccessError:
             imdb_ids.append(id_)
     df = pd.DataFrame(data)
-    combined = pd.concat([episode_df, df], axis=0)
-    combined = combined.reset_index(drop=True)
-    combined = combined.sort_values(by=['series_id', 'season', 'episode'])
-    return combined    
+    # combined = pd.concat([episode_df, df], axis=0)
+    # combined = combined.reset_index(drop=True)
+    # combined = combined.sort_values(by=['series_id', 'season', 'episode'])
+    return df    
 
     
 def main(args):
-    df = get_episode_info(args.episodes,
-                          args.url,
-                          args.series_id)
-    df.to_csv(args.episodes)
+    connection_string = f'mysql+pymysql://{args.username}:{args.password}@{args.host}:{args.port}/{args.database}'
+    engine = db.create_engine(connection_string)
+    with engine.connect() as conn:
+        df = get_episode_info(args.url,
+                            args.series_id)
+        df.to_csv(args.episodes)
     
     # episode_df = pd.read_csv(args.episodes, index_col=0)
     
@@ -112,6 +116,11 @@ if __name__ == '__main__':
     ap.add_argument('series_id')
     ap.add_argument('--episodes', default='./data/episodes.csv')
     ap.add_argument('--url', default=None)
+    ap.add_argument('--host', default='192.168.0.131', type=str)
+    ap.add_argument('--username', default='amos')
+    ap.add_argument('--password', default='M0$hicat')
+    ap.add_argument('--port', default='3306')
+    ap.add_argument('--database', default='CineFace')
     args = ap.parse_args()
 
     if args.url is None:

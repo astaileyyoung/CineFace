@@ -241,6 +241,7 @@ def main(args):
                           batch_size=args.batch_size,
                           scales=args.scales)
         df['filename'] = Path(file).name
+        df['video_src'] = str(Path(file).absolute().resolve())
         if args.imdb_id:
             df['series_id'] = args.imdb_id
         df.to_csv(str(fp))
