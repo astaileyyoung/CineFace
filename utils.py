@@ -85,3 +85,9 @@ def gather_files(d,
             paths.append(path)
     paths = paths if ext is None else [x for x in paths if x.suffix in ext]
     return list(sorted(paths))
+
+
+def extract_face(data, frame):
+    x1, y1, x2, y2 = data['x1'], data['y1'], data['x2'], data['y2']
+    face = frame[y1:y2, x1:x2]
+    return face

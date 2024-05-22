@@ -25,10 +25,14 @@ def string_to_array(encoding):
     return a 
 
 
-def inject_encodings(encodings):
+def parse_vector(vector):
+    return np.array([float(x) for x in vector.split('\n')])
+
+
+def inject_encodings(encodings, batch_size=1024):
     batch = []
-    batch_size = 1024
-    for idx, vector in tqdm(encodings):
+    batch_size = min(batch_size, len(encodings) - 1)
+    for idx, vector in tqdm(encodings.items()):
         batch.append((idx, vector))
         if idx % batch_size == 0:
             CLIENT.upsert(
@@ -43,20 +47,20 @@ def inject_encodings(encodings):
             batch = []
 
 
-def add_encodings(d,
-                  cnt=0):
-    base_dir = Path('/home/amos/programs/CineFace/data/faces_new')
-    subdirs = [x for x in base_dir.iterdir()]
-    for subdir in tqdm(subdirs, leave=True):
-        files = [x for x in subdir.iterdir()]
-        for file in tqdm(files, leave=False):
-            face_df = pd.read_csv(str(file), index_col=0) 
-            if face_df[face_df['encoding'].isna()].shape[0] > 0:
-                continue
-            encodings = [(idx, np.load(row['encoding_path'])) \
-                            for idx, row in tqdm(face_df.iterrows(), total=face_df.shape[0], leave=False)]
-            assert len(encodings) == face_df.shape[0]
-            inject_encodings(encodings)
+# def add_encodings(d,
+#                   cnt=0):
+#     base_dir = Path('/home/amos/programs/CineFace/data/faces_new')
+#     subdirs = [x for x in base_dir.iterdir()]
+#     for subdir in tqdm(subdirs, leave=True):
+#         files = [x for x in subdir.iterdir()]
+#         for file in tqdm(files, leave=False):
+#             face_df = pd.read_csv(str(file), index_col=0) 
+#             if face_df[face_df['encoding'].isna()].shape[0] > 0:
+#                 continue
+#             encodings = [(idx, np.load(row['encoding_path'])) \
+#                             for idx, row in tqdm(face_df.iterrows(), total=face_df.shape[0], leave=False)]
+#             assert len(encodings) == face_df.shape[0]
+#             inject_encodings(encodings)
                
 
 def main(args):
@@ -66,25 +70,26 @@ def main(args):
     port = '3306'
     database = 'CineFace'
 
-    connection_string = f'mysql+pymysql://{username}:{password}@{host}:{port}/{database}'
-    engine = db.create_engine(connection_string)
-    conn = engine.connect()
+    # connection_string = f'mysql+pymysql://{username}:{password}@{host}:{port}/{database}'
+    # engine = db.create_engine(connection_string)
+    # conn = engine.connect()
 
-    cnt = conn.execute(db.text('SELECT MAX(uid)'))
+    # cnt = conn.execute(db.text('SELECT MAX(uid)'))
 
     CLIENT.recreate_collection(collection_name='FacialEmbeddings',
                            vectors_config=VectorParams(size=128, distance=Distance.COSINE))
 
-    add_encodings(args.d)
-    
+    df = pd.read_csv(args.src, index_col=0)
+    encodings = df['encoding'].map(parse_vector)
+    inject_encodings(encodings)
          
 
 
 if __name__ == '__main__':
     ap = ArgumentParser()
-    ap.add_argument('--d', default='./data/faces_new')
+    ap.add_argument('src')
     args = ap.parse_args()
 
-    CLIENT = QdrantClient(host='localhost', port=6333)
+    CLIENT = QdrantClient(host='192.168.0.131', port=6333)
 
     main(args)

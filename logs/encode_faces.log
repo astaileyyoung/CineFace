@@ -64,3 +64,8 @@ ERROR 2024-05-14 16:21:52,035: [Errno 2] No such file or directory: 'data/shinin
 ERROR 2024-05-14 16:22:16,758: [Errno 2] No such file or directory: 'data/shining_bat.mp4'
 ERROR 2024-05-14 16:22:41,820: [Errno 2] No such file or directory: 'data/shining_bat.mp4'
 ERROR 2024-05-14 16:23:19,270: [Errno 2] No such file or directory: 'data/shining_bat.mp4'
+ERROR 2024-05-18 14:14:58,397: [Errno 2] No such file or directory: '/home/amos/datasets/shining_bat.csv'
+ERROR 2024-05-18 14:15:13,328: [Errno 2] No such file or directory: '/home/amos/datasets/shining_bat.csv'
+ERROR 2024-05-18 14:15:51,126: [Errno 2] No such file or directory: '/home/amos/datasets/shining_bat.csv'
+ERROR 2024-05-18 14:44:33,544: 'utf-8' codec can't decode byte 0x99 in position 43: invalid start byte
+ERROR 2024-05-22 10:50:38,813: 'utf-8' codec can't decode byte 0x99 in position 43: invalid start byte

@@ -22,6 +22,35 @@ from videotools.models.RetinaFaceKeras.postprocess import (
     )
 
 
+def distance_from_center(row):
+    x = int((row['x2'] - row['x1'])/2)
+    y = int((row['y2'] - row['y1'])/2)
+    
+    xx = int(row['img_width']/2)
+    yy = int(row['img_height']/2)
+    a = abs(yy - y) 
+    b = abs(xx - x)
+    c = np.sqrt(a^2 + b^2)
+    return round(c, 2) 
+
+
+def pct_of_frame(row):
+    x = int((row['x2'] - row['x1'])/2)
+    y = int((row['y2'] - row['y1'])/2)
+
+    xx = int(row['img_width']/2)
+    yy = int(row['img_height']/2)
+
+    pct_of_frame = (x * y)/(xx * yy)
+    return round(pct_of_frame, 4) 
+
+
+def calc(df):
+    df['distance_from_center'] = df.apply(distance_from_center, axis=1)
+    df['pct_of_frame'] = df.apply(pct_of_frame, axis=1)
+    return df
+
+
 def build_model():
     
     """
@@ -202,8 +231,9 @@ def batch_predict_video(src,
         ret, frame = cap.read()
         if not ret or frame is None:
             logging.error(f'Failed to read {src}') 
-            return 
+            return data if (framecount - frame_num) < frameskip else None 
         elif frame_num % frameskip == 0:
+            h, w = frame.shape[:2]
             frames.append((frame_num, frame))
         
         if (len(frames) >= batch_size) or frame_num == framecount - 1:
@@ -214,6 +244,7 @@ def batch_predict_video(src,
             out_net = [elt.numpy() for elt in out_net]
             faces = batch_parse_predictions(out_net, frames, shapes, im_scales)
             for face in faces:
+                [x.update({'img_width': w, 'img_height': h}) for x in face]
                 data.extend(face)
             pb.update(len(frames) * frameskip)
             frames = []
@@ -223,11 +254,12 @@ def batch_predict_video(src,
 def detect_faces(src, batch_size=64, scales=(720, 1080)):
     data = batch_predict_video(src, batch_size=batch_size, scales=scales)
     df = pd.DataFrame(data)
+    df['filename'] = Path(src).name
+    df['filepath'] = str(src)
     return df
 
 
 def main(args):
-    print('test')
     dst = Path(args.dst)
     if dst.is_dir() and not dst.exists():
         Path.mkdir(dst)
@@ -235,24 +267,29 @@ def main(args):
 
     if Path(args.src).is_dir():
         files = gather_files(args.src, ext=args.ext)
+        if Path(args.dst).is_dir() and not Path(args.dst).exists():
+            Path.mkdir(args.dst)
+            logging.debug(f'Created destination directory at {args.dst}')
+        dst = [Path(args.dst).joinpath(x.name) for x in files]
     else:
         files = [Path(args.src)]
+        dst = [args.dst]
 
-    for file in files:
-        name = f'{file.stem}.csv'
-        fp = dst.joinpath(name)
-        # if not fp.exists():
+    for num, file in enumerate(files):
+        fp = dst[num]
         try:
             df = detect_faces(str(file), 
                             batch_size=args.batch_size,
                             scales=args.scales)
         except:
-            traceback.print_exc()
-            logging.error(traceback.format_exc())
+            e = traceback.format_exc()
+            logging.error(e)
             exit()
-        df['filename'] = Path(file).name
         if args.imdb_id:
             df['series_id'] = args.imdb_id
+        if args.episode_id:
+            df['episode_id'] = args.episode_id
+        df = calc(df)
         df.to_csv(str(fp))
         logging.debug(f'Saved detected faces to {str(fp)}')
 
@@ -263,6 +300,7 @@ if __name__ == "__main__":
     ap.add_argument('dst')
     ap.add_argument('--ext', default=('.mp4', '.avi', '.m4v', '.mkv'))
     ap.add_argument('--imdb_id', default=None)
+    ap.add_argument('--episode_id', default=None)
     ap.add_argument('--scales', default=(720, 1080), type=int, nargs='+')
     ap.add_argument('--batch_size', '-bs', default=64, type=int)
     ap.add_argument('--log_path', default='./find_faces.log')

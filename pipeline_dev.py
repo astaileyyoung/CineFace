@@ -1,40 +1,29 @@
 from argparse import ArgumentParser
 
-from analyze_video import analyze_video
+import pandas as pd 
 
-
-def process_file(fp,
-                 encoder='DeepID'):
-    data = analyze_video(str(fp),
-                         encode=True,
-                         encoder=encoder) 
-    
+from find_faces_dev import detect_faces
+from encode_faces_dev import encode_faces
+from add_to_server import add_to_server
 
 
 def main(args):
-    """
-    Pipeline:
-    --Detect Faces
-    --Represent Faces
-    --Cluster Faces: Do I have to? If the vector search is fast enough, I can search every face in the movie or episode. In fact, this might limit errors since it removes a step. 
-    --Store Faces
-    --Identify Faces: Should I do this here or when I update the SQL server?
-
-    Another thought: I could do everything from the SQL server script. The pipeline might make more sense located there since every step in the process would be done in one place. In fact, I might be able to do away with the CineFace repo altogether by moving the analysis scripts to the videotools repo, which might make more sense anyway. After thinking about it, the detect_faces function should be run on new video files, which is exactly what my SQL Server automation does. 
-
-    Another way of dealing with the CineFace repo would be to keep it so that the SQL Server scripts dealing with faces would be better organized. Everything would be managed by SQL Server and CineFace just a container of scripts essentially.
-
-    I think the second option may be better. The SQL Server repo will probably keep growing in size and complexity, so submodules may be necessary eventually anyway.
-
-    The way the SQL Server watch.py works requires some thought. Currently, the script directly uploads the face file to GitHub, which is then pulled when it runs the server update script. 
-
-    I just thought of a big problem with the SQL-Server idea, which is that the face detection has to run on my PC because of the GPU. Perhaps I use ssh to send the command from the server to the PC?
-    """
-    pass 
+    df = detect_faces(args.src)
+    df['series_id'] = 129134
+    df['episode_id'] = 437913
+    df = encode_faces(df)
+    df = df.drop('filepath', axis=1)
+    add_to_server(df, 'faces')
 
 
 if __name__ == '__main__':
     ap = ArgumentParser()
-    ap.add_argument('')
+    ap.add_argument('src')
+    ap.add_argument('--faces_dir', default='/home/amos/datasets/CineFace/faces')
+    ap.add_argument('--host', default='localhost', type=str)
+    ap.add_argument('--username', default='amos')
+    ap.add_argument('--password', default='M0$hicat')
+    ap.add_argument('--port', default='3306')
+    ap.add_argument('--database', default='film')
     args = ap.parse_args()
     main(args)
