@@ -69,3 +69,10 @@ ERROR 2024-05-18 14:15:13,328: [Errno 2] No such file or directory: '/home/amos/
 ERROR 2024-05-18 14:15:51,126: [Errno 2] No such file or directory: '/home/amos/datasets/shining_bat.csv'
 ERROR 2024-05-18 14:44:33,544: 'utf-8' codec can't decode byte 0x99 in position 43: invalid start byte
 ERROR 2024-05-22 10:50:38,813: 'utf-8' codec can't decode byte 0x99 in position 43: invalid start byte
+ERROR 2024-05-23 16:47:59,483: [Errno 2] No such file or directory: '/home/amos/datasets/CineFace/faces/a-murder-at-the-end-of-the-world_2023_15227418/A.Murder.at.the.End.of.the.World.S01E06.Crime.Seen.2160p.HULU.WEB-DL.DDP5.1.HEVC-CMRG.csv'
+ERROR 2024-05-23 16:48:07,264: [Errno 2] No such file or directory: '/home/amos/datasets/CineFace/faces/a-murder-at-the-end-of-the-world_2023_15227418/A.Murder.at.the.End.of.the.World.S01E05.Crypt.2160p.HULU.WEB-DL.DDP5.1.HEVC-CMRG.csv'
+ERROR 2024-05-23 17:26:26,079: [Errno 2] No such file or directory: '/home/amos/datasets/CineFace/faces/a-murder-at-the-end-of-the-world_2023_15227418/A.Murder.at.the.End.of.the.World.S01E06.Crime.Seen.2160p.HULU.WEB-DL.DDP5.1.HEVC-CMRG.csv'
+ERROR 2024-05-23 17:26:30,005: [Errno 2] No such file or directory: '/home/amos/datasets/CineFace/faces/a-murder-at-the-end-of-the-world_2023_15227418/A.Murder.at.the.End.of.the.World.S01E05.Crypt.2160p.HULU.WEB-DL.DDP5.1.HEVC-CMRG.csv'
+ERROR 2024-05-23 18:02:32,667: [Errno 2] No such file or directory: '/home/amos/datasets/CineFace/faces/a-murder-at-the-end-of-the-world_2023_15227418/A.Murder.at.the.End.of.the.World.S01E06.Crime.Seen.2160p.HULU.WEB-DL.DDP5.1.HEVC-CMRG.csv'
+ERROR 2024-05-23 18:53:02,185: [Errno 2] No such file or directory: '/home/amos/datasets/CineFace/faces/a-murder-at-the-end-of-the-world_2023_15227418/A.Murder.at.the.End.of.the.World.S01E06.Crime.Seen.2160p.HULU.WEB-DL.DDP5.1.HEVC-CMRG.csv'
+ERROR 2024-05-23 19:37:55,876: [Errno 2] No such file or directory: '/home/amos/datasets/CineFace/faces/a-murder-at-the-end-of-the-world_2023_15227418/A.Murder.at.the.End.of.the.World.S01E05.Crypt.2160p.HULU.WEB-DL.DDP5.1.HEVC-CMRG.csv'

@@ -1,6 +1,7 @@
 import os 
 
 os.environ["TF_USE_LEGACY_KERAS"] = "1"
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 
 import logging 
 import traceback
@@ -22,6 +23,10 @@ from videotools.models.RetinaFaceKeras.postprocess import (
     )
 
 
+logging.getLogger("h5py").setLevel(logging.ERROR)
+logging.getLogger("github").setLevel(logging.ERROR)
+
+
 def distance_from_center(row):
     x = int((row['x2'] - row['x1'])/2)
     y = int((row['y2'] - row['y1'])/2)
@@ -30,7 +35,7 @@ def distance_from_center(row):
     yy = int(row['img_height']/2)
     a = abs(yy - y) 
     b = abs(xx - x)
-    c = np.sqrt(a^2 + b^2)
+    c = np.sqrt(a*a + b*b)
     return round(c, 2) 
 
 
@@ -224,14 +229,15 @@ def batch_predict_video(src,
     cap = cv2.VideoCapture(src)
     framecount = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
 
-    pb = tqdm(total=framecount)
+    pb = tqdm(total=framecount, leave=False, desc=Path(src).name)
     frames = []
     data = []
     for frame_num in range(framecount):
         ret, frame = cap.read()
         if not ret or frame is None:
-            logging.error(f'Failed to read {src}') 
-            return data if (framecount - frame_num) < frameskip else None 
+            logging.error(f'Failed to read {src} at frame #{frame_num}') 
+            diff = framecount - frame_num
+            return data if diff < frameskip else None 
         elif frame_num % frameskip == 0:
             h, w = frame.shape[:2]
             frames.append((frame_num, frame))
@@ -260,6 +266,9 @@ def detect_faces(src, batch_size=64, scales=(720, 1080)):
 
 
 def main(args):
+    if not Path(args.src).exists():
+        logging.error(f'{args.src} does not exist. Exiting.')
+        
     dst = Path(args.dst)
     if dst.is_dir() and not dst.exists():
         Path.mkdir(dst)
@@ -307,11 +316,14 @@ if __name__ == "__main__":
     ap.add_argument('--verbosity', '-v', default=10, type=int)
     args = ap.parse_args()
 
-    logging.basicConfig(filename=args.log_path,
-                        filemode='w',
+    sh = logging.StreamHandler()
+    sh.setLevel(40)
+    fh = logging.FileHandler(args.log_path,
+                             mode='a')
+    fh.setLevel(args.verbosity)
+    logging.basicConfig(handlers=[fh, sh],
                         format='%(levelname)s  %(asctime)s: %(message)s',
-                        datefmt='%Y-%m-%d_%H:%M:%S',
-                        level=args.verbosity)
+                        datefmt='%Y-%m-%d_%H:%M:%S')
     
     detector = build_model()
     
