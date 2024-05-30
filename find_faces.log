@@ -1,0 +1,75 @@
+ERROR  2024-05-28_00:34:35: Traceback (most recent call last):
+  File "/home/amos/programs/CineFace/find_faces_dev.py", line 128, in main
+    df = detect_faces(str(file))
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/programs/CineFace/find_faces_dev.py", line 99, in detect_faces
+    encodings = encode(faces, frame)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/programs/CineFace/find_faces_dev.py", line 81, in encode
+    encodings = encoder(f)
+               ^^^^^^^^^^
+TypeError: '_dlib_pybind11.face_recognition_model_v1' object is not callable
+
+ERROR  2024-05-28_00:38:22: Traceback (most recent call last):
+  File "/home/amos/programs/CineFace/find_faces_dev.py", line 129, in main
+    df = detect_faces(str(file))
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/programs/CineFace/find_faces_dev.py", line 100, in detect_faces
+    encodings = encode(faces, frame)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/programs/CineFace/find_faces_dev.py", line 81, in encode
+    f = [process_image(extract_face(x, frame)) for x in faces]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/programs/CineFace/find_faces_dev.py", line 81, in <listcomp>
+    f = [process_image(extract_face(x, frame)) for x in faces]
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/programs/CineFace/utils.py", line 93, in extract_face
+    x1, y1, x2, y2 = data['x1'], data['y1'], data['x2'], data['y2']
+                     ~~~~^^^^^^
+TypeError: string indices must be integers, not 'str'
+
+ERROR  2024-05-28_00:45:29: Traceback (most recent call last):
+  File "/home/amos/programs/CineFace/find_faces_dev.py", line 134, in main
+    df = detect_faces(str(file))
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/programs/CineFace/find_faces_dev.py", line 105, in detect_faces
+    encodings = encode(faces, frame)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/programs/CineFace/find_faces_dev.py", line 86, in encode
+    f = [process_image(extract_face(x['facial_area'], frame)) for x in faces]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/programs/CineFace/find_faces_dev.py", line 86, in <listcomp>
+    f = [process_image(extract_face(x['facial_area'], frame)) for x in faces]
+                                    ~^^^^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+
+ERROR  2024-05-28_00:46:57: Traceback (most recent call last):
+  File "/home/amos/programs/CineFace/find_faces_dev.py", line 134, in main
+    df = detect_faces(str(file))
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/programs/CineFace/find_faces_dev.py", line 105, in detect_faces
+    encodings = encode(faces, frame)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/programs/CineFace/find_faces_dev.py", line 86, in encode
+    f = [process_image(extract_face(x['facial_area'], frame)) for x in faces]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/programs/CineFace/find_faces_dev.py", line 86, in <listcomp>
+    f = [process_image(extract_face(x['facial_area'], frame)) for x in faces]
+                                    ~^^^^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+
+ERROR  2024-05-28_00:49:28: Traceback (most recent call last):
+  File "/home/amos/programs/CineFace/find_faces_dev.py", line 136, in main
+    df = detect_faces(str(file))
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/programs/CineFace/find_faces_dev.py", line 107, in detect_faces
+    encodings = encode(faces, frame)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/programs/CineFace/find_faces_dev.py", line 88, in encode
+    f = [process_image(extract_face(x['facial_area'], frame)) for k, v in faces.items()]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/programs/CineFace/find_faces_dev.py", line 88, in <listcomp>
+    f = [process_image(extract_face(x['facial_area'], frame)) for k, v in faces.items()]
+                                    ^
+NameError: name 'x' is not defined
+

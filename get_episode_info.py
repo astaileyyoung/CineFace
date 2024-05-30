@@ -1,11 +1,17 @@
 from argparse import ArgumentParser
 
+import re
 import pandas as pd
 import requests
 import sqlalchemy as db
 from bs4 import BeautifulSoup
 from imdb import Cinemagoer, _exceptions
 from tqdm import tqdm
+
+from utils import format_field
+
+
+ia = Cinemagoer()
 
 
 def get_ids(url):
@@ -19,50 +25,74 @@ def get_ids(url):
     for div in divs:
         link = div.find_all('a')[-1]['href']
         temp = link.split('/')
-        imdb_id = int(temp[2][2:])
+        imdb_id = temp[2][2:]
         imdb_ids.append(imdb_id)
     return imdb_ids
-    
+
+
+def check_episode_exists(title):
+    temp = re.match(r'Episode #[0-9]{1,}\.[0-9]{1,}', title)
+    if temp is None:
+        return True 
+    else:
+        return False
+
 
 def get_info(imdb_id):
     episode = ia.get_episode(imdb_id)
+    title = format_field(episode, 'title')
+    if not check_episode_exists(title):
+        return None
     datum = {'episode_id': imdb_id,
-             'title': episode.data['title'],
-             'year': episode.data['year'],
-             'season': episode.data['season'],
-             'episode': episode.data['episode'],
-             'cast': ','.join([x.personID for x in episode.data['cast']])}
+             'title': format_field(episode, 'title'),
+             'year': format_field(episode, 'year'),
+             'season': format_field(episode, 'season'),
+             'episode': format_field(episode, 'episode'),
+             'cast': ','.join([x.personID for x in episode.data['cast']]) if 'cast' in episode.data.keys() else None}
     return datum
 
 
-def get_episodes(url,
-                 series_id):
-    imdb_ids = get_ids(url)
+# def get_episodes(url,
+#                  series_id):
+#     imdb_ids = get_ids(url)
     
-    data = []
-    while imdb_ids:
-        id_ = imdb_ids.pop(0)
-        try:
-            datum = get_info(id_)
-            datum['series_id'] = series_id
-            data.append(datum)
-        except _exceptions.IMDbDataAccessError:
-            imdb_ids.append(id_)
-    return data    
+#     data = []
+#     while imdb_ids:
+#         id_ = imdb_ids.pop(0)
+#         try:
+#             datum = get_info(id_)
+#             if not datum:
+#                 continue
+#             datum['series_id'] = series_id
+#             data.append(datum)
+#         except _exceptions.IMDbDataAccessError:
+#             imdb_ids.append(id_)
+#     return data    
 
 
-def get_episode_info(url,
-                     series_id):
+def get_episode_info(df):
+    series_id = df.iloc[0]['series_id']
+    imdb_id = str(series_id).zfill(7)
+    # ia = Cinemagoer()
+    # result = ia.get_movie(series_id)
+    # imdb_id = result.movieID
+    url = f'https://www.imdb.com/search/title/?series=tt{imdb_id}&sort=user_rating,desc&count=250&view=simple'
+
     data = []
-    imdb_ids = get_ids(url)
-    while imdb_ids:
-        id_ = imdb_ids.pop(0)
+    imdb_ids = [int(x) for x in get_ids(url)]
+    existing = [int(x) for x in df['episode_id'].tolist() if not pd.isnull(x)]
+    new_ids = [x for x in imdb_ids if x not in existing]
+    pb = tqdm(total=len(new_ids), leave=False, desc=f'Getting episodes for {series_id}')
+    while new_ids:
+        id_ = new_ids.pop(0)
         try:
             datum = get_info(id_)
-            datum['series_id'] = series_id
-            data.append(datum)
+            if datum:
+                datum['series_id'] = series_id
+                data.append(datum)
         except _exceptions.IMDbDataAccessError:
             imdb_ids.append(id_)
+        pb.update(1)
     df = pd.DataFrame(data)
     # combined = pd.concat([episode_df, df], axis=0)
     # combined = combined.reset_index(drop=True)

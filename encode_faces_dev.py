@@ -20,7 +20,44 @@ def process_image(face):
     return cv2.resize(rgb, (150, 150), interpolation=cv2.INTER_AREA)
 
 
-def encode_faces(src):
+# def encode_faces(src, batch_size=256):
+#     if isinstance(src, str):
+#         try:
+#             df = pd.read_csv(str(src), index_col=0)
+#             df = df.reset_index(drop=True)
+#         except Exception as e:
+#             logging.error(e)
+#             exit()
+#     else:
+#         df = src 
+
+#     cap = cv2.VideoCapture(df.at[0, 'filepath'])
+#     frame_nums = df['frame_num'].unique().tolist()
+#     encodings = []
+#     faces = []
+#     for frame_num in tqdm(frame_nums, desc='Encoding faces', leave=False):
+#         ret, frame = cap.read()
+#         temp = df[df['frame_num'] == frame_num]
+#         for idx, row in temp.iterrows():
+#             face = extract_face(row, frame)
+#             resized = process_image(face)
+#             faces.append(resized)
+#             if (len(faces) >= batch_size) or frame_num == frame_nums[-1]:
+#                 e = encoder.compute_face_descriptor(np.array(faces))
+#                 encodings.extend(e)
+#                 faces = []
+#     e = np.array([np.array(x) for x in encodings])
+#     df = df.assign(encoding=e)
+#     return df
+
+
+def parse_vector(vector):
+    temp = vector.split('\n')
+    e = [float(x) for x in temp]
+    return np.array(e)
+
+
+def encode_faces(src, batch_size=256):
     if isinstance(src, str):
         try:
             df = pd.read_csv(str(src), index_col=0)
@@ -31,22 +68,24 @@ def encode_faces(src):
     else:
         df = src 
 
+    last = df.iloc[-1]['frame_num']
     cap = cv2.VideoCapture(df.at[0, 'filepath'])
-    frame_nums = df['frame_num'].unique().tolist()
+    framecount = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+    encodings = []
     faces = []
-    for frame_num in tqdm(frame_nums):
+    for frame_num in tqdm(range(framecount)):
         ret, frame = cap.read()
         temp = df[df['frame_num'] == frame_num]
         for idx, row in temp.iterrows():
             face = extract_face(row, frame)
             resized = process_image(face)
             faces.append(resized)
-
-    encodings = encoder.compute_face_descriptor(np.array(faces))
-    df = df.assign(encoding=list(encodings))
-    # for num, encoding in enumerate(encodings):
-    #     e = np.array(encoding)
-    #     df.at[num, 'encoding'] = encoding
+            if (len(faces) >= batch_size) or frame_num == last:
+                e = encoder.compute_face_descriptor(np.array(faces))
+                encodings.extend(e)
+                faces = []
+    e = [np.array(x) for x in encodings]
+    df = df.assign(encoding=e)
     return df
 
 
