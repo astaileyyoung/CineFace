@@ -91,11 +91,9 @@ def encode(faces, frame):
 def detect_faces(src, frameskip=24):
     cap = cv2.VideoCapture(src)
     framecount = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
-    
     data = []
     for frame_num in tqdm(range(framecount), desc=Path(src).name, leave=False):
         ret, frame = cap.read()
-        h, w = frame.shape[:2]
         if not ret or frame is None:
             if (framecount - frame_num) < frameskip:
                 break 
@@ -107,8 +105,8 @@ def detect_faces(src, frameskip=24):
             d = format_predictions(faces, frame_num, encodings)
             data.extend(d)
     df = pd.DataFrame(data)
-    df['img_width'] = w 
-    df['img_height'] = h
+    df['img_width'] = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+    df['img_height'] = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
     return df
 
 

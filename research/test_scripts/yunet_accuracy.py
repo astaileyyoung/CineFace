@@ -1,12 +1,16 @@
+from pathlib import Path 
 from argparse import ArgumentParser
 
 import cv2
 import pandas as pd 
+from tqdm import tqdm 
+
+from videotools.Detectors import FaceDetectorYunet
 
 
 def get_box(faces):
     data = []
-    for face in faces:
+    for face in faces[1]:
         confidence = face[-1]
         x1, y1, x2, y2 = list(map(int, face[:4]))
         width = x2 - x1
@@ -36,17 +40,33 @@ def format_data(img, data):
     return new
 
 
-def main(args):
-    size = 300
-    weights = '/home/amos/programs/videotools/opencv_zoo/models/face_detection_yunet/face_detection_yunet_2023mar.onnx'
-    org = cv2.imread(args.src)
-    fd = cv2.FaceDetectorYN_create(str(weights), "", (size, size), score_threshold=0.75)
-    img = cv2.cvtColor(org, cv2.COLOR_BGRA2BGR)
-    img = cv2.resize(img, (size, size))
-    fd.setInputSize((size, size))
-    result = fd.detect(img)
-    data = get_box(faces)
-    df = pd.DataFrame(format_data(org, data))
+# def detect_image(src):
+#     org = cv2.imread(src)
+#     img = cv2.cvtColor(org, cv2.COLOR_BGRA2BGR)
+#     img = cv2.resize(img, (SIZE, SIZE))
+#     fd.setInputSize((SIZE, SIZE))
+#     faces = fd.detect(img)
+#     if faces[1] is None:
+#         return [] 
+    
+#     data = get_box(faces)
+#     data = format_data(img, data)
+#     return data     
+
+    
+def main(args):    
+    images = pd.read_csv(args.src, index_col=0)
+    names = images['name'].unique().tolist()
+    data = []
+    for name in tqdm(names):
+        fp = Path('/home/amos/programs/CineFace/research/test_images').joinpath(name)
+        d = fd.predict_image(str(fp))
+        if d is not None:
+            for i in d:
+                i['name'] = name
+                data.append(i)
+            data.extend(d)
+    df = pd.DataFrame(data)
     df.to_csv(args.dst)
 
 
@@ -55,4 +75,7 @@ if __name__ == '__main__':
     ap.add_argument('src')
     ap.add_argument('dst')
     args = ap.parse_args()
+    
+    fd = FaceDetectorYunet()
+    
     main(args)

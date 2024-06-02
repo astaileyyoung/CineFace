@@ -1,15 +1,16 @@
 import os 
+
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+
 import time 
 from pathlib import Path
 from argparse import ArgumentParser
 
 import cv2
 from retinaface import RetinaFace
+import numpy as np
 import pandas as pd 
 from tqdm import tqdm 
-
-
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 
 def get_box(faces):
@@ -49,25 +50,35 @@ def format_data(img, data):
 def detect_image(fp):
     img = cv2.imread(str(fp))
     faces = RetinaFace.detect_faces(img)
-    data = get_box(faces)
-    data = format_data(img, data)
+    if not faces:
+        data = [{'x1': np.nan,
+                 'y1': np.nan,
+                 'x2': np.nan,
+                 'y2': np.nan,
+                 'width': np.nan,
+                 'height': np.nan,
+                 'area': np.nan,
+                 'confidence': np.nan,
+                 'face_num': np.nan,
+                 'img_width': np.nan,
+                 'pct_of_frame': np.nan,
+                 'name': Path(fp).name,
+                 'duration': np.nan}]
+    else:
+        data = get_box(faces)
+        data = format_data(img, data)
     return data
     
 
 def main(args):
-    images = pd.read_csv(args.src)
-    names = images['name'].unique().tolist()
+    images = [x for x in Path(args.image_dir).iterdir()]
     data = []
-    for name in tqdm(names):
-        fp = Path('/home/amos/programs/CineFace/research/test_images').joinpath(name)
+    for image in tqdm(images):
         t = time.time()
-        preds = detect_image(str(fp))
+        preds = detect_image(str(image))
         d = time.time() - t
-    # for idx, row in tqdm(images.iterrows(), total=images.shape[0]):
-    #     fp = Path('/home/amos/programs/CineFace/research/test_images').joinpath(row['name'])
-    #     d = detect_image(str(fp))
         for i in preds:
-            i['name'] = name
+            i['name'] = image.name
             i['duration'] = round(d, 3)
         data.extend(preds)
     df = pd.DataFrame(data)
@@ -76,7 +87,7 @@ def main(args):
 
 if __name__ == '__main__':
     ap = ArgumentParser()
-    ap.add_argument('src')
     ap.add_argument('dst')
+    ap.add_argument('--image_dir', default='../test_images')
     args = ap.parse_args()
     main(args)

@@ -5,7 +5,7 @@ from tqdm import tqdm
 
 
 size = 300
-weights = Path('..').joinpath('opencv_zoo/models/face_detection_yunet/face_detection_yunet_2023mar.onnx')
+weights = Path('/home/amos/programs/videotools').joinpath('opencv_zoo/models/face_detection_yunet/face_detection_yunet_2023mar.onnx')
 
 fd = cv2.FaceDetectorYN_create(str(weights), "", (size, size), score_threshold=0.50)
 fd.setInputSize((size, size))

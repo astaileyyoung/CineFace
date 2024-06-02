@@ -69,11 +69,12 @@ def encode_faces(src, batch_size=256):
         df = src 
 
     last = df.iloc[-1]['frame_num']
-    cap = cv2.VideoCapture(df.at[0, 'filepath'])
+    src = df.at[0, 'filepath']
+    cap = cv2.VideoCapture(src)
     framecount = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
     encodings = []
     faces = []
-    for frame_num in tqdm(range(framecount)):
+    for frame_num in tqdm(range(framecount), desc=f'Encoding faces for {Path(src).name}', leave=False):
         ret, frame = cap.read()
         temp = df[df['frame_num'] == frame_num]
         for idx, row in temp.iterrows():

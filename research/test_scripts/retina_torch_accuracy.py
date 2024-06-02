@@ -4,6 +4,7 @@ from pathlib import Path
 from argparse import ArgumentParser
 
 import cv2
+import numpy as np
 import pandas as pd 
 from tqdm import tqdm
 
@@ -62,28 +63,45 @@ def resize_image(img, max_size=720):
 def detect_image(src, max_size=720):
     img = cv2.imread(str(src))
     resized = resize_image(img, max_size=max_size)
-    data = model.predict_jsons(resized)
-    data = get_box(data)
-    data = format_data(img, data, Path(src).name)
-    return data 
+    faces = model.predict_jsons(resized)
+    if not faces:
+        data = [{'x1': np.nan,
+                 'y1': np.nan,
+                 'x2': np.nan,
+                 'y2': np.nan,
+                 'width': np.nan,
+                 'height': np.nan,
+                 'area': np.nan,
+                 'confidence': np.nan,
+                 'face_num': np.nan,
+                 'img_width': np.nan,
+                 'pct_of_frame': np.nan,
+                 'name': Path(src).name,
+                 'duration': np.nan}]
+    else:
+        data = get_box(faces)
+        data = format_data(img, data, src)
+    return data
 
 
 def main(args):
-    images = pd.read_csv(args.src)
-    names = images['name'].unique().tolist()
+    images = [x for x in Path(args.image_dir).iterdir()]
     data = []
-    for name in tqdm(names):
-        fp = Path('/home/amos/programs/CineFace/research/test_images').joinpath(name)
-        d = detect_image(str(fp), max_size=args.max_size)
-        data.extend(d)
+    for image in tqdm(images):
+        t = time.time()
+        preds = detect_image(str(image))
+        d = time.time() - t
+        for i in preds:
+            i['name'] = image.name
+            i['duration'] = round(d, 3)
+        data.extend(preds)
     df = pd.DataFrame(data)
     df.to_csv(args.dst)
 
 
 if __name__ == '__main__':
     ap = ArgumentParser()
-    ap.add_argument('--src', default='./images.csv')
-    ap.add_argument('--dst', default='../test_results/retina_torch_accuracy.csv')
-    ap.add_argument('--max_size', default=480, type=int)
+    ap.add_argument('dst')
+    ap.add_argument('--image_dir', default='../test_images')
     args = ap.parse_args()
     main(args)
