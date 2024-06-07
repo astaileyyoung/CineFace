@@ -10,16 +10,16 @@ def remove_bad_faces(faces):
     return new_faces
 
 
-def resize_image(image, model='cv2', max_size=720):
+def resize_image(image, model='cv2'):
     import cv2 
     import PIL 
 
     h, w = image.shape[:2]
-    if h > max_size:
+    if h > 720:
         scale = 720/h 
         ww = int(scale * w)
         if model == 'cv2':
-            image = cv2.resize(image, (max_size, ww), interpolation=cv2.INTER_NEAREST)
+            image = cv2.resize(image, (720, ww), interpolation=cv2.INTER_NEAREST)
         elif model == 'pillow':
             image = PIL.Image.fromarray(image)
             image = image.resize((h, ww))
