@@ -9,6 +9,7 @@ from pathlib import Path
 from argparse import ArgumentParser 
 
 import cv2 
+import dlib 
 import numpy as np
 import pandas as pd
 from tqdm import tqdm 
@@ -19,6 +20,10 @@ from utils import gather_files
 
 logging.getLogger("h5py").setLevel(logging.ERROR)
 logging.getLogger("github").setLevel(logging.ERROR)
+
+
+model_path = Path(__file__).parent.joinpath('data/dlib_face_recognition_resnet_model_v1.dat').absolute().resolve()
+encoder = dlib.face_recognition_model_v1(str(model_path))
 
 
 def distance_from_center(row):
@@ -50,7 +55,7 @@ def calc(df):
     return df
 
 
-def format_predictions(predictions, frame_num):
+def format_predictions(predictions, frame_num, encodings):
     data = []
     for face_num, (_, prediction) in enumerate(predictions.items()):
         x1, y1, x2, y2 = [int(x) for x in prediction['facial_area']]
@@ -62,14 +67,30 @@ def format_predictions(predictions, frame_num):
         datum['confidence'] = round(prediction['score'], 3)
         datum['frame_num'] = frame_num
         datum['face_num'] = face_num
+        datum['encoding'] = np.array(encodings[face_num])
         data.append(datum)
     return data 
+
+
+def process_image(face):
+    rgb = cv2.cvtColor(face, cv2.COLOR_BGR2RGB)
+    return cv2.resize(rgb, (150, 150), interpolation=cv2.INTER_AREA)
+
+
+def extract_face(box, frame):
+    x1, y1, x2, y2 = box 
+    return frame[y1:y2, x1:x2]
+
+
+def encode(faces, frame):
+    f = [process_image(extract_face(v['facial_area'], frame)) for k, v in faces.items()]
+    encodings = encoder.compute_face_descriptor(np.array(f)) 
+    return encodings
 
 
 def detect_faces(src, frameskip=24):
     cap = cv2.VideoCapture(src)
     framecount = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
-    
     data = []
     for frame_num in tqdm(range(framecount), desc=Path(src).name, leave=False):
         ret, frame = cap.read()
@@ -80,9 +101,12 @@ def detect_faces(src, frameskip=24):
                 return None
         elif frame_num % frameskip == 0:
             faces = RetinaFace.detect_faces(frame)
-            d = format_predictions(faces, frame_num)
+            encodings = encode(faces, frame)
+            d = format_predictions(faces, frame_num, encodings)
             data.extend(d)
     df = pd.DataFrame(data)
+    df['img_width'] = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+    df['img_height'] = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
     return df
 
 

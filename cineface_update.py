@@ -6,6 +6,7 @@ from argparse import ArgumentParser
 
 import cv2
 import pymysql
+import requests
 import pandas as pd
 import sqlalchemy as db 
 from tqdm import tqdm 
@@ -44,7 +45,6 @@ class Analyzer(object):
         if not Path(self.dst).exists():
             Path.mkdir(self.dst)
         self.df = self.analyze_file(self.data)
-        self.df = self.encode_faces(self.df)
         self.df.to_csv(self.fp)
         self.success = self.check_if_exists(self.fp)
         self.to_sql()
@@ -142,13 +142,18 @@ def to_github(file,
     with open(str(file), 'r') as f:
         data = f.read().replace('\n', '')
 
-    fp = f'data/faces/{Path(file).parent.parts[-1]}/{Path(file).name}'
-    try:
-        repo.create_file(fp, f'Added face data for {Path(file).stem}', data, branch=branch)
-    except GithubException as e:
-        if e.status == 422:
-            return traceback.format_exc()
-    return None
+    cnt = 0
+    while cnt < 5:
+        fp = f'data/faces/{Path(file).parent.parts[-1]}/{Path(file).name}'
+        try:
+            repo.create_file(fp, f'Added face data for {Path(file).stem}', data, branch=branch)
+        except GithubException as e:
+            if e.status == 422:
+                return traceback.format_exc()
+        except requests.exceptions.ConnectionError:
+            cnt += 1 
+            continue
+        return None
 
 
 def add_to_queue(d,
@@ -250,7 +255,8 @@ def process_queue(engine,
                                   SELECT *
                                   FROM queue
                                   WHERE to_analyze = 1 AND 
-                                        analyzed = 0
+                                        analyzed = 0 AND 
+                                        series_id IS NOT NULL
                                   ORDER BY height ASC 
                                   """, conn)
         

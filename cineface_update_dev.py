@@ -1,14 +1,14 @@
-import logging
+import logging 
 import traceback
-import subprocess as sp
-from pathlib import Path 
-from datetime import datetime
-from argparse import ArgumentParser
+from pathlib import Path
+from datetime import datetime  
+from argparse import ArgumentParser 
 
 import cv2
-import numpy as np
+import pymysql
+import requests
 import pandas as pd
-import sqlalchemy as db
+import sqlalchemy as db 
 from tqdm import tqdm 
 from imdb import Cinemagoer, IMDbError
 from github import Github, Auth, GithubException
@@ -17,11 +17,10 @@ from qdrant_client import QdrantClient
 from qdrant_client.models import Distance, VectorParams, PointStruct
 from qdrant_client.http import models
 
-from find_faces_dev import detect_faces
-from get_episode_info import get_episode_info
+from find_faces_threaded_batch import detect_faces, calc
 from utils import (
-    parse_paths, get_files, create_table, get_id, get_id_sparse, format_imdb_data, format_series
-    )
+    create_table, get_files, parse_paths, get_id, get_id_sparse
+)
 
 
 class Analyzer(object):
@@ -37,21 +36,24 @@ class Analyzer(object):
         self.calling_script = Path(__file__).name
         self.model = 'RetinaCustom'
         self.embedding_model = 'dlib'
-        
-        self.dst, self.fp = self.format_dst(dst_dir, data)
+        self.dst_dir = dst_dir
+        self.data = data
+    
+    def analyze(self):        
+        self.dst, self.fp = self.format_dst(self.dst_dir, self.data)
         if not Path(self.dst).exists():
             Path.mkdir(self.dst)
-        self.analyze_file(data, self.fp)
+        self.df = self.analyze_file(self.data)
+        self.df.to_csv(self.fp)
         self.success = self.check_if_exists(self.fp)
-        if self.success:
-            self.encode_faces()
-            self.to_sql()
+        self.to_sql()
+        return self
     
     def format_dst(self,
                    dst_dir,
                    row):
         dst = Path(dst_dir).joinpath(
-                f'{row["title"].replace(" ", "-").lower()}_{int(row["year"])}_{row["series_id"]}')
+                f'{row["title"].replace(" ", "-").lower()}_{int(row["year"])}_{int(row["series_id"])}')
         fp = dst.joinpath(f'{Path(row["filepath"]).stem}.csv')
         return dst, fp  
 
@@ -74,148 +76,22 @@ class Analyzer(object):
         return num_processed
     
     def analyze_file(self,
-                     data,
-                     dst):
-        df = detect_faces(data['filepath'])
+                     data):
+        df = detect_faces(data['filepath'], num_threads=8, max_size=720)
         df['series_id'] = data['series_id']
         df['episode_id'] = data['episode_id']
-        df.to_csv(dst)
+        df['filename'] = data['filename']
+        df['filepath'] = data['filepath']
+        df = calc(df)
         self.end = datetime.now()
-        self.duration = (self.end - self.start).total_seconds()
-        
-    def encode_faces(self):
-        command = [
-                'ssh',
-                'amos@192.168.0.111',
-                '/home/amos/bin/encode_faces',
-                f'"{self.fp}"',
-                '--to_drop',
-                'filepath video_src']
-        sp.run(command)
+        self.duration = round((self.end - self.start).total_seconds())
+        return df
 
     def to_sql(self):
         columns = pd.read_sql_query('SELECT * FROM history LIMIT 1;', self.conn).columns.tolist()
         df = pd.DataFrame([{k:v for k,v in self.__dict__.items() if k in columns}])
         df.to_sql('history', self.conn, if_exists='append', index=False)
         self.conn.commit()
-
-
-def get_repo(token_path, 
-             repo_name):
-    with open(token_path, 'r') as f:
-        token = f.read().strip()
-    a = Auth.Token(token)
-    g = Github(auth=a)
-    repo = g.get_user().get_repo(repo_name)
-    return repo
-    
-
-def to_github(file,
-              token_path,
-              repo_name='CineFace',
-              branch='main'):
-    repo = get_repo(token_path, repo_name)
-    with open(str(file), 'r') as f:
-        data = f.read().replace('\n', '')
-
-    fp = f'data/faces/{Path(file).parent.parts[-1]}/{Path(file).name}'
-    try:
-        repo.create_file(fp, f'Added face data for {Path(file).stem}', data, branch=branch)
-    except GithubException as e:
-        if e.status == 422:
-            return traceback.format_exc()
-    return None
-
-
-def get_episodes(series_id,
-                 conn):
-    temp = pd.read_sql_query(f'SELECT * FROM episodes WHERE series_id = {series_id};', conn)
-    if temp.shape[0] > 1:
-        return
-    
-    df = get_episode_info(series_id)
-    df.to_sql('episodes', conn, index=False, if_exists='append')
-    conn.commit()
-    logging.debug(f'Added episode info for {series_id}.')
-    
-    
-def get_series(engine):
-    with engine.connect() as conn:
-        ia = Cinemagoer()
-
-        series_ids = pd.read_sql_query('SELECT DISTINCT(series_id) FROM faces;', conn)
-        existing = pd.read_sql_query('SELECT DISTINCT(series_id) FROM series;', conn)
-        temp = series_ids.merge(existing,
-                                how='inner',
-                                on='series_id')
-        new = series_ids.drop(temp.index, axis=0)
-        logging.debug(f'Adding {new.shape[0]} series to database.')
-        data = []
-        for series_id in tqdm(new['series_id'].tolist(), desc='Adding series ...'):
-            series = ia.get_movie(series_id)
-            # ia.update(series, 'episodes')
-            datum = format_series(series)
-            data.append(datum)
-        df = pd.DataFrame(data)
-        df.to_sql('series', conn, index=False, if_exists='append')
-        conn.commit()
-        logging.debug(f'Added {new.shape[0]} series database.')
-    
-
-def parse_vector(vector):
-    return np.array([float(x) for x in vector.split('\n')])
-
-
-def inject_encodings(df,
-                    collection_name='FacialEmbeddings'):
-    cnt = CLIENT.count(collection_name='FacialEmbeddings').count
-    existing = CLIENT.retrieve(collection_name,
-                               [x for x in range(cnt)],
-                               with_vectors=True,
-                               with_payload=True)
-    existing_df = pd.DataFrame([dict(x.payload) for x in existing])
-    if existing_df.shape[0] > 0:
-        temp = df.merge(existing_df,
-                        how='inner',
-                        on=['episode_id', 'frame_num', 'face_num'])
-        new = df.drop(temp.index, axis=0)
-    else:
-        new = df 
-        
-    batch = []
-    batch_size = 1024
-    for idx, row in new.iterrows():
-        batch.append((idx, row))
-        if idx % batch_size == 0:
-            CLIENT.upsert(
-                collection_name=collection_name,
-                points=[
-                    PointStruct(
-                        id=i,
-                        vector=parse_vector(r['encoding']).tolist(),
-                        payload={'series_id': row['series_id'],
-                                 'episode_id': row['episode_id'],
-                                 'frame_num': row['frame_num'],
-                                 'face_num': row['face_num']}
-                    ) for i, r in batch 
-                ]
-            )
-            batch = []
-            
-
-def add_to_server(src, conn):
-    df = pd.read_csv(src, index_col=0)
-    r = conn.execute(db.text('SELECT COUNT(uid) FROM faces;'))
-    cnt = r.fetchone()[0]
-    df = pd.read_csv(str(src), index_col=0)
-    df = df.reset_index(drop=True)
-    df.index = df.index.map(lambda x: x + cnt)
-    inject_encodings(df)
-    logging.debug(f'Added {df.shape[0]} embeddings for {df["series_id"]}.')
-    df = df.drop([x for x in ['video_src', 'encoding'] if x in df.columns], axis=1)
-    df.to_sql('faces', conn, if_exists='append', index=False)
-    conn.commit()
-    logging.debug(f'Added {df.shape[0]} faces to database.')
 
 
 def check_for_tables(engine):
@@ -232,65 +108,184 @@ def check_for_tables(engine):
         if not db.inspect(engine).has_table('episodes'):
             create_table('./sql/tables/episodes.sql', conn)
             logging.debug('Created episode table.')
+        
+        if not db.inspect(engine).has_table('history'):
+            create_table('./sql/tables/history.sql', conn)
+            logging.debug('Created history table.')
+
+        if not db.inspect(engine).has_table('queue'):
+            create_table('./sql/tables/queue.sql', conn)
+            logging.debug('Created queue table.')
 
 
-def analyze_file(row,
-                 dst_dir,
-                 conn,
-                 repo_name='CineFace',
-                 token_path='./data/pat.txt',
-                 branch='main'):
-    if not Path(row['filepath']).exists():
-        logging.error(f'{row["filepath"]} does not exist.')
+def get_repo(token_path, 
+             repo_name):
+    with open(token_path, 'r') as f:
+        token = f.read().strip()
+    a = Auth.Token(token)
+    g = Github(auth=a)
+    repo = g.get_user().get_repo(repo_name)
+    return repo
+
+
+def to_github(file,
+              token_path,
+              repo_name='CineFace',
+              branch='main'):
+    repo = get_repo(token_path, repo_name)
+    with open(str(file), 'r') as f:
+        data = f.read().replace('\n', '')
+
+    cnt = 0
+    while cnt < 5:
+        fp = f'data/faces/{Path(file).parent.parts[-1]}/{Path(file).name}'
+        try:
+            repo.create_file(fp, f'Added face data for {Path(file).stem}', data, branch=branch)
+        except GithubException as e:
+            if e.status == 422:
+                return traceback.format_exc()
+        except requests.exceptions.ConnectionError:
+            cnt += 1 
+            continue
         return None
-    get_episodes(row['series_id'], conn)
-    r = conn.execute(db.text(f"""
-                             SELECT episode_id
-                             FROM episodes
-                             WHERE series_id = {row["series_id"]} AND
-                                   season = {row["season"]} AND
-                                   episode = {row["episode"]} 
-                             """))
-    episode_id = r.fetchone()[0]
-    row['episode_id'] = episode_id
-    a = Analyzer(row, dst_dir, conn)
-    if a.success:
-        conn.execute(db.text(f"""
-                            UPDATE queue
-                            SET analyzed = 1, to_analyze = 0
-                            WHERE series_id = {row["series_id"]} AND
-                                season = {row["season"]} AND
-                                episode = {row["episode"]}
-                            """))
-        conn.commit()
-        logging.debug(f'Analyzed {row["title"]} ({row["series_id"]}) and saved results to {str(a.fp)}.')
-        e = to_github(a.fp, token_path, repo_name=repo_name, branch=branch)
-        if not e:
-            logging.info(f'Uploaded to Github from {a.fp}')
-        else:
-            logging.error(f'Failed to upload file to GitHub.\n\n{e}')
-        add_to_server(a.fp, conn)
-    
 
-def analyze_files(engine,
-                  dst_dir,
+
+def add_to_queue(d,
+                 engine,
+                 extensions=('.mp4', '.m4v', '.mkv', '.avi')):
+    """
+    Scan directory looking for new files. Then, match file to IMDb ID to get metadata.
+    Finally, add the new files with their corresponding IMDb IDs to the SQL server. 
+    """
+    paths = [x for x in get_files(d, extensions=extensions) if 'sample' not in x.stem]
+    df = pd.DataFrame(parse_paths(paths))
+    logging.debug(f'Found {df.shape[0]} files.')
+
+    with engine.connect() as conn:
+        existing = pd.read_sql_query('SELECT filename FROM queue;', conn)
+        new = df[~df['filename'].isin(existing['filename'])]
+        new = new[(new['title'].notna()) &
+                  (new['season'].notna()) &
+                  (new['episode'].notna())]
+        logging.info(f'{new.shape[0]} new files out of {df.shape[0]}.')
+        new.to_sql('queue', conn, if_exists='append', index=False)
+        conn.commit()
+
+
+def get_metadata(row,
+             exclude=['Animation', 'Reality-TV', 'Documentary']):
+    """
+    Gets information from IMdB. 
+    Also removes videos from genres like animation or reality shows.
+    """
+    ia = Cinemagoer(loggingLevel=50)
+    info = ia.get_movie(row['series_id'])
+    row['title'] = info.data['title']
+    row['year'] = info.data['year']
+    if any([True for x in info.data['genres'] if x in exclude]):
+        row['to_analyze'] = 0 
+    else:
+        row['to_analyze'] = 1
+    row['processed'] = 1
+    return row
+
+
+def imdb_id_from_row(row):
+    """
+    I know this function is butt ugly, but it works, so I'm leaving it.
+    """
+    if not pd.isnull(row['year']):
+        try:
+            imdb_id = get_id(row['title'],
+                             year=row['year'],
+                             kind='tv')
+        except IndexError:
+            logging.error(f'Unable to match IMDb ID for {row["title"]}')
+            return None 
+    else:
+        try:
+            imdb_id = get_id_sparse(row['title'], kind='tv')
+        except IndexError:
+            logging.error(f'Unable to match IMDb ID for {row["title"]}')
+            return None 
+    if not imdb_id:
+        logging.error(f'Unable to match IMDb ID for {row["title"]}')
+        return None
+    else:
+        return imdb_id
+
+
+def update_queue(engine):
+    with engine.connect() as conn:
+        df = pd.read_sql_query('SELECT * FROM queue WHERE series_id IS NULL', conn)
+        g = df.groupby('title').max().reset_index()
+        logging.debug(f'Found {g.shape[0]} to process.')
+        for idx, row in tqdm(g.iterrows(),
+                             desc='Adding to queue ...',
+                             total=g.shape[0],
+                             leave=False):
+            imdb_id = imdb_id_from_row(row)
+            if not imdb_id:
+                continue 
+            row['series_id'] = int(imdb_id) 
+            row = get_metadata(row)
+            conn.execute(db.text(f"""
+                                 UPDATE queue 
+                                 SET series_id = {str(imdb_id)},
+                                     year = {row["year"]},
+                                     processed = 1
+                                 WHERE title = '{row["title"].replace("'", "''")}'
+                                 """))
+            conn.commit()
+
+
+def process_queue(engine, 
+                  dst,
                   repo_name='CineFace',
                   token_path='./data/pat.txt',
                   branch='main'):
     with engine.connect() as conn:
-        to_analyze = pd.read_sql_query('SELECT * FROM queue WHERE analyzed = 0 AND to_analyze = 1;', conn)
+        queue = pd.read_sql_query("""
+                                  SELECT *
+                                  FROM queue
+                                  WHERE to_analyze = 1 AND 
+                                        analyzed = 0 AND 
+                                        series_id IS NOT NULL
+                                  ORDER BY height ASC 
+                                  """, conn)
+        
+        logging.debug(f'Found {queue.shape[0]} for analysis.')
+        for _, row in tqdm(queue.iterrows(), total=queue.shape[0]):
+            try:
+                a = Analyzer(row, dst, conn).analyze()
+            except KeyError:
+                conn.execute(db.text(f"""
+                                    UPDATE queue
+                                    SET to_analyze = -1
+                                    WHERE series_id = {row["series_id"]} AND
+                                        season = {row["season"]} AND
+                                        episode = {row["episode"]}
+                                    """))
+                conn.commit()
+                continue 
+            if a.success:
+                conn.execute(db.text(f"""
+                                    UPDATE queue
+                                    SET analyzed = 1, to_analyze = 0
+                                    WHERE series_id = {row["series_id"]} AND
+                                        season = {row["season"]} AND
+                                        episode = {row["episode"]}
+                                    """))
+                conn.commit()
+                logging.debug(f'Analyzed {row["title"]} ({row["series_id"]}) and saved results to {str(a.fp)}.')
+                e = to_github(a.fp, token_path, repo_name=repo_name, branch=branch)
+                if not e:
+                    logging.info(f'Uploaded to Github from {a.fp}')
+                else:
+                    logging.error(f'Failed to upload file to GitHub.\n\n{e}')
 
-        logging.debug(f'Found {to_analyze.shape[0]} for analysis.')
-        for _, row in tqdm(to_analyze.iterrows(), total=to_analyze.shape[0]):
-            
-            analyze_file(row,
-                         dst_dir,
-                         conn,
-                         repo_name=repo_name,
-                         token_path=token_path,
-                         branch=branch)
-            
                 
+
 def main(args):
     collections = [x.name for x in CLIENT.get_collections().collections]
     if 'FacialEmbeddings' not in collections:
@@ -304,14 +299,13 @@ def main(args):
 
     check_for_tables(engine)
 
+    add_to_queue(args.watch_dir,
+                 engine,
+                 extensions=args.extensions)
+    
+    update_queue(engine)
 
-    # Run face detection on the new files.
-    analyze_files(engine,
-                  args.dst,
-                  token_path=args.token_path,
-                  repo_name=args.repo,
-                  branch=args.branch)
-    get_series()
+    process_queue(engine, args.dst)
 
 
 if __name__ == '__main__':

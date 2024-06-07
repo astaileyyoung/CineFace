@@ -95,7 +95,7 @@ def detect_faces(src, frameskip=24):
     for frame_num in tqdm(range(framecount), desc=Path(src).name, leave=False):
         ret, frame = cap.read()
         if not ret or frame is None:
-            if (framecount - frame_num) < frameskip:
+            if (framecount - frame_num) <= frameskip:
                 break 
             else:
                 return None

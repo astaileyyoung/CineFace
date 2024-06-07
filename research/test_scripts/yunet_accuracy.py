@@ -2,10 +2,11 @@ from pathlib import Path
 from argparse import ArgumentParser
 
 import cv2
+import numpy as np
 import pandas as pd 
 from tqdm import tqdm 
 
-from videotools.Detectors import FaceDetectorYunet
+from videotools.detectors import FaceDetectorYunet
 
 
 def get_box(faces):
@@ -39,43 +40,42 @@ def format_data(img, data):
         new.append(datum)
     return new
 
-
-# def detect_image(src):
-#     org = cv2.imread(src)
-#     img = cv2.cvtColor(org, cv2.COLOR_BGRA2BGR)
-#     img = cv2.resize(img, (SIZE, SIZE))
-#     fd.setInputSize((SIZE, SIZE))
-#     faces = fd.detect(img)
-#     if faces[1] is None:
-#         return [] 
-    
-#     data = get_box(faces)
-#     data = format_data(img, data)
-#     return data     
-
     
 def main(args):    
-    images = pd.read_csv(args.src, index_col=0)
-    names = images['name'].unique().tolist()
+    images = [x for x in Path(args.image_dir).iterdir()]
     data = []
-    for name in tqdm(names):
-        fp = Path('/home/amos/programs/CineFace/research/test_images').joinpath(name)
-        d = fd.predict_image(str(fp))
+    for fp in tqdm(images):
+        d = fd.detect(str(fp))
         if d is not None:
             for i in d:
-                i['name'] = name
+                i['name'] = fp.name
                 data.append(i)
-            data.extend(d)
+        else:
+            d = {'x1': np.nan,
+                 'y1': np.nan,
+                 'x2': np.nan,
+                 'y2': np.nan,
+                 'width': np.nan,
+                 'height': np.nan,
+                 'area': np.nan,
+                 'confidence': np.nan,
+                 'face_num': np.nan,
+                 'img_width': np.nan,
+                 'pct_of_frame': np.nan,
+                 'name': fp.name,
+                 'duration': np.nan}
+            data.append(d)
     df = pd.DataFrame(data)
     df.to_csv(args.dst)
 
 
 if __name__ == '__main__':
     ap = ArgumentParser()
-    ap.add_argument('src')
     ap.add_argument('dst')
+    ap.add_argument('--image_dir', default='../test_images')
     args = ap.parse_args()
     
     fd = FaceDetectorYunet()
     
     main(args)
+
