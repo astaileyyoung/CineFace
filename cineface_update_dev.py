@@ -313,7 +313,7 @@ if __name__ == '__main__':
     ap.add_argument('--watch_dir',
                     default='/home/amos/media/tv/')
     ap.add_argument('--dst',
-                    default='/home/amos/datasets/CineFace/faces')
+                    default='./data/faces')
     ap.add_argument('--extensions',
                     default=('.mp4', '.mkv', '.m4v', '.avi'),
                     nargs='+')
