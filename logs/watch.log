@@ -13567,3 +13567,1029 @@ DEBUG  2024-06-07_16:04:18: Incremented Retry for (url='/repos/astaileyyoung/Cin
 WARNING  2024-06-07_16:04:18: Retrying (GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S04E16.1080p.WEBRip.x265-RARBG.csv
 DEBUG  2024-06-07_16:04:18: Starting new HTTPS connection (55): api.github.com:443
 INFO  2024-06-07_16:04:33: Uploaded to Github from /home/amos/datasets/CineFace/faces/white-collar_2009_1358522/White.Collar.S04E16.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_20:43:03: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-06-07_20:43:03: load_verify_locations cafile='/home/amos/anaconda3/envs/retina/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-06-07_20:43:03: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-06-07_20:43:03: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7d8f4c0a3450>
+DEBUG  2024-06-07_20:43:03: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-06-07_20:43:03: send_request_headers.complete
+DEBUG  2024-06-07_20:43:03: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-06-07_20:43:03: send_request_body.complete
+DEBUG  2024-06-07_20:43:03: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-06-07_20:43:03: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 08 Jun 2024 00:43:03 GMT')])
+INFO  2024-06-07_20:43:03: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-06-07_20:43:03: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-06-07_20:43:03: receive_response_body.complete
+DEBUG  2024-06-07_20:43:03: response_closed.started
+DEBUG  2024-06-07_20:43:03: response_closed.complete
+DEBUG  2024-06-07_20:43:03: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-06-07_20:49:00: Found 4979 files.
+INFO  2024-06-07_20:49:00: 0 new files out of 4979.
+DEBUG  2024-06-07_20:49:00: Found 7 to process.
+ERROR  2024-06-07_20:49:01: Unable to match IMDb ID for 
+DEBUG  2024-06-07_20:49:28: Found 3538 for analysis.
+DEBUG  2024-06-07_20:59:04: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S05E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-07_20:59:04: Starting new HTTPS connection (1): api.github.com:443
+DEBUG  2024-06-07_20:59:04: https://api.github.com:443 "GET /user HTTP/1.1" 401 95
+DEBUG  2024-06-07_20:59:04: close.started
+DEBUG  2024-06-07_20:59:04: close.complete
+DEBUG  2024-06-07_21:05:40: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-06-07_21:05:40: load_verify_locations cafile='/home/amos/anaconda3/envs/retina/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-06-07_21:05:40: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-06-07_21:05:40: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b85182e8a90>
+DEBUG  2024-06-07_21:05:40: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-06-07_21:05:40: send_request_headers.complete
+DEBUG  2024-06-07_21:05:40: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-06-07_21:05:40: send_request_body.complete
+DEBUG  2024-06-07_21:05:40: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-06-07_21:05:40: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 08 Jun 2024 01:05:39 GMT')])
+INFO  2024-06-07_21:05:40: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-06-07_21:05:40: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-06-07_21:05:40: receive_response_body.complete
+DEBUG  2024-06-07_21:05:40: response_closed.started
+DEBUG  2024-06-07_21:05:40: response_closed.complete
+DEBUG  2024-06-07_21:05:40: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-06-07_21:10:20: Found 4979 files.
+INFO  2024-06-07_21:10:20: 0 new files out of 4979.
+DEBUG  2024-06-07_21:10:20: Found 7 to process.
+ERROR  2024-06-07_21:10:26: Unable to match IMDb ID for 
+DEBUG  2024-06-07_21:10:49: Found 3537 for analysis.
+DEBUG  2024-06-07_21:21:18: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S05E06.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-07_21:21:18: Starting new HTTPS connection (1): api.github.com:443
+DEBUG  2024-06-07_21:21:19: https://api.github.com:443 "GET /user HTTP/1.1" 200 None
+DEBUG  2024-06-07_21:21:19: https://api.github.com:443 "GET /repos/astaileyyoung/CineFace HTTP/1.1" 200 None
+DEBUG  2024-06-07_21:21:22: https://api.github.com:443 "PUT /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S05E06.1080p.WEBRip.x265-RARBG.csv HTTP/1.1" 403 None
+INFO  2024-06-07_21:21:22: Request PUT /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S05E06.1080p.WEBRip.x265-RARBG.csv failed with 403: Forbidden
+INFO  2024-06-07_21:21:22: Uploaded to Github from data/faces/white-collar_2009_1358522/White.Collar.S05E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_21:31:24: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S05E07.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-07_21:31:24: Starting new HTTPS connection (1): api.github.com:443
+DEBUG  2024-06-07_21:31:24: https://api.github.com:443 "GET /user HTTP/1.1" 200 None
+DEBUG  2024-06-07_21:31:25: https://api.github.com:443 "GET /repos/astaileyyoung/CineFace HTTP/1.1" 200 None
+DEBUG  2024-06-07_21:31:29: https://api.github.com:443 "PUT /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S05E07.1080p.WEBRip.x265-RARBG.csv HTTP/1.1" 403 None
+INFO  2024-06-07_21:31:29: Request PUT /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S05E07.1080p.WEBRip.x265-RARBG.csv failed with 403: Forbidden
+INFO  2024-06-07_21:31:29: Uploaded to Github from data/faces/white-collar_2009_1358522/White.Collar.S05E07.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_21:41:26: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S05E08.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-07_21:41:26: Starting new HTTPS connection (1): api.github.com:443
+DEBUG  2024-06-07_21:41:26: https://api.github.com:443 "GET /user HTTP/1.1" 200 None
+DEBUG  2024-06-07_21:41:27: https://api.github.com:443 "GET /repos/astaileyyoung/CineFace HTTP/1.1" 200 None
+DEBUG  2024-06-07_21:41:33: https://api.github.com:443 "PUT /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S05E08.1080p.WEBRip.x265-RARBG.csv HTTP/1.1" 403 None
+INFO  2024-06-07_21:41:33: Request PUT /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S05E08.1080p.WEBRip.x265-RARBG.csv failed with 403: Forbidden
+INFO  2024-06-07_21:41:33: Uploaded to Github from data/faces/white-collar_2009_1358522/White.Collar.S05E08.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_21:51:06: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S05E09.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-07_21:51:06: Starting new HTTPS connection (1): api.github.com:443
+DEBUG  2024-06-07_21:51:06: https://api.github.com:443 "GET /user HTTP/1.1" 200 None
+DEBUG  2024-06-07_21:51:07: https://api.github.com:443 "GET /repos/astaileyyoung/CineFace HTTP/1.1" 200 None
+DEBUG  2024-06-07_21:51:15: https://api.github.com:443 "PUT /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S05E09.1080p.WEBRip.x265-RARBG.csv HTTP/1.1" 403 None
+INFO  2024-06-07_21:51:15: Request PUT /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S05E09.1080p.WEBRip.x265-RARBG.csv failed with 403: Forbidden
+INFO  2024-06-07_21:51:15: Uploaded to Github from data/faces/white-collar_2009_1358522/White.Collar.S05E09.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:01:14: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S05E10.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-07_22:01:14: Starting new HTTPS connection (1): api.github.com:443
+DEBUG  2024-06-07_22:01:15: https://api.github.com:443 "GET /user HTTP/1.1" 200 None
+DEBUG  2024-06-07_22:01:15: https://api.github.com:443 "GET /repos/astaileyyoung/CineFace HTTP/1.1" 200 None
+DEBUG  2024-06-07_22:01:25: https://api.github.com:443 "PUT /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S05E10.1080p.WEBRip.x265-RARBG.csv HTTP/1.1" 403 None
+INFO  2024-06-07_22:01:25: Request PUT /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S05E10.1080p.WEBRip.x265-RARBG.csv failed with 403: Forbidden
+INFO  2024-06-07_22:01:25: Uploaded to Github from data/faces/white-collar_2009_1358522/White.Collar.S05E10.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:10:49: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S05E11.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-07_22:10:49: Starting new HTTPS connection (1): api.github.com:443
+DEBUG  2024-06-07_22:10:49: https://api.github.com:443 "GET /user HTTP/1.1" 200 None
+DEBUG  2024-06-07_22:10:49: https://api.github.com:443 "GET /repos/astaileyyoung/CineFace HTTP/1.1" 200 None
+DEBUG  2024-06-07_22:11:00: https://api.github.com:443 "PUT /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S05E11.1080p.WEBRip.x265-RARBG.csv HTTP/1.1" 403 None
+INFO  2024-06-07_22:11:00: Request PUT /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S05E11.1080p.WEBRip.x265-RARBG.csv failed with 403: Forbidden
+INFO  2024-06-07_22:11:00: Uploaded to Github from data/faces/white-collar_2009_1358522/White.Collar.S05E11.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:20:15: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S05E12.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-07_22:20:15: Starting new HTTPS connection (1): api.github.com:443
+DEBUG  2024-06-07_22:20:15: https://api.github.com:443 "GET /user HTTP/1.1" 200 None
+DEBUG  2024-06-07_22:20:15: https://api.github.com:443 "GET /repos/astaileyyoung/CineFace HTTP/1.1" 200 None
+DEBUG  2024-06-07_22:20:28: https://api.github.com:443 "PUT /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S05E12.1080p.WEBRip.x265-RARBG.csv HTTP/1.1" 403 None
+INFO  2024-06-07_22:20:28: Request PUT /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S05E12.1080p.WEBRip.x265-RARBG.csv failed with 403: Forbidden
+INFO  2024-06-07_22:20:28: Uploaded to Github from data/faces/white-collar_2009_1358522/White.Collar.S05E12.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:29:54: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S05E13.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-07_22:29:54: Starting new HTTPS connection (1): api.github.com:443
+DEBUG  2024-06-07_22:29:54: https://api.github.com:443 "GET /user HTTP/1.1" 200 None
+DEBUG  2024-06-07_22:29:54: https://api.github.com:443 "GET /repos/astaileyyoung/CineFace HTTP/1.1" 200 None
+DEBUG  2024-06-07_22:30:08: https://api.github.com:443 "PUT /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S05E13.1080p.WEBRip.x265-RARBG.csv HTTP/1.1" 403 None
+INFO  2024-06-07_22:30:08: Request PUT /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S05E13.1080p.WEBRip.x265-RARBG.csv failed with 403: Forbidden
+INFO  2024-06-07_22:30:09: Uploaded to Github from data/faces/white-collar_2009_1358522/White.Collar.S05E13.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:39:32: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-07_22:39:32: Starting new HTTPS connection (1): api.github.com:443
+DEBUG  2024-06-07_22:39:33: https://api.github.com:443 "GET /user HTTP/1.1" 200 None
+DEBUG  2024-06-07_22:39:33: https://api.github.com:443 "GET /repos/astaileyyoung/CineFace HTTP/1.1" 200 None
+DEBUG  2024-06-07_22:39:48: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:39:48: Retrying (GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:39:48: Starting new HTTPS connection (2): api.github.com:443
+DEBUG  2024-06-07_22:40:03: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:40:03: Retrying (GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:40:03: Starting new HTTPS connection (3): api.github.com:443
+DEBUG  2024-06-07_22:40:19: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:40:19: Retrying (GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:40:19: Starting new HTTPS connection (4): api.github.com:443
+DEBUG  2024-06-07_22:40:34: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:40:34: Retrying (GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:40:34: Starting new HTTPS connection (5): api.github.com:443
+DEBUG  2024-06-07_22:40:49: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:40:49: Retrying (GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:40:49: Starting new HTTPS connection (6): api.github.com:443
+DEBUG  2024-06-07_22:41:04: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:41:04: Retrying (GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:41:04: Starting new HTTPS connection (7): api.github.com:443
+DEBUG  2024-06-07_22:41:19: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:41:19: Retrying (GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:41:19: Starting new HTTPS connection (8): api.github.com:443
+DEBUG  2024-06-07_22:41:34: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:41:34: Retrying (GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:41:34: Starting new HTTPS connection (9): api.github.com:443
+DEBUG  2024-06-07_22:41:49: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:41:49: Retrying (GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:41:49: Starting new HTTPS connection (10): api.github.com:443
+DEBUG  2024-06-07_22:42:04: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:42:04: Retrying (GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:42:04: Starting new HTTPS connection (11): api.github.com:443
+DEBUG  2024-06-07_22:42:21: Starting new HTTPS connection (12): api.github.com:443
+DEBUG  2024-06-07_22:42:36: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:42:36: Retrying (GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:42:36: Starting new HTTPS connection (13): api.github.com:443
+DEBUG  2024-06-07_22:42:51: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:42:51: Retrying (GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:42:51: Starting new HTTPS connection (14): api.github.com:443
+DEBUG  2024-06-07_22:43:06: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:43:06: Retrying (GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:43:06: Starting new HTTPS connection (15): api.github.com:443
+DEBUG  2024-06-07_22:43:22: https://api.github.com:443 "PUT /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv HTTP/1.1" 403 None
+INFO  2024-06-07_22:43:22: Request PUT /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv failed with 403: Forbidden
+INFO  2024-06-07_22:43:22: Uploaded to Github from data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:54:40: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-07_22:54:40: Starting new HTTPS connection (1): api.github.com:443
+DEBUG  2024-06-07_22:54:40: https://api.github.com:443 "GET /user HTTP/1.1" 200 None
+DEBUG  2024-06-07_22:54:41: https://api.github.com:443 "GET /repos/astaileyyoung/CineFace HTTP/1.1" 200 None
+DEBUG  2024-06-07_22:54:56: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:54:56: Retrying (GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:54:56: Starting new HTTPS connection (2): api.github.com:443
+DEBUG  2024-06-07_22:55:11: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:55:11: Retrying (GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:55:11: Starting new HTTPS connection (3): api.github.com:443
+DEBUG  2024-06-07_22:55:26: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:55:26: Retrying (GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:55:26: Starting new HTTPS connection (4): api.github.com:443
+DEBUG  2024-06-07_22:55:41: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:55:41: Retrying (GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:55:41: Starting new HTTPS connection (5): api.github.com:443
+DEBUG  2024-06-07_22:55:57: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:55:57: Retrying (GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:55:57: Starting new HTTPS connection (6): api.github.com:443
+DEBUG  2024-06-07_22:56:12: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:56:12: Retrying (GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:56:12: Starting new HTTPS connection (7): api.github.com:443
+DEBUG  2024-06-07_22:56:27: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:56:27: Retrying (GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:56:27: Starting new HTTPS connection (8): api.github.com:443
+DEBUG  2024-06-07_22:56:42: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:56:42: Retrying (GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:56:42: Starting new HTTPS connection (9): api.github.com:443
+DEBUG  2024-06-07_22:56:57: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:56:57: Retrying (GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:56:57: Starting new HTTPS connection (10): api.github.com:443
+DEBUG  2024-06-07_22:57:12: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:57:12: Retrying (GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:57:12: Starting new HTTPS connection (11): api.github.com:443
+DEBUG  2024-06-07_22:57:28: Starting new HTTPS connection (12): api.github.com:443
+DEBUG  2024-06-07_22:57:43: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:57:43: Retrying (GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:57:43: Starting new HTTPS connection (13): api.github.com:443
+DEBUG  2024-06-07_22:57:58: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:57:58: Retrying (GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:57:58: Starting new HTTPS connection (14): api.github.com:443
+DEBUG  2024-06-07_22:58:14: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:58:14: Retrying (GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:58:14: Starting new HTTPS connection (15): api.github.com:443
+DEBUG  2024-06-07_22:58:29: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:58:29: Retrying (GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:58:29: Starting new HTTPS connection (16): api.github.com:443
+DEBUG  2024-06-07_22:58:44: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:58:44: Retrying (GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:58:44: Starting new HTTPS connection (17): api.github.com:443
+DEBUG  2024-06-07_22:58:59: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:58:59: Retrying (GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:58:59: Starting new HTTPS connection (18): api.github.com:443
+DEBUG  2024-06-07_22:59:14: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:59:14: Retrying (GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:59:14: Starting new HTTPS connection (19): api.github.com:443
+DEBUG  2024-06-07_22:59:29: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:59:29: Retrying (GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:59:29: Starting new HTTPS connection (20): api.github.com:443
+DEBUG  2024-06-07_22:59:44: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:59:44: Retrying (GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:59:44: Starting new HTTPS connection (21): api.github.com:443
+DEBUG  2024-06-07_22:59:59: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_22:59:59: Retrying (GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_22:59:59: Starting new HTTPS connection (22): api.github.com:443
+DEBUG  2024-06-07_23:00:16: Starting new HTTPS connection (23): api.github.com:443
+DEBUG  2024-06-07_23:00:31: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:00:31: Retrying (GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:00:31: Starting new HTTPS connection (24): api.github.com:443
+DEBUG  2024-06-07_23:00:46: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:00:46: Retrying (GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:00:46: Starting new HTTPS connection (25): api.github.com:443
+DEBUG  2024-06-07_23:01:01: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:01:01: Retrying (GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:01:01: Starting new HTTPS connection (26): api.github.com:443
+DEBUG  2024-06-07_23:01:16: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:01:16: Retrying (GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:01:16: Starting new HTTPS connection (27): api.github.com:443
+DEBUG  2024-06-07_23:01:31: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:01:31: Retrying (GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:01:31: Starting new HTTPS connection (28): api.github.com:443
+DEBUG  2024-06-07_23:01:46: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:01:46: Retrying (GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:01:46: Starting new HTTPS connection (29): api.github.com:443
+DEBUG  2024-06-07_23:02:02: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:02:02: Retrying (GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:02:02: Starting new HTTPS connection (30): api.github.com:443
+DEBUG  2024-06-07_23:02:17: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:02:17: Retrying (GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:02:17: Starting new HTTPS connection (31): api.github.com:443
+DEBUG  2024-06-07_23:02:32: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:02:32: Retrying (GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:02:32: Starting new HTTPS connection (32): api.github.com:443
+DEBUG  2024-06-07_23:02:47: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:02:47: Retrying (GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:02:47: Starting new HTTPS connection (33): api.github.com:443
+DEBUG  2024-06-07_23:03:03: Starting new HTTPS connection (34): api.github.com:443
+DEBUG  2024-06-07_23:03:18: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:03:18: Retrying (GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:03:18: Starting new HTTPS connection (35): api.github.com:443
+DEBUG  2024-06-07_23:03:33: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:03:33: Retrying (GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:03:33: Starting new HTTPS connection (36): api.github.com:443
+DEBUG  2024-06-07_23:03:49: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:03:49: Retrying (GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:03:49: Starting new HTTPS connection (37): api.github.com:443
+DEBUG  2024-06-07_23:04:04: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:04:04: Retrying (GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:04:04: Starting new HTTPS connection (38): api.github.com:443
+DEBUG  2024-06-07_23:04:19: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:04:19: Retrying (GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:04:19: Starting new HTTPS connection (39): api.github.com:443
+DEBUG  2024-06-07_23:04:34: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:04:34: Retrying (GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:04:34: Starting new HTTPS connection (40): api.github.com:443
+DEBUG  2024-06-07_23:04:49: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:04:49: Retrying (GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:04:49: Starting new HTTPS connection (41): api.github.com:443
+DEBUG  2024-06-07_23:05:04: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:05:04: Retrying (GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:05:04: Starting new HTTPS connection (42): api.github.com:443
+DEBUG  2024-06-07_23:05:19: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:05:19: Retrying (GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:05:19: Starting new HTTPS connection (43): api.github.com:443
+DEBUG  2024-06-07_23:05:35: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:05:35: Retrying (GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:05:35: Starting new HTTPS connection (44): api.github.com:443
+DEBUG  2024-06-07_23:05:51: Starting new HTTPS connection (45): api.github.com:443
+DEBUG  2024-06-07_23:06:06: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:06:06: Retrying (GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:06:06: Starting new HTTPS connection (46): api.github.com:443
+DEBUG  2024-06-07_23:06:21: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:06:21: Retrying (GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:06:21: Starting new HTTPS connection (47): api.github.com:443
+DEBUG  2024-06-07_23:06:36: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:06:36: Retrying (GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:06:36: Starting new HTTPS connection (48): api.github.com:443
+DEBUG  2024-06-07_23:06:51: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:06:51: Retrying (GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:06:51: Starting new HTTPS connection (49): api.github.com:443
+DEBUG  2024-06-07_23:07:06: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:07:06: Retrying (GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:07:06: Starting new HTTPS connection (50): api.github.com:443
+DEBUG  2024-06-07_23:07:22: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:07:22: Retrying (GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:07:22: Starting new HTTPS connection (51): api.github.com:443
+DEBUG  2024-06-07_23:07:37: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:07:37: Retrying (GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:07:37: Starting new HTTPS connection (52): api.github.com:443
+DEBUG  2024-06-07_23:07:52: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:07:52: Retrying (GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:07:52: Starting new HTTPS connection (53): api.github.com:443
+DEBUG  2024-06-07_23:08:07: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:08:07: Retrying (GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:08:07: Starting new HTTPS connection (54): api.github.com:443
+DEBUG  2024-06-07_23:08:22: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:08:22: Retrying (GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:08:22: Starting new HTTPS connection (55): api.github.com:443
+INFO  2024-06-07_23:08:37: Uploaded to Github from data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:18:25: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-07_23:18:25: Starting new HTTPS connection (1): api.github.com:443
+DEBUG  2024-06-07_23:18:25: https://api.github.com:443 "GET /user HTTP/1.1" 200 None
+DEBUG  2024-06-07_23:18:25: https://api.github.com:443 "GET /repos/astaileyyoung/CineFace HTTP/1.1" 200 None
+DEBUG  2024-06-07_23:18:41: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:18:41: Retrying (GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:18:41: Starting new HTTPS connection (2): api.github.com:443
+DEBUG  2024-06-07_23:18:56: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:18:56: Retrying (GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:18:56: Starting new HTTPS connection (3): api.github.com:443
+DEBUG  2024-06-07_23:19:11: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:19:11: Retrying (GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:19:11: Starting new HTTPS connection (4): api.github.com:443
+DEBUG  2024-06-07_23:19:26: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:19:26: Retrying (GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:19:26: Starting new HTTPS connection (5): api.github.com:443
+DEBUG  2024-06-07_23:19:41: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:19:41: Retrying (GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:19:41: Starting new HTTPS connection (6): api.github.com:443
+DEBUG  2024-06-07_23:19:56: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:19:56: Retrying (GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:19:56: Starting new HTTPS connection (7): api.github.com:443
+DEBUG  2024-06-07_23:20:12: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:20:12: Retrying (GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:20:12: Starting new HTTPS connection (8): api.github.com:443
+DEBUG  2024-06-07_23:20:27: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:20:27: Retrying (GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:20:27: Starting new HTTPS connection (9): api.github.com:443
+DEBUG  2024-06-07_23:20:42: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:20:42: Retrying (GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:20:42: Starting new HTTPS connection (10): api.github.com:443
+DEBUG  2024-06-07_23:20:57: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:20:57: Retrying (GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:20:57: Starting new HTTPS connection (11): api.github.com:443
+DEBUG  2024-06-07_23:21:13: Starting new HTTPS connection (12): api.github.com:443
+DEBUG  2024-06-07_23:21:28: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:21:28: Retrying (GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:21:28: Starting new HTTPS connection (13): api.github.com:443
+DEBUG  2024-06-07_23:21:43: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:21:43: Retrying (GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:21:43: Starting new HTTPS connection (14): api.github.com:443
+DEBUG  2024-06-07_23:21:58: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:21:58: Retrying (GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:21:58: Starting new HTTPS connection (15): api.github.com:443
+DEBUG  2024-06-07_23:22:14: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:22:14: Retrying (GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:22:14: Starting new HTTPS connection (16): api.github.com:443
+DEBUG  2024-06-07_23:22:29: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:22:29: Retrying (GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:22:29: Starting new HTTPS connection (17): api.github.com:443
+DEBUG  2024-06-07_23:22:44: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:22:44: Retrying (GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:22:44: Starting new HTTPS connection (18): api.github.com:443
+DEBUG  2024-06-07_23:22:59: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:22:59: Retrying (GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:22:59: Starting new HTTPS connection (19): api.github.com:443
+DEBUG  2024-06-07_23:23:14: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:23:14: Retrying (GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:23:14: Starting new HTTPS connection (20): api.github.com:443
+DEBUG  2024-06-07_23:23:29: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:23:29: Retrying (GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:23:29: Starting new HTTPS connection (21): api.github.com:443
+DEBUG  2024-06-07_23:23:45: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:23:45: Retrying (GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:23:45: Starting new HTTPS connection (22): api.github.com:443
+DEBUG  2024-06-07_23:24:01: Starting new HTTPS connection (23): api.github.com:443
+DEBUG  2024-06-07_23:24:16: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:24:16: Retrying (GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:24:16: Starting new HTTPS connection (24): api.github.com:443
+DEBUG  2024-06-07_23:24:31: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:24:31: Retrying (GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:24:31: Starting new HTTPS connection (25): api.github.com:443
+DEBUG  2024-06-07_23:24:46: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:24:46: Retrying (GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:24:46: Starting new HTTPS connection (26): api.github.com:443
+DEBUG  2024-06-07_23:25:01: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:25:01: Retrying (GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:25:01: Starting new HTTPS connection (27): api.github.com:443
+DEBUG  2024-06-07_23:25:16: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:25:16: Retrying (GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:25:16: Starting new HTTPS connection (28): api.github.com:443
+DEBUG  2024-06-07_23:25:31: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:25:31: Retrying (GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:25:31: Starting new HTTPS connection (29): api.github.com:443
+DEBUG  2024-06-07_23:25:47: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:25:47: Retrying (GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:25:47: Starting new HTTPS connection (30): api.github.com:443
+DEBUG  2024-06-07_23:26:02: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:26:02: Retrying (GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:26:02: Starting new HTTPS connection (31): api.github.com:443
+DEBUG  2024-06-07_23:26:17: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:26:17: Retrying (GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:26:17: Starting new HTTPS connection (32): api.github.com:443
+DEBUG  2024-06-07_23:26:32: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:26:32: Retrying (GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:26:32: Starting new HTTPS connection (33): api.github.com:443
+DEBUG  2024-06-07_23:26:48: Starting new HTTPS connection (34): api.github.com:443
+DEBUG  2024-06-07_23:27:03: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:27:03: Retrying (GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:27:03: Starting new HTTPS connection (35): api.github.com:443
+DEBUG  2024-06-07_23:27:18: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:27:18: Retrying (GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:27:18: Starting new HTTPS connection (36): api.github.com:443
+DEBUG  2024-06-07_23:27:33: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:27:33: Retrying (GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:27:33: Starting new HTTPS connection (37): api.github.com:443
+DEBUG  2024-06-07_23:27:49: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:27:49: Retrying (GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:27:49: Starting new HTTPS connection (38): api.github.com:443
+DEBUG  2024-06-07_23:28:04: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:28:04: Retrying (GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:28:04: Starting new HTTPS connection (39): api.github.com:443
+DEBUG  2024-06-07_23:28:19: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:28:19: Retrying (GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:28:19: Starting new HTTPS connection (40): api.github.com:443
+DEBUG  2024-06-07_23:28:34: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:28:34: Retrying (GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:28:34: Starting new HTTPS connection (41): api.github.com:443
+DEBUG  2024-06-07_23:28:49: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:28:49: Retrying (GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:28:49: Starting new HTTPS connection (42): api.github.com:443
+DEBUG  2024-06-07_23:29:04: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:29:04: Retrying (GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:29:04: Starting new HTTPS connection (43): api.github.com:443
+DEBUG  2024-06-07_23:29:19: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:29:19: Retrying (GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:29:19: Starting new HTTPS connection (44): api.github.com:443
+DEBUG  2024-06-07_23:29:36: Starting new HTTPS connection (45): api.github.com:443
+DEBUG  2024-06-07_23:29:51: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:29:51: Retrying (GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:29:51: Starting new HTTPS connection (46): api.github.com:443
+DEBUG  2024-06-07_23:30:06: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:30:06: Retrying (GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:30:06: Starting new HTTPS connection (47): api.github.com:443
+DEBUG  2024-06-07_23:30:21: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:30:21: Retrying (GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:30:21: Starting new HTTPS connection (48): api.github.com:443
+DEBUG  2024-06-07_23:30:36: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:30:36: Retrying (GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:30:36: Starting new HTTPS connection (49): api.github.com:443
+DEBUG  2024-06-07_23:30:51: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:30:51: Retrying (GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:30:51: Starting new HTTPS connection (50): api.github.com:443
+DEBUG  2024-06-07_23:31:06: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:31:06: Retrying (GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:31:06: Starting new HTTPS connection (51): api.github.com:443
+DEBUG  2024-06-07_23:31:22: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:31:22: Retrying (GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:31:22: Starting new HTTPS connection (52): api.github.com:443
+DEBUG  2024-06-07_23:31:37: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:31:37: Retrying (GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:31:37: Starting new HTTPS connection (53): api.github.com:443
+DEBUG  2024-06-07_23:31:52: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:31:52: Retrying (GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:31:52: Starting new HTTPS connection (54): api.github.com:443
+DEBUG  2024-06-07_23:32:07: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:32:07: Retrying (GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:32:07: Starting new HTTPS connection (55): api.github.com:443
+INFO  2024-06-07_23:32:22: Uploaded to Github from data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:43:05: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-07_23:43:05: Starting new HTTPS connection (1): api.github.com:443
+DEBUG  2024-06-07_23:43:06: https://api.github.com:443 "GET /user HTTP/1.1" 200 None
+DEBUG  2024-06-07_23:43:06: https://api.github.com:443 "GET /repos/astaileyyoung/CineFace HTTP/1.1" 200 None
+DEBUG  2024-06-07_23:43:22: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:43:22: Retrying (GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:43:22: Starting new HTTPS connection (2): api.github.com:443
+DEBUG  2024-06-07_23:43:37: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:43:37: Retrying (GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:43:37: Starting new HTTPS connection (3): api.github.com:443
+DEBUG  2024-06-07_23:43:52: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:43:52: Retrying (GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:43:52: Starting new HTTPS connection (4): api.github.com:443
+DEBUG  2024-06-07_23:44:07: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:44:07: Retrying (GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:44:07: Starting new HTTPS connection (5): api.github.com:443
+DEBUG  2024-06-07_23:44:22: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:44:22: Retrying (GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:44:22: Starting new HTTPS connection (6): api.github.com:443
+DEBUG  2024-06-07_23:44:37: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:44:37: Retrying (GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:44:37: Starting new HTTPS connection (7): api.github.com:443
+DEBUG  2024-06-07_23:44:52: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:44:52: Retrying (GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:44:52: Starting new HTTPS connection (8): api.github.com:443
+DEBUG  2024-06-07_23:45:08: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:45:08: Retrying (GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:45:08: Starting new HTTPS connection (9): api.github.com:443
+DEBUG  2024-06-07_23:45:23: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:45:23: Retrying (GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:45:23: Starting new HTTPS connection (10): api.github.com:443
+DEBUG  2024-06-07_23:45:38: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:45:38: Retrying (GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:45:38: Starting new HTTPS connection (11): api.github.com:443
+DEBUG  2024-06-07_23:45:54: Starting new HTTPS connection (12): api.github.com:443
+DEBUG  2024-06-07_23:46:09: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:46:09: Retrying (GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:46:09: Starting new HTTPS connection (13): api.github.com:443
+DEBUG  2024-06-07_23:46:24: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:46:24: Retrying (GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:46:24: Starting new HTTPS connection (14): api.github.com:443
+DEBUG  2024-06-07_23:46:40: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:46:40: Retrying (GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:46:40: Starting new HTTPS connection (15): api.github.com:443
+DEBUG  2024-06-07_23:46:55: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:46:55: Retrying (GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:46:55: Starting new HTTPS connection (16): api.github.com:443
+DEBUG  2024-06-07_23:47:10: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:47:10: Retrying (GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:47:10: Starting new HTTPS connection (17): api.github.com:443
+DEBUG  2024-06-07_23:47:25: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:47:25: Retrying (GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:47:25: Starting new HTTPS connection (18): api.github.com:443
+DEBUG  2024-06-07_23:47:40: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:47:40: Retrying (GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:47:40: Starting new HTTPS connection (19): api.github.com:443
+DEBUG  2024-06-07_23:47:55: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:47:55: Retrying (GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:47:55: Starting new HTTPS connection (20): api.github.com:443
+DEBUG  2024-06-07_23:48:10: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:48:10: Retrying (GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:48:10: Starting new HTTPS connection (21): api.github.com:443
+DEBUG  2024-06-07_23:48:25: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:48:25: Retrying (GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:48:25: Starting new HTTPS connection (22): api.github.com:443
+DEBUG  2024-06-07_23:48:42: Starting new HTTPS connection (23): api.github.com:443
+DEBUG  2024-06-07_23:48:57: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:48:57: Retrying (GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:48:57: Starting new HTTPS connection (24): api.github.com:443
+DEBUG  2024-06-07_23:49:12: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:49:12: Retrying (GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:49:12: Starting new HTTPS connection (25): api.github.com:443
+DEBUG  2024-06-07_23:49:27: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:49:27: Retrying (GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:49:27: Starting new HTTPS connection (26): api.github.com:443
+DEBUG  2024-06-07_23:49:42: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:49:42: Retrying (GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:49:42: Starting new HTTPS connection (27): api.github.com:443
+DEBUG  2024-06-07_23:49:57: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:49:57: Retrying (GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:49:57: Starting new HTTPS connection (28): api.github.com:443
+DEBUG  2024-06-07_23:50:12: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:50:12: Retrying (GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:50:12: Starting new HTTPS connection (29): api.github.com:443
+DEBUG  2024-06-07_23:50:27: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:50:27: Retrying (GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:50:27: Starting new HTTPS connection (30): api.github.com:443
+DEBUG  2024-06-07_23:50:43: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:50:43: Retrying (GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:50:43: Starting new HTTPS connection (31): api.github.com:443
+DEBUG  2024-06-07_23:50:58: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:50:58: Retrying (GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:50:58: Starting new HTTPS connection (32): api.github.com:443
+DEBUG  2024-06-07_23:51:13: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:51:13: Retrying (GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:51:13: Starting new HTTPS connection (33): api.github.com:443
+DEBUG  2024-06-07_23:51:29: Starting new HTTPS connection (34): api.github.com:443
+DEBUG  2024-06-07_23:51:44: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:51:44: Retrying (GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:51:44: Starting new HTTPS connection (35): api.github.com:443
+DEBUG  2024-06-07_23:51:59: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:51:59: Retrying (GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:51:59: Starting new HTTPS connection (36): api.github.com:443
+DEBUG  2024-06-07_23:52:14: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:52:14: Retrying (GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:52:14: Starting new HTTPS connection (37): api.github.com:443
+DEBUG  2024-06-07_23:52:30: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:52:30: Retrying (GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:52:30: Starting new HTTPS connection (38): api.github.com:443
+DEBUG  2024-06-07_23:52:45: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:52:45: Retrying (GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:52:45: Starting new HTTPS connection (39): api.github.com:443
+DEBUG  2024-06-07_23:53:00: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:53:00: Retrying (GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:53:00: Starting new HTTPS connection (40): api.github.com:443
+DEBUG  2024-06-07_23:53:15: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:53:15: Retrying (GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:53:15: Starting new HTTPS connection (41): api.github.com:443
+DEBUG  2024-06-07_23:53:30: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:53:30: Retrying (GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:53:30: Starting new HTTPS connection (42): api.github.com:443
+DEBUG  2024-06-07_23:53:45: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:53:45: Retrying (GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:53:45: Starting new HTTPS connection (43): api.github.com:443
+DEBUG  2024-06-07_23:54:00: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:54:00: Retrying (GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:54:00: Starting new HTTPS connection (44): api.github.com:443
+DEBUG  2024-06-07_23:54:17: Starting new HTTPS connection (45): api.github.com:443
+DEBUG  2024-06-07_23:54:32: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:54:32: Retrying (GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:54:32: Starting new HTTPS connection (46): api.github.com:443
+DEBUG  2024-06-07_23:54:47: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:54:47: Retrying (GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:54:47: Starting new HTTPS connection (47): api.github.com:443
+DEBUG  2024-06-07_23:55:02: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:55:02: Retrying (GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:55:02: Starting new HTTPS connection (48): api.github.com:443
+DEBUG  2024-06-07_23:55:17: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:55:17: Retrying (GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:55:17: Starting new HTTPS connection (49): api.github.com:443
+DEBUG  2024-06-07_23:55:32: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:55:32: Retrying (GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:55:32: Starting new HTTPS connection (50): api.github.com:443
+DEBUG  2024-06-07_23:55:47: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:55:47: Retrying (GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:55:47: Starting new HTTPS connection (51): api.github.com:443
+DEBUG  2024-06-07_23:56:03: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:56:03: Retrying (GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:56:03: Starting new HTTPS connection (52): api.github.com:443
+DEBUG  2024-06-07_23:56:18: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:56:18: Retrying (GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:56:18: Starting new HTTPS connection (53): api.github.com:443
+DEBUG  2024-06-07_23:56:33: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:56:33: Retrying (GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:56:33: Starting new HTTPS connection (54): api.github.com:443
+DEBUG  2024-06-07_23:56:48: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-07_23:56:48: Retrying (GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-07_23:56:48: Starting new HTTPS connection (55): api.github.com:443
+INFO  2024-06-07_23:57:03: Uploaded to Github from data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:07:02: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-08_00:07:02: Starting new HTTPS connection (1): api.github.com:443
+DEBUG  2024-06-08_00:07:02: https://api.github.com:443 "GET /user HTTP/1.1" 200 None
+DEBUG  2024-06-08_00:07:02: https://api.github.com:443 "GET /repos/astaileyyoung/CineFace HTTP/1.1" 200 None
+DEBUG  2024-06-08_00:07:18: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:07:18: Retrying (GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:07:18: Starting new HTTPS connection (2): api.github.com:443
+DEBUG  2024-06-08_00:07:33: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:07:33: Retrying (GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:07:33: Starting new HTTPS connection (3): api.github.com:443
+DEBUG  2024-06-08_00:07:48: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:07:48: Retrying (GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:07:48: Starting new HTTPS connection (4): api.github.com:443
+DEBUG  2024-06-08_00:08:03: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:08:03: Retrying (GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:08:03: Starting new HTTPS connection (5): api.github.com:443
+DEBUG  2024-06-08_00:08:19: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:08:19: Retrying (GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:08:19: Starting new HTTPS connection (6): api.github.com:443
+DEBUG  2024-06-08_00:08:34: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:08:34: Retrying (GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:08:34: Starting new HTTPS connection (7): api.github.com:443
+DEBUG  2024-06-08_00:08:49: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:08:49: Retrying (GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:08:49: Starting new HTTPS connection (8): api.github.com:443
+DEBUG  2024-06-08_00:09:04: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:09:04: Retrying (GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:09:04: Starting new HTTPS connection (9): api.github.com:443
+DEBUG  2024-06-08_00:09:19: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:09:19: Retrying (GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:09:19: Starting new HTTPS connection (10): api.github.com:443
+DEBUG  2024-06-08_00:09:34: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:09:34: Retrying (GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:09:34: Starting new HTTPS connection (11): api.github.com:443
+DEBUG  2024-06-08_00:09:50: Starting new HTTPS connection (12): api.github.com:443
+DEBUG  2024-06-08_00:10:05: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:10:05: Retrying (GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:10:05: Starting new HTTPS connection (13): api.github.com:443
+DEBUG  2024-06-08_00:10:21: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:10:21: Retrying (GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:10:21: Starting new HTTPS connection (14): api.github.com:443
+DEBUG  2024-06-08_00:10:36: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:10:36: Retrying (GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:10:36: Starting new HTTPS connection (15): api.github.com:443
+DEBUG  2024-06-08_00:10:51: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:10:51: Retrying (GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:10:51: Starting new HTTPS connection (16): api.github.com:443
+DEBUG  2024-06-08_00:11:06: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:11:06: Retrying (GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:11:06: Starting new HTTPS connection (17): api.github.com:443
+DEBUG  2024-06-08_00:11:21: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:11:21: Retrying (GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:11:21: Starting new HTTPS connection (18): api.github.com:443
+DEBUG  2024-06-08_00:11:36: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:11:36: Retrying (GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:11:36: Starting new HTTPS connection (19): api.github.com:443
+DEBUG  2024-06-08_00:11:51: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:11:51: Retrying (GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:11:51: Starting new HTTPS connection (20): api.github.com:443
+DEBUG  2024-06-08_00:12:07: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:12:07: Retrying (GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:12:07: Starting new HTTPS connection (21): api.github.com:443
+DEBUG  2024-06-08_00:12:22: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:12:22: Retrying (GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:12:22: Starting new HTTPS connection (22): api.github.com:443
+DEBUG  2024-06-08_00:12:38: Starting new HTTPS connection (23): api.github.com:443
+DEBUG  2024-06-08_00:12:53: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:12:53: Retrying (GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:12:53: Starting new HTTPS connection (24): api.github.com:443
+DEBUG  2024-06-08_00:13:08: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:13:08: Retrying (GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:13:08: Starting new HTTPS connection (25): api.github.com:443
+DEBUG  2024-06-08_00:13:23: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:13:23: Retrying (GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:13:23: Starting new HTTPS connection (26): api.github.com:443
+DEBUG  2024-06-08_00:13:38: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:13:38: Retrying (GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:13:38: Starting new HTTPS connection (27): api.github.com:443
+DEBUG  2024-06-08_00:13:54: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:13:54: Retrying (GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:13:54: Starting new HTTPS connection (28): api.github.com:443
+DEBUG  2024-06-08_00:14:09: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:14:09: Retrying (GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:14:09: Starting new HTTPS connection (29): api.github.com:443
+DEBUG  2024-06-08_00:14:24: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:14:24: Retrying (GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:14:24: Starting new HTTPS connection (30): api.github.com:443
+DEBUG  2024-06-08_00:14:39: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:14:39: Retrying (GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:14:39: Starting new HTTPS connection (31): api.github.com:443
+DEBUG  2024-06-08_00:14:54: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:14:54: Retrying (GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:14:54: Starting new HTTPS connection (32): api.github.com:443
+DEBUG  2024-06-08_00:15:09: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:15:09: Retrying (GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:15:09: Starting new HTTPS connection (33): api.github.com:443
+DEBUG  2024-06-08_00:15:26: Starting new HTTPS connection (34): api.github.com:443
+DEBUG  2024-06-08_00:15:41: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:15:41: Retrying (GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:15:41: Starting new HTTPS connection (35): api.github.com:443
+DEBUG  2024-06-08_00:15:56: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:15:56: Retrying (GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:15:56: Starting new HTTPS connection (36): api.github.com:443
+DEBUG  2024-06-08_00:16:11: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:16:11: Retrying (GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:16:11: Starting new HTTPS connection (37): api.github.com:443
+DEBUG  2024-06-08_00:16:26: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:16:26: Retrying (GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:16:26: Starting new HTTPS connection (38): api.github.com:443
+DEBUG  2024-06-08_00:16:41: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:16:41: Retrying (GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:16:41: Starting new HTTPS connection (39): api.github.com:443
+DEBUG  2024-06-08_00:16:56: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:16:56: Retrying (GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:16:56: Starting new HTTPS connection (40): api.github.com:443
+DEBUG  2024-06-08_00:17:12: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:17:12: Retrying (GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:17:12: Starting new HTTPS connection (41): api.github.com:443
+DEBUG  2024-06-08_00:17:27: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:17:27: Retrying (GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:17:27: Starting new HTTPS connection (42): api.github.com:443
+DEBUG  2024-06-08_00:17:42: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:17:42: Retrying (GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:17:42: Starting new HTTPS connection (43): api.github.com:443
+DEBUG  2024-06-08_00:17:57: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:17:57: Retrying (GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:17:57: Starting new HTTPS connection (44): api.github.com:443
+DEBUG  2024-06-08_00:18:13: Starting new HTTPS connection (45): api.github.com:443
+DEBUG  2024-06-08_00:18:28: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:18:28: Retrying (GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:18:28: Starting new HTTPS connection (46): api.github.com:443
+DEBUG  2024-06-08_00:18:43: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:18:43: Retrying (GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:18:43: Starting new HTTPS connection (47): api.github.com:443
+DEBUG  2024-06-08_00:18:59: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:18:59: Retrying (GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:18:59: Starting new HTTPS connection (48): api.github.com:443
+DEBUG  2024-06-08_00:19:14: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:19:14: Retrying (GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:19:14: Starting new HTTPS connection (49): api.github.com:443
+DEBUG  2024-06-08_00:19:29: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:19:29: Retrying (GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:19:29: Starting new HTTPS connection (50): api.github.com:443
+DEBUG  2024-06-08_00:19:44: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:19:44: Retrying (GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:19:44: Starting new HTTPS connection (51): api.github.com:443
+DEBUG  2024-06-08_00:19:59: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:19:59: Retrying (GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:19:59: Starting new HTTPS connection (52): api.github.com:443
+DEBUG  2024-06-08_00:20:14: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:20:14: Retrying (GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:20:14: Starting new HTTPS connection (53): api.github.com:443
+DEBUG  2024-06-08_00:20:29: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:20:29: Retrying (GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:20:29: Starting new HTTPS connection (54): api.github.com:443
+DEBUG  2024-06-08_00:20:45: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:20:45: Retrying (GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:20:45: Starting new HTTPS connection (55): api.github.com:443
+INFO  2024-06-08_00:21:00: Uploaded to Github from data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:31:34: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-08_00:31:34: Starting new HTTPS connection (1): api.github.com:443
+DEBUG  2024-06-08_00:31:34: https://api.github.com:443 "GET /user HTTP/1.1" 200 None
+DEBUG  2024-06-08_00:31:35: https://api.github.com:443 "GET /repos/astaileyyoung/CineFace HTTP/1.1" 200 None
+DEBUG  2024-06-08_00:31:50: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:31:50: Retrying (GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:31:50: Starting new HTTPS connection (2): api.github.com:443
+DEBUG  2024-06-08_00:32:05: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:32:05: Retrying (GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:32:05: Starting new HTTPS connection (3): api.github.com:443
+DEBUG  2024-06-08_00:32:20: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:32:20: Retrying (GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:32:20: Starting new HTTPS connection (4): api.github.com:443
+DEBUG  2024-06-08_00:32:36: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:32:36: Retrying (GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:32:36: Starting new HTTPS connection (5): api.github.com:443
+DEBUG  2024-06-08_00:32:51: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:32:51: Retrying (GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:32:51: Starting new HTTPS connection (6): api.github.com:443
+DEBUG  2024-06-08_00:33:06: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:33:06: Retrying (GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:33:06: Starting new HTTPS connection (7): api.github.com:443
+DEBUG  2024-06-08_00:33:21: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:33:21: Retrying (GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:33:21: Starting new HTTPS connection (8): api.github.com:443
+DEBUG  2024-06-08_00:33:36: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:33:36: Retrying (GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:33:36: Starting new HTTPS connection (9): api.github.com:443
+DEBUG  2024-06-08_00:33:51: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:33:51: Retrying (GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:33:51: Starting new HTTPS connection (10): api.github.com:443
+DEBUG  2024-06-08_00:34:06: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:34:06: Retrying (GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:34:06: Starting new HTTPS connection (11): api.github.com:443
+DEBUG  2024-06-08_00:34:22: Starting new HTTPS connection (12): api.github.com:443
+DEBUG  2024-06-08_00:34:38: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:34:38: Retrying (GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:34:38: Starting new HTTPS connection (13): api.github.com:443
+DEBUG  2024-06-08_00:34:53: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:34:53: Retrying (GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:34:53: Starting new HTTPS connection (14): api.github.com:443
+DEBUG  2024-06-08_00:35:08: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:35:08: Retrying (GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:35:08: Starting new HTTPS connection (15): api.github.com:443
+DEBUG  2024-06-08_00:35:23: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:35:23: Retrying (GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:35:23: Starting new HTTPS connection (16): api.github.com:443
+DEBUG  2024-06-08_00:35:38: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:35:38: Retrying (GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:35:38: Starting new HTTPS connection (17): api.github.com:443
+DEBUG  2024-06-08_00:35:53: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:35:53: Retrying (GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:35:53: Starting new HTTPS connection (18): api.github.com:443
+DEBUG  2024-06-08_00:36:08: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:36:08: Retrying (GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:36:08: Starting new HTTPS connection (19): api.github.com:443
+DEBUG  2024-06-08_00:36:24: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:36:24: Retrying (GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:36:24: Starting new HTTPS connection (20): api.github.com:443
+DEBUG  2024-06-08_00:36:39: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:36:39: Retrying (GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:36:39: Starting new HTTPS connection (21): api.github.com:443
+DEBUG  2024-06-08_00:36:54: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:36:54: Retrying (GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:36:54: Starting new HTTPS connection (22): api.github.com:443
+DEBUG  2024-06-08_00:37:10: Starting new HTTPS connection (23): api.github.com:443
+DEBUG  2024-06-08_00:37:25: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:37:25: Retrying (GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:37:25: Starting new HTTPS connection (24): api.github.com:443
+DEBUG  2024-06-08_00:37:40: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:37:40: Retrying (GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:37:40: Starting new HTTPS connection (25): api.github.com:443
+DEBUG  2024-06-08_00:37:55: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:37:55: Retrying (GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:37:55: Starting new HTTPS connection (26): api.github.com:443
+DEBUG  2024-06-08_00:38:10: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:38:10: Retrying (GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:38:10: Starting new HTTPS connection (27): api.github.com:443
+DEBUG  2024-06-08_00:38:26: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:38:26: Retrying (GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:38:26: Starting new HTTPS connection (28): api.github.com:443
+DEBUG  2024-06-08_00:38:41: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:38:41: Retrying (GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:38:41: Starting new HTTPS connection (29): api.github.com:443
+DEBUG  2024-06-08_00:38:56: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:38:56: Retrying (GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:38:56: Starting new HTTPS connection (30): api.github.com:443
+DEBUG  2024-06-08_00:39:11: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:39:11: Retrying (GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:39:11: Starting new HTTPS connection (31): api.github.com:443
+DEBUG  2024-06-08_00:39:26: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:39:26: Retrying (GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:39:26: Starting new HTTPS connection (32): api.github.com:443
+DEBUG  2024-06-08_00:39:41: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:39:41: Retrying (GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:39:41: Starting new HTTPS connection (33): api.github.com:443
+DEBUG  2024-06-08_00:39:58: Starting new HTTPS connection (34): api.github.com:443
+DEBUG  2024-06-08_00:40:13: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:40:13: Retrying (GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:40:13: Starting new HTTPS connection (35): api.github.com:443
+DEBUG  2024-06-08_00:40:28: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:40:28: Retrying (GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:40:28: Starting new HTTPS connection (36): api.github.com:443
+DEBUG  2024-06-08_00:40:43: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:40:43: Retrying (GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:40:43: Starting new HTTPS connection (37): api.github.com:443
+DEBUG  2024-06-08_00:40:58: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:40:58: Retrying (GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:40:58: Starting new HTTPS connection (38): api.github.com:443
+DEBUG  2024-06-08_00:41:13: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:41:13: Retrying (GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:41:13: Starting new HTTPS connection (39): api.github.com:443
+DEBUG  2024-06-08_00:41:28: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:41:28: Retrying (GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:41:28: Starting new HTTPS connection (40): api.github.com:443
+DEBUG  2024-06-08_00:41:44: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:41:44: Retrying (GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:41:44: Starting new HTTPS connection (41): api.github.com:443
+DEBUG  2024-06-08_00:41:59: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:41:59: Retrying (GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:41:59: Starting new HTTPS connection (42): api.github.com:443
+DEBUG  2024-06-08_00:42:14: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:42:14: Retrying (GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:42:14: Starting new HTTPS connection (43): api.github.com:443
+DEBUG  2024-06-08_00:42:29: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:42:29: Retrying (GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:42:29: Starting new HTTPS connection (44): api.github.com:443
+DEBUG  2024-06-08_00:42:45: Starting new HTTPS connection (45): api.github.com:443
+DEBUG  2024-06-08_00:43:00: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:43:00: Retrying (GithubRetry(total=9, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:43:00: Starting new HTTPS connection (46): api.github.com:443
+DEBUG  2024-06-08_00:43:15: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:43:15: Retrying (GithubRetry(total=8, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:43:15: Starting new HTTPS connection (47): api.github.com:443
+DEBUG  2024-06-08_00:43:31: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:43:31: Retrying (GithubRetry(total=7, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:43:31: Starting new HTTPS connection (48): api.github.com:443
+DEBUG  2024-06-08_00:43:46: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:43:46: Retrying (GithubRetry(total=6, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:43:46: Starting new HTTPS connection (49): api.github.com:443
+DEBUG  2024-06-08_00:44:01: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:44:01: Retrying (GithubRetry(total=5, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:44:01: Starting new HTTPS connection (50): api.github.com:443
+DEBUG  2024-06-08_00:44:16: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:44:16: Retrying (GithubRetry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:44:16: Starting new HTTPS connection (51): api.github.com:443
+DEBUG  2024-06-08_00:44:31: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:44:31: Retrying (GithubRetry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:44:31: Starting new HTTPS connection (52): api.github.com:443
+DEBUG  2024-06-08_00:44:46: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:44:46: Retrying (GithubRetry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:44:46: Starting new HTTPS connection (53): api.github.com:443
+DEBUG  2024-06-08_00:45:02: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:45:02: Retrying (GithubRetry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:45:02: Starting new HTTPS connection (54): api.github.com:443
+DEBUG  2024-06-08_00:45:17: Incremented Retry for (url='/repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv'): GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING  2024-06-08_00:45:17: Retrying (GithubRetry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'TimeoutError('The write operation timed out')': /repos/astaileyyoung/CineFace/contents/data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_00:45:17: Starting new HTTPS connection (55): api.github.com:443
+INFO  2024-06-08_00:45:32: Uploaded to Github from data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv
+DEBUG  2024-06-08_09:11:42: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-06-08_09:11:42: load_verify_locations cafile='/home/amos/anaconda3/envs/retina/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-06-08_09:11:42: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-06-08_09:11:42: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7c28affc7550>
+DEBUG  2024-06-08_09:11:42: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-06-08_09:11:42: send_request_headers.complete
+DEBUG  2024-06-08_09:11:42: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-06-08_09:11:42: send_request_body.complete
+DEBUG  2024-06-08_09:11:42: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-06-08_09:11:42: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'date', b'Sat, 08 Jun 2024 13:11:41 GMT')])
+INFO  2024-06-08_09:11:42: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-06-08_09:11:42: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-06-08_09:11:42: receive_response_body.complete
+DEBUG  2024-06-08_09:11:42: response_closed.started
+DEBUG  2024-06-08_09:11:42: response_closed.complete
+DEBUG  2024-06-08_09:11:42: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-06-08_09:17:35: Found 4979 files.
+INFO  2024-06-08_09:17:35: 0 new files out of 4979.
+DEBUG  2024-06-08_09:17:35: Found 7 to process.
+ERROR  2024-06-08_09:17:36: Unable to match IMDb ID for 
+DEBUG  2024-06-08_09:18:07: Found 2982 for analysis.
+DEBUG  2024-06-08_09:33:29: Analyzed The Leftovers (2699128) and saved results to data/faces/the-leftovers_2014_2699128/The.Leftovers.S02E10.BluRay.1080p.Dts.H265-d3g.csv.
+DEBUG  2024-06-08_09:33:29: Starting new HTTPS connection (1): api.github.com:443
+DEBUG  2024-06-08_09:33:29: https://api.github.com:443 "GET /user HTTP/1.1" 200 None
+DEBUG  2024-06-08_09:33:29: https://api.github.com:443 "GET /repos/astaileyyoung/CineFace HTTP/1.1" 200 None
+DEBUG  2024-06-08_09:33:33: https://api.github.com:443 "PUT /repos/astaileyyoung/CineFace/contents/data/faces/the-leftovers_2014_2699128/The.Leftovers.S02E10.BluRay.1080p.Dts.H265-d3g.csv HTTP/1.1" 403 None
+INFO  2024-06-08_09:33:33: Request PUT /repos/astaileyyoung/CineFace/contents/data/faces/the-leftovers_2014_2699128/The.Leftovers.S02E10.BluRay.1080p.Dts.H265-d3g.csv failed with 403: Forbidden
+INFO  2024-06-08_09:33:33: Uploaded to Github from data/faces/the-leftovers_2014_2699128/The.Leftovers.S02E10.BluRay.1080p.Dts.H265-d3g.csv
+DEBUG  2024-06-08_09:34:16: close.started
+DEBUG  2024-06-08_09:34:16: close.complete
+DEBUG  2024-06-08_09:34:26: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-06-08_09:34:26: load_verify_locations cafile='/home/amos/anaconda3/envs/retina/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-06-08_09:34:26: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-06-08_09:34:26: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x717a2c23ffd0>
+DEBUG  2024-06-08_09:34:26: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-06-08_09:34:26: send_request_headers.complete
+DEBUG  2024-06-08_09:34:26: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-06-08_09:34:26: send_request_body.complete
+DEBUG  2024-06-08_09:34:26: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-06-08_09:34:26: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 08 Jun 2024 13:34:26 GMT')])
+INFO  2024-06-08_09:34:26: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-06-08_09:34:26: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-06-08_09:34:26: receive_response_body.complete
+DEBUG  2024-06-08_09:34:26: response_closed.started
+DEBUG  2024-06-08_09:34:26: response_closed.complete
+DEBUG  2024-06-08_09:34:26: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-06-08_09:36:39: Found 4979 files.
+INFO  2024-06-08_09:36:39: 0 new files out of 4979.
+DEBUG  2024-06-08_09:36:39: Found 7 to process.
+ERROR  2024-06-08_09:36:40: Unable to match IMDb ID for 
+DEBUG  2024-06-08_09:37:05: Found 2828 for analysis.
+DEBUG  2024-06-08_09:39:42: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-06-08_09:39:42: load_verify_locations cafile='/home/amos/anaconda3/envs/retina/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-06-08_09:39:42: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-06-08_09:39:42: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7e3d1ff1fcd0>
+DEBUG  2024-06-08_09:39:42: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-06-08_09:39:42: send_request_headers.complete
+DEBUG  2024-06-08_09:39:42: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-06-08_09:39:42: send_request_body.complete
+DEBUG  2024-06-08_09:39:42: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-06-08_09:39:42: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-type', b'application/json'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 08 Jun 2024 13:39:42 GMT')])
+INFO  2024-06-08_09:39:42: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-06-08_09:39:42: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-06-08_09:39:42: receive_response_body.complete
+DEBUG  2024-06-08_09:39:42: response_closed.started
+DEBUG  2024-06-08_09:39:42: response_closed.complete
+DEBUG  2024-06-08_09:39:42: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-06-08_09:45:11: Found 4979 files.
+INFO  2024-06-08_09:45:11: 0 new files out of 4979.
+DEBUG  2024-06-08_09:45:11: Found 7 to process.
+ERROR  2024-06-08_09:45:12: Unable to match IMDb ID for 
+DEBUG  2024-06-08_09:45:35: Found 2727 for analysis.
+DEBUG  2024-06-08_09:55:52: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.the.Dome.S01E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-06-08_09:55:52: Starting new HTTPS connection (1): api.github.com:443
+DEBUG  2024-06-08_09:55:52: https://api.github.com:443 "GET /user HTTP/1.1" 200 None
+DEBUG  2024-06-08_09:55:52: https://api.github.com:443 "GET /repos/astaileyyoung/CineFace HTTP/1.1" 200 None
+DEBUG  2024-06-08_09:55:57: https://api.github.com:443 "PUT /repos/astaileyyoung/CineFace/contents/data/faces/under-the-dome_2013_1553656/Under.the.Dome.S01E01.1080p.BluRay.x265-RARBG.csv HTTP/1.1" 403 None
+INFO  2024-06-08_09:55:57: Request PUT /repos/astaileyyoung/CineFace/contents/data/faces/under-the-dome_2013_1553656/Under.the.Dome.S01E01.1080p.BluRay.x265-RARBG.csv failed with 403: Forbidden
+INFO  2024-06-08_09:55:57: Uploaded to Github from data/faces/under-the-dome_2013_1553656/Under.the.Dome.S01E01.1080p.BluRay.x265-RARBG.csv
+DEBUG  2024-06-08_09:56:11: close.started
+DEBUG  2024-06-08_09:56:11: close.complete
