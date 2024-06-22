@@ -449,3 +449,40 @@ def format_series(series):
     }
     return datum
 
+def get_video_length(src):
+    import cv2 
+
+    cap = cv2.VideoCapture(src)
+    framecount = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+    fps = cap.get(cv2.CAP_PROP_FPS)
+    num_seconds = framecount/fps 
+    return num_seconds
+
+
+def process_image(face):
+    import cv2 
+    import numpy as np
+
+    rgb = cv2.cvtColor(face, cv2.COLOR_BGR2RGB)
+    resized = cv2.resize(rgb, (150, 150), interpolation=cv2.INTER_AREA)
+    return np.array(resized, dtype=np.uint8)
+
+
+def extract_face(box, frame):
+    h, w = frame.shape[:2]
+    x1, y1, x2, y2 = box 
+    x1 = int(x1 * w)
+    y1 = int(y1 * h)
+    x2 = int(x2 * w)
+    y2 = int(y2 * h)
+    return frame[y1:y2, x1:x2]
+
+
+def get_cap_info(src):
+    import cv2 
+    
+    cap = cv2.VideoCapture(src)
+    framecount = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+    width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+    height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+    return width, height, framecount
