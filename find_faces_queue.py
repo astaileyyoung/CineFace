@@ -1,9 +1,10 @@
 import os 
 
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 import time 
 import logging
+import traceback
 import threading
 import subprocess as sp 
 from pathlib import Path
@@ -17,9 +18,10 @@ import pandas as pd
 from tqdm import tqdm 
 from retinaface import RetinaFace
 
-from utils import get_video_length, process_image, extract_face, get_cap_info
-from videotools.detectors import RetinaFaceCustom
+from utils import extract_face
+from videotools.detectors import RetinaFaceBatch
 from videotools.models.RetinaFaceKeras.preprocess import preprocess_image, resize_image
+from videotools.utils import get_video_length, get_cap_info
 
 
 class Frame(object):
@@ -84,10 +86,11 @@ class VideoDetector(object):
                  buffer=4, 
                  batch_size=4,
                  max_size=720,
+                 model='fp32',
                  model_path=Path(__file__).parent.joinpath('data/dlib_face_recognition_resnet_model_v1.dat').absolute().resolve()):
         self.model_path = model_path
         self.encoder = dlib.face_recognition_model_v1(str(model_path))
-        self.detector = RetinaFaceCustom()
+        self.detector = RetinaFaceBatch(model=model)
 
         self.buffer = buffer 
         self.batch_size = batch_size
@@ -108,11 +111,16 @@ class VideoDetector(object):
 
         self.pb = None 
     
-    def is_done(self):
+    def _is_done(self):
         for thread in self.threads:
             if thread.is_alive():
                 return 0
         return 1
+    
+    def process_image(self, face):
+        rgb = cv2.cvtColor(face, cv2.COLOR_BGR2RGB)
+        resized = cv2.resize(rgb, (150, 150), interpolation=cv2.INTER_AREA)
+        return np.array(resized, dtype=np.uint8)
 
     def add_frame_nums(self, data, frame_nums):
         new_data = []
@@ -185,7 +193,7 @@ class VideoDetector(object):
         [x.start() for x in self.threads]
 
     def process_predictions(self):
-        while not self.is_done() or self.predictions:
+        while not self._is_done() or self.predictions:
             if not self.predictions:
                 time.sleep(0.1)
                 continue
@@ -199,19 +207,19 @@ class VideoDetector(object):
             self.faces.append(faces)
 
     def process_queue(self):
-        while not self.is_done() or self.batches:
+        while not self._is_done() or self.batches:
             if not self.batches:
                 time.sleep(0.1)
                 continue
             batch = self.batches.pop(0)
-            d = self.detector.batch_predict_images(batch.array, 
-                                                   raw=True)
+            d = self.detector.predict(batch.array, 
+                                      raw=True)
             
             self.predictions.append((d, batch))
             self.pb.update(len(batch.frames))
     
     def process_faces(self):
-        while not self.is_done() or self.faces:
+        while not self._is_done() or self.faces:
             if not self.faces:
                 time.sleep(0.1)
                 continue
@@ -219,7 +227,7 @@ class VideoDetector(object):
             for f in faces.data:
                 frame = faces.frame_from_frame_num(f['frame_num'])
                 face = extract_face((f['x1'], f['y1'], f['x2'], f['y2']), frame)
-                img = process_image(face)
+                img = self.process_image(face)
                 encoding = self.encoder.compute_face_descriptor(img)
                 datum = {'frame_num': f['frame_num'],
                         'face_num': f['face_num'],
@@ -259,8 +267,9 @@ def main(args):
     vd = VideoDetector(args.num_threads,
                        buffer=args.buffer,
                        batch_size=args.batch_size,
-                       max_size=args.max_size)
-    
+                       max_size=args.max_size,
+                       model=args.model)
+
     df = vd.detect_faces(args.src)
     df.to_csv(args.dst)
 
@@ -273,8 +282,13 @@ if __name__ == '__main__':
     ap.add_argument('--num_threads', '-n', default=4, type=int)
     ap.add_argument('--batch_size', '-bs', default=4, type=int)
     ap.add_argument('--buffer', default=4, type=int)
+    ap.add_argument('--model', default='fp32')
     args = ap.parse_args()
     
+    logging.basicConfig(filename='./logs/find_faces.log',
+                        filemode='w',
+                        format='%(levelname)s  %(asctime)s: %(message)s',
+                        datefmt='%Y-%m-%d_%H:%M:%S')
     main(args)     
 
 

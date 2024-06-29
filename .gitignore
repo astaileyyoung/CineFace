@@ -8,7 +8,7 @@ archived/*
 Untitled*
 .vs*
 mmod_human_face_detector.dat
-data/test_videos/*
+data/videos/*
 research/data/labelbox_images.zip
 research/data/retina
 research/data/retina_quant

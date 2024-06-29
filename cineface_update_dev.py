@@ -17,7 +17,7 @@ from qdrant_client import QdrantClient
 from qdrant_client.models import Distance, VectorParams, PointStruct
 from qdrant_client.http import models
 
-from find_faces_threaded_batch import detect_faces, calc
+from find_faces_queue import detect_faces, calc
 from utils import (
     create_table, get_files, parse_paths, get_id, get_id_sparse
 )
@@ -243,16 +243,27 @@ def process_queue(engine,
                   dst,
                   repo_name='CineFace',
                   token_path='./data/pat.txt',
-                  branch='main'):
+                  branch='main',
+                  series_id=None):
     with engine.connect() as conn:
-        queue = pd.read_sql_query("""
+        if series_id:
+            queue = pd.read_sql_query(f"""
                                   SELECT *
                                   FROM queue
                                   WHERE to_analyze = 1 AND 
                                         analyzed = 0 AND 
-                                        series_id IS NOT NULL
+                                        series_id = {series_id}
                                   ORDER BY height ASC 
                                   """, conn)
+        else:
+            queue = pd.read_sql_query("""
+                                    SELECT *
+                                    FROM queue
+                                    WHERE to_analyze = 1 AND 
+                                            analyzed = 0 AND 
+                                            series_id IS NOT NULL
+                                    ORDER BY height ASC 
+                                    """, conn)
         
         logging.debug(f'Found {queue.shape[0]} for analysis.')
         for _, row in tqdm(queue.iterrows(), total=queue.shape[0]):
@@ -314,6 +325,8 @@ if __name__ == '__main__':
                     default='/home/amos/media/tv/')
     ap.add_argument('--dst',
                     default='./data/faces')
+    ap.add_argument('--series_id',
+                    default=None)
     ap.add_argument('--extensions',
                     default=('.mp4', '.mkv', '.m4v', '.avi'),
                     nargs='+')
