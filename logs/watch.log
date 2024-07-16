@@ -14593,3 +14593,436 @@ INFO  2024-06-08_09:55:57: Request PUT /repos/astaileyyoung/CineFace/contents/da
 INFO  2024-06-08_09:55:57: Uploaded to Github from data/faces/under-the-dome_2013_1553656/Under.the.Dome.S01E01.1080p.BluRay.x265-RARBG.csv
 DEBUG  2024-06-08_09:56:11: close.started
 DEBUG  2024-06-08_09:56:11: close.complete
+DEBUG  2024-06-29_17:45:03: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-06-29_17:45:03: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-06-29_17:45:03: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-06-29_17:45:03: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7267984b4610>
+DEBUG  2024-06-29_17:45:03: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-06-29_17:45:03: send_request_headers.complete
+DEBUG  2024-06-29_17:45:03: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-06-29_17:45:03: send_request_body.complete
+DEBUG  2024-06-29_17:45:03: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-06-29_17:45:03: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'date', b'Sat, 29 Jun 2024 21:45:02 GMT')])
+INFO  2024-06-29_17:45:03: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-06-29_17:45:03: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-06-29_17:45:03: receive_response_body.complete
+DEBUG  2024-06-29_17:45:03: response_closed.started
+DEBUG  2024-06-29_17:45:03: response_closed.complete
+DEBUG  2024-06-29_17:45:03: send_request_headers.started request=<Request [b'DELETE']>
+DEBUG  2024-06-29_17:45:03: send_request_headers.complete
+DEBUG  2024-06-29_17:45:03: send_request_body.started request=<Request [b'DELETE']>
+DEBUG  2024-06-29_17:45:03: send_request_body.complete
+DEBUG  2024-06-29_17:45:03: receive_response_headers.started request=<Request [b'DELETE']>
+DEBUG  2024-06-29_17:45:03: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'date', b'Sat, 29 Jun 2024 21:45:02 GMT')])
+INFO  2024-06-29_17:45:03: HTTP Request: DELETE http://192.168.0.131:6333/collections/FacialEmbeddings "HTTP/1.1 200 OK"
+DEBUG  2024-06-29_17:45:03: receive_response_body.started request=<Request [b'DELETE']>
+DEBUG  2024-06-29_17:45:03: receive_response_body.complete
+DEBUG  2024-06-29_17:45:03: response_closed.started
+DEBUG  2024-06-29_17:45:03: response_closed.complete
+DEBUG  2024-06-29_17:45:03: send_request_headers.started request=<Request [b'PUT']>
+DEBUG  2024-06-29_17:45:03: send_request_headers.complete
+DEBUG  2024-06-29_17:45:03: send_request_body.started request=<Request [b'PUT']>
+DEBUG  2024-06-29_17:45:03: send_request_body.complete
+DEBUG  2024-06-29_17:45:03: receive_response_headers.started request=<Request [b'PUT']>
+DEBUG  2024-06-29_17:45:03: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'date', b'Sat, 29 Jun 2024 21:45:02 GMT')])
+INFO  2024-06-29_17:45:03: HTTP Request: PUT http://192.168.0.131:6333/collections/FacialEmbeddings "HTTP/1.1 200 OK"
+DEBUG  2024-06-29_17:45:03: receive_response_body.started request=<Request [b'PUT']>
+DEBUG  2024-06-29_17:45:03: receive_response_body.complete
+DEBUG  2024-06-29_17:45:03: response_closed.started
+DEBUG  2024-06-29_17:45:03: response_closed.complete
+DEBUG  2024-06-29_17:45:03: Created Facial Embeddings database.
+DEBUG  2024-06-29_17:45:03: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-06-29_17:52:22: Found 4996 files.
+INFO  2024-06-29_17:52:22: 4902 new files out of 4996.
+DEBUG  2024-06-29_17:52:22: Found 71 to process.
+ERROR  2024-06-29_17:52:23: Unable to match IMDb ID for 
+DEBUG  2024-06-29_17:57:12: Found 4316 for analysis.
+DEBUG  2024-06-29_17:57:13: close.started
+DEBUG  2024-06-29_17:57:13: close.complete
+DEBUG  2024-06-29_18:07:20: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-06-29_18:07:20: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-06-29_18:07:20: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-06-29_18:07:20: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x71309bab8d50>
+DEBUG  2024-06-29_18:07:20: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-06-29_18:07:20: send_request_headers.complete
+DEBUG  2024-06-29_18:07:20: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-06-29_18:07:20: send_request_body.complete
+DEBUG  2024-06-29_18:07:20: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-06-29_18:07:20: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'date', b'Sat, 29 Jun 2024 22:07:20 GMT')])
+INFO  2024-06-29_18:07:20: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-06-29_18:07:20: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-06-29_18:07:20: receive_response_body.complete
+DEBUG  2024-06-29_18:07:20: response_closed.started
+DEBUG  2024-06-29_18:07:20: response_closed.complete
+DEBUG  2024-06-29_18:07:20: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-06-29_18:09:06: Found 4996 files.
+INFO  2024-06-29_18:09:06: 0 new files out of 4996.
+DEBUG  2024-06-29_18:09:06: Found 7 to process.
+ERROR  2024-06-29_18:09:07: Unable to match IMDb ID for 
+DEBUG  2024-06-29_18:09:54: Found 4316 for analysis.
+DEBUG  2024-06-29_18:09:55: Creating converter from 3 to 5
+DEBUG  2024-06-29_18:11:02: close.started
+DEBUG  2024-06-29_18:11:02: close.complete
+DEBUG  2024-06-29_18:26:53: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-06-29_18:26:53: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-06-29_18:26:53: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-06-29_18:26:53: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b50f9990490>
+DEBUG  2024-06-29_18:26:53: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-06-29_18:26:53: send_request_headers.complete
+DEBUG  2024-06-29_18:26:53: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-06-29_18:26:53: send_request_body.complete
+DEBUG  2024-06-29_18:26:53: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-06-29_18:26:53: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-encoding', b'gzip'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-type', b'application/json'), (b'date', b'Sat, 29 Jun 2024 22:26:53 GMT')])
+INFO  2024-06-29_18:26:53: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-06-29_18:26:53: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-06-29_18:26:53: receive_response_body.complete
+DEBUG  2024-06-29_18:26:53: response_closed.started
+DEBUG  2024-06-29_18:26:53: response_closed.complete
+DEBUG  2024-06-29_18:26:53: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-06-29_18:28:33: Found 4996 files.
+INFO  2024-06-29_18:28:33: 0 new files out of 4996.
+DEBUG  2024-06-29_18:28:33: Found 7 to process.
+ERROR  2024-06-29_18:28:33: Unable to match IMDb ID for 
+DEBUG  2024-06-29_18:28:57: Found 171 for analysis.
+DEBUG  2024-06-29_18:28:59: Creating converter from 3 to 5
+DEBUG  2024-06-29_18:34:57: close.started
+DEBUG  2024-06-29_18:34:57: close.complete
+DEBUG  2024-06-29_18:36:13: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-06-29_18:36:13: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-06-29_18:36:13: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-06-29_18:36:13: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7a3555cd00d0>
+DEBUG  2024-06-29_18:36:13: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-06-29_18:36:13: send_request_headers.complete
+DEBUG  2024-06-29_18:36:13: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-06-29_18:36:13: send_request_body.complete
+DEBUG  2024-06-29_18:36:13: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-06-29_18:36:13: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-encoding', b'gzip'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-type', b'application/json'), (b'date', b'Sat, 29 Jun 2024 22:36:13 GMT')])
+INFO  2024-06-29_18:36:13: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-06-29_18:36:13: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-06-29_18:36:13: receive_response_body.complete
+DEBUG  2024-06-29_18:36:13: response_closed.started
+DEBUG  2024-06-29_18:36:13: response_closed.complete
+DEBUG  2024-06-29_18:36:13: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-06-29_18:38:02: Found 4996 files.
+INFO  2024-06-29_18:38:02: 0 new files out of 4996.
+DEBUG  2024-06-29_18:38:02: Found 7 to process.
+ERROR  2024-06-29_18:38:02: Unable to match IMDb ID for 
+DEBUG  2024-06-29_18:38:27: Found 171 for analysis.
+DEBUG  2024-06-29_18:38:28: Creating converter from 3 to 5
+DEBUG  2024-06-29_18:44:16: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S01E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_18:44:16: Starting new HTTPS connection (1): api.github.com:443
+DEBUG  2024-06-29_18:44:16: https://api.github.com:443 "GET /user HTTP/11" 401 95
+DEBUG  2024-06-29_18:44:16: close.started
+DEBUG  2024-06-29_18:44:16: close.complete
+DEBUG  2024-06-29_19:07:44: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-06-29_19:07:44: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-06-29_19:07:44: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-06-29_19:07:44: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x78a90fb94410>
+DEBUG  2024-06-29_19:07:44: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-06-29_19:07:44: send_request_headers.complete
+DEBUG  2024-06-29_19:07:44: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-06-29_19:07:44: send_request_body.complete
+DEBUG  2024-06-29_19:07:44: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-06-29_19:07:44: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'date', b'Sat, 29 Jun 2024 23:07:44 GMT')])
+INFO  2024-06-29_19:07:44: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-06-29_19:07:44: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-06-29_19:07:44: receive_response_body.complete
+DEBUG  2024-06-29_19:07:44: response_closed.started
+DEBUG  2024-06-29_19:07:44: response_closed.complete
+DEBUG  2024-06-29_19:07:44: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-06-29_19:09:32: Found 4996 files.
+INFO  2024-06-29_19:09:32: 0 new files out of 4996.
+DEBUG  2024-06-29_19:09:32: Found 7 to process.
+ERROR  2024-06-29_19:09:33: Unable to match IMDb ID for 
+DEBUG  2024-06-29_19:10:02: Found 170 for analysis.
+DEBUG  2024-06-29_19:10:04: Creating converter from 3 to 5
+DEBUG  2024-06-29_19:15:42: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S01E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_19:15:42: Starting new HTTPS connection (1): api.github.com:443
+DEBUG  2024-06-29_19:15:42: https://api.github.com:443 "GET /user HTTP/11" 401 95
+DEBUG  2024-06-29_19:15:42: close.started
+DEBUG  2024-06-29_19:15:42: close.complete
+DEBUG  2024-06-29_19:16:26: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-06-29_19:16:26: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-06-29_19:16:26: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-06-29_19:16:26: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7db79da98790>
+DEBUG  2024-06-29_19:16:26: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-06-29_19:16:26: send_request_headers.complete
+DEBUG  2024-06-29_19:16:26: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-06-29_19:16:26: send_request_body.complete
+DEBUG  2024-06-29_19:16:26: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-06-29_19:16:26: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 29 Jun 2024 23:16:26 GMT')])
+INFO  2024-06-29_19:16:26: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-06-29_19:16:26: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-06-29_19:16:26: receive_response_body.complete
+DEBUG  2024-06-29_19:16:26: response_closed.started
+DEBUG  2024-06-29_19:16:26: response_closed.complete
+DEBUG  2024-06-29_19:16:26: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-06-29_19:18:13: Found 4996 files.
+INFO  2024-06-29_19:18:13: 0 new files out of 4996.
+DEBUG  2024-06-29_19:18:13: Found 7 to process.
+ERROR  2024-06-29_19:18:14: Unable to match IMDb ID for 
+DEBUG  2024-06-29_19:18:38: Found 169 for analysis.
+DEBUG  2024-06-29_19:18:40: Creating converter from 3 to 5
+DEBUG  2024-06-29_19:24:37: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S01E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_19:29:57: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S01E04.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_19:35:07: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S01E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_19:40:12: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S02E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_19:46:15: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S02E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_19:51:21: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S02E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_19:56:27: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S02E04.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_20:01:56: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S02E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_20:07:36: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S02E06.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_20:13:48: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S02E07.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_20:18:54: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S02E08.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_20:23:51: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S02E09.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_20:29:42: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S02E10.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_20:36:37: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S02E11.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_20:41:51: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S02E12.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_20:46:54: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S03E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_20:52:21: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S03E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_20:58:21: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S03E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_21:03:40: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S03E04.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_21:08:54: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S03E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_21:14:32: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S03E06.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_21:19:38: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S03E07.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_21:24:42: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S03E08.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_21:29:46: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S03E09.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_21:35:26: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S03E10.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_21:41:15: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S03E11.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_21:46:38: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S03E12.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_21:52:58: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S03E13.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_21:59:44: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S03E14.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_22:05:05: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S03E15.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_22:10:27: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S03E16.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_22:20:45: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S03E17.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_22:26:27: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S03E18.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_22:31:47: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S03E19.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_22:39:29: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S03E20.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_22:46:31: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S03E21.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_22:52:20: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S03E22.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_22:58:10: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S04E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_23:03:36: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S04E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_23:15:40: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S04E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_23:21:06: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S04E04.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_23:26:23: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S04E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_23:32:28: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S04E06.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_23:38:08: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S04E07.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_23:45:30: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S04E08.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_23:51:40: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S04E09.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-29_23:57:20: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S04E10.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_00:04:39: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S04E11.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_00:09:50: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S04E12.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_00:17:00: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S04E13.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_00:23:19: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S04E14.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_00:29:20: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S04E15.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_00:34:58: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S04E16.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_00:40:09: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S04E17.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_00:46:00: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S04E18.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_00:51:32: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S04E19.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_00:56:55: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S04E20.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_01:03:00: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S04E21.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_01:16:19: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S04E22.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_01:21:25: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S05E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_01:26:58: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S05E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_01:32:31: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S05E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_01:37:42: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S05E04.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_01:44:08: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S05E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_01:51:51: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S05E06.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_01:57:56: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S05E07.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_02:03:18: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S05E08.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_02:08:44: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S05E09.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_02:14:21: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S05E10.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_02:19:25: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S05E11.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_02:24:54: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S05E12.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_02:31:50: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S05E13.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_02:37:20: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S05E14.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_02:43:55: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S05E15.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_02:49:13: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S05E16.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_02:54:17: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S05E17.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_03:04:33: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S05E18.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_03:10:20: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S05E19.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_03:15:49: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S05E20.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_03:21:27: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S05E21.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_03:27:23: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S06E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_03:32:26: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S06E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_03:38:29: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S06E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_03:43:37: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S06E04.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_03:49:20: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S06E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_03:54:28: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S06E06.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_04:00:34: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S06E07.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_04:06:02: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S06E08.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_04:11:23: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S06E09.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_04:18:11: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S06E10.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_04:23:13: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S06E11.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_04:29:02: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S06E12.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_04:34:46: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S06E13.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_04:46:00: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S06E14.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_04:51:52: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S06E15.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_04:57:45: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S06E16.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_05:03:19: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S06E17.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_05:09:04: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S06E18.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_05:14:31: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S06E19.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_05:20:02: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S06E20.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_05:25:38: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S06E21.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_05:31:26: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S06E22.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_05:37:40: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S06E23.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_05:42:26: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S07E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_05:47:33: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S07E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_05:52:49: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S07E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_05:57:50: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S07E04.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_06:03:36: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S07E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_06:09:18: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S07E06.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_06:14:26: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S07E07.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_06:20:08: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S07E08.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_06:25:54: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S07E09.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_06:31:26: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S07E10.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_06:36:37: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S07E11.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_06:41:46: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S07E12.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_06:46:46: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S07E13.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_06:55:54: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S07E14.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_07:00:46: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S07E15.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_07:06:09: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S07E16.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_07:11:41: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S07E17.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_07:17:04: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S07E18.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_07:22:08: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S07E19.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_07:31:01: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S07E20.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_07:36:20: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S07E21.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_07:41:38: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S07E22.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_07:47:12: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S08E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_07:52:50: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S08E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_07:58:25: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S08E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_08:05:18: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S08E04.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_08:10:08: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S08E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_08:15:18: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S08E06.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_08:20:52: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S08E07.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_08:25:56: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S08E08.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_08:31:03: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S08E09.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_08:35:50: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S08E10.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_08:41:05: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S08E11.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_08:46:00: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S08E12.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_08:51:20: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S08E13.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_08:56:51: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S08E14.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_09:02:04: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S08E15.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_09:06:47: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S08E16.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_09:13:07: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S08E17.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_09:17:43: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S08E18.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_09:24:06: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S08E19.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_09:28:55: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S08E20.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_09:34:21: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S08E21.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_09:40:05: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S08E22.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_09:45:48: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S09E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_09:50:40: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S09E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_09:55:28: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S09E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_10:00:20: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S09E04.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_10:05:25: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S09E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_10:10:41: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S09E06.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_10:15:40: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S09E07.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_10:22:34: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S09E08.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_10:27:39: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S09E09.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_10:33:02: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S09E10.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_10:38:30: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S09E11.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_10:43:47: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S09E12.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_10:49:14: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S09E13.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_10:54:21: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S09E14.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_11:00:10: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S09E15.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_11:05:46: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S09E16.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_11:11:39: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S09E17.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_11:16:51: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S09E18.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_11:21:50: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S09E19.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_11:28:55: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S09E20.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_11:40:01: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S09E21.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_11:57:09: Analyzed Seinfeld (98904) and saved results to data/faces/seinfeld_1989_98904/Seinfeld.S09E22.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-06-30_11:57:10: close.started
+DEBUG  2024-06-30_11:57:10: close.complete
+DEBUG  2024-07-09_17:19:28: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-07-09_17:19:28: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-07-09_17:19:28: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-07-09_17:19:28: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7ba591efbb10>
+DEBUG  2024-07-09_17:19:28: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-07-09_17:19:28: send_request_headers.complete
+DEBUG  2024-07-09_17:19:28: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-07-09_17:19:28: send_request_body.complete
+DEBUG  2024-07-09_17:19:28: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-07-09_17:19:28: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-encoding', b'gzip'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-type', b'application/json'), (b'date', b'Tue, 09 Jul 2024 21:19:28 GMT')])
+INFO  2024-07-09_17:19:28: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-07-09_17:19:28: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-07-09_17:19:28: receive_response_body.complete
+DEBUG  2024-07-09_17:19:28: response_closed.started
+DEBUG  2024-07-09_17:19:28: response_closed.complete
+DEBUG  2024-07-09_17:19:28: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-07-09_17:19:28: Found 0 files.
+DEBUG  2024-07-09_17:19:28: close.started
+DEBUG  2024-07-09_17:19:28: close.complete
+DEBUG  2024-07-09_17:20:17: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-07-09_17:20:17: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-07-09_17:20:17: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-07-09_17:20:17: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x780e2c9c46d0>
+DEBUG  2024-07-09_17:20:17: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-07-09_17:20:17: send_request_headers.complete
+DEBUG  2024-07-09_17:20:17: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-07-09_17:20:17: send_request_body.complete
+DEBUG  2024-07-09_17:20:17: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-07-09_17:20:17: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'date', b'Tue, 09 Jul 2024 21:20:17 GMT')])
+INFO  2024-07-09_17:20:17: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-07-09_17:20:17: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-07-09_17:20:17: receive_response_body.complete
+DEBUG  2024-07-09_17:20:17: response_closed.started
+DEBUG  2024-07-09_17:20:17: response_closed.complete
+DEBUG  2024-07-09_17:20:17: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-07-09_17:27:45: Found 5071 files.
+INFO  2024-07-09_17:27:45: 75 new files out of 5071.
+DEBUG  2024-07-09_17:27:45: Found 13 to process.
+ERROR  2024-07-09_17:27:45: Unable to match IMDb ID for 
+DEBUG  2024-07-09_17:28:33: Found 250 for analysis.
+DEBUG  2024-07-09_17:28:35: Creating converter from 3 to 5
+DEBUG  2024-07-09_17:34:57: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S01E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_17:40:02: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S01E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_17:44:51: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S01E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_17:49:47: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S01E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_17:54:35: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S01E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_17:59:08: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S01E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_18:06:04: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S01E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_18:10:57: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S01E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_18:15:36: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S01E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_18:21:49: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S01E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_18:26:19: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S01E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_18:30:46: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S01E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_18:35:17: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S01E13.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_18:39:28: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S01E14.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_18:45:17: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S01E15.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_18:49:48: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S01E16.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_18:54:08: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S01E17.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_18:58:47: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S01E18.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_19:04:03: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S01E19.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_19:10:08: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S01E20.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_19:15:33: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S01E21.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_19:20:51: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S01E22.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_19:26:22: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S01E23.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_19:33:47: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S01E24.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_19:38:27: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S02E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_19:43:05: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S02E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_19:47:24: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S02E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_19:52:42: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S02E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_19:57:31: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S02E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_20:02:15: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S02E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_20:07:05: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S02E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_20:13:01: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S02E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_20:17:38: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S02E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_20:23:06: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S02E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_20:27:27: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S02E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_20:32:32: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S02E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_20:37:25: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S02E13.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_20:43:01: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S02E14.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_20:48:32: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S02E15.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_20:53:40: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S02E16.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_20:58:10: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S02E17.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_21:03:21: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S02E18.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_21:09:13: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S02E19.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_21:13:56: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S02E20.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_21:19:06: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S02E21.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_21:23:37: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S02E22.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_21:30:19: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S02E23.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_21:35:36: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S02E24.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_21:40:28: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S03E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_21:45:16: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S03E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-09_21:50:12: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S03E03.1080p.BluRay.x265-RARBG.csv.

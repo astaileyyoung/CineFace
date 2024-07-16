@@ -7,6 +7,7 @@ from argparse import ArgumentParser
 import cv2
 import pymysql
 import requests
+import numpy as np
 import pandas as pd
 import sqlalchemy as db 
 from tqdm import tqdm 
@@ -17,10 +18,39 @@ from qdrant_client import QdrantClient
 from qdrant_client.models import Distance, VectorParams, PointStruct
 from qdrant_client.http import models
 
-from find_faces_queue import detect_faces, calc
+from find_faces_queue import VideoDetector
 from utils import (
     create_table, get_files, parse_paths, get_id, get_id_sparse
 )
+
+
+def distance_from_center(row):
+    x = int((row['x2'] - row['x1'])/2)
+    y = int((row['y2'] - row['y1'])/2)
+    
+    xx = int(row['img_width']/2)
+    yy = int(row['img_height']/2)
+    a = abs(yy - y) 
+    b = abs(xx - x)
+    c = np.sqrt(a*a + b*b)
+    return round(c, 2) 
+
+
+def pct_of_frame(row):
+    x = int((row['x2'] - row['x1'])/2)
+    y = int((row['y2'] - row['y1'])/2)
+
+    xx = int(row['img_width']/2)
+    yy = int(row['img_height']/2)
+
+    pct_of_frame = (x * y)/(xx * yy)
+    return round(pct_of_frame, 4) 
+
+
+def calc(df):
+    df['distance_from_center'] = df.apply(distance_from_center, axis=1)
+    df['pct_of_frame'] = df.apply(pct_of_frame, axis=1)
+    return df
 
 
 class Analyzer(object):
@@ -42,7 +72,7 @@ class Analyzer(object):
     def analyze(self):        
         self.dst, self.fp = self.format_dst(self.dst_dir, self.data)
         if not Path(self.dst).exists():
-            Path.mkdir(self.dst)
+            Path.mkdir(self.dst, parents=True)
         self.df = self.analyze_file(self.data)
         self.df.to_csv(self.fp)
         self.success = self.check_if_exists(self.fp)
@@ -77,7 +107,8 @@ class Analyzer(object):
     
     def analyze_file(self,
                      data):
-        df = detect_faces(data['filepath'], num_threads=8, max_size=720)
+        vd = VideoDetector(num_threads=8, max_size=720)
+        df = vd.detect_faces(data['filepath'])
         df['series_id'] = data['series_id']
         df['episode_id'] = data['episode_id']
         df['filename'] = data['filename']
@@ -289,11 +320,11 @@ def process_queue(engine,
                                     """))
                 conn.commit()
                 logging.debug(f'Analyzed {row["title"]} ({row["series_id"]}) and saved results to {str(a.fp)}.')
-                e = to_github(a.fp, token_path, repo_name=repo_name, branch=branch)
-                if not e:
-                    logging.info(f'Uploaded to Github from {a.fp}')
-                else:
-                    logging.error(f'Failed to upload file to GitHub.\n\n{e}')
+                # e = to_github(a.fp, token_path, repo_name=repo_name, branch=branch)
+                # if not e:
+                #     logging.info(f'Uploaded to Github from {a.fp}')
+                # else:
+                #     logging.error(f'Failed to upload file to GitHub.\n\n{e}')
 
                 
 
@@ -316,7 +347,7 @@ def main(args):
     
     update_queue(engine)
 
-    process_queue(engine, args.dst)
+    process_queue(engine, args.dst, series_id=args.series_id)
 
 
 if __name__ == '__main__':
