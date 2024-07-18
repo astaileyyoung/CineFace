@@ -70,34 +70,45 @@ def get_info(imdb_id):
 #     return data    
 
 
-def get_episode_info(df):
-    series_id = df.iloc[0]['series_id']
-    imdb_id = str(series_id).zfill(7)
-    # ia = Cinemagoer()
-    # result = ia.get_movie(series_id)
-    # imdb_id = result.movieID
-    url = f'https://www.imdb.com/search/title/?series=tt{imdb_id}&sort=user_rating,desc&count=250&view=simple'
-
+def get_episode_info(series_id):
+    url = f'https://www.imdb.com/search/title/?series=tt{series_id}&sort=user_rating,desc&count=250&view=simple'
+    ids = get_ids(url)
     data = []
-    imdb_ids = [int(x) for x in get_ids(url)]
-    existing = [int(x) for x in df['episode_id'].tolist() if not pd.isnull(x)]
-    new_ids = [x for x in imdb_ids if x not in existing]
-    pb = tqdm(total=len(new_ids), leave=False, desc=f'Getting episodes for {series_id}')
-    while new_ids:
-        id_ = new_ids.pop(0)
-        try:
-            datum = get_info(id_)
-            if datum:
-                datum['series_id'] = series_id
-                data.append(datum)
-        except _exceptions.IMDbDataAccessError:
-            imdb_ids.append(id_)
-        pb.update(1)
-    df = pd.DataFrame(data)
-    # combined = pd.concat([episode_df, df], axis=0)
-    # combined = combined.reset_index(drop=True)
-    # combined = combined.sort_values(by=['series_id', 'season', 'episode'])
-    return df    
+    for id_ in ids:
+        datum = get_info(id_)
+        datum['series_id'] = series_id 
+        data.append(datum)
+    return data 
+        
+
+# def get_episode_info(df):
+#     series_id = df.iloc[0]['series_id']
+#     imdb_id = str(series_id).zfill(7)
+#     # ia = Cinemagoer()
+#     # result = ia.get_movie(series_id)
+#     # imdb_id = result.movieID
+#     url = f'https://www.imdb.com/search/title/?series=tt{imdb_id}&sort=user_rating,desc&count=250&view=simple'
+
+#     data = []
+#     imdb_ids = [int(x) for x in get_ids(url)]
+#     existing = [int(x) for x in df['episode_id'].tolist() if not pd.isnull(x)]
+#     new_ids = [x for x in imdb_ids if x not in existing]
+#     pb = tqdm(total=len(new_ids), leave=False, desc=f'Getting episodes for {series_id}')
+#     while new_ids:
+#         id_ = new_ids.pop(0)
+#         try:
+#             datum = get_info(id_)
+#             if datum:
+#                 datum['series_id'] = series_id
+#                 data.append(datum)
+#         except _exceptions.IMDbDataAccessError:
+#             imdb_ids.append(id_)
+#         pb.update(1)
+#     df = pd.DataFrame(data)
+#     # combined = pd.concat([episode_df, df], axis=0)
+#     # combined = combined.reset_index(drop=True)
+#     # combined = combined.sort_values(by=['series_id', 'season', 'episode'])
+#     return df    
 
     
 def main(args):

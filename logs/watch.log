@@ -15026,3 +15026,258 @@ DEBUG  2024-07-09_21:35:36: Analyzed Modern Family (1442437) and saved results t
 DEBUG  2024-07-09_21:40:28: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S03E01.1080p.BluRay.x265-RARBG.csv.
 DEBUG  2024-07-09_21:45:16: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S03E02.1080p.BluRay.x265-RARBG.csv.
 DEBUG  2024-07-09_21:50:12: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S03E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-17_20:19:17: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-07-17_20:19:17: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-07-17_20:19:17: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-07-17_20:19:17: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7e19d077bc90>
+DEBUG  2024-07-17_20:19:17: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-07-17_20:19:17: send_request_headers.complete
+DEBUG  2024-07-17_20:19:17: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-07-17_20:19:17: send_request_body.complete
+DEBUG  2024-07-17_20:19:17: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-07-17_20:19:17: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'date', b'Thu, 18 Jul 2024 00:19:17 GMT')])
+INFO  2024-07-17_20:19:17: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-07-17_20:19:17: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-07-17_20:19:17: receive_response_body.complete
+DEBUG  2024-07-17_20:19:17: response_closed.started
+DEBUG  2024-07-17_20:19:17: response_closed.complete
+DEBUG  2024-07-17_20:19:17: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-07-17_20:27:38: Found 5083 files.
+INFO  2024-07-17_20:27:39: 12 new files out of 5083.
+DEBUG  2024-07-17_20:27:39: Found 10 to process.
+ERROR  2024-07-17_20:27:39: Unable to match IMDb ID for 
+DEBUG  2024-07-17_20:28:16: Found 3850 for analysis.
+DEBUG  2024-07-17_20:28:18: Creating converter from 3 to 5
+DEBUG  2024-07-17_20:32:17: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S07E01.Get.Your.Freak.Off.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_20:36:24: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S07E02.The.Fat.and.the.Furious.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_20:39:35: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S07E03.Bad.Girls,.Bad.Girls,.Whatcha.Gonna.Do.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_20:42:44: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S07E04.Goodbye.Normal.Jeans.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_20:45:56: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S07E05.Dances.With.Dogs.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_20:49:03: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S07E06.The.Son.Also.Roses.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_20:52:18: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S07E07.The.Texas.Skillsaw.Massacre.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_20:55:33: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S07E08.Full.Metal.Dust.Jacket.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_20:58:17: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S07E09.Pigmalion.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_21:00:56: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S07E10.Megalo.Dale.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_21:05:37: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S07E11.Boxing.Luanne.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_21:08:35: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S07E12.Vision.Quest.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_21:11:31: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S07E13.Queasy.Rider.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_21:15:12: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S07E14.Board.Games.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_21:18:20: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S07E15.An.Officer.and.a.Gentle.Boy.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_21:21:18: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S07E16.The.Miseducation.of.Bobby.Hill.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_21:24:17: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S07E17.The.Good.Buck.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_21:27:14: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S07E18.I.Never.Promised.You.an.Organic.Garden.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_21:30:02: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S07E19.Be.True.to.Your.Fool.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_21:33:21: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S07E20.Racist.Dawg.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_21:36:20: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S07E21.Night.and.Deity.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_21:39:24: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S07E22.Maid.in.Arlen.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_21:42:36: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S07E23.The.Witches.of.East.Arlen.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_21:45:40: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S08E01.Patch.Boomhauer.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_21:48:24: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S08E02.Reborn.To.Be.Wild.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_21:52:23: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S08E03.New.Cowboy.on.the.Block.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_21:55:25: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S08E04.The.Incredible.Hank.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_21:58:04: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S08E05.Flirting.with.the.Master.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_22:00:57: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S08E06.After.the.Mold.Rush.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_22:03:34: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S08E07.Livin'.on.Reds,.Vitamin.C,.and.Propane.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_22:06:32: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S08E08.Rich.Hank,.Poor.Hank.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_22:09:06: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S08E09.Ceci.N'est.Pas.Une.King.of.the.Hill.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_22:11:54: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S08E10.That's.What.She.Said.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_22:14:24: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S08E11.My.Hair.Lady.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_22:17:07: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S08E12.Phish.and.Wildlife.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_22:22:48: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S08E13.Cheer.Factor.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_22:25:28: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S08E14.Dale.Be.Not.Proud.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_22:28:44: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S08E15.Après.Hank,.le.Deluge.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_22:30:55: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S08E16.Daletech.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_22:33:34: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S08E17.How.I.Learned.to.Stop.Worrying.and.Love.the.Alamo.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_22:36:35: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S08E18.Girl,.You'll.be.a.Giant.Soon.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_22:39:02: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S08E19.Stressed.for.Success.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_22:41:14: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S08E20.Hank's.Back.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_22:44:02: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S08E21.The.Redneck.on.Rainey.Street.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_22:46:13: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S08E22.Talking.Shop.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_22:49:31: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S09E01.A.Rover.Runs.Through.It.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_22:53:11: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S09E02.Ms.Wakefield.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_22:56:54: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S09E03.Death.Buys.a.Timeshare.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_23:00:02: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S09E04.Yard,.She.Blows!.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_23:03:28: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S09E05.Dale.to.the.Chief.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_23:06:35: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S09E06.The.Petriot.Act.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_23:09:35: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S09E07.Enrique-cilable.Differences.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_23:12:28: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S09E08.Mutual.of.OmAbwah.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_23:17:03: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S09E09.Care-Takin'.Care.of.Business.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_23:20:37: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S09E10.Arlen.City.Bomber.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_23:24:51: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S09E11.Redcorn.Gambles.with.His.Future.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_23:29:13: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S09E12.Smoking.and.the.Bandit.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_23:32:16: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S09E13.Gone.With.the.Windstorm.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_23:37:00: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S09E14.Bobby.on.Track.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_23:41:52: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S09E15.It.Ain't.Over.'til.the.Fat.Neighbor.Sings.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_23:45:06: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S10E01.Hank's.on.Board.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_23:48:28: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S10E02.Bystand.Me.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_23:51:53: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S10E03.Bill's.House.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-17_23:56:37: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S10E04.Harlottown.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_00:00:10: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S10E05.A.Portrait.of.the.Artist.as.a.Young.Clown.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_00:04:08: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S10E06.Orange.You.Sad.I.Did.Say.Banana.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_00:09:11: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S10E07.You.Gotta.Believe.(In.Moderation).480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_00:12:28: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S10E08.Business.Is.Picking.Up.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_00:16:20: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S10E09.The.Year.of.Washing.Dangerously.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_00:20:09: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S10E10.Hank.Fixes.Everything.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_00:24:09: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S10E11.Church.Hopping.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_00:27:30: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S10E12.24.Hour.Propane.People.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_00:31:18: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S10E13.The.Texas.Panhandler.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_00:34:19: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S10E14.Hank's.Bully.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_00:37:14: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S10E15.Edu-macating.Lucky.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_00:38:59: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S11E01.The.Peggy.Horror.Picture.Show.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_00:40:56: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S11E02.SerPUNt.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_00:42:49: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S11E03.Blood.and.Sauce.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_00:44:32: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S11E04.Luanne.Gets.Lucky.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_00:46:44: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S11E05.Hank.Gets.Dusted.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_00:48:17: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S11E06.Glen.Peggy.Glen.Ross.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_00:50:05: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S11E07.The.Passion.of.Dauterive.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_00:51:46: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S11E08.Grand.Theft.Arlen.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_00:53:42: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S11E09.Peggy's.Gone.to.Pots.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_00:55:24: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S11E10.Hair.Today,.Gone.Today.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_00:56:57: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S11E11.Bill,.Bulk,.and.the.Body.Buddies.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_00:58:49: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S11E12.Lucky's.Wedding.Suit.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:01:50: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S12E01.Suite.Smells.of.Excess.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:04:10: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S12E02.Bobby.Rae.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:06:35: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S12E03.The.Powder.Puff.Boys.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:08:31: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S12E04.Four.Wave.Intersection.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:10:01: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S12E05.Death.Picks.Cotton.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:11:30: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S12E06.Raise.the.Steaks.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:14:22: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S12E07.Tears.of.an.Inflatable.Clown.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:16:41: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S12E08.The.Minh.Who.Knew.Too.Much.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:18:55: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S12E09.Dream.Weaver.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:20:49: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S12E10.Doggone.Crazy.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:23:04: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S12E11.Trans-Fascism.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:24:57: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S12E12.Untitled.Blake.McCormick.Project.(aka.Three.Men.and.a.Bastard).480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:26:45: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S12E13.The.Accidental.Terrorist.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:28:33: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S12E14.Lady.and.Gentrification.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:30:52: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S12E15.Behind.Closed.Doors.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:33:22: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S12E16.Pour.Some.Sugar.on.Kahn.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:35:28: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S12E17.Six.Characters.in.Search.of.a.House.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:37:45: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S12E18.The.Courtship.of.Joseph's.Father.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:39:50: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S12E19.Strangeness.on.a.Train.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:42:12: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S12E20.Cops.and.Robert.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:43:38: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S12E21.It.Came.From.the.Garage.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:45:15: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S12E22.Life.A.Loser's.Manual.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:47:07: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S13E01.Dia-bill-ic.Shock.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:48:54: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S13E02.Earthy.Girls.are.Easy.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:50:48: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S13E03.Square-Footed.Monster.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:52:56: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S13E04.Lost.in.MySpace.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:55:19: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S13E05.No.Bobby.Left.Behind.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:57:07: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S13E06.A.Bill.Full.of.Dollars.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_01:59:04: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S13E07.Straight.as.an.Arrow.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_02:01:04: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S13E08.Lucky.See,.Monkey.Do.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_02:03:20: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S13E09.What.Happens.At.The.National.Propane.Gas.Convention....480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_02:05:19: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S13E10.Master.of.Puppets.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_02:07:51: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S13E11.Bwah.My.Nose.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_02:10:32: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S13E12.Uncool.Customer.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_02:13:12: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S13E13.Nancy.Does.Dallas.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_02:15:27: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S13E14.Born.Again.on.the.Fourth.of.July.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_02:17:10: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S13E15.Serves.Me.Right.For.Giving.General.George.S.Patton.The.Bathroom.Key.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_02:19:40: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S13E16.Bad.News.Bill.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_02:21:27: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S13E17.Manger.Baby.Einstein.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_02:23:25: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S13E18.Uh-Oh,.Canada.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_02:26:03: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S13E19.The.Boy.Can't.Help.It.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_02:27:44: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S13E20.The.Honeymooners.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_02:29:59: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S13E21.Bill.Gathers.Moss.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_02:32:04: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S13E22.When.Joseph.Met.Lori,.and.Made.Out.with.Her.in.the.Janitor's.Closet.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_02:34:14: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S13E23.Just.Another.Manic.Kahn-Day.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_02:38:37: Analyzed King Of The Hill (118375) and saved results to data/faces/king-of-the-hill_1997_118375/King.of.the.Hill.S13E24.To.Sirloin.With.Love.480p.DVDRip.10bit.x265.HEVC.DD2.0-PHOCiS.csv.
+DEBUG  2024-07-18_02:53:44: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S01E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_03:07:05: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S01E04.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_03:22:46: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S01E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_03:35:45: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S01E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_03:47:36: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S01E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_03:59:33: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S01E06.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_04:09:32: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S01E07.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_04:20:38: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S01E08.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_04:28:24: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S01E09.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_04:44:12: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S01E10.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_04:59:19: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S02E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_05:10:22: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S02E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_05:22:24: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S02E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_05:34:09: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S02E04.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_05:45:00: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S02E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_05:57:09: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S02E06.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_06:08:37: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S02E07.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_06:20:11: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S02E08.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_06:29:36: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S02E09.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_06:42:26: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S02E10.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_06:53:06: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S03E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_07:05:48: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S03E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_07:17:57: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S03E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_07:28:35: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S03E04.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_07:40:17: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S03E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_07:51:24: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S03E06.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_08:01:24: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S03E07.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_08:12:30: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S03E08.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_08:21:57: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S03E09.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_08:39:54: Analyzed For All Mankind (7772588) and saved results to data/faces/for-all-mankind_2019_7772588/For.All.Mankind.S03E10.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-18_08:49:59: Analyzed The Outsider (8550800) and saved results to data/faces/the-outsider_2020_8550800/the.outsider.2020.s01e01.BluRay.10Bit.1080p.DDP5.1.H265-d3g.csv.
+DEBUG  2024-07-18_08:59:20: Analyzed The Outsider (8550800) and saved results to data/faces/the-outsider_2020_8550800/the.outsider.2020.s01e02.BluRay.10Bit.1080p.DDP5.1.H265-d3g.csv.
+DEBUG  2024-07-18_09:09:02: Analyzed The Outsider (8550800) and saved results to data/faces/the-outsider_2020_8550800/the.outsider.2020.s01e03.BluRay.10Bit.1080p.DDP5.1.H265-d3g.csv.
+DEBUG  2024-07-18_09:18:07: Analyzed The Outsider (8550800) and saved results to data/faces/the-outsider_2020_8550800/the.outsider.2020.s01e04.BluRay.10Bit.1080p.DDP5.1.H265-d3g.csv.
+DEBUG  2024-07-18_09:25:48: Analyzed The Outsider (8550800) and saved results to data/faces/the-outsider_2020_8550800/the.outsider.2020.s01e05.BluRay.10Bit.1080p.DDP5.1.H265-d3g.csv.
+DEBUG  2024-07-18_09:35:42: Analyzed The Outsider (8550800) and saved results to data/faces/the-outsider_2020_8550800/the.outsider.2020.s01e06.BluRay.10Bit.1080p.DDP5.1.H265-d3g.csv.
+DEBUG  2024-07-18_09:43:18: Analyzed The Outsider (8550800) and saved results to data/faces/the-outsider_2020_8550800/the.outsider.2020.s01e07.BluRay.10Bit.1080p.DDP5.1.H265-d3g.csv.
+DEBUG  2024-07-18_09:53:55: Analyzed The Outsider (8550800) and saved results to data/faces/the-outsider_2020_8550800/the.outsider.2020.s01e08.BluRay.10Bit.1080p.DDP5.1.H265-d3g.csv.
+DEBUG  2024-07-18_10:02:36: Analyzed The Outsider (8550800) and saved results to data/faces/the-outsider_2020_8550800/the.outsider.2020.s01e09.BluRay.10Bit.1080p.DDP5.1.H265-d3g.csv.
+DEBUG  2024-07-18_10:09:39: Analyzed The Outsider (8550800) and saved results to data/faces/the-outsider_2020_8550800/the.outsider.2020.s01e10.BluRay.10Bit.1080p.DDP5.1.H265-d3g.csv.
+DEBUG  2024-07-18_10:19:01: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S01E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_10:28:06: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S01E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_10:37:58: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S01E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_10:46:55: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S01E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_10:55:48: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S01E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_11:05:22: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S01E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_11:14:02: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S01E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_11:22:17: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S01E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_11:30:45: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S02E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_11:38:42: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S02E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_11:47:37: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S02E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_11:55:23: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S02E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_12:03:26: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S02E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_12:13:01: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S02E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_12:23:14: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S02E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_12:31:08: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S02E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_12:39:45: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S02E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_12:48:06: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S02E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_12:56:08: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S02E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_13:04:25: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S02E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_13:13:32: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S02E13.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_13:21:38: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S02E14.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_13:30:04: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S02E15.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_13:38:43: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S02E16.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_13:47:37: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S03E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_13:56:10: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S03E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_14:04:59: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S03E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_14:13:24: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S03E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_14:21:44: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S03E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_14:30:32: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S03E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_14:39:54: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S03E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_14:49:15: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S03E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_14:57:10: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S03E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_15:05:59: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S03E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_15:14:13: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S03E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_15:22:08: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S03E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_15:30:42: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S03E13.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_15:39:17: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S03E14.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_15:47:14: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S03E15.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_15:55:46: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S03E16.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_16:03:28: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S04E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_16:11:25: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S04E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_16:19:37: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S04E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_16:27:55: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S04E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_16:36:30: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S04E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_16:45:01: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S04E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_16:53:18: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S04E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_17:02:07: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S04E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_17:11:09: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S04E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_17:19:48: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S04E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_17:29:34: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S04E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_17:38:58: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S04E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_17:48:37: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S04E13.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_17:57:45: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S04E14.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_18:06:48: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S04E15.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_18:16:46: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S04E16.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_18:25:21: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S05E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_18:33:54: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S05E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_18:43:02: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S05E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-18_18:51:38: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S05E04.1080p.BluRay.x265-RARBG.csv.

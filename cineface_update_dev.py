@@ -25,11 +25,12 @@ from utils import (
 
 
 def distance_from_center(row):
-    x = int((row['x2'] - row['x1'])/2)
-    y = int((row['y2'] - row['y1'])/2)
+    x = int((((row['x2'] - row['x1'])/2) + row['x1']) * row['img_width'])
+    y = int((((row['y2'] - row['y1'])/2) + row['y1']) * row['img_height'])
     
     xx = int(row['img_width']/2)
     yy = int(row['img_height']/2)
+    
     a = abs(yy - y) 
     b = abs(xx - x)
     c = np.sqrt(a*a + b*b)
@@ -37,14 +38,13 @@ def distance_from_center(row):
 
 
 def pct_of_frame(row):
-    x = int((row['x2'] - row['x1'])/2)
-    y = int((row['y2'] - row['y1'])/2)
-
-    xx = int(row['img_width']/2)
-    yy = int(row['img_height']/2)
+    x = int((row['x2'] - row['x1']) * row['img_width'])
+    y = int((row['y2'] - row['y1']) * row['img_height'])
+    xx = row['img_width']
+    yy = row['img_height']
 
     pct_of_frame = (x * y)/(xx * yy)
-    return round(pct_of_frame, 4) 
+    return round(pct_of_frame * 100, 2)  
 
 
 def calc(df):
