@@ -111,6 +111,8 @@ class Analyzer(object):
         df = vd.detect_faces(data['filepath'])
         df['series_id'] = data['series_id']
         df['episode_id'] = data['episode_id']
+        df['season'] = data['season']
+        df['episode'] = data['episode']
         df['filename'] = data['filename']
         df['filepath'] = data['filepath']
         df = calc(df)
