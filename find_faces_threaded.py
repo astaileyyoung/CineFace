@@ -215,22 +215,6 @@ def process_queue():
         DATA.extend(d)
         
 
-# def parse_results():
-#     v = {}
-#     framecount = 0
-#     for VIDEO in VIDEOS:
-#         v[str(VIDEO.src)] = framecount
-#         framecount += VIDEO.framecount
-#     data = []
-#     for datum in DATA:
-#         framecount = v[datum['src']]
-#         datum['frame_num'] = datum['frame_num']
-#         data.append(datum)
-#     df = pd.DataFrame(data)
-#     df = df.sort_values(by='frame_num', ascending=True)
-#     return df
-
-
 def detect_faces(src, num_threads=4, max_size=None):
     global PB 
     

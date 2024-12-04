@@ -17,7 +17,7 @@ import pandas as pd
 from tqdm import tqdm 
 from retinaface import RetinaFace
 
-from videotools.utils import resize_image
+from utils import resize_image
 from videotools.detectors import RetinaFaceCustom
 from videotools.models.RetinaFaceKeras.preprocess import preprocess_image
 
@@ -102,7 +102,7 @@ def video_to_numpy(video,
             break 
         if frame_num % frameskip == 0:
             if max_size:
-                frame = resize_image(frame, max_size=max_size)
+                frame = resize_image(frame, max_size)
                 frames.append(Frame(frame, frame_num, str(video.src)))
         if len(frames) >= BATCH_SIZE:
             FRAMES.append(frames)

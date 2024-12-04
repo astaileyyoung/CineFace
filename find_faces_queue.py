@@ -53,8 +53,8 @@ class Faces(object):
     def frame_from_frame_num(self, frame_num):
         for frame in self.frames:
             if frame.frame_num == frame_num:
-                return frame.image
-            
+                return frame
+
 
 class Batch(object):
     def __init__(self, frames):
@@ -226,6 +226,7 @@ class VideoDetector(object):
             faces = self.faces.pop(0)
             for f in faces.data:
                 frame = faces.frame_from_frame_num(f['frame_num'])
+                frame, frame_num = (frame.image, frame.frame_num)
                 face = extract_face((f['x1'], f['y1'], f['x2'], f['y2']), frame)
                 img = self.process_image(face)
                 encoding = self.encoder.compute_face_descriptor(img)

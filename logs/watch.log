@@ -15444,3 +15444,823 @@ DEBUG  2024-07-19_16:54:30: Analyzed Homeland (1796960) and saved results to dat
 DEBUG  2024-07-19_17:03:29: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S02E09.1080p.BluRay.x265-RARBG.csv.
 DEBUG  2024-07-19_17:12:09: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S02E10.1080p.BluRay.x265-RARBG.csv.
 DEBUG  2024-07-19_17:21:07: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S02E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_17:33:32: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S02E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_17:47:49: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S03E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_17:57:10: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S03E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_18:06:46: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S03E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_18:16:07: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S03E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_18:24:15: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S03E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_18:32:49: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S03E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_18:41:26: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S03E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_18:49:43: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S03E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_18:59:28: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S03E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_19:06:51: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S03E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_19:17:42: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S03E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_19:29:56: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S03E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_19:39:32: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S04E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_19:48:34: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S04E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_19:58:21: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S04E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_20:07:48: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S04E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_20:16:06: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S04E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_20:25:24: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S04E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_20:36:07: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S04E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_20:44:58: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S04E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_20:54:04: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S04E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_21:02:49: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S04E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_21:11:29: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S04E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_21:21:29: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S04E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_21:31:09: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S05E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_21:41:38: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S05E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_21:54:37: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S05E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_22:03:20: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S05E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_22:11:50: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S05E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_22:19:44: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S05E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_22:28:17: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S05E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_22:37:25: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S05E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_22:47:19: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S05E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_22:57:16: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S05E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_23:08:44: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S05E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_23:18:11: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S05E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_23:28:03: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S06E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_23:37:44: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S06E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_23:46:37: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S06E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-19_23:55:39: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S06E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_00:03:25: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S06E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_00:12:12: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S06E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_00:22:01: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S06E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_00:31:24: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S06E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_00:40:09: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S06E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_00:49:47: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S06E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_00:58:53: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S06E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_01:08:45: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S06E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_01:19:38: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S07E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_01:30:33: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S07E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_01:40:22: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S07E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_01:49:19: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S07E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_02:00:04: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S07E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_02:10:29: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S07E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_02:20:49: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S07E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_02:29:38: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S07E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_02:38:29: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S07E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_02:49:18: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S07E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_02:58:40: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S07E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_03:12:44: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S07E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_03:23:19: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S08E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_03:32:18: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S08E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_03:41:32: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S08E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_03:52:56: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S08E04.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_04:02:02: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S08E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_04:11:53: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S08E06.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_04:24:45: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S08E07.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_04:35:13: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S08E08.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_04:44:40: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S08E09.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_04:55:23: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S08E10.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:04:40: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S08E11.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:16:59: Analyzed Homeland (1796960) and saved results to data/faces/homeland_2011_1796960/Homeland.S08E12.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:18:03: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S01E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:19:06: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S01E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:20:08: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S01E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:22:17: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S01E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:24:21: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S01E07.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:25:24: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S01E08.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:26:25: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S01E09.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:27:27: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S01E10.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:28:32: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S02E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:29:35: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S02E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:30:37: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S02E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:31:42: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S02E04.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:32:43: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S02E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:33:47: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S02E06.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:34:49: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S02E07.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:35:56: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S02E08.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:37:00: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S02E09.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:38:04: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S02E10.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:39:08: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S03E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:40:15: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S03E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:41:19: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S03E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:42:21: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S03E04.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:43:27: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S03E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:44:35: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S03E06.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:45:43: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S03E07.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:46:50: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S03E08.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:47:56: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S03E09.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:49:02: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S03E10.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:50:09: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S04E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:51:13: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S04E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:52:18: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S04E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:53:21: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S04E04.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:54:23: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S04E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:55:25: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S04E06.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:56:29: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S04E07.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:57:35: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S04E08.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:58:41: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S04E09.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_05:59:51: Analyzed Infinity Train (8146754) and saved results to data/faces/infinity-train_2019_8146754/Infinity.Train.S04E10.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_06:12:50: Analyzed Legion (5114356) and saved results to data/faces/legion_2017_5114356/Legion.S01E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_06:20:57: Analyzed Legion (5114356) and saved results to data/faces/legion_2017_5114356/Legion.S01E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_06:29:02: Analyzed Legion (5114356) and saved results to data/faces/legion_2017_5114356/Legion.S01E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_06:38:31: Analyzed Legion (5114356) and saved results to data/faces/legion_2017_5114356/Legion.S01E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_06:47:24: Analyzed Legion (5114356) and saved results to data/faces/legion_2017_5114356/Legion.S01E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_06:56:35: Analyzed Legion (5114356) and saved results to data/faces/legion_2017_5114356/Legion.S01E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_07:04:05: Analyzed Legion (5114356) and saved results to data/faces/legion_2017_5114356/Legion.S01E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_07:12:34: Analyzed Legion (5114356) and saved results to data/faces/legion_2017_5114356/Legion.S01E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_07:22:27: Analyzed Legion (5114356) and saved results to data/faces/legion_2017_5114356/Legion.S02E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_07:30:55: Analyzed Legion (5114356) and saved results to data/faces/legion_2017_5114356/Legion.S02E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_07:40:06: Analyzed Legion (5114356) and saved results to data/faces/legion_2017_5114356/Legion.S02E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_07:47:52: Analyzed Legion (5114356) and saved results to data/faces/legion_2017_5114356/Legion.S02E04.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_07:55:04: Analyzed Legion (5114356) and saved results to data/faces/legion_2017_5114356/Legion.S02E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_08:02:34: Analyzed Legion (5114356) and saved results to data/faces/legion_2017_5114356/Legion.S02E06.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_08:10:25: Analyzed Legion (5114356) and saved results to data/faces/legion_2017_5114356/Legion.S02E07.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_08:17:07: Analyzed Legion (5114356) and saved results to data/faces/legion_2017_5114356/Legion.S02E08.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_08:23:38: Analyzed Legion (5114356) and saved results to data/faces/legion_2017_5114356/Legion.S02E09.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_08:30:53: Analyzed Legion (5114356) and saved results to data/faces/legion_2017_5114356/Legion.S02E10.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_08:39:16: Analyzed Legion (5114356) and saved results to data/faces/legion_2017_5114356/Legion.S02E11.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_08:47:55: Analyzed Legion (5114356) and saved results to data/faces/legion_2017_5114356/Legion.S03E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_08:55:17: Analyzed Legion (5114356) and saved results to data/faces/legion_2017_5114356/Legion.S03E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_09:02:32: Analyzed Legion (5114356) and saved results to data/faces/legion_2017_5114356/Legion.S03E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_09:11:34: Analyzed Legion (5114356) and saved results to data/faces/legion_2017_5114356/Legion.S03E04.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_09:18:42: Analyzed Legion (5114356) and saved results to data/faces/legion_2017_5114356/Legion.S03E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_09:27:27: Analyzed Legion (5114356) and saved results to data/faces/legion_2017_5114356/Legion.S03E06.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_09:35:02: Analyzed Legion (5114356) and saved results to data/faces/legion_2017_5114356/Legion.S03E07.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_09:43:43: Analyzed Legion (5114356) and saved results to data/faces/legion_2017_5114356/Legion.S03E08.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-20_09:51:40: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S01E01.Its.a.Fae.Fae.Fae.Fae.World.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_09:59:59: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S01E02.Where.Theres.a.Will.Theres.a.Fae.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_10:08:19: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S01E03.Oh.Kappa.My.Kappa.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_10:16:32: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S01E04.Faetal.Attraction.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_10:25:14: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S01E05.Dead.Lucky.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_10:33:21: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S01E06.Food.For.Thought.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_10:41:26: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S01E07.ArachnoFaebia.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_10:48:32: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S01E08.Vexed.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_10:58:11: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S01E09.Fae.Day.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_11:06:12: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S01E10.The.Mourning.After.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_11:14:58: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S01E11.Faetal.Justice.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_11:23:50: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S01E12.Dis.Members.Only.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_11:31:31: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S01E13.Blood.Lines.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_11:40:33: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S02E01.Something.Wicked.This.Fae.Comes.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_11:49:33: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S02E02.I.Fought.the.Fae.(And.the.Fae.Won).BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_11:57:32: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S02E03.Scream.a.Little.Dream.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_12:05:53: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S02E04.Mirror.Mirror.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_12:15:13: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S02E05.BrotherFae.of.the.Wolves.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_12:24:13: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S02E06.Its.Better.to.Burn.Out.Than.Fae.Away.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_12:32:46: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S02E07.Fae.Gone.Wild.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_12:42:13: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S02E08.Death.Didnt.Become.Him.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_12:51:34: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S02E09.Original.Skin.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_13:00:22: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S02E10.Raging.Fae.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_13:09:56: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S02E11.Cant.See.the.Fae-Rest.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_13:17:58: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S02E12.Masks.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_13:26:01: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S02E13.Barometz.Trick.Pressure.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_13:35:03: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S02E14.Midnight.Lamp.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_13:44:06: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S02E15.Table.For.Fae.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_13:53:15: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S02E16.Schools.Out.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_14:02:47: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S02E17.The.Girl.Who.Faed.With.Fire.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_14:12:18: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S02E18.Fae-nted.Love.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_14:20:45: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S02E19.Truth.and.Consequences.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_14:29:31: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S02E20.Lachlans.Gambit.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_14:38:32: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S02E21.Into.the.Dark.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_14:47:34: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S02E22.Flesh.and.Blood.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_14:57:29: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S03E01.Caged.Fae.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_15:07:03: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S03E02.SubterrFaenean.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_15:16:02: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S03E03.ConFaegion.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_15:24:23: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S03E04.Fae-de.To.Black.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_15:34:08: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S03E05.Faes.Wide.Shut.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_15:42:25: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S03E06.The.Kenzi.Scale.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_15:51:23: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S03E07.Theres.Bo.Place.Like.Home.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_16:00:32: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S03E08.Fae-ge.Against.the.Machine.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_16:08:53: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S03E09.Ceremony.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_16:17:45: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S03E10.Delinquents.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_16:26:41: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S03E11.Adventures.in.Fae-bysitting.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_16:36:12: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S03E12.Hail.Hale.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_16:44:37: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S03E13.Those.Who.Wander.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_16:56:47: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S04E01.In.Memoriam.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_17:04:59: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S04E02.Sleeping.Beauty.School.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_17:12:50: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S04E03.Lovers.Apart.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_17:20:44: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S04E04.Turn.to.Stone.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_17:30:30: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S04E05.Let.the.Dark.Times.Roll.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_17:38:53: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S04E06.Of.All.the.Gin.Joints.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_17:46:54: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S04E07.La.Fae.Epoque.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_17:55:18: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S04E08.Groundhog.Fae.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_18:03:06: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S04E09.Destinys.Child.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_18:10:59: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S04E10.Waves.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_18:19:17: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S04E11.End.of.a.Line.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_18:27:27: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S04E12.Origin.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_18:35:11: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S04E13.Dark.Horse.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_18:43:09: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S05E01.Like.Hell.Part.1.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_18:50:42: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S05E02.Like.Hell.Part.2.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_18:58:54: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S05E03.Big.in.Japan.BluRay.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_19:07:16: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S05E04.When.God.Opens.a.Window.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_19:16:05: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S05E05.Its.Your.Lucky.Fae.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_19:26:40: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S05E06.Clear.Eyes.Fae.Hearts.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_19:34:20: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S05E07.Here.Comes.the.Night.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_19:44:19: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S05E08.End.of.Faes.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_19:52:21: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S05E09.44.Minutes.to.Save.the.World.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_20:01:06: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S05E10.Like.Father.Like.Daughter.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_20:11:14: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S05E11.Sweet.Valkyrie.High.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_20:20:09: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S05E12.Judgement.Fae.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_20:28:06: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S05E13.Family.Portrait.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_20:36:47: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S05E14.Follow.the.Yellow.Trick.Road.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_20:45:42: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S05E15.Let.Them.Burn.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_20:54:42: Analyzed Lost Girl (1429449) and saved results to data/faces/lost-girl_2010_1429449/Lost.Girl.S05E16.Rise.BluRay.10Bit.1080p.DD5.1.H265-d3g.csv.
+DEBUG  2024-07-20_20:59:06: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S03E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_21:04:06: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S03E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_21:09:52: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S03E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_21:14:39: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S03E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_21:19:52: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S03E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_21:25:27: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S03E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_21:30:52: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S03E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_21:37:03: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S03E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_21:42:05: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S03E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_21:48:37: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S03E13.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_21:53:55: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S03E14.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_21:59:16: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S03E15.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_22:04:29: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S03E16.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_22:10:23: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S03E17.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_22:15:54: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S03E18.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_22:21:25: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S03E19.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_22:26:23: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S03E20.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_22:31:18: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S03E21.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_22:38:38: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S03E22.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_22:44:01: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S03E23.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_22:49:44: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S03E24.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_22:54:57: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S04E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_23:00:57: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S04E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_23:05:43: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S04E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_23:10:10: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S04E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_23:14:57: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S04E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_23:20:22: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S04E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_23:25:39: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S04E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_23:31:17: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S04E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_23:36:50: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S04E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_23:42:16: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S04E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_23:47:29: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S04E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_23:53:02: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S04E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-20_23:58:06: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S04E13.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_00:03:45: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S04E14.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_00:08:21: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S04E15.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_00:13:24: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S04E16.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_00:18:50: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S04E17.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_00:23:51: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S04E18.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_00:29:47: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S04E19.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_00:35:00: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S04E20.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_00:39:45: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S04E21.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_00:46:12: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S04E22.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_00:52:34: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S04E23.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_00:59:31: Analyzed Modern Family (1442437) and saved results to data/faces/modern-family_2009_1442437/Modern.Family.S04E24.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_01:12:06: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S01E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_01:25:38: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S01E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_01:37:31: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S01E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_01:49:29: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S01E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_02:02:42: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S01E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_02:14:11: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S01E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_02:26:07: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S01E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_02:38:28: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S01E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_02:50:27: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S01E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_03:05:32: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S01E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_03:16:47: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S01E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_03:27:45: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S01E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_03:40:16: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S02E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_03:52:47: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S02E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_04:06:32: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S02E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_04:18:09: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S02E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_04:30:17: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S02E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_04:42:40: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S02E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_04:54:10: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S02E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_05:06:19: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S02E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_05:18:44: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S02E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_05:29:09: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S02E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_05:40:09: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S02E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_05:51:08: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S02E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_06:04:50: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S03E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-21_06:16:10: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S03E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-21_06:27:13: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S03E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-21_06:39:47: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S03E04.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-21_06:50:31: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S03E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-21_07:02:55: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S03E06.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-21_07:17:09: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S03E07.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-21_07:29:30: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S03E08.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-21_07:39:22: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S03E09.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-21_07:50:57: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S03E10.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-21_08:02:27: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S03E11.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-21_08:14:18: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S03E12.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-21_08:26:53: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S04E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-21_08:39:18: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S04E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-21_08:50:09: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S04E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-21_09:04:10: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S04E04.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-21_09:17:13: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S04E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-21_09:28:39: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S04E06.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-21_09:39:55: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S04E07.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-21_09:53:26: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S04E08.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-21_10:04:37: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S04E09.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-21_10:16:34: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S04E10.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-21_10:27:42: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S04E11.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-21_10:38:20: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S04E12.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-21_10:54:38: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S05E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-21_10:54:44: close.started
+DEBUG  2024-07-21_10:54:44: close.complete
+DEBUG  2024-07-21_18:57:11: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-07-21_18:57:11: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-07-21_18:57:11: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-07-21_18:57:11: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x76a88a79f950>
+DEBUG  2024-07-21_18:57:11: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-07-21_18:57:11: send_request_headers.complete
+DEBUG  2024-07-21_18:57:11: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-07-21_18:57:11: send_request_body.complete
+DEBUG  2024-07-21_18:57:11: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-07-21_18:57:11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'date', b'Sun, 21 Jul 2024 22:57:11 GMT')])
+INFO  2024-07-21_18:57:11: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-07-21_18:57:11: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-07-21_18:57:11: receive_response_body.complete
+DEBUG  2024-07-21_18:57:11: response_closed.started
+DEBUG  2024-07-21_18:57:11: response_closed.complete
+DEBUG  2024-07-21_18:57:11: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-07-21_19:03:41: Found 5085 files.
+INFO  2024-07-21_19:03:41: 2 new files out of 5085.
+DEBUG  2024-07-21_19:03:41: Found 10 to process.
+ERROR  2024-07-21_19:03:42: Unable to match IMDb ID for 
+DEBUG  2024-07-21_19:04:15: Found 2119 for analysis.
+DEBUG  2024-07-21_19:04:17: Creating converter from 3 to 5
+DEBUG  2024-07-21_19:12:58: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.the.Dome.S01E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_19:21:59: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.the.Dome.S01E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_19:29:52: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.the.Dome.S01E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_19:38:21: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.the.Dome.S01E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_19:48:24: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.the.Dome.S01E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_19:56:51: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.the.Dome.S01E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_20:03:58: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.the.Dome.S01E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_20:11:23: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.the.Dome.S01E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_20:18:47: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.the.Dome.S01E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_20:27:39: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.the.Dome.S01E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_20:34:34: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.the.Dome.S01E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_20:44:01: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.the.Dome.S01E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_20:53:36: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.the.Dome.S01E13.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_21:01:28: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.the.Dome.S02E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_21:10:07: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.the.Dome.S02E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_21:17:29: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.the.Dome.S02E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_21:25:30: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.the.Dome.S02E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_21:34:49: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.the.Dome.S02E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_21:42:11: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.the.Dome.S02E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_21:49:53: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.the.Dome.S02E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_21:57:35: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.the.Dome.S02E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_22:04:56: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.the.Dome.S02E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_22:12:12: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.the.Dome.S02E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_22:19:51: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.the.Dome.S02E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_22:27:39: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.the.Dome.S02E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_22:36:33: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.the.Dome.S02E13.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_22:52:56: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.The.Dome.S03E01E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_23:01:51: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.The.Dome.S03E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_23:09:48: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.The.Dome.S03E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_23:17:47: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.The.Dome.S03E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_23:25:49: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.The.Dome.S03E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_23:33:19: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.The.Dome.S03E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_23:40:55: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.The.Dome.S03E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_23:48:26: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.The.Dome.S03E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-21_23:56:23: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.The.Dome.S03E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_00:03:51: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.The.Dome.S03E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_00:11:27: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.The.Dome.S03E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_00:19:54: Analyzed Under The Dome (1553656) and saved results to data/faces/under-the-dome_2013_1553656/Under.The.Dome.S03E13.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_00:31:42: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S01E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_00:40:22: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S01E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_00:49:29: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S01E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_00:57:44: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S01E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_01:06:59: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S01E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_01:16:39: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S01E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_01:25:55: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S01E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_01:35:44: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S01E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_01:44:30: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S01E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_01:52:43: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S01E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_02:01:24: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S01E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_02:09:45: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S01E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_02:18:36: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S01E13.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_02:26:38: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S01E14.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_02:36:16: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S02E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_02:45:23: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S02E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_02:54:28: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S02E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_03:03:47: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S02E04.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_03:11:46: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S02E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_03:21:38: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S02E06.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_03:30:20: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S02E07.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_03:38:41: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S02E08.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_03:46:47: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S02E09.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_03:55:54: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S02E10.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_04:04:35: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S02E11.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_04:13:58: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S02E12.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_04:22:23: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S02E13.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_04:30:50: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S02E14.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_04:39:57: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S02E15.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_04:48:25: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S02E16.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_04:56:02: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S03E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_05:04:41: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S03E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_05:13:10: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S03E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_05:22:37: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S03E04.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_05:32:25: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S03E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_05:41:45: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S03E06.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_05:51:19: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S03E07.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_06:00:11: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S03E08.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_06:08:22: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S03E09.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_06:16:56: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S03E10.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_06:25:02: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S03E11.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_06:33:44: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S03E12.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_06:42:16: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S03E13.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_06:52:17: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S03E14.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_07:01:21: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S03E15.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_07:09:26: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S03E16.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_07:17:58: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S04E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_07:26:33: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S04E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_07:34:22: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S04E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_07:43:12: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S04E04.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_07:52:16: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S04E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_08:00:17: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S04E06.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_08:09:15: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S04E07.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_08:17:16: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S04E08.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_08:26:47: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S04E09.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_08:36:38: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S04E10.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_08:44:56: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S04E11.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_08:53:43: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S04E12.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_09:02:14: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S04E13.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_09:10:51: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S04E14.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_09:19:34: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S04E15.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_09:28:07: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S04E16.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_09:36:04: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S05E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_09:44:04: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S05E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_09:52:38: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S05E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_10:00:41: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S05E04.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_10:08:38: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S05E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_10:17:19: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S05E06.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_10:25:52: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S05E07.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_10:34:26: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S05E08.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_10:42:35: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S05E09.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_10:51:11: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S05E10.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_10:59:09: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S05E11.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_11:07:09: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S05E12.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_11:15:09: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S05E13.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_11:23:14: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S06E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_11:33:20: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S06E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_11:41:44: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S06E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_11:51:00: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S06E04.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_11:59:38: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S06E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_12:08:34: Analyzed White Collar (1358522) and saved results to data/faces/white-collar_2009_1358522/White.Collar.S06E06.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_12:29:58: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S01E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_12:38:48: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S01E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_12:48:31: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S01E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_12:57:59: Analyzed Suits (1632701) and saved results to data/faces/suits_2011_1632701/Suits.S01E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_13:13:03: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S05E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_13:25:30: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S05E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_13:41:55: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S05E04.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_13:53:11: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S05E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_14:05:34: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S05E06.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_14:17:47: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S05E07.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_14:28:32: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S05E08.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_14:38:27: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S05E09.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_14:48:43: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S05E10.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_14:59:48: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S05E11.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_15:11:47: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S05E12.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_15:23:14: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S06E01.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_15:34:02: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S06E02.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_15:44:18: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S06E03.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_15:54:06: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S06E04.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_16:07:02: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S06E05.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_16:17:11: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S06E06.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_16:28:12: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S06E07.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_16:38:12: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S06E08.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_16:52:28: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S06E09.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_17:05:50: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S06E10.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_17:17:16: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S06E11.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_17:29:53: Analyzed Billions (4270492) and saved results to data/faces/billions_2016_4270492/Billions.S06E12.1080p.WEBRip.x265-RARBG.csv.
+DEBUG  2024-07-22_17:38:59: Analyzed Channel Zero (4820370) and saved results to data/faces/channel-zero_2016_4820370/Channel Zero (2016) - S01E01 - You Have to Go Inside (1080p BluRay x265 r00t).csv.
+DEBUG  2024-07-22_17:46:47: Analyzed Channel Zero (4820370) and saved results to data/faces/channel-zero_2016_4820370/Channel Zero (2016) - S01E02 - I'll Hold Your Hand (1080p BluRay x265 r00t).csv.
+DEBUG  2024-07-22_17:54:23: Analyzed Channel Zero (4820370) and saved results to data/faces/channel-zero_2016_4820370/Channel Zero (2016) - S01E03 - Want to See Something Cool (1080p BluRay x265 r00t).csv.
+DEBUG  2024-07-22_18:02:06: Analyzed Channel Zero (4820370) and saved results to data/faces/channel-zero_2016_4820370/Channel Zero (2016) - S01E04 - A Strange Vessel (1080p BluRay x265 r00t).csv.
+DEBUG  2024-07-22_18:09:51: Analyzed Channel Zero (4820370) and saved results to data/faces/channel-zero_2016_4820370/Channel Zero (2016) - S01E05 - Guest of Honor (1080p BluRay x265 r00t).csv.
+DEBUG  2024-07-22_18:17:16: Analyzed Channel Zero (4820370) and saved results to data/faces/channel-zero_2016_4820370/Channel Zero (2016) - S01E06 - Welcome Home (1080p BluRay x265 r00t).csv.
+DEBUG  2024-07-22_18:25:42: Analyzed Channel Zero (4820370) and saved results to data/faces/channel-zero_2016_4820370/Channel Zero (2016) - S02E01 - This Isn't Real (1080p BluRay x265 r00t).csv.
+DEBUG  2024-07-22_18:32:47: Analyzed Channel Zero (4820370) and saved results to data/faces/channel-zero_2016_4820370/Channel Zero (2016) - S02E02 - Nice Neighborhood (1080p BluRay x265 r00t).csv.
+DEBUG  2024-07-22_18:40:03: Analyzed Channel Zero (4820370) and saved results to data/faces/channel-zero_2016_4820370/Channel Zero (2016) - S02E03 - Beware the Cannibals (1080p BluRay x265 r00t).csv.
+DEBUG  2024-07-22_18:47:13: Analyzed Channel Zero (4820370) and saved results to data/faces/channel-zero_2016_4820370/Channel Zero (2016) - S02E04 - The Reflection (1080p BluRay x265 r00t).csv.
+DEBUG  2024-07-22_18:54:00: Analyzed Channel Zero (4820370) and saved results to data/faces/channel-zero_2016_4820370/Channel Zero (2016) - S02E05 - The Damage (1080p BluRay x265 r00t).csv.
+DEBUG  2024-07-22_19:01:31: Analyzed Channel Zero (4820370) and saved results to data/faces/channel-zero_2016_4820370/Channel Zero (2016) - S02E06 - The Hollow Girl (1080p BluRay x265 r00t).csv.
+DEBUG  2024-07-22_19:09:01: Analyzed Channel Zero (4820370) and saved results to data/faces/channel-zero_2016_4820370/Channel Zero (2016) - S03E01 - Insidious Onset (1080p BluRay x265 r00t).csv.
+DEBUG  2024-07-22_19:16:34: Analyzed Channel Zero (4820370) and saved results to data/faces/channel-zero_2016_4820370/Channel Zero (2016) - S03E02 - Father Time (1080p BluRay x265 r00t).csv.
+DEBUG  2024-07-22_19:23:41: Analyzed Channel Zero (4820370) and saved results to data/faces/channel-zero_2016_4820370/Channel Zero (2016) - S03E03 - All You Ghost Mice (1080p BluRay x265 r00t).csv.
+DEBUG  2024-07-22_19:31:11: Analyzed Channel Zero (4820370) and saved results to data/faces/channel-zero_2016_4820370/Channel Zero (2016) - S03E04 - Alice in Slaughterland (1080p BluRay x265 r00t).csv.
+DEBUG  2024-07-22_19:38:16: Analyzed Channel Zero (4820370) and saved results to data/faces/channel-zero_2016_4820370/Channel Zero (2016) - S03E05 - The Red Door (1080p RED BluRay x265 r00t).csv.
+DEBUG  2024-07-22_19:44:40: Analyzed Channel Zero (4820370) and saved results to data/faces/channel-zero_2016_4820370/Channel Zero (2016) - S03E06 - Sacrifice Zone (1080p BluRay x265 r00t).csv.
+DEBUG  2024-07-22_19:52:24: Analyzed Channel Zero (4820370) and saved results to data/faces/channel-zero_2016_4820370/Channel Zero (2016) - S04E01 - Ashes on My Pillow (1080p BluRay x265 r00t).csv.
+DEBUG  2024-07-22_19:59:32: Analyzed Channel Zero (4820370) and saved results to data/faces/channel-zero_2016_4820370/Channel Zero (2016) - S04E02 - Where Did You Sleep Last Night (1080p BluRay x265 r00t).csv.
+DEBUG  2024-07-22_20:07:20: Analyzed Channel Zero (4820370) and saved results to data/faces/channel-zero_2016_4820370/Channel Zero (2016) - S04E03 - Love Hurts (1080p BluRay x265 r00t).csv.
+DEBUG  2024-07-22_20:14:54: Analyzed Channel Zero (4820370) and saved results to data/faces/channel-zero_2016_4820370/Channel Zero (2016) - S04E04 - Bizarre Love Triangle (1080p BluRay x265 r00t).csv.
+DEBUG  2024-07-22_20:22:07: Analyzed Channel Zero (4820370) and saved results to data/faces/channel-zero_2016_4820370/Channel Zero (2016) - S04E05 - You Belong to Me (1080p BluRay x265 r00t).csv.
+DEBUG  2024-07-22_20:29:27: Analyzed Channel Zero (4820370) and saved results to data/faces/channel-zero_2016_4820370/Channel Zero (2016) - S04E06 - Two of Us (1080p BluRay x265 r00t).csv.
+DEBUG  2024-07-22_20:34:44: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S01E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_20:40:38: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S01E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_20:48:07: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S01E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_20:54:06: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S01E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_21:00:46: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S01E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_21:06:12: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S01E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_21:15:22: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S01E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_21:20:11: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S01E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_21:26:14: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S01E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_21:32:00: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S01E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_21:38:29: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S01E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_21:45:19: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S01E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_21:52:00: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S01E13.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_21:57:55: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S01E14.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_22:04:55: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S01E15.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_22:13:11: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S01E16.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_22:19:13: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S01E17.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_22:27:16: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S01E18.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_22:33:43: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S01E19.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_22:40:40: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S01E20.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_22:46:20: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S01E21.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_22:51:54: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S01E22.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_22:57:42: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S02E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_23:03:39: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S02E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_23:10:13: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S02E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_23:16:59: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S02E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_23:22:26: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S02E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_23:28:13: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S02E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_23:33:53: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S02E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_23:41:08: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S02E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_23:47:35: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S02E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_23:52:47: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S02E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-22_23:59:07: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S02E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_00:06:57: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S02E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_00:12:51: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S02E13.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_00:19:21: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S02E14.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_00:24:42: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S02E15.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_00:32:04: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S02E16.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_00:38:32: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S02E17.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_00:45:08: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S02E18.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_00:52:42: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S02E19.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_00:59:46: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S02E20.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_01:06:29: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S02E21.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_01:11:43: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S02E22.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_01:18:18: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S03E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_01:24:24: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S03E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_01:30:12: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S03E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_01:36:27: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S03E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_01:42:34: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S03E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_01:49:43: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S03E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_01:54:58: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S03E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_02:01:37: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S03E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_02:08:35: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S03E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_02:15:19: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S03E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_02:21:56: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S03E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_02:28:05: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S03E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_02:34:54: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S03E13.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_02:42:06: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S03E14.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_02:48:27: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S03E15.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_02:54:34: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S03E16.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_03:01:48: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S03E17.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_03:09:03: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S03E18.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_03:15:24: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S03E19.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_03:22:05: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S03E20.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_03:28:48: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S03E21.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_03:34:12: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S03E22.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_03:41:00: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S03E23.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_03:47:14: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S03E24.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_03:52:46: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S03E25.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_03:58:07: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S04E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_04:04:48: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S04E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_04:10:45: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S04E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_04:17:04: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S04E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_04:23:18: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S04E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_04:29:42: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S04E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_04:37:25: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S04E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_04:44:54: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S04E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_04:53:27: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S04E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_05:01:04: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S04E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_05:07:39: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S04E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_05:14:54: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S04E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_05:22:37: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S04E13.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_05:30:06: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S04E14.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_05:35:36: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S04E15.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_05:42:09: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S04E16.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_05:49:50: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S04E17.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_05:57:04: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S04E18.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_06:03:22: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S04E19.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_06:11:21: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S04E20.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_06:18:07: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S04E21.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_06:24:54: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S04E22.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_06:31:15: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S04E23.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_06:39:06: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S04E24.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_06:45:28: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S04E25.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_06:52:24: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S04E26.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_06:58:17: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S05E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_07:03:51: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S05E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_07:11:19: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S05E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_07:19:07: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S05E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_07:25:53: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S05E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_07:33:30: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S05E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_07:40:59: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S05E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_07:47:40: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S05E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_07:54:57: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S05E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_08:01:39: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S05E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_08:08:39: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S05E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_08:15:51: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S05E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_08:22:11: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S05E13.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_08:28:52: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S05E14.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_08:35:36: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S05E15.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_08:43:29: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S05E16.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_08:49:58: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S05E17.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_08:56:43: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S05E18.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_09:03:18: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S05E19.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_09:08:38: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S05E20.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_09:14:16: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S05E21.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_09:20:38: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S05E22.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_09:26:37: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S05E23.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_09:33:01: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S05E24.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_09:39:33: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S05E25.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_09:46:17: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S05E26.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_09:52:00: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S06E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_09:59:11: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S06E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_10:05:46: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S06E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_10:13:50: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S06E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_10:20:20: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S06E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_10:25:15: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S06E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_10:32:01: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S06E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_10:40:02: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S06E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_10:46:16: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S06E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_10:52:51: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S06E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_10:58:52: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S06E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_11:05:38: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S06E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_11:12:57: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S06E13.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_11:19:57: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S06E14.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_11:26:53: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S06E15.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_11:32:42: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S06E16.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_11:39:17: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S06E17.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_11:45:16: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S06E18.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_11:51:36: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S06E19.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_11:57:06: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S06E20.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_12:07:22: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S06E21.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_12:13:57: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S06E22.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_12:21:46: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S06E23.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_12:28:30: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S06E24.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_12:33:58: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S06E25.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_12:40:07: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S07E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_12:45:22: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S07E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_12:50:59: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S07E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_12:56:57: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S07E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_13:03:37: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S07E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_13:10:14: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S07E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_13:16:55: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S07E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_13:23:39: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S07E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_13:30:31: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S07E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_13:38:45: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S07E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_13:44:11: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S07E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_13:49:47: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S07E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_13:56:05: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S07E13.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_14:03:21: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S07E14.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_14:09:34: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S07E15.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_14:15:43: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S07E16.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_14:21:20: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S07E17.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_14:26:50: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S07E18.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_14:33:34: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S07E19.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_14:41:07: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S07E20.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_14:47:33: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S07E21.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_14:52:35: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S07E22.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_14:58:12: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S08E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_15:03:55: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S08E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_15:10:03: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S08E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_15:16:52: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S08E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_15:23:15: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S08E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_15:31:27: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S08E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_15:38:45: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S08E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_15:45:23: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S08E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_15:52:12: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S08E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_15:57:09: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S08E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_16:03:43: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S08E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_16:10:06: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S08E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_16:15:52: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S08E13.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_16:22:54: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S08E14.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_16:29:09: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S08E15.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_16:35:10: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S08E16.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_16:43:03: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S08E17.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_16:50:23: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S08E18.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_16:58:05: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S08E19.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_17:05:39: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S08E20.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_17:13:48: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S08E21.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_17:19:35: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S08E22.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_17:26:05: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S08E23.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_17:32:49: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S08E24.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_17:38:39: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S08E25.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_17:45:19: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S08E26.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_17:50:42: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S09E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_17:58:08: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S09E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_18:06:27: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S09E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_18:12:53: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S09E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_18:18:50: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S09E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_18:25:00: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S09E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_18:31:16: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S09E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_18:38:50: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S09E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_18:45:50: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S09E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_18:51:49: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S09E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_18:58:06: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S09E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_19:04:32: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S09E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_19:11:25: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S09E13.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_19:17:45: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S09E14.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_19:24:15: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S09E15.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_19:31:27: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S09E16.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_19:37:09: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S09E17.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_19:43:28: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S09E18.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_19:50:07: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S09E19.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_19:56:51: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S09E20.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_20:05:32: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S09E21.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_20:12:04: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S09E22.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_20:18:50: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S09E23.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_20:24:43: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S09E24.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_20:30:00: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S09E25.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_20:35:27: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S10E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_20:41:41: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S10E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_20:48:44: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S10E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_20:53:49: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S10E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_21:00:27: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S10E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_21:07:04: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S10E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_21:14:28: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S10E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_21:21:34: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S10E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_21:27:31: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S10E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_21:33:51: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S10E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_21:39:37: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S10E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_21:44:55: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S10E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_21:52:03: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S10E13.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_21:58:33: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S10E14.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_22:05:11: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S10E15.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_22:14:38: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S10E16.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_22:21:11: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S10E17.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_22:27:47: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S10E18.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_22:33:33: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S10E19.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_22:40:24: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S10E20.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_22:47:04: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S10E21.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_22:53:16: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S10E22.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_23:00:14: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S10E23.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_23:08:10: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S10E24.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_23:18:43: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S10E25E26.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_23:23:20: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S11E01.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_23:31:18: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S11E02.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_23:37:29: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S11E03.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_23:44:13: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S11E04.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_23:50:32: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S11E05.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-23_23:56:27: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S11E06.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-24_00:04:02: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S11E07.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-24_00:10:15: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S11E08.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-24_00:16:53: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S11E09.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-24_00:23:18: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S11E10.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-24_00:29:48: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S11E11.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-24_00:36:47: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S11E12.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-24_00:43:26: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S11E13.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-24_00:48:49: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S11E14.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-24_00:56:39: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S11E15.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-24_01:02:41: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S11E16.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-24_01:07:53: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S11E17.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-24_01:15:09: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S11E18.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-24_01:23:19: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S11E19.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-24_01:27:26: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S11E20.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-24_01:36:04: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S11E21.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-24_01:42:20: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S11E22.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-24_01:54:25: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S11E23E24.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-24_02:00:33: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S11E25.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-24_02:21:20: Analyzed Cheers (83399) and saved results to data/faces/cheers_1982_83399/Cheers.S11E26E27E28.1080p.BluRay.x265-RARBG.csv.
+DEBUG  2024-07-24_02:23:55: close.started
+DEBUG  2024-07-24_02:23:55: close.complete
+DEBUG  2024-10-20_12:57:14: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-10-20_12:57:14: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-10-20_12:57:14: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-10-20_12:57:14: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f1673115850>
+DEBUG  2024-10-20_12:57:14: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-10-20_12:57:14: send_request_headers.complete
+DEBUG  2024-10-20_12:57:14: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-10-20_12:57:14: send_request_body.complete
+DEBUG  2024-10-20_12:57:14: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-10-20_12:57:14: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-type', b'application/json'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'date', b'Sun, 20 Oct 2024 16:57:14 GMT')])
+INFO  2024-10-20_12:57:14: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-10-20_12:57:14: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-10-20_12:57:14: receive_response_body.complete
+DEBUG  2024-10-20_12:57:14: response_closed.started
+DEBUG  2024-10-20_12:57:14: response_closed.complete
+DEBUG  2024-10-20_12:57:14: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-10-20_12:57:14: Found 0 files.
+DEBUG  2024-10-20_12:57:15: close.started
+DEBUG  2024-10-20_12:57:15: close.complete
+DEBUG  2024-10-20_12:58:03: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-10-20_12:58:03: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-10-20_12:58:03: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-10-20_12:58:03: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f3b2663e590>
+DEBUG  2024-10-20_12:58:03: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-10-20_12:58:03: send_request_headers.complete
+DEBUG  2024-10-20_12:58:03: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-10-20_12:58:03: send_request_body.complete
+DEBUG  2024-10-20_12:58:03: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-10-20_12:58:04: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'date', b'Sun, 20 Oct 2024 16:58:03 GMT')])
+INFO  2024-10-20_12:58:04: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-10-20_12:58:04: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-10-20_12:58:04: receive_response_body.complete
+DEBUG  2024-10-20_12:58:04: response_closed.started
+DEBUG  2024-10-20_12:58:04: response_closed.complete
+DEBUG  2024-10-20_12:58:04: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-10-20_13:06:13: Found 5736 files.
+INFO  2024-10-20_13:06:13: 453 new files out of 5736.
+DEBUG  2024-10-20_13:06:13: Found 27 to process.
+ERROR  2024-10-20_13:06:14: Unable to match IMDb ID for 
+ERROR  2024-10-20_13:06:45: Unable to match IMDb ID for Gravity Falls
+ERROR  2024-10-20_13:07:35: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2024-10-20_13:08:02: Found 342 for analysis.
+DEBUG  2024-10-20_13:08:04: Creating converter from 3 to 5
+DEBUG  2024-10-20_13:21:12: Analyzed Happy Valley (3428912) and saved results to data/faces/happy-valley_2014_3428912/Happy.Valley.S02E01.1080p.BluRay.x264-SHORTBREHD.csv.
+DEBUG  2024-10-20_13:33:17: Analyzed Happy Valley (3428912) and saved results to data/faces/happy-valley_2014_3428912/Happy.Valley.S02E02.1080p.BluRay.x264-SHORTBREHD.csv.
+DEBUG  2024-10-20_13:44:48: Analyzed Happy Valley (3428912) and saved results to data/faces/happy-valley_2014_3428912/Happy.Valley.S02E03.1080p.BluRay.x264-SHORTBREHD.csv.

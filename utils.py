@@ -95,7 +95,7 @@ def extract_face(data, frame):
     return face
 
 
-def resize_image(image):
+def resize_image(image, max_size):
     import cv2 
 
     h, w = image.shape[:2]

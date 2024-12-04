@@ -141,6 +141,7 @@ def main(args):
             df['series_id'] = args.imdb_id
         if args.episode_id:
             df['episode_id'] = args.episode_id
+        df['filepath'] = str(file)
         df.to_csv(str(fp))
         logging.debug(f'Saved detected faces to {str(fp)}')
 
