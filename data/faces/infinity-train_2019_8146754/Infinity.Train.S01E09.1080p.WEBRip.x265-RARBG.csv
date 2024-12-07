@@ -1,4 +1,4 @@
-,x1,y1,x2,y2,right_eye_x,right_eye_y,left_eye_x,left_eye_y,nose_x,nose_y,mouth_right_x,mouth_right_y,mouth_left_x,mouth_left_y,confidence,face_num,frame_num,img_width,img_height,filepath,encoding,series_id,episode_id,filename,distance_from_center,pct_of_frame
+,x1,y1,x2,y2,right_eye_x,right_eye_y,left_eye_x,left_eye_y,nose_x,nose_y,mouth_right_x,mouth_right_y,mouth_left_x,mouth_left_y,confidence,face_num,frame_num,img_width,img_height,filepath,encoding,series_id,episode_id,filename,distance_from_center,pct_of_frame,season,episode
 0,0.242,0.467,0.265,0.509,0.25,0.485,0.259,0.486,0.255,0.495,0.25,0.501,0.257,0.502,0.979,0,14256,1920,1080,/home/amos/media/tv/Infinity.Train.S01-S04.1080p.WEBRip.x265-RARBG/Infinity.Train.S01.1080p.WEBRip.x265-RARBG/Infinity.Train.S01E09.1080p.WEBRip.x265-RARBG.mp4,"-0.0555951
 -0.0402775
 0.0842168
@@ -126,4 +126,4 @@
 -0.0123897
 0.0410238
 0.027139
-0.0909707",8146754,,Infinity.Train.S01E09.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0
+0.0909707",8146754,,Infinity.Train.S01E09.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0,1,9

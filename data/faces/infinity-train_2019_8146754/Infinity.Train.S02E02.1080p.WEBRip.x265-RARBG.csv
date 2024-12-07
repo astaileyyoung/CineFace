@@ -1,4 +1,4 @@
-,x1,y1,x2,y2,right_eye_x,right_eye_y,left_eye_x,left_eye_y,nose_x,nose_y,mouth_right_x,mouth_right_y,mouth_left_x,mouth_left_y,confidence,face_num,frame_num,img_width,img_height,filepath,encoding,series_id,episode_id,filename,distance_from_center,pct_of_frame
+,x1,y1,x2,y2,right_eye_x,right_eye_y,left_eye_x,left_eye_y,nose_x,nose_y,mouth_right_x,mouth_right_y,mouth_left_x,mouth_left_y,confidence,face_num,frame_num,img_width,img_height,filepath,encoding,series_id,episode_id,filename,distance_from_center,pct_of_frame,season,episode
 0,0.365,0.603,0.375,0.623,0.369,0.61,0.373,0.611,0.371,0.615,0.369,0.619,0.372,0.619,0.972,0,1320,1920,1080,/home/amos/media/tv/Infinity.Train.S01-S04.1080p.WEBRip.x265-RARBG/Infinity.Train.S02.1080p.WEBRip.x265-RARBG/Infinity.Train.S02E02.1080p.WEBRip.x265-RARBG.mp4,"-0.0391502
 0.0608235
 0.017929
@@ -126,7 +126,7 @@
 0.0233193
 -0.0162018
 -0.0172607
-0.00772374",8146754,,Infinity.Train.S02E02.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0
+0.00772374",8146754,,Infinity.Train.S02E02.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0,2,2
 1,0.157,0.404,0.192,0.492,0.181,0.432,0.186,0.434,0.192,0.445,0.184,0.466,0.188,0.468,0.929,0,3264,1920,1080,/home/amos/media/tv/Infinity.Train.S01-S04.1080p.WEBRip.x265-RARBG/Infinity.Train.S02.1080p.WEBRip.x265-RARBG/Infinity.Train.S02E02.1080p.WEBRip.x265-RARBG.mp4,"-0.121283
 0.125303
 0.132145
@@ -254,7 +254,7 @@
 0.0477812
 -0.0292029
 0.0218968
-0.0102517",8146754,,Infinity.Train.S02E02.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0
+0.0102517",8146754,,Infinity.Train.S02E02.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0,2,2
 2,0.157,0.403,0.193,0.491,0.181,0.43,0.186,0.431,0.192,0.443,0.184,0.464,0.189,0.466,0.9,0,3288,1920,1080,/home/amos/media/tv/Infinity.Train.S01-S04.1080p.WEBRip.x265-RARBG/Infinity.Train.S02.1080p.WEBRip.x265-RARBG/Infinity.Train.S02E02.1080p.WEBRip.x265-RARBG.mp4,"-0.112998
 0.1253
 0.12867
@@ -382,7 +382,7 @@
 0.0672884
 -0.0519724
 0.0134673
-0.0114613",8146754,,Infinity.Train.S02E02.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0
+0.0114613",8146754,,Infinity.Train.S02E02.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0,2,2
 3,0.496,0.392,0.516,0.444,0.51,0.409,0.514,0.411,0.514,0.422,0.508,0.43,0.511,0.432,0.962,0,4728,1920,1080,/home/amos/media/tv/Infinity.Train.S01-S04.1080p.WEBRip.x265-RARBG/Infinity.Train.S02.1080p.WEBRip.x265-RARBG/Infinity.Train.S02E02.1080p.WEBRip.x265-RARBG.mp4,"-0.110189
 0.122975
 0.0580099
@@ -510,7 +510,7 @@
 0.0392851
 -0.0455681
 0.0223241
-0.0174794",8146754,,Infinity.Train.S02E02.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0
+0.0174794",8146754,,Infinity.Train.S02E02.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0,2,2
 4,0.496,0.391,0.516,0.443,0.51,0.409,0.514,0.41,0.515,0.421,0.509,0.43,0.511,0.431,0.975,0,4752,1920,1080,/home/amos/media/tv/Infinity.Train.S01-S04.1080p.WEBRip.x265-RARBG/Infinity.Train.S02.1080p.WEBRip.x265-RARBG/Infinity.Train.S02E02.1080p.WEBRip.x265-RARBG.mp4,"-0.103337
 0.12086
 0.0660185
@@ -638,7 +638,7 @@
 0.0151768
 -0.0416617
 0.0101145
-0.00190017",8146754,,Infinity.Train.S02E02.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0
+0.00190017",8146754,,Infinity.Train.S02E02.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0,2,2
 5,0.499,0.439,0.511,0.464,0.505,0.448,0.509,0.448,0.508,0.453,0.505,0.457,0.508,0.458,0.989,0,8520,1920,1080,/home/amos/media/tv/Infinity.Train.S01-S04.1080p.WEBRip.x265-RARBG/Infinity.Train.S02.1080p.WEBRip.x265-RARBG/Infinity.Train.S02E02.1080p.WEBRip.x265-RARBG.mp4,"-0.0387697
 0.0642943
 0.0401372
@@ -766,7 +766,7 @@
 0.0628999
 0.00943531
 0.0172684
-0.0403356",8146754,,Infinity.Train.S02E02.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0
+0.0403356",8146754,,Infinity.Train.S02E02.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0,2,2
 6,0.551,0.488,0.568,0.525,0.557,0.499,0.565,0.5,0.562,0.507,0.558,0.515,0.564,0.515,0.98,0,9360,1920,1080,/home/amos/media/tv/Infinity.Train.S01-S04.1080p.WEBRip.x265-RARBG/Infinity.Train.S02.1080p.WEBRip.x265-RARBG/Infinity.Train.S02E02.1080p.WEBRip.x265-RARBG.mp4,"-0.0580264
 0.0554584
 0.0294889
@@ -894,4 +894,4 @@
 0.0479845
 -0.00301481
 0.0917077
-0.0422585",8146754,,Infinity.Train.S02E02.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0
+0.0422585",8146754,,Infinity.Train.S02E02.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0,2,2

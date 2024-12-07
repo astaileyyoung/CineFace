@@ -1,4 +1,4 @@
-,x1,y1,x2,y2,right_eye_x,right_eye_y,left_eye_x,left_eye_y,nose_x,nose_y,mouth_right_x,mouth_right_y,mouth_left_x,mouth_left_y,confidence,face_num,frame_num,img_width,img_height,filepath,encoding,series_id,episode_id,filename,distance_from_center,pct_of_frame
+,x1,y1,x2,y2,right_eye_x,right_eye_y,left_eye_x,left_eye_y,nose_x,nose_y,mouth_right_x,mouth_right_y,mouth_left_x,mouth_left_y,confidence,face_num,frame_num,img_width,img_height,filepath,encoding,series_id,episode_id,filename,distance_from_center,pct_of_frame,season,episode
 0,0.05,0.315,0.069,0.355,0.057,0.328,0.066,0.328,0.063,0.336,0.059,0.344,0.065,0.344,0.958,0,2784,1920,1080,/home/amos/media/tv/Infinity.Train.S01-S04.1080p.WEBRip.x265-RARBG/Infinity.Train.S04.1080p.WEBRip.x265-RARBG/Infinity.Train.S04E04.1080p.WEBRip.x265-RARBG.mp4,"-0.0542628
 0.0594779
 -0.0339136
@@ -126,7 +126,7 @@
 0.060306
 -0.015715
 0.0879703
-0.00946945",8146754,,Infinity.Train.S04E04.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0
+0.00946945",8146754,,Infinity.Train.S04E04.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0,4,4
 1,0.279,0.306,0.449,0.697,0.321,0.458,0.404,0.446,0.369,0.506,0.343,0.597,0.408,0.588,0.934,0,5064,1920,1080,/home/amos/media/tv/Infinity.Train.S01-S04.1080p.WEBRip.x265-RARBG/Infinity.Train.S04.1080p.WEBRip.x265-RARBG/Infinity.Train.S04E04.1080p.WEBRip.x265-RARBG.mp4,"-0.172524
 -0.0281494
 -0.0271714
@@ -254,7 +254,7 @@
 0.150504
 -0.0474433
 0.0656095
-0.018689",8146754,,Infinity.Train.S04E04.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0
+0.018689",8146754,,Infinity.Train.S04E04.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0,4,4
 2,0.728,0.314,0.766,0.416,0.755,0.352,0.762,0.355,0.764,0.376,0.751,0.391,0.756,0.393,0.969,0,10680,1920,1080,/home/amos/media/tv/Infinity.Train.S01-S04.1080p.WEBRip.x265-RARBG/Infinity.Train.S04.1080p.WEBRip.x265-RARBG/Infinity.Train.S04E04.1080p.WEBRip.x265-RARBG.mp4,"-0.0828068
 0.0252865
 0.087066
@@ -382,7 +382,7 @@
 0.0376453
 0.0141491
 0.0127131
-0.00856274",8146754,,Infinity.Train.S04E04.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0
+0.00856274",8146754,,Infinity.Train.S04E04.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0,4,4
 3,0.553,0.301,0.743,0.72,0.588,0.46,0.674,0.452,0.621,0.526,0.6,0.611,0.668,0.605,0.94,0,12456,1920,1080,/home/amos/media/tv/Infinity.Train.S01-S04.1080p.WEBRip.x265-RARBG/Infinity.Train.S04.1080p.WEBRip.x265-RARBG/Infinity.Train.S04E04.1080p.WEBRip.x265-RARBG.mp4,"-0.174123
 0.0869749
 0.110633
@@ -510,7 +510,7 @@
 0.0900277
 -0.0603036
 0.0373077
-0.0674796",8146754,,Infinity.Train.S04E04.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0
+0.0674796",8146754,,Infinity.Train.S04E04.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0,4,4
 4,0.305,0.664,0.314,0.684,0.308,0.672,0.312,0.672,0.31,0.676,0.308,0.679,0.312,0.679,0.929,0,13464,1920,1080,/home/amos/media/tv/Infinity.Train.S01-S04.1080p.WEBRip.x265-RARBG/Infinity.Train.S04.1080p.WEBRip.x265-RARBG/Infinity.Train.S04E04.1080p.WEBRip.x265-RARBG.mp4,"-0.0272692
 0.0898609
 0.0644237
@@ -638,7 +638,7 @@
 0.033633
 0.015847
 -0.00526126
-0.00688024",8146754,,Infinity.Train.S04E04.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0
+0.00688024",8146754,,Infinity.Train.S04E04.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0,4,4
 5,0.251,0.655,0.261,0.676,0.254,0.663,0.258,0.663,0.256,0.667,0.254,0.672,0.258,0.671,0.927,1,13464,1920,1080,/home/amos/media/tv/Infinity.Train.S01-S04.1080p.WEBRip.x265-RARBG/Infinity.Train.S04.1080p.WEBRip.x265-RARBG/Infinity.Train.S04E04.1080p.WEBRip.x265-RARBG.mp4,"-0.0814664
 0.0685888
 0.0622423
@@ -766,7 +766,7 @@
 0.0619818
 0.0146019
 -0.036297
-0.016081",8146754,,Infinity.Train.S04E04.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0
+0.016081",8146754,,Infinity.Train.S04E04.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0,4,4
 6,0.256,0.646,0.265,0.667,0.258,0.655,0.263,0.654,0.261,0.658,0.259,0.663,0.263,0.662,0.97,0,13608,1920,1080,/home/amos/media/tv/Infinity.Train.S01-S04.1080p.WEBRip.x265-RARBG/Infinity.Train.S04.1080p.WEBRip.x265-RARBG/Infinity.Train.S04E04.1080p.WEBRip.x265-RARBG.mp4,"-0.0610528
 0.0941644
 0.000501716
@@ -894,4 +894,4 @@
 0.000104949
 -0.0524483
 0.0105638
-0.0574812",8146754,,Infinity.Train.S04E04.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0
+0.0574812",8146754,,Infinity.Train.S04E04.1080p.WEBRip.x265-RARBG.mp4,1101.45,0.0,4,4

@@ -16264,3 +16264,405 @@ DEBUG  2024-10-20_13:08:04: Creating converter from 3 to 5
 DEBUG  2024-10-20_13:21:12: Analyzed Happy Valley (3428912) and saved results to data/faces/happy-valley_2014_3428912/Happy.Valley.S02E01.1080p.BluRay.x264-SHORTBREHD.csv.
 DEBUG  2024-10-20_13:33:17: Analyzed Happy Valley (3428912) and saved results to data/faces/happy-valley_2014_3428912/Happy.Valley.S02E02.1080p.BluRay.x264-SHORTBREHD.csv.
 DEBUG  2024-10-20_13:44:48: Analyzed Happy Valley (3428912) and saved results to data/faces/happy-valley_2014_3428912/Happy.Valley.S02E03.1080p.BluRay.x264-SHORTBREHD.csv.
+DEBUG  2024-12-04_13:23:53: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-12-04_13:23:53: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-12-04_13:23:53: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-12-04_13:23:53: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x74fab95f25d0>
+DEBUG  2024-12-04_13:23:53: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-04_13:23:53: send_request_headers.complete
+DEBUG  2024-12-04_13:23:53: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-12-04_13:23:53: send_request_body.complete
+DEBUG  2024-12-04_13:23:53: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-04_13:23:53: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'date', b'Wed, 04 Dec 2024 18:23:53 GMT')])
+INFO  2024-12-04_13:23:53: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-12-04_13:23:53: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-12-04_13:23:53: receive_response_body.complete
+DEBUG  2024-12-04_13:23:53: response_closed.started
+DEBUG  2024-12-04_13:23:53: response_closed.complete
+DEBUG  2024-12-04_13:23:53: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-12-04_13:32:20: Found 5782 files.
+INFO  2024-12-04_13:32:20: 46 new files out of 5782.
+DEBUG  2024-12-04_13:32:20: Found 17 to process.
+ERROR  2024-12-04_13:32:20: Unable to match IMDb ID for 
+ERROR  2024-12-04_13:32:35: Unable to match IMDb ID for Gravity Falls
+ERROR  2024-12-04_13:32:59: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2024-12-04_13:33:18: Found 297 for analysis.
+DEBUG  2024-12-04_13:33:20: Creating converter from 3 to 5
+DEBUG  2024-12-04_13:46:00: Analyzed Happy Valley (3428912) and saved results to data/faces/happy-valley_2014_3428912/Happy.Valley.S02E04.1080p.BluRay.x264-SHORTBREHD.csv.
+DEBUG  2024-12-04_13:57:56: Analyzed Happy Valley (3428912) and saved results to data/faces/happy-valley_2014_3428912/Happy.Valley.S02E05.1080p.BluRay.x264-SHORTBREHD.csv.
+DEBUG  2024-12-04_17:25:17: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-12-04_17:25:17: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-12-04_17:25:17: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-12-04_17:25:17: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7fba547b9650>
+DEBUG  2024-12-04_17:25:17: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-04_17:25:17: send_request_headers.complete
+DEBUG  2024-12-04_17:25:17: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-12-04_17:25:17: send_request_body.complete
+DEBUG  2024-12-04_17:25:17: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-04_17:25:17: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'date', b'Wed, 04 Dec 2024 22:25:17 GMT')])
+INFO  2024-12-04_17:25:17: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-12-04_17:25:17: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-12-04_17:25:17: receive_response_body.complete
+DEBUG  2024-12-04_17:25:17: response_closed.started
+DEBUG  2024-12-04_17:25:17: response_closed.complete
+DEBUG  2024-12-04_17:25:17: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-12-04_17:25:17: Found 0 files.
+DEBUG  2024-12-04_17:25:17: close.started
+DEBUG  2024-12-04_17:25:17: close.complete
+DEBUG  2024-12-04_17:30:28: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-12-04_17:30:28: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-12-04_17:30:28: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-12-04_17:30:28: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x70c4fe9dc110>
+DEBUG  2024-12-04_17:30:28: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-04_17:30:28: send_request_headers.complete
+DEBUG  2024-12-04_17:30:28: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-12-04_17:30:28: send_request_body.complete
+DEBUG  2024-12-04_17:30:28: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-04_17:30:28: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'date', b'Wed, 04 Dec 2024 22:30:28 GMT')])
+INFO  2024-12-04_17:30:28: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-12-04_17:30:28: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-12-04_17:30:28: receive_response_body.complete
+DEBUG  2024-12-04_17:30:28: response_closed.started
+DEBUG  2024-12-04_17:30:28: response_closed.complete
+DEBUG  2024-12-04_17:30:28: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-12-04_17:38:37: Found 5782 files.
+INFO  2024-12-04_17:38:37: 0 new files out of 5782.
+DEBUG  2024-12-04_17:38:37: Found 11 to process.
+ERROR  2024-12-04_17:38:37: Unable to match IMDb ID for 
+ERROR  2024-12-04_17:38:47: Unable to match IMDb ID for Gravity Falls
+ERROR  2024-12-04_17:39:02: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2024-12-04_17:39:20: Found 295 for analysis.
+DEBUG  2024-12-04_17:39:22: Creating converter from 3 to 5
+DEBUG  2024-12-04_17:50:56: Analyzed Happy Valley (3428912) and saved results to data/faces/happy-valley_2014_3428912/Happy.Valley.S02E06.1080p.BluRay.x264-SHORTBREHD.csv.
+DEBUG  2024-12-04_18:11:15: Analyzed The Serpent Queen (14022350) and saved results to data/faces/the-serpent-queen_2022_14022350/the.serpent.queen.s02e01.2160p.web.h265-lazycunts.csv.
+DEBUG  2024-12-04_18:11:16: close.started
+DEBUG  2024-12-04_18:11:16: close.complete
+DEBUG  2024-12-07_11:28:28: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-12-07_11:28:28: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-12-07_11:28:28: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-12-07_11:28:28: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x723104124f90>
+DEBUG  2024-12-07_11:28:28: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-07_11:28:28: send_request_headers.complete
+DEBUG  2024-12-07_11:28:28: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-12-07_11:28:28: send_request_body.complete
+DEBUG  2024-12-07_11:28:28: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-07_11:28:28: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-type', b'application/json'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 07 Dec 2024 16:28:28 GMT')])
+INFO  2024-12-07_11:28:28: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-12-07_11:28:28: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-12-07_11:28:28: receive_response_body.complete
+DEBUG  2024-12-07_11:28:28: response_closed.started
+DEBUG  2024-12-07_11:28:28: response_closed.complete
+DEBUG  2024-12-07_11:29:10: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-12-07_11:29:24: Found 0 files.
+DEBUG  2024-12-07_11:30:27: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-12-07_11:30:27: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-12-07_11:30:27: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-12-07_11:30:27: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b6b08661990>
+DEBUG  2024-12-07_11:30:27: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-07_11:30:27: send_request_headers.complete
+DEBUG  2024-12-07_11:30:27: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-12-07_11:30:27: send_request_body.complete
+DEBUG  2024-12-07_11:30:27: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-07_11:30:27: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 07 Dec 2024 16:30:27 GMT')])
+INFO  2024-12-07_11:30:27: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-12-07_11:30:27: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-12-07_11:30:27: receive_response_body.complete
+DEBUG  2024-12-07_11:30:27: response_closed.started
+DEBUG  2024-12-07_11:30:27: response_closed.complete
+DEBUG  2024-12-07_11:30:30: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-12-07_11:31:15: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-12-07_11:31:15: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-12-07_11:31:15: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-12-07_11:31:15: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b190bcc4610>
+DEBUG  2024-12-07_11:31:15: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-07_11:31:15: send_request_headers.complete
+DEBUG  2024-12-07_11:31:15: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-12-07_11:31:15: send_request_body.complete
+DEBUG  2024-12-07_11:31:15: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-07_11:31:15: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 07 Dec 2024 16:31:15 GMT')])
+INFO  2024-12-07_11:31:15: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-12-07_11:31:15: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-12-07_11:31:15: receive_response_body.complete
+DEBUG  2024-12-07_11:31:15: response_closed.started
+DEBUG  2024-12-07_11:31:15: response_closed.complete
+DEBUG  2024-12-07_11:31:15: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-12-07_11:37:52: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-12-07_11:37:52: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-12-07_11:37:52: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-12-07_11:37:52: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x78533e29bad0>
+DEBUG  2024-12-07_11:37:52: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-07_11:37:52: send_request_headers.complete
+DEBUG  2024-12-07_11:37:52: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-12-07_11:37:52: send_request_body.complete
+DEBUG  2024-12-07_11:37:52: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-07_11:37:52: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'date', b'Sat, 07 Dec 2024 16:37:52 GMT')])
+INFO  2024-12-07_11:37:52: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-12-07_11:37:52: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-12-07_11:37:52: receive_response_body.complete
+DEBUG  2024-12-07_11:37:52: response_closed.started
+DEBUG  2024-12-07_11:37:52: response_closed.complete
+DEBUG  2024-12-07_11:37:52: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-12-07_11:39:49: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-12-07_11:39:49: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-12-07_11:39:49: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-12-07_11:39:49: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7dc8fd60cf90>
+DEBUG  2024-12-07_11:39:49: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-07_11:39:49: send_request_headers.complete
+DEBUG  2024-12-07_11:39:49: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-12-07_11:39:49: send_request_body.complete
+DEBUG  2024-12-07_11:39:49: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-07_11:39:49: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'date', b'Sat, 07 Dec 2024 16:39:49 GMT')])
+INFO  2024-12-07_11:39:49: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-12-07_11:39:49: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-12-07_11:39:49: receive_response_body.complete
+DEBUG  2024-12-07_11:39:49: response_closed.started
+DEBUG  2024-12-07_11:39:49: response_closed.complete
+DEBUG  2024-12-07_11:39:49: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-12-07_11:43:02: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-12-07_11:43:02: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-12-07_11:43:02: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-12-07_11:43:02: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x75a62914df50>
+DEBUG  2024-12-07_11:43:02: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-07_11:43:02: send_request_headers.complete
+DEBUG  2024-12-07_11:43:02: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-12-07_11:43:02: send_request_body.complete
+DEBUG  2024-12-07_11:43:02: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-07_11:43:02: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-type', b'application/json'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 07 Dec 2024 16:43:02 GMT')])
+INFO  2024-12-07_11:43:02: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-12-07_11:43:02: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-12-07_11:43:02: receive_response_body.complete
+DEBUG  2024-12-07_11:43:02: response_closed.started
+DEBUG  2024-12-07_11:43:02: response_closed.complete
+DEBUG  2024-12-07_11:43:02: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-12-07_11:46:39: Found 5793 files.
+INFO  2024-12-07_11:53:39: 11 new files out of 5793.
+DEBUG  2024-12-07_11:54:44: Found 13 to process.
+ERROR  2024-12-07_11:54:58: Unable to match IMDb ID for 
+ERROR  2024-12-07_11:55:39: Unable to match IMDb ID for Gravity Falls
+ERROR  2024-12-07_11:55:57: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2024-12-07_12:21:25: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-12-07_12:21:25: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-12-07_12:21:25: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-12-07_12:21:25: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x70597396d5d0>
+DEBUG  2024-12-07_12:21:25: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-07_12:21:25: send_request_headers.complete
+DEBUG  2024-12-07_12:21:25: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-12-07_12:21:25: send_request_body.complete
+DEBUG  2024-12-07_12:21:25: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-07_12:21:25: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'date', b'Sat, 07 Dec 2024 17:21:25 GMT')])
+INFO  2024-12-07_12:21:25: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-12-07_12:21:25: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-12-07_12:21:25: receive_response_body.complete
+DEBUG  2024-12-07_12:21:25: response_closed.started
+DEBUG  2024-12-07_12:21:25: response_closed.complete
+DEBUG  2024-12-07_12:21:25: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-12-07_12:23:39: Found 5793 files.
+INFO  2024-12-07_12:23:39: 5501 new files out of 5793.
+DEBUG  2024-12-07_12:23:59: Found 94 to process.
+ERROR  2024-12-07_12:23:59: Unable to match IMDb ID for 
+ERROR  2024-12-07_12:25:48: Unable to match IMDb ID for Gravity Falls
+ERROR  2024-12-07_12:28:08: Unable to match IMDb ID for Sherlock Holmes
+CRITICAL  2024-12-07_12:30:43: IMDbDataAccessError exception raised; args: ({'errcode': None, 'errmsg': 'None', 'url': 'https://www.imdb.com/title/tt0157246/reference', 'proxy': '', 'exception type': 'IOError', 'original exception': TimeoutError('The read operation timed out')},); kwds: {}
+Traceback (most recent call last):
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/imdb/parser/http/__init__.py", line 233, in retrieve_unicode
+    response = uopener.open(url)
+               ^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/urllib/request.py", line 519, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/urllib/request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/urllib/request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/urllib/request.py", line 1352, in do_open
+    r = h.getresponse()
+        ^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/http/client.py", line 1395, in getresponse
+    response.begin()
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/http/client.py", line 325, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/http/client.py", line 286, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/ssl.py", line 1314, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/ssl.py", line 1166, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+CRITICAL  2024-12-07_12:30:43: caught an exception retrieving or parsing "main" info set for mopID "0157246" (accessSystem: http)
+Traceback (most recent call last):
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/imdb/parser/http/__init__.py", line 233, in retrieve_unicode
+    response = uopener.open(url)
+               ^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/urllib/request.py", line 519, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/urllib/request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/urllib/request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/urllib/request.py", line 1352, in do_open
+    r = h.getresponse()
+        ^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/http/client.py", line 1395, in getresponse
+    response.begin()
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/http/client.py", line 325, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/http/client.py", line 286, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/ssl.py", line 1314, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/ssl.py", line 1166, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/imdb/__init__.py", line 848, in update
+    ret = method(mopID)
+          ^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/imdb/parser/http/__init__.py", line 481, in get_movie_main
+    cont = self._retrieve(self.urls['movie_main'] % movieID + 'reference')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/imdb/parser/http/__init__.py", line 392, in _retrieve
+    ret = self.urlOpener.retrieve_unicode(url, size=size)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/imdb/parser/http/__init__.py", line 261, in retrieve_unicode
+    raise IMDbDataAccessError(
+imdb._exceptions.IMDbDataAccessError: {'errcode': None, 'errmsg': 'None', 'url': 'https://www.imdb.com/title/tt0157246/reference', 'proxy': '', 'exception type': 'IOError', 'original exception': TimeoutError('The read operation timed out')}
+DEBUG  2024-12-07_12:37:21: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-12-07_12:37:21: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-12-07_12:37:21: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-12-07_12:37:21: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x726500961550>
+DEBUG  2024-12-07_12:37:21: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-07_12:37:21: send_request_headers.complete
+DEBUG  2024-12-07_12:37:21: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-12-07_12:37:21: send_request_body.complete
+DEBUG  2024-12-07_12:37:21: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-07_12:37:21: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'date', b'Sat, 07 Dec 2024 17:37:20 GMT')])
+INFO  2024-12-07_12:37:21: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-12-07_12:37:21: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-12-07_12:37:21: receive_response_body.complete
+DEBUG  2024-12-07_12:37:21: response_closed.started
+DEBUG  2024-12-07_12:37:21: response_closed.complete
+DEBUG  2024-12-07_12:37:21: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-12-07_12:39:28: Found 5793 files.
+INFO  2024-12-07_12:39:28: 0 new files out of 5793.
+DEBUG  2024-12-07_12:39:41: Found 12 to process.
+ERROR  2024-12-07_12:39:42: Unable to match IMDb ID for 
+CRITICAL  2024-12-07_12:40:48: IMDbDataAccessError exception raised; args: ({'errcode': None, 'errmsg': 'None', 'url': 'https://www.imdb.com/title/tt0397306/reference', 'proxy': '', 'exception type': 'IOError', 'original exception': TimeoutError('The read operation timed out')},); kwds: {}
+Traceback (most recent call last):
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/imdb/parser/http/__init__.py", line 234, in retrieve_unicode
+    content = response.read()
+              ^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/http/client.py", line 467, in read
+    return self._read_chunked(amt)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/http/client.py", line 590, in _read_chunked
+    chunk_left = self._get_chunk_left()
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/http/client.py", line 573, in _get_chunk_left
+    chunk_left = self._read_next_chunk_size()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/http/client.py", line 533, in _read_next_chunk_size
+    line = self.fp.readline(_MAXLINE + 1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/ssl.py", line 1314, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/ssl.py", line 1166, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+CRITICAL  2024-12-07_12:40:48: caught an exception retrieving or parsing "main" info set for mopID "0397306" (accessSystem: http)
+Traceback (most recent call last):
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/imdb/parser/http/__init__.py", line 234, in retrieve_unicode
+    content = response.read()
+              ^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/http/client.py", line 467, in read
+    return self._read_chunked(amt)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/http/client.py", line 590, in _read_chunked
+    chunk_left = self._get_chunk_left()
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/http/client.py", line 573, in _get_chunk_left
+    chunk_left = self._read_next_chunk_size()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/http/client.py", line 533, in _read_next_chunk_size
+    line = self.fp.readline(_MAXLINE + 1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/ssl.py", line 1314, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/ssl.py", line 1166, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/imdb/__init__.py", line 848, in update
+    ret = method(mopID)
+          ^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/imdb/parser/http/__init__.py", line 481, in get_movie_main
+    cont = self._retrieve(self.urls['movie_main'] % movieID + 'reference')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/imdb/parser/http/__init__.py", line 392, in _retrieve
+    ret = self.urlOpener.retrieve_unicode(url, size=size)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/imdb/parser/http/__init__.py", line 261, in retrieve_unicode
+    raise IMDbDataAccessError(
+imdb._exceptions.IMDbDataAccessError: {'errcode': None, 'errmsg': 'None', 'url': 'https://www.imdb.com/title/tt0397306/reference', 'proxy': '', 'exception type': 'IOError', 'original exception': TimeoutError('The read operation timed out')}
+DEBUG  2024-12-07_12:41:12: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-12-07_12:41:12: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-12-07_12:41:12: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-12-07_12:41:12: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x73dc5a79bad0>
+DEBUG  2024-12-07_12:41:12: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-07_12:41:12: send_request_headers.complete
+DEBUG  2024-12-07_12:41:12: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-12-07_12:41:12: send_request_body.complete
+DEBUG  2024-12-07_12:41:12: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-07_12:41:12: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'date', b'Sat, 07 Dec 2024 17:41:12 GMT')])
+INFO  2024-12-07_12:41:12: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-12-07_12:41:12: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-12-07_12:41:12: receive_response_body.complete
+DEBUG  2024-12-07_12:41:12: response_closed.started
+DEBUG  2024-12-07_12:41:12: response_closed.complete
+DEBUG  2024-12-07_12:41:12: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-12-07_12:43:04: Found 5793 files.
+INFO  2024-12-07_12:43:04: 0 new files out of 5793.
+DEBUG  2024-12-07_12:43:14: Found 12 to process.
+ERROR  2024-12-07_12:43:14: Unable to match IMDb ID for 
+ERROR  2024-12-07_12:43:24: Unable to match IMDb ID for Gravity Falls
+ERROR  2024-12-07_12:43:38: Unable to match IMDb ID for Sherlock Holmes

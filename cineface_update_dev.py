@@ -212,7 +212,13 @@ def get_metadata(row,
     Also removes videos from genres like animation or reality shows.
     """
     ia = Cinemagoer(loggingLevel=50)
-    info = ia.get_movie(row['series_id'])
+    cnt = 0
+    while cnt < 5:
+        try:
+            info = ia.get_movie(row['series_id'])
+            break
+        except IMDbError:
+            cnt += 1
     row['title'] = info.data['title']
     row['year'] = info.data['year']
     if any([True for x in info.data['genres'] if x in exclude]):
