@@ -16666,3 +16666,21 @@ DEBUG  2024-12-07_12:43:14: Found 12 to process.
 ERROR  2024-12-07_12:43:14: Unable to match IMDb ID for 
 ERROR  2024-12-07_12:43:24: Unable to match IMDb ID for Gravity Falls
 ERROR  2024-12-07_12:43:38: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2024-12-08_11:47:57: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-12-08_11:47:57: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-12-08_11:47:57: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-12-08_11:47:57: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x71eaf1b59750>
+DEBUG  2024-12-08_11:47:57: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-08_11:47:57: send_request_headers.complete
+DEBUG  2024-12-08_11:47:57: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-12-08_11:47:57: send_request_body.complete
+DEBUG  2024-12-08_11:47:57: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-08_11:47:57: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-encoding', b'gzip'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-type', b'application/json'), (b'date', b'Sun, 08 Dec 2024 16:47:57 GMT')])
+INFO  2024-12-08_11:47:57: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-12-08_11:47:57: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-12-08_11:47:57: receive_response_body.complete
+DEBUG  2024-12-08_11:47:57: response_closed.started
+DEBUG  2024-12-08_11:47:57: response_closed.complete
+DEBUG  2024-12-08_11:47:57: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-12-08_11:48:00: close.started
+DEBUG  2024-12-08_11:48:00: close.complete
