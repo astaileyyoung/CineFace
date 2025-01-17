@@ -7,6 +7,7 @@ from argparse import ArgumentParser
 import cv2
 import pymysql
 import requests
+import numpy as np
 import pandas as pd
 import sqlalchemy as db 
 from tqdm import tqdm 
@@ -17,11 +18,40 @@ from qdrant_client import QdrantClient
 from qdrant_client.models import Distance, VectorParams, PointStruct
 from qdrant_client.http import models
 
-from find_faces_dev import detect_faces, calc
-from encode_faces_dev import encode_faces
+from find_faces_queue import VideoDetector
+from find_faces import detect_faces
 from utils import (
     create_table, get_files, parse_paths, get_id, get_id_sparse
 )
+
+
+def distance_from_center(row):
+    x = int((((row['x2'] - row['x1'])/2) + row['x1']) * row['img_width'])
+    y = int((((row['y2'] - row['y1'])/2) + row['y1']) * row['img_height'])
+    
+    xx = int(row['img_width']/2)
+    yy = int(row['img_height']/2)
+    
+    a = abs(yy - y) 
+    b = abs(xx - x)
+    c = np.sqrt(a*a + b*b)
+    return round(c, 2) 
+
+
+def pct_of_frame(row):
+    x = int((row['x2'] - row['x1']) * row['img_width'])
+    y = int((row['y2'] - row['y1']) * row['img_height'])
+    xx = row['img_width']
+    yy = row['img_height']
+
+    pct_of_frame = (x * y)/(xx * yy)
+    return round(pct_of_frame * 100, 2)  
+
+
+def calc(df):
+    df['distance_from_center'] = df.apply(distance_from_center, axis=1)
+    df['pct_of_frame'] = df.apply(pct_of_frame, axis=1)
+    return df
 
 
 class Analyzer(object):
@@ -43,13 +73,45 @@ class Analyzer(object):
     def analyze(self):        
         self.dst, self.fp = self.format_dst(self.dst_dir, self.data)
         if not Path(self.dst).exists():
-            Path.mkdir(self.dst)
+            Path.mkdir(self.dst, parents=True)
         self.df = self.analyze_file(self.data)
-        self.df.to_csv(self.fp)
-        self.success = self.check_if_exists(self.fp)
-        self.to_sql()
+        if self.df is not None:
+            self.df.to_csv(self.fp)
+            self.success = self.check_if_exists(self.fp)
+            self.to_sql()
         return self
     
+    def _analyze_queue(self, data):
+        vd = VideoDetector(num_threads=8, max_size=720)
+        df = vd.detect_faces(data['filepath'])
+        df['series_id'] = data['series_id']
+        df['episode_id'] = data['episode_id']
+        df['season'] = data['season']
+        df['episode'] = data['episode']
+        df['filename'] = data['filename']
+        df['filepath'] = data['filepath']
+        df['encoding'] = data['encoding']
+        df = calc(df)
+        self.end = datetime.now()
+        self.duration = round((self.end - self.start).total_seconds())
+        return df
+    
+    def _analyze_regular(self, data):
+        df = detect_faces(data['filepath'])
+        if df is None:
+            return None
+        df['series_id'] = data['series_id']
+        df['episode_id'] = data['episode_id']
+        df['season'] = data['season']
+        df['episode'] = data['episode']
+        df['filename'] = data['filename']
+        df['filepath'] = data['filepath']
+        df['encoding'] = data['encoding']
+        df = calc(df)
+        self.end = datetime.now()
+        self.duration = round((self.end - self.start).total_seconds())
+        return df
+
     def format_dst(self,
                    dst_dir,
                    row):
@@ -78,19 +140,12 @@ class Analyzer(object):
     
     def analyze_file(self,
                      data):
-        df = detect_faces(data['filepath'])
-        df['series_id'] = data['series_id']
-        df['episode_id'] = data['episode_id']
-        df['filename'] = data['filename']
-        df['filepath'] = data['filepath']
-        df = calc(df)
-        self.end = datetime.now()
-        self.duration = round((self.end - self.start).total_seconds())
-        return df
-        
-    def encode_faces(self, df):
-        df = encode_faces(df)
-        return df
+        try:
+            df = self._analyze_queue(data)
+            return df
+        except:
+            df = self._analyze_regular(data)
+            return df
 
     def to_sql(self):
         columns = pd.read_sql_query('SELECT * FROM history LIMIT 1;', self.conn).columns.tolist()
@@ -121,7 +176,6 @@ def check_for_tables(engine):
         if not db.inspect(engine).has_table('queue'):
             create_table('./sql/tables/queue.sql', conn)
             logging.debug('Created queue table.')
-
 
 
 def get_repo(token_path, 
@@ -185,7 +239,13 @@ def get_metadata(row,
     Also removes videos from genres like animation or reality shows.
     """
     ia = Cinemagoer(loggingLevel=50)
-    info = ia.get_movie(row['series_id'])
+    cnt = 0
+    while cnt < 5:
+        try:
+            info = ia.get_movie(row['series_id'])
+            break
+        except IMDbError:
+            cnt += 1
     row['title'] = info.data['title']
     row['year'] = info.data['year']
     if any([True for x in info.data['genres'] if x in exclude]):
@@ -239,7 +299,8 @@ def update_queue(engine):
                                  UPDATE queue 
                                  SET series_id = {str(imdb_id)},
                                      year = {row["year"]},
-                                     processed = 1
+                                     processed = 1,
+                                     to_analyze = {row["to_analyze"]}
                                  WHERE title = '{row["title"].replace("'", "''")}'
                                  """))
             conn.commit()
@@ -249,20 +310,43 @@ def process_queue(engine,
                   dst,
                   repo_name='CineFace',
                   token_path='./data/pat.txt',
-                  branch='main'):
+                  branch='main',
+                  series_id=None):
     with engine.connect() as conn:
-        queue = pd.read_sql_query("""
+        conn.execute(db.text('CALL updateQueue'))
+        if series_id:
+            queue = pd.read_sql_query(f"""
                                   SELECT *
                                   FROM queue
                                   WHERE to_analyze = 1 AND 
                                         analyzed = 0 AND 
-                                        series_id IS NOT NULL
+                                        series_id = {series_id}
                                   ORDER BY height ASC 
                                   """, conn)
+        else:
+            queue = pd.read_sql_query("""
+                                    SELECT *
+                                    FROM queue
+                                    WHERE to_analyze = 1 AND 
+                                            analyzed = 0 AND 
+                                            series_id IS NOT NULL
+                                    ORDER BY height ASC 
+                                    """, conn)
         
         logging.debug(f'Found {queue.shape[0]} for analysis.')
         for _, row in tqdm(queue.iterrows(), total=queue.shape[0]):
-            a = Analyzer(row, dst, conn).analyze()
+            try:
+                a = Analyzer(row, dst, conn).analyze()
+            except KeyError:
+                conn.execute(db.text(f"""
+                                    UPDATE queue
+                                    SET to_analyze = -1
+                                    WHERE series_id = {row["series_id"]} AND
+                                        season = {row["season"]} AND
+                                        episode = {row["episode"]}
+                                    """))
+                conn.commit()
+                continue 
             if a.success:
                 conn.execute(db.text(f"""
                                     UPDATE queue
@@ -273,12 +357,13 @@ def process_queue(engine,
                                     """))
                 conn.commit()
                 logging.debug(f'Analyzed {row["title"]} ({row["series_id"]}) and saved results to {str(a.fp)}.')
-                e = to_github(a.fp, token_path, repo_name=repo_name, branch=branch)
-                if not e:
-                    logging.info(f'Uploaded to Github from {a.fp}')
-                else:
-                    logging.error(f'Failed to upload file to GitHub.\n\n{e}')
-            
+                # e = to_github(a.fp, token_path, repo_name=repo_name, branch=branch)
+                # if not e:
+                #     logging.info(f'Uploaded to Github from {a.fp}')
+                # else:
+                #     logging.error(f'Failed to upload file to GitHub.\n\n{e}')
+
+                
 
 def main(args):
     collections = [x.name for x in CLIENT.get_collections().collections]
@@ -299,7 +384,7 @@ def main(args):
     
     update_queue(engine)
 
-    process_queue(engine, args.dst)
+    process_queue(engine, args.dst, series_id=args.series_id)
 
 
 if __name__ == '__main__':
@@ -307,7 +392,9 @@ if __name__ == '__main__':
     ap.add_argument('--watch_dir',
                     default='/home/amos/media/tv/')
     ap.add_argument('--dst',
-                    default='/home/amos/datasets/CineFace/faces')
+                    default='./data/faces')
+    ap.add_argument('--series_id',
+                    default=None)
     ap.add_argument('--extensions',
                     default=('.mp4', '.mkv', '.m4v', '.avi'),
                     nargs='+')

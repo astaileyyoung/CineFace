@@ -8,107 +8,87 @@ import numpy as np
 import pandas as pd
 from tqdm import tqdm
 
-from videotools.extract_faces import extract_face
+from utils import extract_face
 
 
 model_path = Path(__file__).parent.joinpath('data/dlib_face_recognition_resnet_model_v1.dat').absolute().resolve()
 encoder = dlib.face_recognition_model_v1(str(model_path))
 
-# def encode_face(src):
-#     img = cv2.imread(str(src))
-#     if img is None or img.shape[0] == 0:
-#         print(f'{Path(src).name} is invalid.')
-#         return 
-        
-#     # rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-#     # h, w = rgb.shape[:2]
-#     face_encodings = DeepFace.represent(img, model_name='Facenet', enforce_detection=False)
-#     return face_encodings[0] if face_encodings else None
+
+def process_image(face):
+    rgb = cv2.cvtColor(face, cv2.COLOR_BGR2RGB)
+    return cv2.resize(rgb, (150, 150), interpolation=cv2.INTER_AREA)
 
 
-# def create_target_directory(df,
-#                             dst):
-#     series_id = df.at[0, 'series_id']
-#     dst_dir = Path(dst).joinpath(str(series_id))
-#     try:
-#         Path.mkdir(dst_dir)
-#     except:
-#         pass
-#     return dst_dir
+# def encode_faces(src, batch_size=256):
+#     if isinstance(src, str):
+#         try:
+#             df = pd.read_csv(str(src), index_col=0)
+#             df = df.reset_index(drop=True)
+#         except Exception as e:
+#             logging.error(e)
+#             exit()
+#     else:
+#         df = src 
+
+#     cap = cv2.VideoCapture(df.at[0, 'filepath'])
+#     frame_nums = df['frame_num'].unique().tolist()
+#     encodings = []
+#     faces = []
+#     for frame_num in tqdm(frame_nums, desc='Encoding faces', leave=False):
+#         ret, frame = cap.read()
+#         temp = df[df['frame_num'] == frame_num]
+#         for idx, row in temp.iterrows():
+#             face = extract_face(row, frame)
+#             resized = process_image(face)
+#             faces.append(resized)
+#             if (len(faces) >= batch_size) or frame_num == frame_nums[-1]:
+#                 e = encoder.compute_face_descriptor(np.array(faces))
+#                 encodings.extend(e)
+#                 faces = []
+#     e = np.array([np.array(x) for x in encodings])
+#     df = df.assign(encoding=e)
+#     return df
 
 
-# def encode_face(face):
-#     h, w = face.shape[:2]
-#     try:
-#         face = cv2.cvtColor(face, cv2.COLOR_BGR2RGB)
-#     except cv2.error as e:
-#         logging.error(e) 
-#         return None
-    
-#     encoding = face_recognition.face_encodings(face,
-#                                     known_face_locations=[(0, h, w, 0)])
-#     return encoding
+def parse_vector(vector):
+    temp = vector.split('\n')
+    e = [float(x) for x in temp]
+    return np.array(e)
 
 
-def batch_encode_faces(cropped_faces):
+def encode_faces(src, batch_size=256):
+    if isinstance(src, str):
+        try:
+            df = pd.read_csv(str(src), index_col=0)
+            df = df.reset_index(drop=True)
+        except Exception as e:
+            logging.error(e)
+            exit()
+    else:
+        df = src 
+
+    last = df.iloc[-1]['frame_num']
+    src = df.at[0, 'filepath']
+    cap = cv2.VideoCapture(src)
+    framecount = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
     encodings = []
-    for face in cropped_faces:
-        if face.sum() > 0:
-            encoding = encoder.compute_face_descriptor(face)
-        else:
-            encoding = None
-        encodings.append(encoding)
-    return encodings
-
-
-def encode_faces(file):
-    try:
-        df = pd.read_csv(str(file), index_col=0)
-    except Exception as e:
-        logging.error(e)
-        exit()
-    df = df.reset_index(drop=True)
-    df['encoding'] = ''
-    cap = cv2.VideoCapture(df.at[0, 'filepath'])
     faces = []
-    for idx, row in tqdm(df.iterrows(), total=df.shape[0]):
-        face = extract_face(row, cap)
-        rgb = cv2.cvtColor(face, cv2.COLOR_BGR2RGB)
-        faces.append(cv2.resize(rgb, (150, 150), interpolation=cv2.INTER_AREA))
-
-    encodings = encoder.compute_face_descriptor(np.array(faces))
-    # encodings = batch_encode_faces(faces)
-    for num, encoding in enumerate(encodings):
-        e = np.array(encoding)
-        df.at[num, 'encoding'] = e
-
-        # encoding = encode_face(face)
-        # if encoding is None:
-        #     logging.error(row['video_src'])
-        #     return None
-        # frame_num = row['frame_num']
-        # face_num = row['face_num']
-        # name = f'{file.stem}_{frame_num}_{face_num}.npy'
-        # fp = Path(dst_dir).joinpath(name)
-        # np.save(str(fp), encoding)
-        # df.at[idx, 'encoding_path'] = str(fp)
+    for frame_num in tqdm(range(framecount), desc=f'Encoding faces for {Path(src).name}', leave=False):
+        ret, frame = cap.read()
+        temp = df[df['frame_num'] == frame_num]
+        for idx, row in temp.iterrows():
+            face = extract_face(row, frame)
+            resized = process_image(face)
+            faces.append(resized)
+            if (len(faces) >= batch_size) or frame_num == last:
+                e = encoder.compute_face_descriptor(np.array(faces))
+                encodings.extend(e)
+                faces = []
+    e = [np.array(x) for x in encodings]
+    df = df.assign(encoding=e)
     return df
 
-
-# def encode_from_directory(src,
-#                           dst):
-#     files = [x for x in Path(src).iterdir()]
-#     for file in tqdm(files):
-#         encode_faces(file, dst)
-#         # name = f'{file.stem}.npy'
-#         # fp = Path(dst).joinpath(name)
-#         # if fp.exists():
-#         #     continue
-#         # encoding = encode_face(file,
-#         #                         dst)
-#         # if encoding is not None:
-#         #     np.save(str(fp), encoding)
-        
 
 def main(args):
     df = encode_faces(args.src)

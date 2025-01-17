@@ -16684,3 +16684,775 @@ DEBUG  2024-12-08_11:47:57: response_closed.complete
 DEBUG  2024-12-08_11:47:57: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
 DEBUG  2024-12-08_11:48:00: close.started
 DEBUG  2024-12-08_11:48:00: close.complete
+DEBUG  2024-12-11_12:28:34: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-12-11_12:28:34: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-12-11_12:28:34: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-12-11_12:28:34: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x787e7705df10>
+DEBUG  2024-12-11_12:28:34: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_12:28:34: send_request_headers.complete
+DEBUG  2024-12-11_12:28:34: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_12:28:34: send_request_body.complete
+DEBUG  2024-12-11_12:28:34: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_12:28:34: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-type', b'application/json'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'date', b'Wed, 11 Dec 2024 17:28:34 GMT')])
+INFO  2024-12-11_12:28:34: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-12-11_12:28:34: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_12:28:34: receive_response_body.complete
+DEBUG  2024-12-11_12:28:34: response_closed.started
+DEBUG  2024-12-11_12:28:34: response_closed.complete
+DEBUG  2024-12-11_12:28:34: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-12-11_12:36:37: Found 5861 files.
+INFO  2024-12-11_12:36:37: 68 new files out of 5861.
+DEBUG  2024-12-11_12:36:42: Found 12 to process.
+ERROR  2024-12-11_12:36:43: Unable to match IMDb ID for 
+ERROR  2024-12-11_12:36:59: Unable to match IMDb ID for Gravity Falls
+ERROR  2024-12-11_12:37:16: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2024-12-11_12:38:29: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-12-11_12:38:29: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-12-11_12:38:29: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-12-11_12:38:29: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x77bdf4d657d0>
+DEBUG  2024-12-11_12:38:29: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_12:38:29: send_request_headers.complete
+DEBUG  2024-12-11_12:38:29: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_12:38:29: send_request_body.complete
+DEBUG  2024-12-11_12:38:29: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_12:38:29: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'date', b'Wed, 11 Dec 2024 17:38:28 GMT')])
+INFO  2024-12-11_12:38:29: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-12-11_12:38:29: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_12:38:29: receive_response_body.complete
+DEBUG  2024-12-11_12:38:29: response_closed.started
+DEBUG  2024-12-11_12:38:29: response_closed.complete
+DEBUG  2024-12-11_12:38:29: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-12-11_12:40:17: Found 5861 files.
+INFO  2024-12-11_12:40:17: 0 new files out of 5861.
+DEBUG  2024-12-11_12:40:17: Found 11 to process.
+ERROR  2024-12-11_12:40:17: Unable to match IMDb ID for 
+ERROR  2024-12-11_12:40:25: Unable to match IMDb ID for Gravity Falls
+ERROR  2024-12-11_12:40:34: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2024-12-11_12:41:28: Found 3443 for analysis.
+DEBUG  2024-12-11_12:44:51: Creating converter from 3 to 5
+DEBUG  2024-12-11_13:55:46: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-12-11_13:55:46: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-12-11_13:55:46: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-12-11_13:55:46: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x79956896fc90>
+DEBUG  2024-12-11_13:55:46: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_13:55:46: send_request_headers.complete
+DEBUG  2024-12-11_13:55:46: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_13:55:46: send_request_body.complete
+DEBUG  2024-12-11_13:55:46: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_13:55:46: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'date', b'Wed, 11 Dec 2024 18:55:46 GMT')])
+INFO  2024-12-11_13:55:46: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-12-11_13:55:46: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_13:55:46: receive_response_body.complete
+DEBUG  2024-12-11_13:55:46: response_closed.started
+DEBUG  2024-12-11_13:55:46: response_closed.complete
+DEBUG  2024-12-11_13:55:46: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-12-11_13:59:44: Found 5861 files.
+INFO  2024-12-11_14:00:38: 0 new files out of 5861.
+DEBUG  2024-12-11_14:01:35: Found 11 to process.
+ERROR  2024-12-11_14:01:41: Unable to match IMDb ID for 
+DEBUG  2024-12-11_14:06:16: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-12-11_14:06:16: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-12-11_14:06:16: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-12-11_14:06:16: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7fe9ec556cd0>
+DEBUG  2024-12-11_14:06:16: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:06:16: send_request_headers.complete
+DEBUG  2024-12-11_14:06:16: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:06:16: send_request_body.complete
+DEBUG  2024-12-11_14:06:16: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:06:16: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'date', b'Wed, 11 Dec 2024 19:06:16 GMT')])
+INFO  2024-12-11_14:06:16: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-12-11_14:06:16: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:06:16: receive_response_body.complete
+DEBUG  2024-12-11_14:06:16: response_closed.started
+DEBUG  2024-12-11_14:06:16: response_closed.complete
+DEBUG  2024-12-11_14:06:16: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-12-11_14:08:17: Found 5861 files.
+INFO  2024-12-11_14:08:17: 0 new files out of 5861.
+DEBUG  2024-12-11_14:08:17: Found 11 to process.
+ERROR  2024-12-11_14:08:18: Unable to match IMDb ID for 
+DEBUG  2024-12-11_14:08:43: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-12-11_14:08:43: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-12-11_14:08:43: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-12-11_14:08:43: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7a6dc7c76a90>
+DEBUG  2024-12-11_14:08:43: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:08:43: send_request_headers.complete
+DEBUG  2024-12-11_14:08:43: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:08:43: send_request_body.complete
+DEBUG  2024-12-11_14:08:43: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:08:43: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'date', b'Wed, 11 Dec 2024 19:08:43 GMT')])
+INFO  2024-12-11_14:08:43: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-12-11_14:08:43: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:08:43: receive_response_body.complete
+DEBUG  2024-12-11_14:08:43: response_closed.started
+DEBUG  2024-12-11_14:08:43: response_closed.complete
+DEBUG  2024-12-11_14:08:43: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-12-11_14:10:55: Found 5861 files.
+INFO  2024-12-11_14:10:55: 0 new files out of 5861.
+DEBUG  2024-12-11_14:10:55: Found 11 to process.
+ERROR  2024-12-11_14:10:56: Unable to match IMDb ID for 
+ERROR  2024-12-11_14:11:05: Unable to match IMDb ID for Gravity Falls
+ERROR  2024-12-11_14:11:22: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2024-12-11_14:12:52: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-12-11_14:12:52: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-12-11_14:12:52: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-12-11_14:12:52: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x70eed6466910>
+DEBUG  2024-12-11_14:12:52: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:12:52: send_request_headers.complete
+DEBUG  2024-12-11_14:12:52: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:12:52: send_request_body.complete
+DEBUG  2024-12-11_14:12:52: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:12:52: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-type', b'application/json'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'date', b'Wed, 11 Dec 2024 19:12:52 GMT')])
+INFO  2024-12-11_14:12:52: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-12-11_14:12:52: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:12:52: receive_response_body.complete
+DEBUG  2024-12-11_14:12:52: response_closed.started
+DEBUG  2024-12-11_14:12:52: response_closed.complete
+DEBUG  2024-12-11_14:12:52: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-12-11_14:15:02: Found 5861 files.
+INFO  2024-12-11_14:15:02: 0 new files out of 5861.
+DEBUG  2024-12-11_14:15:02: Found 11 to process.
+ERROR  2024-12-11_14:15:03: Unable to match IMDb ID for 
+DEBUG  2024-12-11_14:20:06: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-12-11_14:20:06: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-12-11_14:20:06: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-12-11_14:20:06: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7630e6f62750>
+DEBUG  2024-12-11_14:20:06: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:20:06: send_request_headers.complete
+DEBUG  2024-12-11_14:20:06: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:20:06: send_request_body.complete
+DEBUG  2024-12-11_14:20:06: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:20:06: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'date', b'Wed, 11 Dec 2024 19:20:06 GMT')])
+INFO  2024-12-11_14:20:06: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-12-11_14:20:06: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:20:06: receive_response_body.complete
+DEBUG  2024-12-11_14:20:06: response_closed.started
+DEBUG  2024-12-11_14:20:06: response_closed.complete
+DEBUG  2024-12-11_14:20:06: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-12-11_14:22:16: Found 5861 files.
+INFO  2024-12-11_14:22:16: 0 new files out of 5861.
+DEBUG  2024-12-11_14:22:16: Found 11 to process.
+ERROR  2024-12-11_14:22:17: Unable to match IMDb ID for 
+ERROR  2024-12-11_14:22:37: Unable to match IMDb ID for Gravity Falls
+ERROR  2024-12-11_14:22:50: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2024-12-11_14:24:45: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-12-11_14:24:45: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-12-11_14:24:45: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-12-11_14:24:45: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f086ed54f90>
+DEBUG  2024-12-11_14:24:45: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:24:45: send_request_headers.complete
+DEBUG  2024-12-11_14:24:45: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:24:45: send_request_body.complete
+DEBUG  2024-12-11_14:24:45: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:24:45: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'date', b'Wed, 11 Dec 2024 19:24:45 GMT')])
+INFO  2024-12-11_14:24:45: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-12-11_14:24:45: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:24:45: receive_response_body.complete
+DEBUG  2024-12-11_14:24:45: response_closed.started
+DEBUG  2024-12-11_14:24:45: response_closed.complete
+DEBUG  2024-12-11_14:24:45: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-12-11_14:27:36: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-12-11_14:27:36: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-12-11_14:27:36: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-12-11_14:27:36: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f207b1e7f50>
+DEBUG  2024-12-11_14:27:36: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:27:36: send_request_headers.complete
+DEBUG  2024-12-11_14:27:36: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:27:36: send_request_body.complete
+DEBUG  2024-12-11_14:27:36: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:27:36: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'date', b'Wed, 11 Dec 2024 19:27:36 GMT')])
+INFO  2024-12-11_14:27:36: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-12-11_14:27:36: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:27:36: receive_response_body.complete
+DEBUG  2024-12-11_14:27:36: response_closed.started
+DEBUG  2024-12-11_14:27:36: response_closed.complete
+DEBUG  2024-12-11_14:27:36: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-12-11_14:29:22: Found 5861 files.
+INFO  2024-12-11_14:29:22: 5569 new files out of 5861.
+DEBUG  2024-12-11_14:29:22: Found 95 to process.
+ERROR  2024-12-11_14:29:23: Unable to match IMDb ID for 
+DEBUG  2024-12-11_14:29:54: close.started
+DEBUG  2024-12-11_14:29:54: close.complete
+DEBUG  2024-12-11_14:30:52: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-12-11_14:30:52: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-12-11_14:30:52: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-12-11_14:30:52: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7fe0f9397950>
+DEBUG  2024-12-11_14:30:52: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:30:52: send_request_headers.complete
+DEBUG  2024-12-11_14:30:52: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:30:52: send_request_body.complete
+DEBUG  2024-12-11_14:30:52: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:30:52: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-type', b'application/json'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'date', b'Wed, 11 Dec 2024 19:30:52 GMT')])
+INFO  2024-12-11_14:30:52: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-12-11_14:30:52: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:30:52: receive_response_body.complete
+DEBUG  2024-12-11_14:30:52: response_closed.started
+DEBUG  2024-12-11_14:30:52: response_closed.complete
+DEBUG  2024-12-11_14:30:52: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-12-11_14:31:04: close.started
+DEBUG  2024-12-11_14:31:04: close.complete
+DEBUG  2024-12-11_14:31:21: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-12-11_14:31:21: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-12-11_14:31:21: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-12-11_14:31:21: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x72d362061bd0>
+DEBUG  2024-12-11_14:31:21: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:31:21: send_request_headers.complete
+DEBUG  2024-12-11_14:31:21: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:31:21: send_request_body.complete
+DEBUG  2024-12-11_14:31:21: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:31:21: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'date', b'Wed, 11 Dec 2024 19:31:20 GMT')])
+INFO  2024-12-11_14:31:21: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-12-11_14:31:21: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:31:21: receive_response_body.complete
+DEBUG  2024-12-11_14:31:21: response_closed.started
+DEBUG  2024-12-11_14:31:21: response_closed.complete
+DEBUG  2024-12-11_14:31:21: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-12-11_14:33:03: Found 5861 files.
+INFO  2024-12-11_14:33:03: 0 new files out of 5861.
+DEBUG  2024-12-11_14:33:03: Found 95 to process.
+ERROR  2024-12-11_14:33:04: Unable to match IMDb ID for 
+DEBUG  2024-12-11_14:33:25: close.started
+DEBUG  2024-12-11_14:33:25: close.complete
+DEBUG  2024-12-11_14:34:19: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-12-11_14:34:19: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-12-11_14:34:19: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-12-11_14:34:19: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7a1c796f2a50>
+DEBUG  2024-12-11_14:34:19: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:34:19: send_request_headers.complete
+DEBUG  2024-12-11_14:34:19: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:34:19: send_request_body.complete
+DEBUG  2024-12-11_14:34:19: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:34:19: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'date', b'Wed, 11 Dec 2024 19:34:19 GMT')])
+INFO  2024-12-11_14:34:19: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-12-11_14:34:19: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:34:19: receive_response_body.complete
+DEBUG  2024-12-11_14:34:19: response_closed.started
+DEBUG  2024-12-11_14:34:19: response_closed.complete
+DEBUG  2024-12-11_14:34:19: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-12-11_14:36:09: Found 5861 files.
+INFO  2024-12-11_14:36:09: 0 new files out of 5861.
+DEBUG  2024-12-11_14:36:09: Found 88 to process.
+ERROR  2024-12-11_14:36:10: Unable to match IMDb ID for 
+ERROR  2024-12-11_14:37:33: Unable to match IMDb ID for Gravity Falls
+ERROR  2024-12-11_14:39:55: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2024-12-11_14:42:46: Found 2683 for analysis.
+DEBUG  2024-12-11_14:42:48: close.started
+DEBUG  2024-12-11_14:42:48: close.complete
+DEBUG  2024-12-11_14:44:57: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-12-11_14:44:57: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-12-11_14:44:57: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-12-11_14:44:57: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7dbd3e1cf910>
+DEBUG  2024-12-11_14:44:57: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:44:57: send_request_headers.complete
+DEBUG  2024-12-11_14:44:57: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:44:57: send_request_body.complete
+DEBUG  2024-12-11_14:44:57: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:44:57: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-encoding', b'gzip'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-type', b'application/json'), (b'date', b'Wed, 11 Dec 2024 19:44:57 GMT')])
+INFO  2024-12-11_14:44:57: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-12-11_14:44:57: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:44:57: receive_response_body.complete
+DEBUG  2024-12-11_14:44:57: response_closed.started
+DEBUG  2024-12-11_14:44:57: response_closed.complete
+DEBUG  2024-12-11_14:44:57: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-12-11_14:46:46: Found 5861 files.
+INFO  2024-12-11_14:46:46: 0 new files out of 5861.
+DEBUG  2024-12-11_14:46:46: Found 11 to process.
+ERROR  2024-12-11_14:46:47: Unable to match IMDb ID for 
+ERROR  2024-12-11_14:46:56: Unable to match IMDb ID for Gravity Falls
+ERROR  2024-12-11_14:47:08: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2024-12-11_14:47:58: Found 2683 for analysis.
+DEBUG  2024-12-11_14:55:07: close.started
+DEBUG  2024-12-11_14:55:07: close.complete
+DEBUG  2024-12-11_14:55:54: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-12-11_14:55:54: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-12-11_14:55:54: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-12-11_14:55:54: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f15a1126ad0>
+DEBUG  2024-12-11_14:55:54: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:55:54: send_request_headers.complete
+DEBUG  2024-12-11_14:55:54: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:55:54: send_request_body.complete
+DEBUG  2024-12-11_14:55:54: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:55:54: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-type', b'application/json'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'date', b'Wed, 11 Dec 2024 19:55:53 GMT')])
+INFO  2024-12-11_14:55:54: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-12-11_14:55:54: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_14:55:54: receive_response_body.complete
+DEBUG  2024-12-11_14:55:54: response_closed.started
+DEBUG  2024-12-11_14:55:54: response_closed.complete
+DEBUG  2024-12-11_14:55:54: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-12-11_14:57:51: Found 5861 files.
+INFO  2024-12-11_14:57:51: 0 new files out of 5861.
+DEBUG  2024-12-11_14:57:57: Found 11 to process.
+ERROR  2024-12-11_14:57:57: Unable to match IMDb ID for 
+ERROR  2024-12-11_14:58:06: Unable to match IMDb ID for Gravity Falls
+ERROR  2024-12-11_14:58:21: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2024-12-11_14:59:20: Found 2683 for analysis.
+DEBUG  2024-12-11_15:09:12: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2024-12-11_15:09:12: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2024-12-11_15:09:12: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2024-12-11_15:09:12: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x75241fe71650>
+DEBUG  2024-12-11_15:09:12: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_15:09:12: send_request_headers.complete
+DEBUG  2024-12-11_15:09:12: send_request_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_15:09:12: send_request_body.complete
+DEBUG  2024-12-11_15:09:12: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2024-12-11_15:09:12: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'date', b'Wed, 11 Dec 2024 20:09:12 GMT')])
+INFO  2024-12-11_15:09:12: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2024-12-11_15:09:12: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2024-12-11_15:09:12: receive_response_body.complete
+DEBUG  2024-12-11_15:09:12: response_closed.started
+DEBUG  2024-12-11_15:09:12: response_closed.complete
+DEBUG  2024-12-11_15:09:12: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2024-12-11_15:11:09: Found 5861 files.
+INFO  2024-12-11_15:11:09: 0 new files out of 5861.
+DEBUG  2024-12-11_15:11:09: Found 11 to process.
+ERROR  2024-12-11_15:11:10: Unable to match IMDb ID for 
+ERROR  2024-12-11_15:11:22: Unable to match IMDb ID for Gravity Falls
+ERROR  2024-12-11_15:11:37: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2024-12-11_15:12:34: Found 2683 for analysis.
+DEBUG  2024-12-11_15:19:39: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S01E01.Pilot.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_15:25:33: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S01E02.A.New.Lease.on.Life.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_15:31:33: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S01E03.Head.Case.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_15:38:20: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S01E04.Between.a.Rock.and.Harlins.Place.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_15:45:41: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S01E05.Boo.Humbug.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_15:52:09: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S01E06.William.Tell.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_15:58:22: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S01E07.Where.Theres.a.Will.Theres.No.Way.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_16:04:34: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S01E08.The.Buying.Game.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_16:11:27: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S01E09.The.Truth.About.Will.and.Dogs.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_16:17:58: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S01E10.The.Big.Vent.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_16:29:22: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S01E11.Will.on.Ice.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_16:35:46: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S01E12.My.Fair.Maid-y.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_16:42:56: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S01E13.The.Unsinkable.Mommy.Adler.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_16:50:37: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S01E14.Big.Brother.Is.Coming.Part.1.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_16:56:40: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S01E15.Big.Brother.Is.Coming.Part.2.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_17:03:02: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S01E16.Yours.Mine.or.Ours.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_17:09:02: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S01E17.Secrets.and.Lays.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_17:15:02: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S01E18.Grace.Replaced.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_17:21:42: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S01E19.Will.Works.Out.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_17:28:42: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S01E20.Saving.Grace.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_17:36:29: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S01E21.Alley.Cats.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_17:45:17: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S01E22.Object.of.My.Rejection.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_17:51:37: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S02E01.Guess.Whos.Not.Coming.to.Dinner.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_17:58:55: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S02E02.Election.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_18:05:29: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S02E03.Das.Boob.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_18:12:37: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S02E04.Whose.Mom.Is.It.Anyway..480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_18:19:06: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S02E05.Polk.Defeats.Truman.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_18:26:22: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S02E06.To.Serve.and.Disinfect.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_18:32:56: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S02E07.Homo.for.the.Holidays.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_18:39:35: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S02E08.Terms.of.Employment.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_18:46:45: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S02E09.I.Never.Promised.You.an.Olive.Garden.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_18:54:26: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S02E10.Tea.and.a.Total.Lack.of.Sympathy.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_19:00:44: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S02E11.Seeds.of.Discontent.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_19:06:55: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S02E12.Hes.Come.Undone.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_19:14:33: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S02E13.Oh.Dad.Poor.Dad.Hes.Kept.Me.in.the.Closet.and.Im.Feeling.So.Sad.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_19:21:50: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S02E14.Acting.Out.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_19:28:39: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S02E15.Advise.and.Resent.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_19:34:49: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S02E16.Hey.La.Hey.La.My.Ex-Boyfriends.Back.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_19:41:46: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S02E17.The.Hospital.Show.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_19:48:46: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S02E18.Sweet.and.Sour.Charity.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_19:55:20: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S02E19.An.Affair.to.Forget.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_20:02:30: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S02E20.Girls.Interrupted.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_20:09:12: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S02E21.There.But.for.the.Grace.of.Grace.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_20:16:44: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S02E22.My.Best.Friends.Tush.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_20:22:27: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S02E23.Ben.Her.Part.1.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_20:28:08: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S02E24.Ben.Her.Part.2.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_20:34:11: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S03E01.New.Will.City.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_20:40:32: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S03E02.Fear.and.Clothing.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_20:47:36: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S03E03.Husbands.and.Trophy.Wives.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_20:54:00: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S03E04.Girl.Trouble.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_21:00:38: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S03E05.Grace.0.Jack.2000.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_21:07:19: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S03E06.Love.Plus.One.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_21:14:47: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S03E07.Gypsies.Tramps.and.Weed.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_21:22:18: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S03E08.Lows.in.the.Mid-Eighties.Part.I.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_21:29:00: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S03E09.Lows.in.the.Mid-Eighties.Part.II.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_21:35:21: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S03E10.Threes.a.Crowd.Six.Is.a.Freak.Show.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_21:44:01: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S03E11.Coffee.&.Commitment.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_21:51:24: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S03E12.Swimming.Pools.Movie.Stars.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_21:57:45: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S03E13.Crazy.in.Love.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_22:04:37: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S03E14.Brothers.A.Love.Story.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_22:10:48: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S03E15.My.Uncle.the.Car.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_22:21:04: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S03E16.Cheaters.Part.I.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_22:27:16: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S03E17.Cheaters.Part.II.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_22:33:17: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S03E18.Mad.Dogs.and.Average.Men.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_22:40:06: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S03E19.Poker.I.Dont.Even.Like.Her.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_22:46:36: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S03E20.An.Old-Fashioned.Piano.Party.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_22:54:15: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S03E21.The.Young.and.the.Tactless.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_23:01:02: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S03E22.Alice.Doesnt.Lisp.Here.Anymore.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_23:07:18: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S03E23.Last.of.the.Really.Odd.Lovers.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_23:13:41: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S03E24.Sons.and.Lovers.Part.I.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_23:20:46: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S03E25.Sons.and.Lovers.Part.II.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_23:27:21: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S04E01.The.Third.Wheel.Gets.the.Grace.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_23:33:34: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S04E02.Past.and.Presents.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_23:40:53: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S04E03.Crouching.Father.Hidden.Husband.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_23:47:40: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S04E04.Prison.Blues.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-11_23:54:04: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S04E05.Loose.Lips.Sink.Relationships.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_00:00:32: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S04E06.The.Rules.of.Engagement.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_00:06:42: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S04E07.Bed.Bath.and.Beyond.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_00:13:18: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S04E08.Star-Spangled.Banter.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_00:21:03: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S04E09.Moveable.Feast.Part.1.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_00:27:29: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S04E10.Moveable.Feast.Part.2.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_00:34:53: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S04E11.Stakin.Care.of.Business.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_00:41:28: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S04E12.Jingle.Balls.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_00:47:52: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S04E13.Whoa.Nelly.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_00:54:03: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S04E14.Grace.in.the.Hole.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_01:00:57: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S04E15.Dyeing.Is.Easy.Comedy.Is.Hard.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_01:10:47: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S04E16.A.Chorus.Lie.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_01:17:23: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S04E17.Someone.Old.Someplace.New.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_01:23:54: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S04E18.Something.Borrowed.Someones.Due.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_01:32:00: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S04E19.Cheatin.Trouble.Blues.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_01:38:19: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S04E20.Went.to.a.Garden.Potty.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_01:45:42: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S04E21.He.Shoots.They.Snore.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_01:52:22: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S04E22.Wedding.Balls.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_02:01:05: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S04E23.Fagel.Attraction.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_02:07:38: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S04E24.Hocus.Focus.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_02:13:23: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S04E25.A.Buncha.White.Chicks.Sittin.Around.Talkin.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_02:19:56: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S04E26.A.I.Artificial.Insemination.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_02:25:46: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S04E27.A.I.Artificial.Insemination.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_02:31:48: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S05E01.And.the.Horse.He.Rode.In.On.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_02:38:14: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S05E02.Bacon.and.Eggs.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_02:44:24: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S05E03.The.Kid.Stays.Out.of.the.Picture.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_02:51:03: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S05E04.Humongous.Growth.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_02:57:13: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S05E05.Its.the.Gay.Pumpkin.Charlie.Brown.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_03:05:19: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S05E06.Boardroom.and.a.Parked.Place.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_03:12:47: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S05E07.The.Needle.and.the.Omelets.Done.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_03:21:27: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S05E08.Marry.Me.a.Little.Marry.Me.a.Little.More.Part.1.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_03:29:45: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S05E09.Marry.Me.a.Little.Marry.Me.a.Little.More.Part.2.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_03:36:18: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S05E10.The.Honeymoons.Over.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_03:43:29: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S05E11.All.About.Christmas.Eve.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_03:51:06: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S05E12.Field.of.Queens.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_03:57:37: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S05E13.Fagmalion.Part.One.Gay.It.Forward.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_04:06:07: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S05E14.Fagmalion.Part.Two.Attack.of.the.Clones.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_04:12:20: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S05E15.Homojo.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_04:18:53: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S05E16.Women.and.Children.First.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_04:27:50: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S05E17.Fagmalion.Part.Three.Bye.Bye.Beardy.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_04:33:52: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S05E18.Fagmalion.Part.Four.The.Guy.Who.Loved.Me.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_04:40:42: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S05E19.Sex.Losers.&.Videotape.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_04:46:59: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S05E20.Leo.Unwrapped.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_04:54:14: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S05E21.Dolls.and.Dolls.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_05:00:25: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S05E22.May.Divorce.Be.With.You.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_05:08:58: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S05E23.23.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_05:15:22: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S05E24.Season.Finale.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_05:21:32: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S06E01.Dames.at.Sea.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_05:28:26: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S06E02.Last.Ex.to.Brooklyn.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_05:34:43: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S06E03.Home.Court.Disadvantage.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_05:42:27: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S06E04.Me.and.Mr.Jones.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_05:50:49: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S06E05.A-Story.Bee-Story.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_05:57:10: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S06E06.Heart.Like.a.Wheelchair.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_06:03:52: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S06E07.Nice.in.White.Satin.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_06:10:48: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S06E08.Swimming.From.Cambodia.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_06:20:07: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S06E09.Strangers.With.Candice.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_06:26:58: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S06E10.Fanilow.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_06:32:55: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S06E11.The.Accidental.Tsuris.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_06:40:48: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S06E12.A.Gay.December.Romance.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_06:46:43: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S06E13.Ice.Cream.Balls.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_06:52:46: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S06E14.Looking.for.Mr.Good.Enough.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_06:59:16: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S06E15.Flip-Flop.Part.1.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_07:05:40: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S06E16.Flip-Flop.Part.2.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_07:11:58: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S06E17.East.Side.Story.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_07:21:20: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S06E18.Courting.Disaster.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_07:29:08: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S06E19.No.Sex.n.the.City.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_07:35:12: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S06E20.Fred.Astaire.and.Ginger.Chicken.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_07:41:25: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S06E21.I.Never.Cheered.for.My.Father.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_07:48:57: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S06E22.Speechless.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_07:56:36: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S06E23.I.Do.Part.1.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_08:04:29: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S06E24.Oh.No.You.Di-int.Part.2.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_08:14:15: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S07E01.FYI.I.Hurt.Too.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_08:21:01: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S07E02.Back.Up.Dancer.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_08:27:14: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S07E03.One.Gay.at.a.Time.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_08:33:29: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S07E04.Company.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_08:40:17: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S07E05.Key.Party.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_08:47:17: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S07E06.The.Newlydreads.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_08:53:30: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S07E07.Will.&.Grace.&.Vince.&.Nadine.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_09:00:04: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S07E08.Saving.Grace.Again.Part.1.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_09:06:23: Analyzed Will & Grace (157246) and saved results to data/faces/will-&-grace_1998_157246/Will.&.Grace.S07E09.Saving.Grace.Again.Part.2.480p.Web.h264-JBee.csv.
+DEBUG  2024-12-12_09:14:12: Analyzed Mythic Quest (8879940) and saved results to data/faces/mythic-quest_2020_8879940/Mythic.Quest.S03E07.Sarian.1080p.ATVP.WEB-DL.DDP5.1.H.264-CasStudio.csv.
+DEBUG  2024-12-12_09:27:57: Analyzed Manhunt (16912512) and saved results to data/faces/manhunt_2024_16912512/manhunt.2024.s01e06.1080p.web.h264-successfulcrab.csv.
+DEBUG  2024-12-12_09:41:37: Analyzed Lessons In Chemistry (13911628) and saved results to data/faces/lessons-in-chemistry_2023_13911628/Lessons.in.Chemistry.S01E01.Little.Miss.Hastings.1080p.WEBRip.DDP5.1.Atmos.H265-d3g.csv.
+DEBUG  2024-12-12_09:55:50: Analyzed Lessons In Chemistry (13911628) and saved results to data/faces/lessons-in-chemistry_2023_13911628/Lessons.in.Chemistry.S01E02.Her.and.Him.1080p.WEBRip.DDP5.1.Atmos.H265-d3g.csv.
+DEBUG  2024-12-12_10:09:12: Analyzed Lessons In Chemistry (13911628) and saved results to data/faces/lessons-in-chemistry_2023_13911628/Lessons.in.Chemistry.S01E03.Living.Dead.Things.1080p.WEBRip.DDP5.1.Atmos.H265-d3g.csv.
+DEBUG  2024-12-12_10:22:49: Analyzed Lessons In Chemistry (13911628) and saved results to data/faces/lessons-in-chemistry_2023_13911628/Lessons.in.Chemistry.S01E04.Primitive.Instinct.1080p.WEBRip.DDP5.1.Atmos.H265-d3g.csv.
+DEBUG  2024-12-12_10:35:37: Analyzed Lessons In Chemistry (13911628) and saved results to data/faces/lessons-in-chemistry_2023_13911628/Lessons.in.Chemistry.S01E05.CH3COOH.1080p.WEBRip.DDP5.1.Atmos.H265-d3g.csv.
+DEBUG  2024-12-12_10:49:08: Analyzed Lessons In Chemistry (13911628) and saved results to data/faces/lessons-in-chemistry_2023_13911628/Lessons.in.Chemistry.S01E06.Poirot.1080p.WEBRip.DDP5.1.Atmos.H265-d3g.csv.
+DEBUG  2024-12-12_11:00:51: Analyzed Lessons In Chemistry (13911628) and saved results to data/faces/lessons-in-chemistry_2023_13911628/Lessons.in.Chemistry.S01E07.Book.of.Calvin.1080p.WEBRip.DDP5.1.Atmos.H265-d3g.csv.
+DEBUG  2024-12-12_11:14:19: Analyzed Lessons In Chemistry (13911628) and saved results to data/faces/lessons-in-chemistry_2023_13911628/Lessons.in.Chemistry.S01E08.Introduction.to.Chemistry.1080p.WEBRip.DDP5.1.Atmos.H265-d3g.csv.
+DEBUG  2024-12-12_11:24:21: Analyzed Servant (8068860) and saved results to data/faces/servant_2019_8068860/Servant (2019) S02E05 (1080p ATVP Webrip x265 10bit EAC3 5.1 Atmos - Goki)[TAoE].csv.
+DEBUG  2024-12-12_11:33:38: Analyzed Servant (8068860) and saved results to data/faces/servant_2019_8068860/Servant (2019) S02E09 (1080p ATVP Webrip x265 10bit EAC3 5.1 Atmos - Goki)[TAoE].csv.
+DEBUG  2024-12-12_11:43:11: Analyzed Servant (8068860) and saved results to data/faces/servant_2019_8068860/Servant (2019) S02E08 (1080p ATVP Webrip x265 10bit EAC3 5.1 Atmos - Goki)[TAoE].csv.
+DEBUG  2024-12-12_11:52:42: Analyzed Servant (8068860) and saved results to data/faces/servant_2019_8068860/Servant (2019) S02E10 (1080p ATVP Webrip x265 10bit EAC3 5.1 Atmos - Goki)[TAoE].csv.
+DEBUG  2024-12-12_12:00:20: Analyzed Servant (8068860) and saved results to data/faces/servant_2019_8068860/servant.s02e01.1080p.web.h264-glhf.csv.
+DEBUG  2024-12-12_12:07:53: Analyzed Servant (8068860) and saved results to data/faces/servant_2019_8068860/servant.s02e02.1080p.web.h264-ggwp.csv.
+DEBUG  2024-12-12_12:27:08: Analyzed Slow Horses (5875444) and saved results to data/faces/slow-horses_2022_5875444/Slow.Horses.S04E06.1080p.x265-ELiTE.csv.
+DEBUG  2024-12-12_12:42:46: Analyzed Ted Lasso (10986410) and saved results to data/faces/ted-lasso_2020_10986410/Ted.Lasso.S03E01.Smells.Like.Mean.Spirit.EAC3.5.1.1080p.WEBRip.x265-iVy.csv.
+DEBUG  2024-12-12_13:05:16: Analyzed Ted Lasso (10986410) and saved results to data/faces/ted-lasso_2020_10986410/Ted.Lasso.S03E02.(I.Don't.Want.to.Go.to).Chelsea.EAC3.5.1.1080p.WEBRip.x265-iVy.csv.
+DEBUG  2024-12-12_13:26:51: Analyzed Ted Lasso (10986410) and saved results to data/faces/ted-lasso_2020_10986410/Ted.Lasso.S03E03.4-5-1.EAC3.5.1.1080p.WEBRip.x265-iVy.csv.
+DEBUG  2024-12-12_13:46:05: Analyzed Ted Lasso (10986410) and saved results to data/faces/ted-lasso_2020_10986410/Ted.Lasso.S03E04.Big.Week.EAC3.5.1.1080p.WEBRip.x265-iVy.csv.
+DEBUG  2024-12-12_14:04:09: Analyzed Ted Lasso (10986410) and saved results to data/faces/ted-lasso_2020_10986410/Ted.Lasso.S03E05.Signs.EAC3.5.1.1080p.WEBRip.x265-iVy.csv.
+DEBUG  2024-12-12_14:25:15: Analyzed Ted Lasso (10986410) and saved results to data/faces/ted-lasso_2020_10986410/Ted.Lasso.S03E06.Sunflowers.EAC3.5.1.1080p.WEBRip.x265-iVy.csv.
+DEBUG  2024-12-12_14:46:26: Analyzed Ted Lasso (10986410) and saved results to data/faces/ted-lasso_2020_10986410/Ted.Lasso.S03E07.The.Strings.That.Bind.Us.EAC3.5.1.1080p.WEBRip.x265-iVy.csv.
+DEBUG  2024-12-12_14:51:59: close.started
+DEBUG  2024-12-12_14:51:59: close.complete
+DEBUG  2025-01-14_20:30:09: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2025-01-14_20:30:09: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2025-01-14_20:30:09: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2025-01-14_20:30:09: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x77ad652550d0>
+DEBUG  2025-01-14_20:30:09: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-14_20:30:09: send_request_headers.complete
+DEBUG  2025-01-14_20:30:09: send_request_body.started request=<Request [b'GET']>
+DEBUG  2025-01-14_20:30:09: send_request_body.complete
+DEBUG  2025-01-14_20:30:09: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-14_20:30:09: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'date', b'Wed, 15 Jan 2025 01:30:08 GMT')])
+INFO  2025-01-14_20:30:09: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2025-01-14_20:30:09: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2025-01-14_20:30:09: receive_response_body.complete
+DEBUG  2025-01-14_20:30:09: response_closed.started
+DEBUG  2025-01-14_20:30:09: response_closed.complete
+DEBUG  2025-01-14_20:30:09: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2025-01-14_20:30:09: Found 0 files.
+DEBUG  2025-01-14_20:30:09: close.started
+DEBUG  2025-01-14_20:30:09: close.complete
+DEBUG  2025-01-14_20:31:01: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2025-01-14_20:31:01: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2025-01-14_20:31:01: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2025-01-14_20:31:01: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7d0eb8bcc550>
+DEBUG  2025-01-14_20:31:01: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-14_20:31:01: send_request_headers.complete
+DEBUG  2025-01-14_20:31:01: send_request_body.started request=<Request [b'GET']>
+DEBUG  2025-01-14_20:31:01: send_request_body.complete
+DEBUG  2025-01-14_20:31:01: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-14_20:31:01: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'date', b'Wed, 15 Jan 2025 01:31:01 GMT')])
+INFO  2025-01-14_20:31:01: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2025-01-14_20:31:01: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2025-01-14_20:31:01: receive_response_body.complete
+DEBUG  2025-01-14_20:31:01: response_closed.started
+DEBUG  2025-01-14_20:31:01: response_closed.complete
+DEBUG  2025-01-14_20:31:01: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2025-01-14_20:39:49: Found 5968 files.
+INFO  2025-01-14_20:39:49: 107 new files out of 5968.
+DEBUG  2025-01-14_20:39:49: Found 19 to process.
+ERROR  2025-01-14_20:39:50: Unable to match IMDb ID for 
+ERROR  2025-01-14_20:39:59: Unable to match IMDb ID for Gravity Falls
+ERROR  2025-01-14_20:40:25: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2025-01-14_20:41:44: Found 2609 for analysis.
+DEBUG  2025-01-14_20:52:09: Analyzed Servant (8068860) and saved results to data/faces/servant_2019_8068860/Servant (2019) S02E03 (1080p ATVP Webrip x265 10bit EAC3 5.1 Atmos - Goki)[TAoE].csv.
+DEBUG  2025-01-14_21:03:57: Analyzed Servant (8068860) and saved results to data/faces/servant_2019_8068860/Servant (2019) S02E04 (1080p ATVP Webrip x265 10bit EAC3 5.1 Atmos - Goki)[TAoE].csv.
+DEBUG  2025-01-14_21:13:40: Analyzed Servant (8068860) and saved results to data/faces/servant_2019_8068860/Servant (2019) S02E06 (1080p ATVP Webrip x265 10bit EAC3 5.1 Atmos - Goki)[TAoE].csv.
+DEBUG  2025-01-14_21:24:33: Analyzed Servant (8068860) and saved results to data/faces/servant_2019_8068860/Servant (2019) S02E07 (1080p ATVP Webrip x265 10bit EAC3 5.1 Atmos - Goki)[TAoE].csv.
+DEBUG  2025-01-14_21:42:28: Analyzed Ted Lasso (10986410) and saved results to data/faces/ted-lasso_2020_10986410/Ted.Lasso.S03E08.We'll.Never.Have.Paris.EAC3.5.1.1080p.WEBRip.x265-iVy.csv.
+DEBUG  2025-01-14_22:02:11: Analyzed Ted Lasso (10986410) and saved results to data/faces/ted-lasso_2020_10986410/Ted.Lasso.S03E09.La.Locker.Room.Aux.Folles.EAC3.5.1.1080p.WEBRip.x265-iVy.csv.
+DEBUG  2025-01-14_22:22:42: Analyzed Ted Lasso (10986410) and saved results to data/faces/ted-lasso_2020_10986410/Ted.Lasso.S03E10.International.Break.EAC3.5.1.1080p.WEBRip.x265-iVy.csv.
+DEBUG  2025-01-14_22:57:47: Analyzed Ted Lasso (10986410) and saved results to data/faces/ted-lasso_2020_10986410/Ted.Lasso.S03E11.Mom.City.EAC3.5.1.1080p.WEBRip.x265-iVy.csv.
+DEBUG  2025-01-14_23:39:38: Analyzed Ted Lasso (10986410) and saved results to data/faces/ted-lasso_2020_10986410/Ted.Lasso.S03E12.So.Long.Farewell.EAC3.5.1.1080p.WEBRip.x265-iVy.csv.
+DEBUG  2025-01-14_23:56:13: Analyzed Happy Valley (3428912) and saved results to data/faces/happy-valley_2014_3428912/Happy.Valley.S03E01.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTb.csv.
+DEBUG  2025-01-15_00:13:34: Analyzed Happy Valley (3428912) and saved results to data/faces/happy-valley_2014_3428912/Happy.Valley.S03E02.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTb.csv.
+DEBUG  2025-01-15_00:32:20: Analyzed Happy Valley (3428912) and saved results to data/faces/happy-valley_2014_3428912/Happy.Valley.S03E03.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTb.csv.
+DEBUG  2025-01-15_00:50:49: Analyzed Happy Valley (3428912) and saved results to data/faces/happy-valley_2014_3428912/Happy.Valley.S03E04.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTb.csv.
+DEBUG  2025-01-15_01:07:57: Analyzed Happy Valley (3428912) and saved results to data/faces/happy-valley_2014_3428912/Happy.Valley.S03E05.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTb.csv.
+DEBUG  2025-01-15_01:28:18: Analyzed Happy Valley (3428912) and saved results to data/faces/happy-valley_2014_3428912/Happy.Valley.S03E06.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTb.csv.
+DEBUG  2025-01-15_01:38:17: Analyzed Mythic Quest (8879940) and saved results to data/faces/mythic-quest_2020_8879940/Mythic.Quest.S03E01.Across.the.Universe.1080p.ATVP.WEB-DL.DDP5.1.H.264-CasStudio.csv.
+DEBUG  2025-01-15_01:46:08: Analyzed Mythic Quest (8879940) and saved results to data/faces/mythic-quest_2020_8879940/Mythic.Quest.S03E02.Partners.1080p.ATVP.WEB-DL.DDP5.1.H.264-CasStudio.csv.
+DEBUG  2025-01-15_01:54:05: Analyzed Mythic Quest (8879940) and saved results to data/faces/mythic-quest_2020_8879940/Mythic.Quest.S03E03.Crushing.It.1080p.ATVP.WEB-DL.DDP5.1.H.264-CasStudio.csv.
+DEBUG  2025-01-15_02:01:46: Analyzed Mythic Quest (8879940) and saved results to data/faces/mythic-quest_2020_8879940/Mythic.Quest.S03E04.The.Two.Joes.1080p.ATVP.WEB-DL.DDP5.1.H.264-CasStudio.csv.
+DEBUG  2025-01-15_02:09:13: Analyzed Mythic Quest (8879940) and saved results to data/faces/mythic-quest_2020_8879940/Mythic.Quest.S03E05.Playpen.1080p.ATVP.WEB-DL.DDP5.1.H.264-CasStudio.csv.
+DEBUG  2025-01-15_02:20:49: Analyzed Mythic Quest (8879940) and saved results to data/faces/mythic-quest_2020_8879940/Mythic.Quest.S03E06.The.12.Hours.of.Christmas.1080p.ATVP.WEB-DL.DDP5.1.H.264-CasStudio.csv.
+DEBUG  2025-01-15_02:28:50: Analyzed Mythic Quest (8879940) and saved results to data/faces/mythic-quest_2020_8879940/Mythic.Quest.S03E08.To.Catch.a.Mouse.1080p.ATVP.WEB-DL.DDP5.1.H.264-CasStudio.csv.
+DEBUG  2025-01-15_02:36:00: Analyzed Mythic Quest (8879940) and saved results to data/faces/mythic-quest_2020_8879940/Mythic.Quest.S03E09.The.Year.of.Phil.1080p.ATVP.WEB-DL.DDP5.1.H.264-CasStudio.csv.
+DEBUG  2025-01-15_02:45:12: Analyzed Mythic Quest (8879940) and saved results to data/faces/mythic-quest_2020_8879940/Mythic.Quest.S03E10.Buffalo.Chicken.Pizza.1080p.ATVP.WEB-DL.DDP5.1.H.264-CasStudio.csv.
+DEBUG  2025-01-15_02:59:44: Analyzed Presumed Innocent (17677860) and saved results to data/faces/presumed-innocent_2024_17677860/Presumed Innocent (2024) S01E05 Pregame (1080p DS4K ATVP Webrip x265 10bit SDR EAC3 5.1 Atmos English - H4XO).csv.
+DEBUG  2025-01-15_03:09:10: close.started
+DEBUG  2025-01-15_03:09:10: close.complete
+DEBUG  2025-01-15_09:35:47: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2025-01-15_09:35:47: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2025-01-15_09:35:47: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2025-01-15_09:35:47: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7aefd223f0d0>
+DEBUG  2025-01-15_09:35:47: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-15_09:35:47: send_request_headers.complete
+DEBUG  2025-01-15_09:35:47: send_request_body.started request=<Request [b'GET']>
+DEBUG  2025-01-15_09:35:47: send_request_body.complete
+DEBUG  2025-01-15_09:35:47: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-15_09:35:47: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'date', b'Wed, 15 Jan 2025 14:35:46 GMT')])
+INFO  2025-01-15_09:35:47: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2025-01-15_09:35:47: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2025-01-15_09:35:47: receive_response_body.complete
+DEBUG  2025-01-15_09:35:47: response_closed.started
+DEBUG  2025-01-15_09:35:47: response_closed.complete
+DEBUG  2025-01-15_09:35:47: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2025-01-15_09:43:47: Found 5968 files.
+INFO  2025-01-15_09:43:47: 0 new files out of 5968.
+DEBUG  2025-01-15_09:43:47: Found 11 to process.
+ERROR  2025-01-15_09:43:48: Unable to match IMDb ID for 
+ERROR  2025-01-15_09:44:01: Unable to match IMDb ID for Gravity Falls
+ERROR  2025-01-15_09:44:19: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2025-01-15_09:45:17: Found 2584 for analysis.
+DEBUG  2025-01-15_09:55:15: close.started
+DEBUG  2025-01-15_09:55:15: close.complete
+DEBUG  2025-01-15_18:54:23: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2025-01-15_18:54:23: load_verify_locations cafile='/usr/lib/ssl/cert.pem'
+DEBUG  2025-01-15_18:54:23: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2025-01-15_18:54:23: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x730afc571a90>
+DEBUG  2025-01-15_18:54:23: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-15_18:54:23: send_request_headers.complete
+DEBUG  2025-01-15_18:54:23: send_request_body.started request=<Request [b'GET']>
+DEBUG  2025-01-15_18:54:23: send_request_body.complete
+DEBUG  2025-01-15_18:54:23: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-15_18:54:23: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'date', b'Wed, 15 Jan 2025 23:54:23 GMT')])
+INFO  2025-01-15_18:54:23: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2025-01-15_18:54:23: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2025-01-15_18:54:23: receive_response_body.complete
+DEBUG  2025-01-15_18:54:23: response_closed.started
+DEBUG  2025-01-15_18:54:23: response_closed.complete
+DEBUG  2025-01-15_18:54:23: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2025-01-15_18:54:23: Found 0 files.
+DEBUG  2025-01-15_18:55:16: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2025-01-15_18:55:16: load_verify_locations cafile='/usr/lib/ssl/cert.pem'
+DEBUG  2025-01-15_18:55:16: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2025-01-15_18:55:16: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x72f24f15a9d0>
+DEBUG  2025-01-15_18:55:16: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-15_18:55:16: send_request_headers.complete
+DEBUG  2025-01-15_18:55:16: send_request_body.started request=<Request [b'GET']>
+DEBUG  2025-01-15_18:55:16: send_request_body.complete
+DEBUG  2025-01-15_18:55:16: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-15_18:55:16: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'date', b'Wed, 15 Jan 2025 23:55:16 GMT')])
+INFO  2025-01-15_18:55:16: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2025-01-15_18:55:16: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2025-01-15_18:55:16: receive_response_body.complete
+DEBUG  2025-01-15_18:55:16: response_closed.started
+DEBUG  2025-01-15_18:55:16: response_closed.complete
+DEBUG  2025-01-15_18:55:16: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2025-01-15_19:02:37: Found 5968 files.
+INFO  2025-01-15_19:02:38: 0 new files out of 5968.
+DEBUG  2025-01-15_19:02:38: Found 11 to process.
+ERROR  2025-01-15_19:02:38: Unable to match IMDb ID for 
+ERROR  2025-01-15_19:02:56: Unable to match IMDb ID for Gravity Falls
+ERROR  2025-01-15_19:03:14: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2025-01-15_19:04:12: Found 2584 for analysis.
+DEBUG  2025-01-15_19:19:25: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2025-01-15_19:19:25: load_verify_locations cafile='/usr/lib/ssl/cert.pem'
+DEBUG  2025-01-15_19:19:25: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2025-01-15_19:19:25: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7c613c15bfd0>
+DEBUG  2025-01-15_19:19:25: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-15_19:19:25: send_request_headers.complete
+DEBUG  2025-01-15_19:19:25: send_request_body.started request=<Request [b'GET']>
+DEBUG  2025-01-15_19:19:25: send_request_body.complete
+DEBUG  2025-01-15_19:19:25: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-15_19:19:25: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'date', b'Thu, 16 Jan 2025 00:19:25 GMT')])
+INFO  2025-01-15_19:19:25: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2025-01-15_19:19:25: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2025-01-15_19:19:25: receive_response_body.complete
+DEBUG  2025-01-15_19:19:25: response_closed.started
+DEBUG  2025-01-15_19:19:25: response_closed.complete
+DEBUG  2025-01-15_19:19:25: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2025-01-15_19:21:39: Found 5968 files.
+INFO  2025-01-15_19:21:39: 0 new files out of 5968.
+DEBUG  2025-01-15_19:21:39: Found 11 to process.
+ERROR  2025-01-15_19:21:40: Unable to match IMDb ID for 
+ERROR  2025-01-15_19:21:49: Unable to match IMDb ID for Gravity Falls
+ERROR  2025-01-15_19:22:04: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2025-01-15_19:22:57: Found 2584 for analysis.
+DEBUG  2025-01-15_19:38:47: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2025-01-15_19:38:47: load_verify_locations cafile='/usr/lib/ssl/cert.pem'
+DEBUG  2025-01-15_19:38:47: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2025-01-15_19:38:47: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x77ad645b7010>
+DEBUG  2025-01-15_19:38:47: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-15_19:38:47: send_request_headers.complete
+DEBUG  2025-01-15_19:38:47: send_request_body.started request=<Request [b'GET']>
+DEBUG  2025-01-15_19:38:47: send_request_body.complete
+DEBUG  2025-01-15_19:38:47: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-15_19:38:47: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'date', b'Thu, 16 Jan 2025 00:38:46 GMT')])
+INFO  2025-01-15_19:38:47: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2025-01-15_19:38:47: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2025-01-15_19:38:47: receive_response_body.complete
+DEBUG  2025-01-15_19:38:47: response_closed.started
+DEBUG  2025-01-15_19:38:47: response_closed.complete
+DEBUG  2025-01-15_19:38:47: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2025-01-15_19:41:02: Found 5968 files.
+INFO  2025-01-15_19:41:02: 0 new files out of 5968.
+DEBUG  2025-01-15_19:41:02: Found 11 to process.
+ERROR  2025-01-15_19:41:03: Unable to match IMDb ID for 
+ERROR  2025-01-15_19:41:11: Unable to match IMDb ID for Gravity Falls
+ERROR  2025-01-15_19:41:26: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2025-01-15_19:42:22: Found 2584 for analysis.
+DEBUG  2025-01-15_19:52:51: Analyzed The King Of Queens (165581) and saved results to data/faces/the-king-of-queens_1998_165581/The.King.of.Queens.S03E18.Papa.Pill.1080p.BluRay.10bit.x265.HEVC.DTS2.0-PHOCiS.csv.
+DEBUG  2025-01-15_20:02:33: Analyzed The King Of Queens (165581) and saved results to data/faces/the-king-of-queens_1998_165581/The.King.of.Queens.S08E18.Sold-Y.Locks.1080p.BluRay.10bit.x265.HEVC.DTS2.0-PHOCiS.csv.
+DEBUG  2025-01-15_20:13:11: Analyzed The King Of Queens (165581) and saved results to data/faces/the-king-of-queens_1998_165581/The.King.of.Queens.S04E23.Eddie.Money.1080p.BluRay.10bit.x265.HEVC.DTS2.0-PHOCiS.csv.
+DEBUG  2025-01-15_20:16:02: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2025-01-15_20:16:02: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2025-01-15_20:16:02: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2025-01-15_20:16:02: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x721e647d89d0>
+DEBUG  2025-01-15_20:16:02: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-15_20:16:02: send_request_headers.complete
+DEBUG  2025-01-15_20:16:02: send_request_body.started request=<Request [b'GET']>
+DEBUG  2025-01-15_20:16:02: send_request_body.complete
+DEBUG  2025-01-15_20:16:02: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-15_20:16:02: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-type', b'application/json'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'date', b'Thu, 16 Jan 2025 01:16:02 GMT')])
+INFO  2025-01-15_20:16:02: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2025-01-15_20:16:02: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2025-01-15_20:16:02: receive_response_body.complete
+DEBUG  2025-01-15_20:16:02: response_closed.started
+DEBUG  2025-01-15_20:16:02: response_closed.complete
+DEBUG  2025-01-15_20:16:02: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2025-01-15_20:18:15: Found 5968 files.
+INFO  2025-01-15_20:18:15: 0 new files out of 5968.
+DEBUG  2025-01-15_20:18:15: Found 11 to process.
+ERROR  2025-01-15_20:18:16: Unable to match IMDb ID for 
+ERROR  2025-01-15_20:18:24: Unable to match IMDb ID for Gravity Falls
+ERROR  2025-01-15_20:18:41: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2025-01-15_20:19:30: Found 2581 for analysis.
+DEBUG  2025-01-15_20:29:01: Analyzed The King Of Queens (165581) and saved results to data/faces/the-king-of-queens_1998_165581/The.King.of.Queens.S04E24.Two.Thirty.1080p.BluRay.10bit.x265.HEVC.DTS2.0-PHOCiS.csv.
+DEBUG  2025-01-15_20:38:17: Analyzed The King Of Queens (165581) and saved results to data/faces/the-king-of-queens_1998_165581/The.King.of.Queens.S02E02.Female.Problems.1080p.BluRay.10bit.x265.HEVC.DTS2.0-PHOCiS.csv.
+DEBUG  2025-01-15_20:47:39: Analyzed The King Of Queens (165581) and saved results to data/faces/the-king-of-queens_1998_165581/The.King.of.Queens.S02E03.Assaulted.Nuts.1080p.BluRay.10bit.x265.HEVC.DTS2.0-PHOCiS.csv.
+DEBUG  2025-01-15_20:59:20: Analyzed The King Of Queens (165581) and saved results to data/faces/the-king-of-queens_1998_165581/The.King.of.Queens.S02E04.Parent.Trapped.1080p.BluRay.10bit.x265.HEVC.DTS2.0-PHOCiS.csv.
+DEBUG  2025-01-15_21:07:43: Analyzed The King Of Queens (165581) and saved results to data/faces/the-king-of-queens_1998_165581/The.King.of.Queens.S02E05.Tube.Stakes.1080p.BluRay.10bit.x265.HEVC.DTS2.0-PHOCiS.csv.
+DEBUG  2025-01-15_21:21:17: Analyzed The King Of Queens (165581) and saved results to data/faces/the-king-of-queens_1998_165581/The.King.of.Queens.S02E06.Doug.Out.1080p.BluRay.10bit.x265.HEVC.DTS2.0-PHOCiS.csv.
+DEBUG  2025-01-15_21:34:48: Analyzed Snowpiercer (6156584) and saved results to data/faces/snowpiercer_2020_6156584/Snowpiercer.S04E01.Snakes.in.the.Garden.1080p.REPACK.AMZN.WEB-DL.DDP5.1.H.264-NTb.csv.
+DEBUG  2025-01-15_21:47:07: Analyzed Snowpiercer (6156584) and saved results to data/faces/snowpiercer_2020_6156584/Snowpiercer.S04E02.The.Sting.of.Survival.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTb.csv.
+DEBUG  2025-01-15_22:00:27: Analyzed Snowpiercer (6156584) and saved results to data/faces/snowpiercer_2020_6156584/Snowpiercer.S04E03.Life.Source.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTb.csv.
+DEBUG  2025-01-15_22:12:17: Analyzed Snowpiercer (6156584) and saved results to data/faces/snowpiercer_2020_6156584/Snowpiercer.S04E04.North.Star.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTb.csv.
+DEBUG  2025-01-15_22:25:21: Analyzed Snowpiercer (6156584) and saved results to data/faces/snowpiercer_2020_6156584/Snowpiercer.S04E05.The.Engineer.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTb.csv.
+DEBUG  2025-01-15_22:37:56: Analyzed Snowpiercer (6156584) and saved results to data/faces/snowpiercer_2020_6156584/Snowpiercer.S04E06.Bell.the.Cat.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTb.csv.
+DEBUG  2025-01-15_22:50:41: Analyzed Snowpiercer (6156584) and saved results to data/faces/snowpiercer_2020_6156584/Snowpiercer.S04E07.A.Moth.to.a.Flame.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTb.csv.
+DEBUG  2025-01-15_23:04:28: Analyzed Snowpiercer (6156584) and saved results to data/faces/snowpiercer_2020_6156584/Snowpiercer.S04E08.By.Weeping.Cross.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTb.csv.
+DEBUG  2025-01-15_23:16:26: Analyzed Snowpiercer (6156584) and saved results to data/faces/snowpiercer_2020_6156584/Snowpiercer.S04E09.Dominant.Traits.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTb.csv.
+DEBUG  2025-01-15_23:29:19: Analyzed Snowpiercer (6156584) and saved results to data/faces/snowpiercer_2020_6156584/Snowpiercer.S04E10.Last.Stop.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTb.csv.
+DEBUG  2025-01-15_23:52:52: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S01E01.Celebration.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_00:16:13: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S01E02.Sht.Show.At.The.Fk.Factory.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_00:40:07: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S01E03.Lifeboats.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_01:06:58: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S01E04.Sad.Sack.Wasp.Trap.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_01:29:22: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S01E05.I.Went.to.Market.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_01:52:48: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S01E06.Which.Side.Are.You.On.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_02:15:35: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S01E07.Austerlitz.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_02:37:14: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S01E08.Prague.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_03:02:05: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S01E09.Pre-Nuptial.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_03:29:09: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S01E10.Nobody.Is.Ever.Missing.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_03:53:50: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S02E01.The.Summer.Palace.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_04:18:26: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S02E02.Vaulter.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_04:43:24: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S02E03.Hunting.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_05:09:10: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S02E04.Safe.Room.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_05:34:50: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S02E05.Tern.Haven.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_06:00:36: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S02E06.Argestes.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_06:23:23: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S02E07.Return.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_06:50:07: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S02E08.Dundee.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_07:21:18: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S02E09.DC.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_07:50:34: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S02E10.This.Is.Not.for.Tears.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_08:13:51: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S03E01.Secession.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_08:36:39: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S03E02.Mass.In.Time.Of.War.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_09:01:13: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S03E03.The.Disruption.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_09:23:33: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S03E04.Lion.In.The.Meadow.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_09:49:06: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S03E05.Retired.Janitors.Of.Idaho.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_10:14:45: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S03E06.What.It.Takes.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_10:38:59: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S03E07.Too.Much.Birthday.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_11:05:10: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S03E08.Chiantishire.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_11:32:39: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S03E09.All.The.Bells.Say.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_11:56:45: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S04E01.The.Munsters.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_12:21:04: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S04E02.Rehearsal.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_12:47:07: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S04E03.Connor's.Wedding.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_13:10:24: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S04E04.Honeymoon.States.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_13:34:54: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S04E05.Kill.List.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_13:59:36: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S04E06.Living+.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_14:25:42: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S04E07.Tailgate.Party.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_14:51:43: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S04E08.America.Decides.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_15:37:06: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S04E09.Church.And.State.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_16:12:36: Analyzed Succession (7660850) and saved results to data/faces/succession_2018_7660850/Succession.2018.S04E10.With.Open.Eyes.1080p.WebRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-16_16:22:50: Analyzed Superstore (4477976) and saved results to data/faces/superstore_2015_4477976/Superstore (2015) S01E01 Pilot (1080p AMZN Webrip x265 10bit EAC3 5.1 - TheSickle)[TAoE].csv.
+DEBUG  2025-01-16_16:32:47: Analyzed Superstore (4477976) and saved results to data/faces/superstore_2015_4477976/Superstore (2015) S01E02 Magazine Profile (1080p AMZN Webrip x265 10bit EAC3 5.1 - TheSickle)[TAoE].csv.
+DEBUG  2025-01-16_16:43:25: Analyzed Superstore (4477976) and saved results to data/faces/superstore_2015_4477976/Superstore (2015) S01E03 Shots and Salsa (1080p AMZN Webrip x265 10bit EAC3 5.1 - TheSickle)[TAoE].csv.
+DEBUG  2025-01-16_16:53:29: Analyzed Superstore (4477976) and saved results to data/faces/superstore_2015_4477976/Superstore (2015) S01E04 Mannequin (1080p AMZN Webrip x265 10bit EAC3 5.1 - TheSickle)[TAoE].csv.
+DEBUG  2025-01-16_16:53:34: close.started
+DEBUG  2025-01-16_16:53:34: close.complete

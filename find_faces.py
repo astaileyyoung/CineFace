@@ -55,15 +55,16 @@ def calc(df):
     return df
 
 
-def format_predictions(predictions, frame_num, encodings):
+def format_predictions(img, predictions, frame_num, encodings):
+    h, w = img.shape[:2]
     data = []
     for face_num, (_, prediction) in enumerate(predictions.items()):
-        x1, y1, x2, y2 = [int(x) for x in prediction['facial_area']]
-        datum = {'x1': x1, 'y1': y1, 'x2': x2, 'y2': y2}
+        x1, y1, x2, y2 = [x for x in prediction['facial_area']]
+        datum = {'x1': round(x1/w, 3), 'y1': round(y1/h, 3), 'x2': round(x2/w, 3), 'y2': round(y2/h, 3)}
         for k, v in prediction['landmarks'].items():
             x, y = v 
-            datum[f'{k}_x'] = int(x) 
-            datum[f'{k}_y'] = int(y)
+            datum[f'{k}_x'] = round(x/w, 3)
+            datum[f'{k}_y'] = round(y/h, 3)
         datum['confidence'] = round(prediction['score'], 3)
         datum['frame_num'] = frame_num
         datum['face_num'] = face_num
@@ -88,21 +89,21 @@ def encode(faces, frame):
     return encodings
 
 
-def detect_faces(src, frameskip=24):
+def detect_faces(src, frameskip=24, completion_threshold=0.95):
     cap = cv2.VideoCapture(src)
     framecount = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
     data = []
     for frame_num in tqdm(range(framecount), desc=Path(src).name, leave=False):
         ret, frame = cap.read()
         if not ret or frame is None:
-            if (framecount - frame_num) < frameskip:
+            if frame_num/framecount >= completion_threshold:
                 break 
             else:
                 return None
         elif frame_num % frameskip == 0:
             faces = RetinaFace.detect_faces(frame)
             encodings = encode(faces, frame)
-            d = format_predictions(faces, frame_num, encodings)
+            d = format_predictions(frame, faces, frame_num, encodings)
             data.extend(d)
     df = pd.DataFrame(data)
     df['img_width'] = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
@@ -141,6 +142,7 @@ def main(args):
             df['series_id'] = args.imdb_id
         if args.episode_id:
             df['episode_id'] = args.episode_id
+        df['filepath'] = str(file)
         df.to_csv(str(fp))
         logging.debug(f'Saved detected faces to {str(fp)}')
 
