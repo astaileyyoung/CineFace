@@ -107,10 +107,13 @@ def resize_image(image, max_size):
 
 
 def parse_path(path):
+    from pathlib import Path 
+
     import re 
     import cv2
     import numpy as np
 
+    path = Path(path)
     cap = cv2.VideoCapture(str(path))
     text = path.stem.replace(' ', '.')
     year = re.search(r'(19|20)[0-9]{2}(?=[^0-9])', '.'.join([path.parent.parts[-1], text]), flags=re.I)
@@ -459,3 +462,15 @@ def extract_face(box, frame):
     y2 = int(y2 * h)
     return frame[y1:y2, x1:x2]
 
+
+def tmdb_from_imdb(imdb_id):
+    from tmdbv3api import TMDb, Find
+
+    tmdb = TMDb()
+    tmdb.api_key = '64a6b6f9419ae4cba5b9a5f1c9e87401'
+
+    imdb_id = f'tt{str(imdb_id).zfill(7)}'    # The imdb_id is stored as an integer in the database. Convert to formatted string.
+    search = Find()
+    results = search.find_by_imdb_id(imdb_id)
+    tmdb_id = results['tv_results'][0]['id']  
+    return tmdb_id

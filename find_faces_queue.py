@@ -15,6 +15,7 @@ import cv2
 import dlib 
 import numpy as np
 import pandas as pd
+import face_recognition
 from tqdm import tqdm 
 from retinaface import RetinaFace
 
@@ -162,26 +163,30 @@ class VideoDetector(object):
             files = [x for x in Path('temp').iterdir()]
             [x.unlink() for x in files]
         
-        num_seconds = get_video_length(src)
-        segment_length = round(num_seconds/self.num_threads)
-        command = [
-            'ffmpeg',
-            '-i',
-            f'{src}',
-            '-c',
-            'copy',
-            '-map',
-            '0',
-            '-segment_time',
-            str(segment_length),
-            '-f',
-            'segment',
-            'temp/out%03d.mp4'
-        ]
-        p = sp.Popen(command, stdout=sp.DEVNULL, stderr=sp.DEVNULL)
-        out, err = p.communicate()
-        
-        files = list(sorted([x for x in Path('./temp').iterdir()], key=lambda x: x.name))
+        if self.num_threads > 1:
+            num_seconds = get_video_length(src)
+            segment_length = round(num_seconds/self.num_threads)
+            command = [
+                'ffmpeg',
+                '-i',
+                f'{src}',
+                '-c',
+                'copy',
+                '-map',
+                '0',
+                '-segment_time',
+                str(segment_length),
+                '-f',
+                'segment',
+                'temp/out%03d.mp4'
+            ]
+            p = sp.Popen(command, stdout=sp.DEVNULL, stderr=sp.DEVNULL)
+            out, err = p.communicate()
+            
+            files = list(sorted([x for x in Path('./temp').iterdir()], key=lambda x: x.name))
+        else:
+            files = [src]
+
         prev = 0
         for file in files:
             video = Video(file, prev)
@@ -229,10 +234,14 @@ class VideoDetector(object):
                 frame, frame_num = (frame.image, frame.frame_num)
                 face = extract_face((f['x1'], f['y1'], f['x2'], f['y2']), frame)
                 img = self.process_image(face)
-                encoding = self.encoder.compute_face_descriptor(img)
+                # encoding = self.encoder.compute_face_descriptor(img)
+                rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+                h, w = rgb.shape[:2]
+                encoding = face_recognition.face_encodings(rgb, known_face_locations=[[0, w, h, 0]])
+                encoding_string = np.array2string(encoding[0], separator=',').replace('\n', '').replace(' ', '')
                 datum = {'frame_num': f['frame_num'],
                         'face_num': f['face_num'],
-                        'encoding': encoding}
+                        'encoding': encoding_string}
                 self.encodings.append(datum)
 
     def detect_faces(self, src):

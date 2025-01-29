@@ -81,8 +81,8 @@ class Analyzer(object):
             self.to_sql()
         return self
     
-    def _analyze_queue(self, data):
-        vd = VideoDetector(num_threads=8, max_size=720)
+    def _analyze_queue(self, data, num_threads=8, batch_size=4):
+        vd = VideoDetector(num_threads=num_threads, max_size=720, batch_size=batch_size)
         df = vd.detect_faces(data['filepath'])
         df['series_id'] = data['series_id']
         df['episode_id'] = data['episode_id']
@@ -90,7 +90,6 @@ class Analyzer(object):
         df['episode'] = data['episode']
         df['filename'] = data['filename']
         df['filepath'] = data['filepath']
-        df['encoding'] = data['encoding']
         df = calc(df)
         self.end = datetime.now()
         self.duration = round((self.end - self.start).total_seconds())
@@ -144,7 +143,7 @@ class Analyzer(object):
             df = self._analyze_queue(data)
             return df
         except:
-            df = self._analyze_regular(data)
+            df = self._analyze_queue(data, num_threads=1, batch_size=1)
             return df
 
     def to_sql(self):
@@ -335,18 +334,7 @@ def process_queue(engine,
         
         logging.debug(f'Found {queue.shape[0]} for analysis.')
         for _, row in tqdm(queue.iterrows(), total=queue.shape[0]):
-            try:
-                a = Analyzer(row, dst, conn).analyze()
-            except KeyError:
-                conn.execute(db.text(f"""
-                                    UPDATE queue
-                                    SET to_analyze = -1
-                                    WHERE series_id = {row["series_id"]} AND
-                                        season = {row["season"]} AND
-                                        episode = {row["episode"]}
-                                    """))
-                conn.commit()
-                continue 
+            a = Analyzer(row, dst, conn).analyze()
             if a.success:
                 conn.execute(db.text(f"""
                                     UPDATE queue
@@ -362,6 +350,16 @@ def process_queue(engine,
                 #     logging.info(f'Uploaded to Github from {a.fp}')
                 # else:
                 #     logging.error(f'Failed to upload file to GitHub.\n\n{e}')
+            else:
+                conn.execute(db.text(f"""
+                                    UPDATE queue
+                                    SET to_analyze = -1
+                                    WHERE series_id = {row["series_id"]} AND
+                                        season = {row["season"]} AND
+                                        episode = {row["episode"]}
+                                    """))
+                conn.commit()
+                continue 
 
                 
 

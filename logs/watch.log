@@ -17456,3 +17456,343 @@ DEBUG  2025-01-16_16:43:25: Analyzed Superstore (4477976) and saved results to d
 DEBUG  2025-01-16_16:53:29: Analyzed Superstore (4477976) and saved results to data/faces/superstore_2015_4477976/Superstore (2015) S01E04 Mannequin (1080p AMZN Webrip x265 10bit EAC3 5.1 - TheSickle)[TAoE].csv.
 DEBUG  2025-01-16_16:53:34: close.started
 DEBUG  2025-01-16_16:53:34: close.complete
+DEBUG  2025-01-17_11:56:02: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2025-01-17_11:56:02: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2025-01-17_11:56:02: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2025-01-17_11:56:02: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x73d8112cdf50>
+DEBUG  2025-01-17_11:56:02: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-17_11:56:02: send_request_headers.complete
+DEBUG  2025-01-17_11:56:02: send_request_body.started request=<Request [b'GET']>
+DEBUG  2025-01-17_11:56:02: send_request_body.complete
+DEBUG  2025-01-17_11:56:02: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-17_11:56:02: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'date', b'Fri, 17 Jan 2025 16:56:01 GMT')])
+INFO  2025-01-17_11:56:02: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2025-01-17_11:56:02: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2025-01-17_11:56:02: receive_response_body.complete
+DEBUG  2025-01-17_11:56:02: response_closed.started
+DEBUG  2025-01-17_11:56:02: response_closed.complete
+DEBUG  2025-01-17_11:56:02: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2025-01-17_11:58:15: close.started
+DEBUG  2025-01-17_11:58:15: close.complete
+DEBUG  2025-01-17_17:39:14: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2025-01-17_17:39:14: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2025-01-17_17:39:14: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2025-01-17_17:39:14: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x76bba1be1f50>
+DEBUG  2025-01-17_17:39:14: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-17_17:39:14: send_request_headers.complete
+DEBUG  2025-01-17_17:39:14: send_request_body.started request=<Request [b'GET']>
+DEBUG  2025-01-17_17:39:14: send_request_body.complete
+DEBUG  2025-01-17_17:39:14: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-17_17:39:14: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'date', b'Fri, 17 Jan 2025 22:39:13 GMT')])
+INFO  2025-01-17_17:39:14: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2025-01-17_17:39:14: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2025-01-17_17:39:14: receive_response_body.complete
+DEBUG  2025-01-17_17:39:14: response_closed.started
+DEBUG  2025-01-17_17:39:14: response_closed.complete
+DEBUG  2025-01-17_17:39:14: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2025-01-17_17:48:04: Found 6176 files.
+INFO  2025-01-17_17:48:04: 208 new files out of 6176.
+DEBUG  2025-01-17_17:48:05: Found 17 to process.
+ERROR  2025-01-17_17:48:05: Unable to match IMDb ID for 
+ERROR  2025-01-17_17:48:23: Unable to match IMDb ID for Gravity Falls
+ERROR  2025-01-17_17:48:53: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2025-01-17_17:50:22: Found 0 for analysis.
+DEBUG  2025-01-17_17:50:23: close.started
+DEBUG  2025-01-17_17:50:23: close.complete
+DEBUG  2025-01-17_17:53:00: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2025-01-17_17:53:00: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2025-01-17_17:53:00: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2025-01-17_17:53:00: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x719071a52d90>
+DEBUG  2025-01-17_17:53:00: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-17_17:53:00: send_request_headers.complete
+DEBUG  2025-01-17_17:53:00: send_request_body.started request=<Request [b'GET']>
+DEBUG  2025-01-17_17:53:00: send_request_body.complete
+DEBUG  2025-01-17_17:53:00: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-17_17:53:00: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'date', b'Fri, 17 Jan 2025 22:52:59 GMT')])
+INFO  2025-01-17_17:53:00: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2025-01-17_17:53:00: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2025-01-17_17:53:00: receive_response_body.complete
+DEBUG  2025-01-17_17:53:00: response_closed.started
+DEBUG  2025-01-17_17:53:00: response_closed.complete
+DEBUG  2025-01-17_17:53:00: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2025-01-17_17:53:11: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2025-01-17_17:53:11: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2025-01-17_17:53:19: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2025-01-17_17:53:19: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x75068ea56450>
+DEBUG  2025-01-17_17:53:19: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-17_17:53:19: send_request_headers.complete
+DEBUG  2025-01-17_17:53:19: send_request_body.started request=<Request [b'GET']>
+DEBUG  2025-01-17_17:53:19: send_request_body.complete
+DEBUG  2025-01-17_17:53:19: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-17_17:53:19: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'date', b'Fri, 17 Jan 2025 22:53:18 GMT')])
+INFO  2025-01-17_17:53:19: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2025-01-17_17:53:19: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2025-01-17_17:53:19: receive_response_body.complete
+DEBUG  2025-01-17_17:53:19: response_closed.started
+DEBUG  2025-01-17_17:53:19: response_closed.complete
+DEBUG  2025-01-17_17:53:22: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2025-01-17_17:55:32: Found 6176 files.
+INFO  2025-01-17_17:55:32: 0 new files out of 6176.
+DEBUG  2025-01-17_17:55:32: Found 12 to process.
+ERROR  2025-01-17_17:55:33: Unable to match IMDb ID for 
+ERROR  2025-01-17_17:55:43: Unable to match IMDb ID for Gravity Falls
+ERROR  2025-01-17_17:56:06: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2025-01-17_18:12:59: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2025-01-17_18:12:59: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2025-01-17_18:12:59: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2025-01-17_18:12:59: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x741b66207510>
+DEBUG  2025-01-17_18:12:59: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-17_18:12:59: send_request_headers.complete
+DEBUG  2025-01-17_18:12:59: send_request_body.started request=<Request [b'GET']>
+DEBUG  2025-01-17_18:12:59: send_request_body.complete
+DEBUG  2025-01-17_18:12:59: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-17_18:12:59: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'date', b'Fri, 17 Jan 2025 23:12:59 GMT')])
+INFO  2025-01-17_18:12:59: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2025-01-17_18:12:59: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2025-01-17_18:12:59: receive_response_body.complete
+DEBUG  2025-01-17_18:12:59: response_closed.started
+DEBUG  2025-01-17_18:12:59: response_closed.complete
+DEBUG  2025-01-17_18:12:59: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2025-01-17_18:15:08: Found 6176 files.
+INFO  2025-01-17_18:15:08: 0 new files out of 6176.
+DEBUG  2025-01-17_18:15:08: Found 11 to process.
+ERROR  2025-01-17_18:15:09: Unable to match IMDb ID for 
+ERROR  2025-01-17_18:15:23: Unable to match IMDb ID for Gravity Falls
+ERROR  2025-01-17_18:15:39: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2025-01-17_18:16:51: Found 176 for analysis.
+DEBUG  2025-01-18_08:51:57: close.started
+DEBUG  2025-01-18_08:51:57: close.complete
+DEBUG  2025-01-18_14:09:42: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2025-01-18_14:09:42: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2025-01-18_14:09:42: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2025-01-18_14:09:42: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f5ec201fc10>
+DEBUG  2025-01-18_14:09:42: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-18_14:09:42: send_request_headers.complete
+DEBUG  2025-01-18_14:09:42: send_request_body.started request=<Request [b'GET']>
+DEBUG  2025-01-18_14:09:42: send_request_body.complete
+DEBUG  2025-01-18_14:09:42: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-18_14:09:42: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'date', b'Sat, 18 Jan 2025 19:09:41 GMT')])
+INFO  2025-01-18_14:09:42: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2025-01-18_14:09:42: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2025-01-18_14:09:42: receive_response_body.complete
+DEBUG  2025-01-18_14:09:42: response_closed.started
+DEBUG  2025-01-18_14:09:42: response_closed.complete
+DEBUG  2025-01-18_14:09:42: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2025-01-18_14:09:42: Found 0 files.
+DEBUG  2025-01-18_14:09:42: close.started
+DEBUG  2025-01-18_14:09:42: close.complete
+DEBUG  2025-01-18_14:10:06: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2025-01-18_14:10:06: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2025-01-18_14:10:06: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2025-01-18_14:10:06: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x79de0a9cda10>
+DEBUG  2025-01-18_14:10:06: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-18_14:10:06: send_request_headers.complete
+DEBUG  2025-01-18_14:10:06: send_request_body.started request=<Request [b'GET']>
+DEBUG  2025-01-18_14:10:06: send_request_body.complete
+DEBUG  2025-01-18_14:10:06: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-18_14:10:06: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'date', b'Sat, 18 Jan 2025 19:10:06 GMT')])
+INFO  2025-01-18_14:10:06: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2025-01-18_14:10:06: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2025-01-18_14:10:06: receive_response_body.complete
+DEBUG  2025-01-18_14:10:06: response_closed.started
+DEBUG  2025-01-18_14:10:06: response_closed.complete
+DEBUG  2025-01-18_14:10:06: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2025-01-18_14:18:44: Found 6185 files.
+INFO  2025-01-18_14:18:44: 9 new files out of 6185.
+DEBUG  2025-01-18_14:18:44: Found 16 to process.
+ERROR  2025-01-18_14:18:45: Unable to match IMDb ID for 
+ERROR  2025-01-18_14:18:58: Unable to match IMDb ID for Gravity Falls
+ERROR  2025-01-18_14:19:23: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2025-01-18_14:21:00: Found 123 for analysis.
+DEBUG  2025-01-18_15:04:15: close.started
+DEBUG  2025-01-18_15:04:15: close.complete
+DEBUG  2025-01-18_15:05:33: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2025-01-18_15:05:33: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2025-01-18_15:05:33: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2025-01-18_15:05:33: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7eb82e662850>
+DEBUG  2025-01-18_15:05:33: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-18_15:05:33: send_request_headers.complete
+DEBUG  2025-01-18_15:05:33: send_request_body.started request=<Request [b'GET']>
+DEBUG  2025-01-18_15:05:33: send_request_body.complete
+DEBUG  2025-01-18_15:05:33: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-18_15:05:33: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-type', b'application/json'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 18 Jan 2025 20:05:32 GMT')])
+INFO  2025-01-18_15:05:33: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2025-01-18_15:05:33: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2025-01-18_15:05:33: receive_response_body.complete
+DEBUG  2025-01-18_15:05:33: response_closed.started
+DEBUG  2025-01-18_15:05:33: response_closed.complete
+DEBUG  2025-01-18_15:05:33: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2025-01-18_15:07:54: Found 6185 files.
+INFO  2025-01-18_15:07:54: 0 new files out of 6185.
+DEBUG  2025-01-18_15:07:54: Found 12 to process.
+ERROR  2025-01-18_15:07:55: Unable to match IMDb ID for 
+ERROR  2025-01-18_15:08:07: Unable to match IMDb ID for Gravity Falls
+ERROR  2025-01-18_15:08:24: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2025-01-18_15:10:02: Found 121 for analysis.
+DEBUG  2025-01-18_15:28:11: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2025-01-18_15:28:11: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2025-01-18_15:28:11: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2025-01-18_15:28:11: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x718258aeb7d0>
+DEBUG  2025-01-18_15:28:11: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-18_15:28:11: send_request_headers.complete
+DEBUG  2025-01-18_15:28:11: send_request_body.started request=<Request [b'GET']>
+DEBUG  2025-01-18_15:28:11: send_request_body.complete
+DEBUG  2025-01-18_15:28:11: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-18_15:28:11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'date', b'Sat, 18 Jan 2025 20:28:11 GMT')])
+INFO  2025-01-18_15:28:11: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2025-01-18_15:28:11: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2025-01-18_15:28:11: receive_response_body.complete
+DEBUG  2025-01-18_15:28:11: response_closed.started
+DEBUG  2025-01-18_15:28:11: response_closed.complete
+DEBUG  2025-01-18_15:28:11: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2025-01-18_15:30:34: Found 6185 files.
+INFO  2025-01-18_15:30:34: 0 new files out of 6185.
+DEBUG  2025-01-18_15:30:34: Found 12 to process.
+ERROR  2025-01-18_15:30:34: Unable to match IMDb ID for 
+ERROR  2025-01-18_15:30:48: Unable to match IMDb ID for Gravity Falls
+ERROR  2025-01-18_15:31:04: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2025-01-18_15:32:17: Found 120 for analysis.
+DEBUG  2025-01-18_16:36:29: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2025-01-18_16:36:29: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2025-01-18_16:36:29: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2025-01-18_16:36:29: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x725bb51632d0>
+DEBUG  2025-01-18_16:36:29: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-18_16:36:29: send_request_headers.complete
+DEBUG  2025-01-18_16:36:29: send_request_body.started request=<Request [b'GET']>
+DEBUG  2025-01-18_16:36:29: send_request_body.complete
+DEBUG  2025-01-18_16:36:29: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-18_16:36:29: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-type', b'application/json'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 18 Jan 2025 21:36:29 GMT')])
+INFO  2025-01-18_16:36:29: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2025-01-18_16:36:29: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2025-01-18_16:36:29: receive_response_body.complete
+DEBUG  2025-01-18_16:36:29: response_closed.started
+DEBUG  2025-01-18_16:36:29: response_closed.complete
+DEBUG  2025-01-18_16:36:29: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2025-01-18_16:38:09: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2025-01-18_16:38:09: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2025-01-18_16:38:09: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2025-01-18_16:38:09: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7e741385ac90>
+DEBUG  2025-01-18_16:38:09: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-18_16:38:09: send_request_headers.complete
+DEBUG  2025-01-18_16:38:09: send_request_body.started request=<Request [b'GET']>
+DEBUG  2025-01-18_16:38:09: send_request_body.complete
+DEBUG  2025-01-18_16:38:09: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-18_16:38:09: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-encoding', b'gzip'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-type', b'application/json'), (b'date', b'Sat, 18 Jan 2025 21:38:09 GMT')])
+INFO  2025-01-18_16:38:09: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2025-01-18_16:38:09: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2025-01-18_16:38:09: receive_response_body.complete
+DEBUG  2025-01-18_16:38:09: response_closed.started
+DEBUG  2025-01-18_16:38:09: response_closed.complete
+DEBUG  2025-01-18_16:38:09: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2025-01-18_16:40:29: Found 6185 files.
+INFO  2025-01-18_16:40:29: 0 new files out of 6185.
+DEBUG  2025-01-18_16:40:29: Found 12 to process.
+ERROR  2025-01-18_16:40:30: Unable to match IMDb ID for 
+ERROR  2025-01-18_16:40:44: Unable to match IMDb ID for Gravity Falls
+ERROR  2025-01-18_16:41:03: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2025-01-18_16:42:17: Found 120 for analysis.
+DEBUG  2025-01-18_16:43:58: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2025-01-18_16:43:58: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2025-01-18_16:43:58: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2025-01-18_16:43:58: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7d4fdf991b50>
+DEBUG  2025-01-18_16:43:58: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-18_16:43:58: send_request_headers.complete
+DEBUG  2025-01-18_16:43:58: send_request_body.started request=<Request [b'GET']>
+DEBUG  2025-01-18_16:43:58: send_request_body.complete
+DEBUG  2025-01-18_16:43:58: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-18_16:43:58: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 18 Jan 2025 21:43:58 GMT')])
+INFO  2025-01-18_16:43:58: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2025-01-18_16:43:58: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2025-01-18_16:43:58: receive_response_body.complete
+DEBUG  2025-01-18_16:43:58: response_closed.started
+DEBUG  2025-01-18_16:43:58: response_closed.complete
+DEBUG  2025-01-18_16:43:58: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2025-01-18_16:46:24: Found 6185 files.
+INFO  2025-01-18_16:46:24: 0 new files out of 6185.
+DEBUG  2025-01-18_16:46:24: Found 12 to process.
+ERROR  2025-01-18_16:46:25: Unable to match IMDb ID for 
+ERROR  2025-01-18_16:46:38: Unable to match IMDb ID for Gravity Falls
+ERROR  2025-01-18_16:46:51: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2025-01-18_16:48:04: Found 120 for analysis.
+DEBUG  2025-01-18_17:32:09: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2025-01-18_17:32:09: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2025-01-18_17:32:09: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2025-01-18_17:32:09: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x779088041ad0>
+DEBUG  2025-01-18_17:32:09: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-18_17:32:09: send_request_headers.complete
+DEBUG  2025-01-18_17:32:09: send_request_body.started request=<Request [b'GET']>
+DEBUG  2025-01-18_17:32:09: send_request_body.complete
+DEBUG  2025-01-18_17:32:09: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-18_17:32:09: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-type', b'application/json'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 18 Jan 2025 22:32:08 GMT')])
+INFO  2025-01-18_17:32:09: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2025-01-18_17:32:09: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2025-01-18_17:32:09: receive_response_body.complete
+DEBUG  2025-01-18_17:32:09: response_closed.started
+DEBUG  2025-01-18_17:32:09: response_closed.complete
+DEBUG  2025-01-18_17:32:09: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2025-01-18_17:34:22: Found 6185 files.
+INFO  2025-01-18_17:34:22: 0 new files out of 6185.
+DEBUG  2025-01-18_17:34:22: Found 12 to process.
+ERROR  2025-01-18_17:34:22: Unable to match IMDb ID for 
+ERROR  2025-01-18_17:34:37: Unable to match IMDb ID for Gravity Falls
+ERROR  2025-01-18_17:34:51: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2025-01-18_17:36:05: Found 176 for analysis.
+DEBUG  2025-01-18_17:47:14: close.started
+DEBUG  2025-01-18_17:47:14: close.complete
+DEBUG  2025-01-18_17:47:39: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2025-01-18_17:47:39: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2025-01-18_17:47:39: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2025-01-18_17:47:39: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7c47fc03f810>
+DEBUG  2025-01-18_17:47:39: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-18_17:47:39: send_request_headers.complete
+DEBUG  2025-01-18_17:47:39: send_request_body.started request=<Request [b'GET']>
+DEBUG  2025-01-18_17:47:39: send_request_body.complete
+DEBUG  2025-01-18_17:47:39: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-18_17:47:39: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'date', b'Sat, 18 Jan 2025 22:47:39 GMT')])
+INFO  2025-01-18_17:47:39: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2025-01-18_17:47:39: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2025-01-18_17:47:39: receive_response_body.complete
+DEBUG  2025-01-18_17:47:39: response_closed.started
+DEBUG  2025-01-18_17:47:39: response_closed.complete
+DEBUG  2025-01-18_17:47:39: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2025-01-18_17:49:54: Found 6185 files.
+INFO  2025-01-18_17:49:54: 0 new files out of 6185.
+DEBUG  2025-01-18_17:49:54: Found 12 to process.
+ERROR  2025-01-18_17:49:55: Unable to match IMDb ID for 
+ERROR  2025-01-18_17:50:09: Unable to match IMDb ID for Gravity Falls
+ERROR  2025-01-18_17:50:26: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2025-01-18_17:51:32: Found 176 for analysis.
+DEBUG  2025-01-18_18:02:33: Analyzed House Md (412142) and saved results to data/faces/house-md_2004_412142/House.MD.2004.S01E01.Everybody.Lies.1080p.BluRayRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-18_18:13:39: Analyzed House Md (412142) and saved results to data/faces/house-md_2004_412142/House.MD.2004.S01E02.Paternity.1080p.BluRayRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-18_18:25:23: Analyzed House Md (412142) and saved results to data/faces/house-md_2004_412142/House.MD.2004.S01E03.Occams.Razor.1080p.BluRayRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-18_18:37:04: Analyzed House Md (412142) and saved results to data/faces/house-md_2004_412142/House.MD.2004.S01E04.Maternity.1080p.BluRayRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-18_18:48:29: Analyzed House Md (412142) and saved results to data/faces/house-md_2004_412142/House.MD.2004.S01E05.Damned.If.You.Do.1080p.BluRayRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-18_19:00:26: Analyzed House Md (412142) and saved results to data/faces/house-md_2004_412142/House.MD.2004.S01E06.The.Socratic.Method.1080p.BluRayRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-18_19:04:13: close.started
+DEBUG  2025-01-18_19:04:13: close.complete
+DEBUG  2025-01-18_19:04:35: load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG  2025-01-18_19:04:35: load_verify_locations cafile='/home/amos/anaconda3/envs/face/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG  2025-01-18_19:04:35: connect_tcp.started host='192.168.0.131' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG  2025-01-18_19:04:35: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7fabe4d2d7d0>
+DEBUG  2025-01-18_19:04:35: send_request_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-18_19:04:35: send_request_headers.complete
+DEBUG  2025-01-18_19:04:35: send_request_body.started request=<Request [b'GET']>
+DEBUG  2025-01-18_19:04:35: send_request_body.complete
+DEBUG  2025-01-18_19:04:35: receive_response_headers.started request=<Request [b'GET']>
+DEBUG  2025-01-18_19:04:35: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'date', b'Sun, 19 Jan 2025 00:04:34 GMT')])
+INFO  2025-01-18_19:04:35: HTTP Request: GET http://192.168.0.131:6333/collections "HTTP/1.1 200 OK"
+DEBUG  2025-01-18_19:04:35: receive_response_body.started request=<Request [b'GET']>
+DEBUG  2025-01-18_19:04:35: receive_response_body.complete
+DEBUG  2025-01-18_19:04:35: response_closed.started
+DEBUG  2025-01-18_19:04:35: response_closed.complete
+DEBUG  2025-01-18_19:04:35: Connected to mysql+pymysql://amos:M0$hicat@192.168.0.131:3306/CineFace
+DEBUG  2025-01-18_19:06:43: Found 6185 files.
+INFO  2025-01-18_19:06:43: 0 new files out of 6185.
+DEBUG  2025-01-18_19:06:43: Found 12 to process.
+ERROR  2025-01-18_19:06:44: Unable to match IMDb ID for 
+ERROR  2025-01-18_19:06:57: Unable to match IMDb ID for Gravity Falls
+ERROR  2025-01-18_19:07:16: Unable to match IMDb ID for Sherlock Holmes
+DEBUG  2025-01-18_19:08:26: Found 170 for analysis.
+DEBUG  2025-01-18_19:20:10: Analyzed House Md (412142) and saved results to data/faces/house-md_2004_412142/House.MD.2004.S01E07.Fidelity.1080p.BluRayRip.x265.10Bit.AC3.5.1-JATT.csv.
+DEBUG  2025-01-18_19:21:38: close.started
+DEBUG  2025-01-18_19:21:38: close.complete
