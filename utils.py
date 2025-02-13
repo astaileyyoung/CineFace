@@ -95,41 +95,15 @@ def extract_face(data, frame):
     return face
 
 
-def resize_image(image, max_size):
+def resize_image(image, max_size=720):
     import cv2 
 
     h, w = image.shape[:2]
-    if w > 1080:
-        scale = 720/w 
+    if w > max_size:
+        scale = max_size/w 
         hh = int(scale * h)
-        image = cv2.resize(image, (720, hh))
+        image = cv2.resize(image, (max_size, hh))
     return image
-
-
-def parse_path(path):
-    from pathlib import Path 
-
-    import re 
-    import cv2
-    import numpy as np
-
-    path = Path(path)
-    cap = cv2.VideoCapture(str(path))
-    text = path.stem.replace(' ', '.')
-    year = re.search(r'(19|20)[0-9]{2}(?=[^0-9])', '.'.join([path.parent.parts[-1], text]), flags=re.I)
-    season = re.search(r'(?<=S)[0-9]{2}(?=E)', text, flags=re.I)
-    episode = re.search('(?<=E)[0-9]{2}', text, flags=re.I)
-    title = re.search(r'[a-zA-Z\&\'\.-]*', text, flags=re.I)
-    datum = {'title': title.group().strip().title().rstrip(' S').replace('.', ' ').strip() if title else np.nan,
-             'season': int(season.group()) if season is not None else np.nan,
-             'episode': int(episode.group()) if episode is not None else np.nan,
-             'year': int(year.group()) if year is not None else np.nan,
-             'filename': path.name,
-             'filepath': str(path),
-             'height': cap.get(cv2.CAP_PROP_FRAME_HEIGHT),
-             'width': cap.get(cv2.CAP_PROP_FRAME_WIDTH),
-             'episode_id': None}
-    return datum
 
 
 def parse_paths(paths):

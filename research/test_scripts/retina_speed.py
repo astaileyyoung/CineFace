@@ -29,7 +29,7 @@ def format_predictions(predictions, frame_num):
 def main(args):
     t = time.time()
     # src = '/home/amos/datasets/test_videos/shining_bat.mp4'
-    cap = cv2.VideoCapture(args.src, cv2.CAP_DSHOW)
+    cap = cv2.VideoCapture(args.src)
     framecount = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
     for frame_num in tqdm(range(framecount), leave=False):
         ret, frame = cap.read()

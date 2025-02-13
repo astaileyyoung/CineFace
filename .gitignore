@@ -15,4 +15,6 @@ research/data/retina_quant
 research/data/retina.zip
 research/data/retina_converted
 temp
+.vscode
+logs
 
