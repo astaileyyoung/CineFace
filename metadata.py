@@ -230,7 +230,7 @@ def format_imdb_data(data):
     fields = list(data.keys())
     datum = {'imdb_id': int(data['imdbID']),
              'title': data['title'] if 'title' in fields else np.nan,
-             'localized_title': data['localized_title'] if 'localized_title' in fields else np.nan,
+             'localized_title': data['localized title'] if 'localized title' in fields else np.nan,
              'year': data['year'] if 'year' in fields else np.nan,
              'genres': ', '.join(data['genres']) if 'genres' in fields else np.nan,
              'runtime': max([int(x) for x in data['runtimes']]) if 'runtimes' in fields else np.nan,
