@@ -1,29 +1,47 @@
-import re
 import logging 
-import traceback
 from pathlib import Path
 from datetime import datetime  
 from argparse import ArgumentParser 
 
 import cv2
-import pymysql
-import requests
 import numpy as np
 import pandas as pd
 import sqlalchemy as db 
 from tqdm import tqdm 
 from imdb import Cinemagoer, IMDbError
-from github import Github, Auth, GithubException
 
 from qdrant_client import QdrantClient 
-from qdrant_client.models import Distance, VectorParams, PointStruct
-from qdrant_client.http import models
 
 from pipeline import pipeline
-from metadata import parse_path
-from utils import (
-    create_table, get_files, get_id, get_id_sparse
-)
+from metadata import parse_path, get_id, get_id_sparse
+
+
+def create_table(fp,
+                 conn):
+    import sqlalchemy as db
+    from pathlib import Path
+
+    with open(Path(__file__).parent.joinpath(fp).absolute().resolve(), 'r') as f:
+        text = f.read()
+    text = text.replace('\t', ' ')
+    text = text.replace('\n', '')
+    statement = db.text(text)
+    conn.execute(statement)
+    conn.commit()
+
+
+def get_files(src,
+              extensions=('.mp4', '.m4v', '.mkv', '.avi')):
+    import os 
+    from pathlib import Path 
+
+    paths = []
+    for root, dirs, files in os.walk(src):
+        for name in files:
+            path = Path(root).joinpath(name)
+            if path.suffix in extensions:
+                paths.append(path)
+    return paths
 
 
 def update_existing(d, engine):

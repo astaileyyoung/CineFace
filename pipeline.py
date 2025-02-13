@@ -13,8 +13,20 @@ from imdb import Cinemagoer, IMDbError
 
 from find_faces import find_faces
 from match_faces import match_faces
-from metadata import parse_path
-from utils import get_id, get_id_sparse, gather_files
+from metadata import parse_path, get_id, get_id_sparse
+
+
+def gather_files(d,
+                 ext=None):
+    import os 
+
+    paths = []
+    for root, dirs, files in os.walk(d):
+        for name in files:
+            path = Path(root).joinpath(name)
+            paths.append(path)
+    paths = paths if ext is None else [x for x in paths if x.suffix in ext]
+    return list(sorted(paths))
 
 
 def get_metadata(df):
