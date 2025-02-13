@@ -1,4 +1,5 @@
 import re
+import logging
 from functools import partial 
 
 import cv2
@@ -7,7 +8,11 @@ import numpy as np
 import pandas as pd
 from pathlib import Path
 from imdb import Cinemagoer
-from tmdbv3api import TMDb, Find
+from tmdbv3api import TMDb, TV, Find, Season, Episode, exceptions, Person
+
+
+tmdb = TMDb()
+tmdb.api_key = '64a6b6f9419ae4cba5b9a5f1c9e87401'
 
 
 def parse_path(path, get_cap=False):
@@ -269,3 +274,31 @@ def tmdb_from_imdb(imdb_id):
     results = search.find_by_imdb_id(imdb_id)
     tmdb_id = results['tv_results'][0]['id']  
     return tmdb_id
+
+
+def cast_from_season(imdb_id, season_num):
+    tmdb_id = tmdb_from_imdb(imdb_id)
+    season = Season()
+    s = season.details(tmdb_id, season_num)
+    cast = [{k: v for k,v in x.items() if k in ['name', 'id']} for x in s['credits']['cast']]
+    return cast
+
+
+def cast_from_episode(imdb_id, season_num, episode_num):
+    tmdb_id = tmdb_from_imdb(imdb_id)
+    episode = Episode()
+    try:
+        e = episode.details(tmdb_id, season_num, episode_num)
+        cast = [{k: v for k,v in x.items() if k in ['name', 'id']} for x in e['guest_stars']]
+        return cast
+    except exceptions.TMDbException:
+        logging.error(f'Episode not found for imdb_id = {imdb_id}, season = {season_num}, episode = {episode_num}. Unable to match faces.')
+        return []
+
+
+def get_cast(imdb_id, season_num, episode_num=None):
+    cast = cast_from_season(imdb_id, season_num)
+    if episode_num:
+        guest_stars = cast_from_episode(imdb_id, season_num, episode_num)
+        cast.extend(guest_stars)
+    return cast

@@ -12,8 +12,6 @@ from argparse import ArgumentParser
 import cv2
 import numpy as np
 import pandas as pd
-import sqlalchemy as db
-from tqdm import tqdm
 from deepface.modules import preprocessing
 from deepface import DeepFace
 from deepface.models.facial_recognition.Facenet import load_facenet128d_model
@@ -21,9 +19,9 @@ from deepface.models.facial_recognition.Facenet import load_facenet128d_model
 from qdrant_client import QdrantClient 
 from qdrant_client.models import Distance, VectorParams, PointStruct, QueryRequest, Filter, FieldCondition, MatchValue
 
-from tmdbv3api import TMDb, TV, Find, Season, Episode, exceptions, Person
+from tmdbv3api import TMDb, Person
 
-from utils import tmdb_from_imdb
+from metadata import get_cast 
 
 
 tmdb = TMDb()
@@ -36,34 +34,6 @@ if 'Headshots' not in collections:
                             vectors_config=VectorParams(size=128, distance=Distance.COSINE))
 
 model = load_facenet128d_model()
-
-
-def cast_from_season(imdb_id, season_num):
-    tmdb_id = tmdb_from_imdb(imdb_id)
-    season = Season()
-    s = season.details(tmdb_id, season_num)
-    cast = [{k: v for k,v in x.items() if k in ['name', 'id']} for x in s['credits']['cast']]
-    return cast
-
-
-def cast_from_episode(imdb_id, season_num, episode_num):
-    tmdb_id = tmdb_from_imdb(imdb_id)
-    episode = Episode()
-    try:
-        e = episode.details(tmdb_id, season_num, episode_num)
-        cast = [{k: v for k,v in x.items() if k in ['name', 'id']} for x in e['guest_stars']]
-        return cast
-    except exceptions.TMDbException:
-        logging.error(f'Episode not found for imdb_id = {imdb_id}, season = {season_num}, episode = {episode_num}. Unable to match faces.')
-        return []
-
-
-def get_cast(imdb_id, season_num, episode_num=None):
-    cast = cast_from_season(imdb_id, season_num)
-    if episode_num:
-        guest_stars = cast_from_episode(imdb_id, season_num, episode_num)
-        cast.extend(guest_stars)
-    return cast
     
 
 def get_headshot(tmdb_id):
