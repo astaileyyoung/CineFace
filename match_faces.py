@@ -36,7 +36,22 @@ if 'Headshots' not in collections:
 model = load_facenet128d_model()
     
 
-def get_headshot(tmdb_id):
+def get_headshot(tmdb_id, 
+                 detector_backend='retinaface',
+                 recognition_model='Facenet', 
+                 collection_name='Headshots'):
+    normalization = {
+                "VGG-Face": "VGGFace2", 
+                "Facenet": "Facenet", 
+                "Facenet512": "Facenet", 
+                "OpenFace": "base", 
+                "DeepID": "base", 
+                "ArcFace": "ArcFace", 
+                "Dlib": "base", 
+                "SFace": "base",
+                "GhostFaceNet": "base"
+                }
+    
     person = Person()
     p = person.details(tmdb_id)
     for num, image in enumerate(p['images']['profiles']):
@@ -60,11 +75,13 @@ def get_headshot(tmdb_id):
             img = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
 
         try:
-            faces = DeepFace.extract_faces(img,
-                                        detector_backend='retinaface',
-                                        enforce_detection=True,
-                                        align=True,
-                                        normalize_face=True)
+            faces = DeepFace.represent(img,
+                                       detector_backend=detector_backend,
+                                       model_name=recognition_model,
+                                       enforce_detection=True,
+                                       align=True,
+                                       normalization=normalization[recognition_model]
+                                       )
         except ValueError:
             continue 
 
@@ -75,8 +92,10 @@ def get_headshot(tmdb_id):
         face = img[y1:y2, x1:x2]
         fp = Path('./data/headshots').joinpath(f'{p["name"]}_{p["id"]}_{num}.png')
         cv2.imwrite(str(fp), face)
-        f = preprocessing.normalize_input(preprocessing.resize_image(face, (160, 160)), normalization='Facenet')
-        encoding = model(f)[0]
+
+        # f = preprocessing.normalize_input(preprocessing.resize_image(face, (160, 160)), normalization='Facenet')
+        # encoding = model(f)[0]
+        encoding = faces[0]['embedding']
 
         point = PointStruct(
             id=str(uuid.uuid4()),
@@ -85,22 +104,28 @@ def get_headshot(tmdb_id):
                 'tmdb_id': p['id']
                 },
             vector=encoding)
-        CLIENT.upsert(collection_name='Headshots',
+        CLIENT.upsert(collection_name=collection_name,
                     points=[point])
 
 
-def add_headshots(cast):
+def add_headshots(cast, 
+                  collection_name='Headshots',
+                  detector_backend='retinaface',
+                  recognition_model='Facenet'):
     for c in cast:
         response = CLIENT.scroll(
-            collection_name='Headshots',
+            collection_name=collection_name,
             scroll_filter=Filter(
                 must=[FieldCondition(key='tmdb_id',
-                                            match=MatchValue(value=c['id']))]
+                                     match=MatchValue(value=c['id']))]
             ),
             limit=1
         )
         if not response[0]:
-            get_headshot(c['id'])
+            get_headshot(c['id'], 
+                         collection_name=collection_name,
+                         detector_backend=detector_backend,
+                         recognition_model=recognition_model)
 
 
 def parse_response(response,

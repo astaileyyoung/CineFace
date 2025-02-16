@@ -184,13 +184,13 @@ def ar_to_decimal(ar):
     if pd.isnull(ar):
         return np.nan
 
-    m = re.findall(r'[12]\.[0-9]{2}[\s]{0,1}:[\s]{0,1}1', ar)
-    if m:
+    m = re.findall(r'[0-9].*:[\s]{0,1}[0-9]{1}', ar)
+    try:
         temp = m[0].split(':')
         a, b = [float(x.strip()) for x in temp]
         aspect_ratio = round(a/b, 2)
         return aspect_ratio
-    else:
+    except:
         return None
 
 

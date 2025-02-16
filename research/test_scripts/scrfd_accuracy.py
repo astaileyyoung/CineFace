@@ -89,6 +89,6 @@ def main(args):
 if __name__ == '__main__':
     ap = ArgumentParser()
     ap.add_argument('dst')
-    ap.add_argument('--image_dir', default='../test_images')
+    ap.add_argument('--image_dir', default='/home/amos/programs/CineFace/research/test_images')
     args = ap.parse_args()
     main(args)

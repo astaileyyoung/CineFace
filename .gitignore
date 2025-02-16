@@ -17,4 +17,5 @@ research/data/retina_converted
 temp
 .vscode
 logs
-
+research/data/headshots/*
+research/data/label_df_results.csv
