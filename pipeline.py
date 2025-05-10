@@ -3,17 +3,15 @@ import os
 os.environ["TF_USE_LEGACY_KERAS"] = "1"
 
 
-import logging
 from pathlib import Path
 from argparse import ArgumentParser
 
-import pandas as pd 
-from tqdm import tqdm
-from imdb import Cinemagoer, IMDbError
+from qdrant_client import QdrantClient 
 
+from metadata import get_metadata
 from find_faces import find_faces
 from match_faces import match_faces
-from metadata import parse_path, get_id, get_id_sparse
+from save_faces import save_faces
 
 
 def gather_files(d,
@@ -29,89 +27,71 @@ def gather_files(d,
     return list(sorted(paths))
 
 
-def get_metadata(df):
-    filepath = df.at[0, 'filepath']
-    datum = parse_path(filepath)
-    if not pd.isnull(datum['year']):
-        try:
-            imdb_id = get_id(title=datum['title'],
-                             year=datum['year'],
-                             kind='tv')
-        except IndexError:
-            imdb_id = get_id_sparse(title=datum['title'],
-                                    kind='tv')
-    else:
-        imdb_id = get_id_sparse(title=datum['title'],
-                                kind='tv')
-    ia = Cinemagoer()
-    cnt = 0
-    while cnt < 5:
-        try:
-            info = ia.get_movie(imdb_id)
-            break
-        except IMDbError:
-            cnt += 1
-    df['title'] = info.data['title']
-    df['year'] = info.data['year']
-    df['imdb_id'] = imdb_id
-    df['season'] = datum['season']
-    df['episode'] = datum['episode']
-    return df
-
-
 def add_metadata(df, metadata):
     for k, v in metadata.items():
         if k in ['title', 'year', 'imdb_id', 'season', 'episode']:
-            df = df.assign(k=v)
+            df[k] = v
     return df
 
 
 def pipeline(file,
+             client,
              num_threads=4,
+             detection_backend='SCRFD',
+             recognition_model='Facenet',
+             threshold=0.5,
              metadata=None):
-    df = find_faces(file, num_threads=num_threads)
     if not metadata:
-        df = get_metadata(df)
-    else:
-        df = add_metadata(df, metadata)
-    df = match_faces(df)
+        metadata = get_metadata(file)
+    
+    df = find_faces(
+            file, 
+            num_threads=num_threads,
+            detection_backend=detection_backend,
+            recognition_model=recognition_model)
+    if df is None:
+        return 
+    
+    df = add_metadata(df, metadata)
+    df = match_faces(df, client, recognition_model=recognition_model, threshold=threshold)
     return df
 
 
 def main(args):
-    if Path(args.src).is_dir():
-        if not Path(args.dst).exists():
-            Path.mkdir(Path(args.dst), parents=True)
+    client = QdrantClient(host=args.qdrant_client, port=args.qdrant_port)
 
-        files = gather_files(args.src, ext=('.mp4', '.mkv', '.m4v', '.avi'))
-        for file in tqdm(files, leave=True):
-            dst = Path(args.dst).joinpath(f'{file.stem}.csv')
-            if dst.exists():
-                continue
+    metadata = {
+        'imdb_id': args.imdb_id,
+        'season': args.season,
+        'episode': args.episode
+    } if args.imdb_id or args.season or args.episode else None
+    df = pipeline(
+            args.src, 
+            client,
+            num_threads=args.num_threads,
+            detection_backend=args.detection_backend,
+            recognition_model=args.recognition_model,
+            threshold=args.threshold,
+            metadata=metadata)
+    df.to_csv(args.dst)  
 
-            df = pipeline(file, num_threads=args.num_threads)
-            df.to_csv(dst)
-
-    else:
-        df = pipeline(args.src, num_threads=args.num_threads)
-        df.to_csv(args.dst)  
+    if args.faces_dir:
+        save_faces(args.dst, args.faces_dir, label='predicted_name')
 
 
 if __name__ == '__main__':
     ap = ArgumentParser()
     ap.add_argument('src')
     ap.add_argument('dst')
+    ap.add_argument('--faces_dir', default=None)
     ap.add_argument('--num_threads', '-n', default=4, type=int)
-    ap.add_argument('--host', default='localhost', type=str)
-    ap.add_argument('--username', default='amos')
-    ap.add_argument('--password', default='M0$hicat')
-    ap.add_argument('--port', default='3306')
-    ap.add_argument('--database', default='film')
+    ap.add_argument('--detection_backend', '-db', default='SCRFD')
+    ap.add_argument('--recognition_model', '-rm', default='Facenet')
+    ap.add_argument('--threshold', '-t', default=0.5, type=float)
+    ap.add_argument('--imdb_id', default=None, type=int)
+    ap.add_argument('--season', default=None, type=int)
+    ap.add_argument('--episode', default=None, type=int)
+    ap.add_argument('--qdrant_client', default='192.168.0.131')
+    ap.add_argument('--qdrant_port', default=6333, type=int)
     args = ap.parse_args()
-
-    logging.basicConfig(level=logging.DEBUG,
-                        filename='./logs/pipeline.log',
-                        format='%(asctime)s %(levelname)s-8s %(message)s',
-                        datefmt='%Y-%m-%d %H:%M:%S')
-
     main(args)

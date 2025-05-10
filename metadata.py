@@ -1,18 +1,27 @@
 import re
+import uuid
+import urllib
 import logging
 from functools import partial 
+from pathlib import Path
 
 import cv2
 import difflib
 import numpy as np
 import pandas as pd
-from pathlib import Path
-from imdb import Cinemagoer
-from tmdbv3api import TMDb, TV, Find, Season, Episode, exceptions, Person
+from deepface import DeepFace
+from imdb import Cinemagoer, IMDbError
+from tmdbv3api import TMDb, TV, Find, Season, Episode, exceptions, Person, Movie
+from qdrant_client.models import Distance, VectorParams, PointStruct
 
 
 tmdb = TMDb()
 tmdb.api_key = '64a6b6f9419ae4cba5b9a5f1c9e87401'
+SEARCH = Find()
+MOVIE = Movie()
+EPISODE = Episode()
+SEASON = Season()
+IA = Cinemagoer(loggingLevel=20)
 
 
 def parse_path(path, get_cap=False):
@@ -24,15 +33,15 @@ def parse_path(path, get_cap=False):
     season = re.search(r'(?<=S)[0-9]{2}(?=E)', text, flags=re.I)
     episode = re.search('(?<=E)[0-9]{2}', text, flags=re.I)
     title = re.search(r'[a-zA-Z\&\'\.-]*', text, flags=re.I)
-    datum = {'title': title.group().strip().title().rstrip(' S').replace('.', ' ').strip() if title else np.nan,
-             'season': int(season.group()) if season is not None else np.nan,
-             'episode': int(episode.group()) if episode is not None else np.nan,
-             'height': int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT)) if get_cap else None,
-             'width': int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)) if get_cap else None,
-             'year': int(year.group()) if year is not None else np.nan,
-             'filename': path.name,
-             'filepath': str(path)}
-    return datum
+    data = {'title': title.group().strip().title().rstrip(' S').replace('.', ' ').strip() if title else np.nan,
+            'season': int(season.group()) if season is not None else np.nan,
+            'episode': int(episode.group()) if episode is not None else np.nan,
+            'height': int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT)) if get_cap else None,
+            'width': int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)) if get_cap else None,
+            'year': int(year.group()) if year is not None else np.nan,
+            'filename': path.name,
+            'filepath': str(path)}
+    return {k: v for k, v in data.items() if v}
 
 
 def match_title(results,
@@ -101,12 +110,10 @@ def get_id(title,
 
 
 def get_id_sparse(title,
-                  kind=None,
-                  log_level=20):
+                  kind=None):
     special_char_map = {ord('ä'): 'a', ord('ü'):'u', ord('ö'):'o', ord('ß'):'s', ord('&'): 'and', ord('à'): 'a'}
-    ia = Cinemagoer(loggingLevel=log_level)
 
-    result = ia.search_movie(title)
+    result = IA.search_movie(title)
     temp = [x for x in result if kind in x.data['kind']] if kind else result
     results = []
     for x in temp:
@@ -186,7 +193,7 @@ def ar_to_decimal(ar):
 
     m = re.findall(r'[0-9].*:[\s]{0,1}[0-9]{1}', ar)
     try:
-        temp = m[0].split(':')
+        temp = [x.strip() for x in m[0].split(':')]
         a, b = [float(x.strip()) for x in temp]
         aspect_ratio = round(a/b, 2)
         return aspect_ratio
@@ -266,40 +273,148 @@ def format_imdb_data(data):
     return datum
 
 
-def tmdb_from_imdb(imdb_id):
-    tmdb = TMDb()
-    tmdb.api_key = '64a6b6f9419ae4cba5b9a5f1c9e87401'
-
+def tmdb_from_imdb(imdb_id, kind):
     imdb_id = f'tt{str(imdb_id).zfill(7)}'    # The imdb_id is stored as an integer in the database. Convert to formatted string.
-    search = Find()
-    results = search.find_by_imdb_id(imdb_id)
-    tmdb_id = results['tv_results'][0]['id']  
+    results = SEARCH.find_by_imdb_id(imdb_id)
+    tmdb_id = results['tv_results' if kind == 'tv' else 'movie_results'][0]['id']  
     return tmdb_id
 
 
 def cast_from_season(imdb_id, season_num):
-    tmdb_id = tmdb_from_imdb(imdb_id)
-    season = Season()
-    s = season.details(tmdb_id, season_num)
-    cast = [{k: v for k,v in x.items() if k in ['name', 'id']} for x in s['credits']['cast']]
+    tmdb_id = tmdb_from_imdb(imdb_id, kind='tv')
+    s = SEASON.details(tmdb_id, season_num)
+    cast = [{k: v for k,v in x.items() if k in ['name', 'character', 'id']} for x in s['credits']['cast']]
     return cast
 
 
 def cast_from_episode(imdb_id, season_num, episode_num):
-    tmdb_id = tmdb_from_imdb(imdb_id)
-    episode = Episode()
+    tmdb_id = tmdb_from_imdb(imdb_id, kind='tv')
     try:
-        e = episode.details(tmdb_id, season_num, episode_num)
-        cast = [{k: v for k,v in x.items() if k in ['name', 'id']} for x in e['guest_stars']]
+        e = EPISODE.details(tmdb_id, season_num, episode_num)
+        cast = [{k: v for k,v in x.items() if k in ['name', 'character', 'id']} for x in e['guest_stars']]
         return cast
     except exceptions.TMDbException:
         logging.error(f'Episode not found for imdb_id = {imdb_id}, season = {season_num}, episode = {episode_num}. Unable to match faces.')
         return []
 
 
-def get_cast(imdb_id, season_num, episode_num=None):
-    cast = cast_from_season(imdb_id, season_num)
-    if episode_num:
-        guest_stars = cast_from_episode(imdb_id, season_num, episode_num)
-        cast.extend(guest_stars)
+def cast_from_movie(imdb_id):
+    tmdb_id = tmdb_from_imdb(imdb_id, kind='movie')
+    m = MOVIE.details(tmdb_id)
+    cast = [{k: v for k, v in x.items() if k in ['name', 'character', 'id']} for x in m['casts']['cast']]
     return cast
+
+
+def get_cast(imdb_id, season_num=None, episode_num=None):
+    if season_num:
+        cast = cast_from_season(imdb_id, season_num)
+        if episode_num:
+            guest_stars = cast_from_episode(imdb_id, season_num, episode_num)
+            cast.extend(guest_stars)
+    else:
+        cast = cast_from_movie(imdb_id)
+    return cast
+
+
+def get_metadata(filepath, kind=None):
+    data = parse_path(filepath)
+
+    if not kind and data['title'] and data['season'] and data['episode']:
+        kind = 'tv'
+    elif not kind and data['title'] and not data['season'] and not data['episode']:
+        kind = 'movie'
+
+    try:
+        imdb_id = get_id(title=data['title'],
+                        year=data['year'],
+                        kind=kind)
+    except ValueError:
+        imdb_id = get_id_sparse(title=data['title'],
+                                kind=kind)
+
+    cnt = 0
+    while cnt < 5:
+        try:
+            info = IA.get_movie(imdb_id)
+            break
+        except IMDbError:
+            cnt += 1
+    data['title'] = info.data['title']
+    data['year'] = info.data['year']
+    data['imdb_id'] = int(imdb_id)
+    return data
+
+
+def get_headshot(tmdb_id, 
+                 client,
+                 detector_backend='retinaface',
+                 recognition_model='Facenet', 
+                 collection_name='Headshots'):
+    normalization = {
+                "VGG-Face": "VGGFace2", 
+                "Facenet": "Facenet", 
+                "Facenet512": "Facenet", 
+                "OpenFace": "base", 
+                "DeepID": "base", 
+                "ArcFace": "ArcFace", 
+                "Dlib": "base", 
+                "SFace": "base",
+                "GhostFaceNet": "base"
+                }
+    
+    person = Person()
+    p = person.details(tmdb_id)
+    for num, image in enumerate(p['images']['profiles']):
+        u = image['file_path']
+        cnt = 0
+        while cnt < 5:
+            url = f'http://image.tmdb.org/t/p/w500{u}'
+
+            r = urllib.request.urlopen(url)
+            img_array = np.array(bytearray(r.read()), dtype=np.uint8)
+            img = cv2.imdecode(img_array, -1)
+            if img is None:
+                cnt += 1
+            else:
+                break
+
+        if img is None:
+            continue 
+        # DeepFace requires a 3-dimensional image. 
+        elif img.ndim == 2:
+            img = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
+
+        try:
+            faces = DeepFace.represent(img,
+                                       detector_backend=detector_backend,
+                                       model_name=recognition_model,
+                                       enforce_detection=True,
+                                       align=True,
+                                       normalization=normalization[recognition_model]
+                                       )
+        except ValueError:
+            continue 
+
+        x1 = faces[0]['facial_area']['x']
+        y1 = faces[0]['facial_area']['y']
+        x2 = x1 + faces[0]['facial_area']['w']
+        y2 = y1 + faces[0]['facial_area']['h']
+        face = img[y1:y2, x1:x2]
+        fp = Path('./data/headshots').joinpath(f'{p["name"]}_{p["id"]}_{num}.png')
+        cv2.imwrite(str(fp), face)
+
+        encoding = faces[0]['embedding']
+
+        collections = [x.name for x in client.get_collections().collections]
+        if collection_name not in collections:
+            client.recreate_collection(collection_name=collection_name,
+                                    vectors_config=VectorParams(size=np.array(encoding).size(), distance=Distance.COSINE))
+        point = PointStruct(
+            id=str(uuid.uuid4()),
+            payload={
+                'name': p['name'],
+                'tmdb_id': p['id']
+                },
+            vector=encoding)
+        client.upsert(collection_name=collection_name,
+                    points=[point])

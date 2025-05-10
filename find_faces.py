@@ -1,9 +1,3 @@
-"""
-TODO:
-1) Currently, only the Facenet recognition model is working because the DeepFace FacialRecognition class doesn't support batch encoding.
-"""
-
-
 import os 
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
@@ -20,11 +14,12 @@ from argparse import ArgumentParser
 import cv2 
 import numpy as np
 import pandas as pd
+import tensorflow as tf
 from tqdm import tqdm 
+from deepface import DeepFace
+from insightface.app import FaceAnalysis
+from deepface.models.Detector import FacialAreaRegion
 from deepface.modules import preprocessing, modeling, detection
-from deepface.models.facial_recognition.Facenet import load_facenet128d_model
-
-from utils import resize_image
 
 
 def get_cap_info(src):
@@ -69,7 +64,7 @@ class DetectedFace(object):
 
 class ExtractedFace(object):
     def __init__(self, face, frame, face_num):
-        self.x1 = max(0, face.facial_area.x)    # Yunet sometimes returns negative coordinates
+        self.x1 = max(0, face.facial_area.x)    # DeepFace sometimes returns negative coordinates
         self.y1 = max(0, face.facial_area.y)
         self.x2 = max(0, face.facial_area.x + face.facial_area.w)
         self.y2 = max(0, face.facial_area.y + face.facial_area.h)
@@ -86,6 +81,44 @@ class ExtractedFace(object):
         return {k: v for k, v in self.__dict__.items() if k != 'face'}
 
 
+class Detector(object):
+    def __init__(self, backend):
+        self.backend = backend
+        if backend == 'SCRFD':
+            self.app = FaceAnalysis(allowed_modules=['detection'], name='buffalo_l')
+            self.app.prepare(ctx_id=0, det_size=(640, 640))
+        else:
+            self.detector = modeling.build_model('face_detector', backend)
+
+    def detect(self, img):
+        if self.backend == 'SCRFD':
+            faces = self.app.get(img)
+            new = []
+            for face in faces:
+                x1, y1, x2, y2 = [max(0, int(x)) for x in face['bbox']]
+                right_eye, left_eye, nose, right_mouth, left_mouth = [[int(x) for x in landmark] for landmark in face['kps']]
+                f = FacialAreaRegion(
+                    x=x1,
+                    y=y1,
+                    w=x2 - x1,
+                    h=y2 - y1,
+                    left_eye=left_eye,
+                    right_eye=right_eye,
+                    nose=nose,
+                    mouth_right=right_mouth,
+                    mouth_left=left_mouth,
+                    confidence=face['det_score']
+                )
+                new.append(f)
+            return new
+        else:
+            try:
+                faces = self.detector.detect_faces(img)
+                return faces
+            except ValueError:
+                return []
+            
+
 class VideoDetector(object):
     def __init__(self, 
                  num_threads,
@@ -94,8 +127,7 @@ class VideoDetector(object):
                  detection_backend='retinaface',
                  recognition_model='Facenet',
                  buffer=4, 
-                 max_size=720,
-                 model='fp32'):
+                 max_size=720):
         normalization = {
                         "VGG-Face": "VGGFace2", 
                         "Facenet": "Facenet", 
@@ -107,12 +139,14 @@ class VideoDetector(object):
                         "SFace": "base",
                         "GhostFaceNet": "base"
                         }
-        self.detector = modeling.build_model(task='face_detector', model_name=detection_backend)
-        self.encoder = load_facenet128d_model()
+        self.detector = Detector(detection_backend)
 
         self.normalization = normalization[recognition_model]
         self.detection_backend=detection_backend
         self.recognition_model=recognition_model
+
+        model = modeling.build_model(task='facial_recognition', model_name=recognition_model)
+        self.input_shape = model.input_shape
 
         self.encode = encode
         self.align = align
@@ -143,6 +177,9 @@ class VideoDetector(object):
         cap = cv2.VideoCapture(src)
         framecount = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
         fps = cap.get(cv2.CAP_PROP_FPS)
+        if not framecount or not fps:
+            print('Unable to read video file.')
+            return None
         num_seconds = framecount/fps 
         return num_seconds
     
@@ -160,7 +197,6 @@ class VideoDetector(object):
             if not ret or frame is None:
                 break 
             if frame_num % frameskip == 0:
-                # frame = resize_image(frame)
                 height, width = frame.shape[:2]
                 height_border = int(0.5 * height)
                 width_border = int(0.5 * width)
@@ -183,6 +219,7 @@ class VideoDetector(object):
                         height_border=height_border
                     )
                 )
+        cap.release()
 
     def add_videos_to_queue(self,
                             src):       
@@ -194,6 +231,9 @@ class VideoDetector(object):
         
         if self.num_threads > 1:
             num_seconds = self.get_video_length(src)
+            if not num_seconds:
+                return
+            
             segment_length = round(num_seconds/self.num_threads)
             command = [
                 'ffmpeg',
@@ -229,6 +269,7 @@ class VideoDetector(object):
         f = partial(self.video_to_numpy)
         self.threads = [threading.Thread(target=f, args=(x, )) for x in self.videos]
         [x.start() for x in self.threads]
+        return True
 
     def get_faces(self):
         while not self._is_done() or self.frames:
@@ -236,7 +277,7 @@ class VideoDetector(object):
                 time.sleep(0.1)
                 continue
             frame = self.frames.pop(0)
-            faces = self.detector.detect_faces(frame.image)
+            faces = self.detector.detect(frame.image)
             self.detections.extend([DetectedFace(x, frame, num) for num, x in enumerate(faces)])
             self.pb.update()
 
@@ -269,18 +310,21 @@ class VideoDetector(object):
                 faces.append(self.faces.pop())
 
             if self.encode:
-                # images = [preprocessing.normalize_input(preprocessing.resize_image(face.face, self.encoder.input_shape), 
-                #                                         normalization=self.normalization) for face in faces]
-                images = [preprocessing.normalize_input(preprocessing.resize_image(face.face, (160, 160)), 
-                                                        normalization=self.normalization) for face in faces]
-                # encodings = np.array(self.encoder.forward(np.concatenate(images, axis=0)))
-                encodings = self.encoder(np.concatenate(images, axis=0))
-                for num, face in enumerate(faces):
-                    # face.encoding = encodings[num].tolist() if encodings.ndim > 1 else encodings.tolist()
-                    face.encoding = encodings[num]._numpy().tolist()
-                    self.data.append(face.save_data())
-            else:
-                [self.data.append(face.save_data()) for face in faces]
+                a = np.concatenate([preprocessing.resize_image(img=face.face, target_size=self.input_shape) for face in faces])
+                encodings = DeepFace.represent(
+                    a,
+                    detector_backend='skip',
+                    model_name=self.recognition_model,
+                    enforce_detection=False,
+                    align=True,
+                    normalization=self.normalization
+                )
+   
+                for num, encoding in enumerate(encodings):
+                    faces[num].encoding = encoding['embedding'] if isinstance(encoding, dict) else encoding[0]['embedding']
+
+            [self.data.append(face.save_data()) for face in faces]
+            tf.keras.backend.clear_session()
                             
     def detect_faces(self, src):
         self.width, self.height, self.framecount = get_cap_info(src)
@@ -288,7 +332,9 @@ class VideoDetector(object):
                        desc=f'Detecting faces in {Path(src).name}',
                        leave=False)
         
-        self.add_videos_to_queue(src)
+        if not self.add_videos_to_queue(src):
+            return 
+        
         get_faces = threading.Thread(target=self.get_faces)
         extract_faces = threading.Thread(target=self.extract_faces)
         encode_faces = threading.Thread(target=self.encode_faces)
@@ -359,17 +405,15 @@ if __name__ == '__main__':
     ap.add_argument('dst')
     ap.add_argument('--encode', default='true')
     ap.add_argument('--align', default='true')
-    ap.add_argument('--detection_backend', default='yunet')
+    ap.add_argument('--detection_backend', default='yolov11m')
     ap.add_argument('--recognition_model', default='Facenet')
     ap.add_argument('--num_threads', '-n', default=4, type=int)
-    ap.add_argument('--batch_size', '-bs', default=4, type=int)
-    ap.add_argument('--buffer', default=4, type=int)
+    ap.add_argument('--buffer', default=8, type=int)
     args = ap.parse_args()
     args.encode = args.encode.lower() == 'true'
     args.align = args.align.lower() == 'true'
     
-    logging.basicConfig(filename='./logs/find_faces.log',
-                        filemode='w',
+    logging.basicConfig(level=20,
                         format='%(levelname)s  %(asctime)s: %(message)s',
                         datefmt='%Y-%m-%d_%H:%M:%S')
     main(args)     

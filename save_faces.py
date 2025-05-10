@@ -6,44 +6,34 @@ import pandas as pd
 from tqdm import tqdm 
 
 
-def main(args):
-    dst_dir = Path(args.dst)
-    df = pd.read_csv(args.src)
+def save_faces(src, dst, label=None):
+    df = pd.read_csv(src)
     cap = cv2.VideoCapture(df.iloc[0]['filepath'])
-    frame_nums = df['frame_num'].unique().tolist()
     df = df.set_index('frame_num')
     for idx, row in tqdm(df.iterrows(), total=df.shape[0]):
         cap.set(cv2.CAP_PROP_POS_FRAMES, idx)
-        ret, frame = cap.read()
+        _, frame = cap.read()
 
-
-    # for frame_num in tqdm(frame_nums):
-    #     temp = df.loc[frame_num]
-    #     if not isinstance(temp, pd.DataFrame):
-    #         temp = temp.to_frame().transpose()
-    #     cap.set(cv2.CAP_PROP_POS_FRAMES, frame_num)
-    #     ret, frame = cap.read()
-    #     for idx, row in temp.iterrows():
-            # x1 = int(row['x1'] * row['img_width'])
-            # y1 = int(row['y1'] * row['img_height'])
-            # x2 = int(row['x2'] * row['img_width'])
-            # y2 = int(row['y2'] * row['img_height'])
         x1 = row['x1']
         y1 = row['y1']
         x2 = row['x2']
         y2 = row['y2']
         face = frame[y1:y2, x1:x2]
         name = f'{idx}_{row["face_num"]}.png'
-        if args.label is not None:
-            dst = Path(args.dst).joinpath(str(row[args.label]))
+        if label is not None:
+            dst_dir = Path(dst).joinpath(str(row[label]))
         else:
-            dst = Path(args.dst)
+            dst_dir = Path(dst)
 
-        if not dst.exists():
-            Path.mkdir(dst, parents=True)
+        if not dst_dir.exists():
+            Path.mkdir(dst_dir, parents=True)
 
-        fp = dst.joinpath(name)
+        fp = dst_dir.joinpath(name)
         cv2.imwrite(str(fp), face)
+
+
+def main(args):
+    save_faces(args.src, args.dst, label=args.label) 
 
 
 if __name__ == '__main__':
