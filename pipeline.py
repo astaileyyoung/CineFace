@@ -73,10 +73,15 @@ def main(args):
             recognition_model=args.recognition_model,
             threshold=args.threshold,
             metadata=metadata)
-    df.to_csv(args.dst)  
 
     if args.faces_dir:
         save_faces(args.dst, args.faces_dir, label='predicted_name')
+
+    df = df.drop('filepath', axis=1)
+    for column in df.columns:
+        if df[column].isna().all():
+            df = df.drop(column, axis=1)
+    df.to_csv(args.dst)  
 
 
 if __name__ == '__main__':
@@ -85,7 +90,7 @@ if __name__ == '__main__':
     ap.add_argument('dst')
     ap.add_argument('--faces_dir', default=None)
     ap.add_argument('--num_threads', '-n', default=4, type=int)
-    ap.add_argument('--detection_backend', '-db', default='SCRFD')
+    ap.add_argument('--detection_backend', '-db', default='yolov11m')
     ap.add_argument('--recognition_model', '-rm', default='Facenet')
     ap.add_argument('--threshold', '-t', default=0.5, type=float)
     ap.add_argument('--imdb_id', default=None, type=int)
