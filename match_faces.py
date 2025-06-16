@@ -3,6 +3,7 @@ import os
 os.environ["TF_USE_LEGACY_KERAS"] = "1"
 
 import ast
+import time
 from argparse import ArgumentParser
 
 import pandas as pd
@@ -58,16 +59,21 @@ def parse_response(response,
     return name, cast_id, confidence
 
 
-def match_faces(df, client, threshold=0.5, recognition_model='Facenet'):
+def match_faces(df, 
+                client, 
+                threshold=0.5, 
+                timeout=60,
+                recognition_model='Facenet', 
+                batch_size=1024):
     imdb_id = df.at[0, 'imdb_id']
     season = df.at[0, 'season'] if 'season' in df.columns else None
     episode = df.at[0, 'episode'] if 'episode' in df.columns else None
    
     cast = get_cast(imdb_id, season_num=season, episode_num=episode)
-    characters = {x['id']: x['character'] for x in cast}
     if not cast:
         return df
 
+    characters = {x['id']: x['character'] for x in cast}
     collection_name = f'Headshots_{recognition_model}'
     cast_ids = [x['id'] for x in cast]
     add_headshots(cast, client, collection_name=collection_name, recognition_model=recognition_model)
@@ -76,17 +82,35 @@ def match_faces(df, client, threshold=0.5, recognition_model='Facenet'):
     else:
         encodings = df['encoding'].tolist()
 
-    requests = [QueryRequest(
-                    query=encoding, 
-                    with_payload=True, 
-                    score_threshold=threshold, 
-                    limit=100
-                    ) for encoding in encodings]
-    response = client.query_batch_points(
-        collection_name=collection_name,
-        requests=requests,
-        timeout=60
-    )
+    response = []
+    requests = []
+    for num, encoding in enumerate(encodings):
+        requests.append(QueryRequest(
+            query=encoding, 
+            with_payload=True, 
+            score_threshold=threshold, 
+            limit=100
+            ))
+        if len(requests) == batch_size or len(encodings) == num + 1:
+            r = client.query_batch_points(
+                collection_name=collection_name,
+                requests=requests,
+                timeout=timeout
+            )
+            response.extend(r)
+            requests = []
+
+    # requests = [QueryRequest(
+    #                     query=encoding, 
+    #                     with_payload=True, 
+    #                     score_threshold=threshold, 
+    #                     limit=100
+    #                     ) for encoding in encodings]
+    # response = client.query_batch_points(
+    #     collection_name=collection_name,
+    #     requests=requests,
+    #     timeout=60
+    # )
 
     names, cast_ids, confidence = zip(*[parse_response(x, cast_ids) for x in response])
     df = df.assign(
@@ -100,13 +124,19 @@ def match_faces(df, client, threshold=0.5, recognition_model='Facenet'):
 
 
 def main(args):
+    t = time.time()
     client = QdrantClient(host=args.qdrant_client, port=args.qdrant_port)
     df = pd.read_csv(args.src, index_col=0)
-    if args.imdb_id and args.season and args.episode:
+    if args.imdb_id or args.season or args.episode:
         df = df.assign(imdb_id=args.imdb_id, season=args.season, episode=args.episode)
     df = df.reset_index(drop=True)
-    df = match_faces(df, client, threshold=args.threshold, recognition_model=args.recognition_model)
+    df = match_faces(df, 
+                     client, 
+                     threshold=args.threshold, 
+                     recognition_model=args.recognition_model, 
+                     batch_size=args.batch_size)
     df.to_csv(args.dst)
+    print(f'Successfully matched faces for {args.src} ({time.time() - t}) and saved to {args.dst}')
 
 
 if __name__ == '__main__':
@@ -118,6 +148,8 @@ if __name__ == '__main__':
                     '-t', 
                     default=0.5,
                     type=float)
+    ap.add_argument('--timeout', default=60, type=int)
+    ap.add_argument('--batch_size', default=1024, type=int)
     ap.add_argument('--imdb_id', default=None, type=int)
     ap.add_argument('--season', default=None, type=int)
     ap.add_argument('--episode', default=None, type=int)

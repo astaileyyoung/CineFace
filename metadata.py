@@ -125,6 +125,46 @@ def get_id_sparse(title,
     return results[0].movieID
 
 
+def get_id_new(title,
+               year,
+               kind=None,
+               log_level=20):
+    """
+    There is currently an issue with the Cinemagoer package when searching for tv and movies. 
+    'Kind' is always set to 'movie' even if the title is a tv show. 
+    Also, search_movie no longer returns 'year' for results, so we have to use 'get_movie' on the resulting imdb_id.
+    """
+    special_char_map = {ord('ä'): 'a',
+                        ord('ü'): 'u',
+                        ord('ö'): 'o', 
+                        ord('ß'): 's', 
+                        ord('ō'): 'o'}
+    ia = Cinemagoer(loggingLevel=log_level)
+
+    results = ia.search_movie(title)
+
+    possibilities = []
+    for result in results:
+        r = ia.get_movie(result.movieID)
+        if kind is not None and kind != r.data['kind']:
+            continue
+
+        a = re.sub('[^0-9a-zA-Z]+', '', r.data['title'].translate(special_char_map)).lower()
+        b = re.sub('[^0-9a-zA-Z]+', '', title).lower()
+        if a == b:
+            if year is not None:
+                year = int(year)
+                try:
+                    imdb_year = int(r.data['year'])
+                    if year - 2 <= imdb_year <= year + 2:
+                        return r.movieID
+                except KeyError:
+                    continue
+
+    possibilities = match_title(possibilities, title, char_map=special_char_map, threshold=0.0)
+    return possibilities[0].movieID if possibilities else None
+
+
 def parse_field(value,
                 field):
     if pd.isnull(field):
@@ -276,7 +316,11 @@ def format_imdb_data(data):
 def tmdb_from_imdb(imdb_id, kind):
     imdb_id = f'tt{str(imdb_id).zfill(7)}'    # The imdb_id is stored as an integer in the database. Convert to formatted string.
     results = SEARCH.find_by_imdb_id(imdb_id)
-    tmdb_id = results['tv_results' if kind == 'tv' else 'movie_results'][0]['id']  
+    if kind == 'tv':
+        tmdb_id = results['tv_results'][0]['id'] if results['tv_results'] else results['tv_episode_results'][0]['id'] 
+    else:
+        tmdb_id = results['movie_results'][0]['id']
+    # tmdb_id = results['tv_results' if kind == 'tv' else 'movie_results'][0]['id']  
     return tmdb_id
 
 
@@ -306,7 +350,7 @@ def cast_from_movie(imdb_id):
 
 
 def get_cast(imdb_id, season_num=None, episode_num=None):
-    if season_num:
+    if not pd.isnull(season_num):
         cast = cast_from_season(imdb_id, season_num)
         if episode_num:
             guest_stars = cast_from_episode(imdb_id, season_num, episode_num)

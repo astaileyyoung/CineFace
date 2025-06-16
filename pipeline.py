@@ -40,6 +40,8 @@ def pipeline(file,
              detection_backend='SCRFD',
              recognition_model='Facenet',
              threshold=0.5,
+             timeout=60,
+             batch_size=256,
              metadata=None):
     if not metadata:
         metadata = get_metadata(file)
@@ -53,7 +55,12 @@ def pipeline(file,
         return 
     
     df = add_metadata(df, metadata)
-    df = match_faces(df, client, recognition_model=recognition_model, threshold=threshold)
+    df = match_faces(df, 
+                     client, 
+                     recognition_model=recognition_model, 
+                     threshold=threshold, 
+                     batch_size=batch_size,
+                     timeout=timeout)
     return df
 
 
@@ -72,6 +79,8 @@ def main(args):
             detection_backend=args.detection_backend,
             recognition_model=args.recognition_model,
             threshold=args.threshold,
+            timeout=args.timeout,
+            batch_size=args.batch_size,
             metadata=metadata)
 
     if args.faces_dir:
@@ -93,6 +102,8 @@ if __name__ == '__main__':
     ap.add_argument('--detection_backend', '-db', default='yolov11m')
     ap.add_argument('--recognition_model', '-rm', default='Facenet')
     ap.add_argument('--threshold', '-t', default=0.5, type=float)
+    ap.add_argument('--timeout', default=60, type=int)
+    ap.add_argument('--batch_size', default=256, type=int)
     ap.add_argument('--imdb_id', default=None, type=int)
     ap.add_argument('--season', default=None, type=int)
     ap.add_argument('--episode', default=None, type=int)

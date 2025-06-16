@@ -122,6 +122,7 @@ class Detector(object):
 class VideoDetector(object):
     def __init__(self, 
                  num_threads,
+                 frameskip=24,
                  encode=True,
                  align=True,
                  detection_backend='retinaface',
@@ -148,6 +149,7 @@ class VideoDetector(object):
         model = modeling.build_model(task='facial_recognition', model_name=recognition_model)
         self.input_shape = model.input_shape
 
+        self.frameskip = frameskip
         self.encode = encode
         self.align = align
         self.buffer = buffer 
@@ -184,8 +186,7 @@ class VideoDetector(object):
         return num_seconds
     
     def video_to_numpy(self,
-                       video,
-                       frameskip=24):
+                       video):
         cap = cv2.VideoCapture(str(video.src))
         framecount = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
         start = video.frame_start
@@ -196,7 +197,7 @@ class VideoDetector(object):
             ret, frame = cap.read()
             if not ret or frame is None:
                 break 
-            if frame_num % frameskip == 0:
+            if frame_num % self.frameskip == 0:
                 height, width = frame.shape[:2]
                 height_border = int(0.5 * height)
                 width_border = int(0.5 * width)
@@ -328,7 +329,7 @@ class VideoDetector(object):
                             
     def detect_faces(self, src):
         self.width, self.height, self.framecount = get_cap_info(src)
-        self.pb = tqdm(total=int(self.framecount/24), 
+        self.pb = tqdm(total=int(self.framecount/self.frameskip), 
                        desc=f'Detecting faces in {Path(src).name}',
                        leave=False)
         
@@ -362,6 +363,7 @@ class VideoDetector(object):
 
 def find_faces(src,
                num_threads=4,
+               frameskip=24,
                encode=True,
                align=True,
                detection_backend='yunet',
@@ -370,6 +372,7 @@ def find_faces(src,
               ):
     try:
         vd = VideoDetector(num_threads,
+                           frameskip=frameskip,
                            encode=encode, 
                            align=align,
                            detection_backend=detection_backend,
@@ -378,12 +381,15 @@ def find_faces(src,
         df = vd.detect_faces(src)
     except KeyError:
         vd = VideoDetector(1,
+                           frameskip=frameskip,
                            encode=encode,
                            align=align,
                            buffer=buffer,
                            detection_backend=detection_backend,
                            recognition_model=recognition_model)
         df = vd.detect_faces(src)
+    except KeyboardInterrupt:
+        exit()
     return df
 
 
@@ -391,6 +397,7 @@ def main(args):
     start = time.time()
     df = find_faces(args.src,
                     num_threads=args.num_threads,
+                    frameskip=args.frameskip,
                     encode=args.encode,
                     align=args.align,
                     detection_backend=args.detection_backend,
@@ -408,6 +415,7 @@ if __name__ == '__main__':
     ap.add_argument('--detection_backend', default='yolov11m')
     ap.add_argument('--recognition_model', default='Facenet')
     ap.add_argument('--num_threads', '-n', default=4, type=int)
+    ap.add_argument('--frameskip', default=24, type=int)
     ap.add_argument('--buffer', default=8, type=int)
     args = ap.parse_args()
     args.encode = args.encode.lower() == 'true'
