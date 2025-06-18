@@ -6,13 +6,25 @@ os.environ["TF_USE_LEGACY_KERAS"] = "1"
 from pathlib import Path
 from argparse import ArgumentParser
 
+import docker
+import pandas as pd
 from qdrant_client import QdrantClient 
 
 from metadata import get_metadata
-from find_faces import find_faces
+from find_faces_dev import find_faces
 from match_faces import match_faces
 from save_faces import save_faces
 
+
+def pull_if_not_exists(image_name):
+    client = docker.from_env()
+    try:
+        client.images.get(image_name)
+    except docker.errors.ImageNotFound:
+        client.images.pull(image_name)
+    except docker.errors.APIError as e:
+        print("Docker error: ", e)
+        
 
 def gather_files(d,
                  ext=None):
@@ -37,7 +49,10 @@ def add_metadata(df, metadata):
 def pipeline(file,
              client,
              num_threads=4,
+             frameskip=24,
              detection_backend='SCRFD',
+             encoding_col='encoding',
+             image='astaileyyoung/visage',
              recognition_model='Facenet',
              threshold=0.5,
              timeout=60,
@@ -46,17 +61,13 @@ def pipeline(file,
     if not metadata:
         metadata = get_metadata(file)
     
-    df = find_faces(
-            file, 
-            num_threads=num_threads,
-            detection_backend=detection_backend,
-            recognition_model=recognition_model)
-    if df is None:
-        return 
+    find_faces(file, 'temp.csv', image=image, frameskip=frameskip)
+    df = pd.read_csv('temp.csv')
     
     df = add_metadata(df, metadata)
     df = match_faces(df, 
                      client, 
+                     encoding_col=encoding_col,
                      recognition_model=recognition_model, 
                      threshold=threshold, 
                      batch_size=batch_size,
@@ -75,7 +86,10 @@ def main(args):
     df = pipeline(
             args.src, 
             client,
+            encoding_col=args.encoding_col,
+            image=args.image,
             num_threads=args.num_threads,
+            frameskip=args.frameskip,
             detection_backend=args.detection_backend,
             recognition_model=args.recognition_model,
             threshold=args.threshold,
@@ -86,10 +100,8 @@ def main(args):
     if args.faces_dir:
         save_faces(args.dst, args.faces_dir, label='predicted_name')
 
-    df = df.drop('filepath', axis=1)
-    for column in df.columns:
-        if df[column].isna().all():
-            df = df.drop(column, axis=1)
+    if 'filepath' in df.columns:
+        df = df.drop('filepath', axis=1)
     df.to_csv(args.dst)  
 
 
@@ -98,7 +110,10 @@ if __name__ == '__main__':
     ap.add_argument('src')
     ap.add_argument('dst')
     ap.add_argument('--faces_dir', default=None)
+    ap.add_argument('--encoding_col', default='embedding')
+    ap.add_argument('--image', default='astaileyyoung/visage', type=str)
     ap.add_argument('--num_threads', '-n', default=4, type=int)
+    ap.add_argument('--frameskip', default=24, type=int)
     ap.add_argument('--detection_backend', '-db', default='yolov11m')
     ap.add_argument('--recognition_model', '-rm', default='Facenet')
     ap.add_argument('--threshold', '-t', default=0.5, type=float)
