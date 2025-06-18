@@ -152,7 +152,7 @@ def get_id_new(title,
         a = re.sub('[^0-9a-zA-Z]+', '', r.data['title'].translate(special_char_map)).lower()
         b = re.sub('[^0-9a-zA-Z]+', '', title).lower()
         if a == b:
-            if year is not None:
+            if year is not None and not pd.isnull(year):
                 year = int(year)
                 try:
                     imdb_year = int(r.data['year'])
@@ -369,7 +369,7 @@ def get_metadata(filepath, kind=None):
         kind = 'movie'
 
     try:
-        imdb_id = get_id(title=data['title'],
+        imdb_id = get_id_new(title=data['title'],
                         year=data['year'],
                         kind=kind)
     except ValueError:

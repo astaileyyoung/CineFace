@@ -64,6 +64,7 @@ def match_faces(df,
                 threshold=0.5, 
                 timeout=60,
                 recognition_model='Facenet', 
+                encoding_col='encoding',
                 batch_size=1024):
     imdb_id = df.at[0, 'imdb_id']
     season = df.at[0, 'season'] if 'season' in df.columns else None
@@ -77,10 +78,10 @@ def match_faces(df,
     collection_name = f'Headshots_{recognition_model}'
     cast_ids = [x['id'] for x in cast]
     add_headshots(cast, client, collection_name=collection_name, recognition_model=recognition_model)
-    if isinstance(df.at[0, 'encoding'], str):
-        encodings = df['encoding'].map(ast.literal_eval).tolist()
+    if isinstance(df.at[0, encoding_col], str):
+        encodings = df[encoding_col].map(ast.literal_eval).tolist()
     else:
-        encodings = df['encoding'].tolist()
+        encodings = df[encoding_col].tolist()
 
     response = []
     requests = []
