@@ -72,6 +72,7 @@ def pipeline(file,
                      threshold=threshold, 
                      batch_size=batch_size,
                      timeout=timeout)
+    Path('temp.csv').unlink()
     return df
 
 
