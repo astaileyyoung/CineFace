@@ -1,0 +1,7 @@
+.i*
+data/*
+__pycache__
+archived/*
+Untitled*
+models
+logs
