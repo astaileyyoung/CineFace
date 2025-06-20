@@ -35,6 +35,7 @@ python pipeline.py <src> <dst> [options]
 |-------------------------|----------|----------------------------|-----------------------------------------------------|
 | `src`                   | str      | (required)                 | Path to input video file or directory.              |
 | `dst`                   | str      | (required)                 | Path to output directory or results file.           |
+| `imdb_id`               | int      | (required)                 | IMDb ID (just the numbers).                         |
 | `--faces_dir`           | str      | `None`                     | Directory to save face images to                    |
 | `--encoding_col`        | str      | `'embedding'`              | Column name for face embeddings.                    |
 | `--image`               | str      | `'astaileyyoung/visage'`   | Container/image name (for debugging/development).   |
@@ -42,7 +43,6 @@ python pipeline.py <src> <dst> [options]
 | `--threshold`, `-t`     | float    | `0.5`                      | Recognition confidence threshold.                   |
 | `--timeout`             | int      | `60`                       | Timeout (in seconds) for matching.                  |
 | `--batch_size`          | int      | `256`                      | Batch size for matching.                            |
-| `--imdb_id`             | int      | `None`                     | IMDb ID (required for matching).                    |
 | `--season`              | int      | `None`                     | Season number (required for matching tv show).      |
 | `--episode`             | int      | `None`                     | Episode number (requird for matching tv show).      |
 | `--qdrant_client`       | str      | `'localhost'`              | Qdrant client address (vector DB).                  |
