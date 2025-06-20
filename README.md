@@ -48,7 +48,8 @@ python pipeline.py <src> <dst> [options]
 | `--qdrant_client`       | str      | `'localhost'`              | Qdrant client address (vector DB).                  |
 | `--qdrant_port`         | int      | `6333`                     | Qdrant port.                                        |
 
-**Automatic tv/movie identification by filename is no longer working due to change in the IMDb API that has broken Cinemagoer search, which automatic identification depends on. If analyzing a movie, you must enter the imdb_id 
+**Automatic tv/movie identification by filename is no longer working due to change in the IMDb API that has broken Cinemagoer search, which automatic identification depends on. If analyzing a movie, you must enter the imdb_id. If analyzing a tv show, you must enter the imdb_id, season, and episode.
+
 
 ## Datasets
 The dataset can be downloaded [here](https://drive.google.com/file/d/1YO7jiCmMv66vZ18sBkWiJ40v4HrYQYJn/view?usp=sharing). 

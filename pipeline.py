@@ -10,7 +10,6 @@ import pandas as pd
 from qdrant_client import QdrantClient 
 
 from metadata import get_metadata
-from find_faces_dev import find_faces
 from match_faces import match_faces
 from save_faces import save_faces
 
@@ -84,7 +83,7 @@ def main(args):
         'imdb_id': args.imdb_id,
         'season': args.season,
         'episode': args.episode
-    } if args.imdb_id or args.season or args.episode else None
+    }
     df = pipeline(
             args.src, 
             client,
@@ -110,6 +109,7 @@ if __name__ == '__main__':
     ap = ArgumentParser()
     ap.add_argument('src')
     ap.add_argument('dst')
+    ap.add_argument('imdb_id')
     ap.add_argument('--faces_dir', default=None)
     ap.add_argument('--encoding_col', default='embedding')
     ap.add_argument('--image', default='astaileyyoung/visage', type=str)
@@ -119,7 +119,6 @@ if __name__ == '__main__':
     ap.add_argument('--threshold', '-t', default=0.5, type=float)
     ap.add_argument('--timeout', default=60, type=int)
     ap.add_argument('--batch_size', default=256, type=int)
-    ap.add_argument('--imdb_id', default=None, type=int)
     ap.add_argument('--season', default=None, type=int)
     ap.add_argument('--episode', default=None, type=int)
     ap.add_argument('--qdrant_client', default='192.168.0.131')
