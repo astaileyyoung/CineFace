@@ -1,7 +1,56 @@
 # CineFace
 
-The code here is for my project CineFace, which uses AI to detect and identify faces in film and television. 
+CineFace is an AI-powered toolkit for detecting and identifying faces in film and television content. This project leverages advanced machine learning models to automatically recognize and analyze characters across movies, TV shows, and video clips. If you're only interested in the CineFace dataset, it's available at the bottom.
 
+
+## Requirements
+CineFace relies on [Docker](https://docs.docker.com/get-started/get-docker/) and [Qdrant](). To install Qdrant, just run with Docker. It will download the image automatically
+```
+docker run -p 6333:6333 qdrant/qdrant
+```
+
+## Install
+Simply download the source code
+```
+git clone https://github.com/astaileyyoung/CineFace.git
+```
+
+CineFace uses Visage as a backend for accurate, high-performance facial detection and encoding. [Visage](https://github.com/astaileyyoung/Visage) can also be used independently.
+
+**Be advised that the associated docker image is quite large (~17GB) since it relies on heavy ML libraries built from source, so it will take a while to download (~10-15 minutes). 
+
+
+## Usage
+Running CineFace is straightforward. Simply use the pipeline.py script
+
+#### **Basic Command**
+```
+python pipeline.py <src> <dst> [options]
+```
+- `<src>`: Path to the input video file
+- `<dst>`: Path to the output file
+### **Command-Line Arguments**
+
+| Argument                | Type     | Default                    | Description                                         |
+|-------------------------|----------|----------------------------|-----------------------------------------------------|
+| `src`                   | str      | (required)                 | Path to input video file or directory.              |
+| `dst`                   | str      | (required)                 | Path to output directory or results file.           |
+| `--faces_dir`           | str      | `None`                     | Directory to save face images to                    |
+| `--encoding_col`        | str      | `'embedding'`              | Column name for face embeddings.                    |
+| `--image`               | str      | `'astaileyyoung/visage'`   | Container/image name (for debugging/development).   |
+| `--frameskip`           | int      | `24`                       | Number of frames to skip between detections.        |
+| `--threshold`, `-t`     | float    | `0.5`                      | Recognition confidence threshold.                   |
+| `--timeout`             | int      | `60`                       | Timeout (in seconds) for matching.                  |
+| `--batch_size`          | int      | `256`                      | Batch size for matching.                            |
+| `--imdb_id`             | int      | `None`                     | IMDb ID (required for matching).                    |
+| `--season`              | int      | `None`                     | Season number (required for matching tv show).      |
+| `--episode`             | int      | `None`                     | Episode number (requird for matching tv show).      |
+| `--qdrant_client`       | str      | `'localhost'`              | Qdrant client address (vector DB).                  |
+| `--qdrant_port`         | int      | `6333`                     | Qdrant port.                                        |
+
+**Automatic tv/movie identification by filename is no longer working due to change in the IMDb API that has broken Cinemagoer search, which automatic identification depends on. If analyzing a movie, you must enter the imdb_id 
+
+## Datasets
 The dataset can be downloaded [here](https://drive.google.com/file/d/1YO7jiCmMv66vZ18sBkWiJ40v4HrYQYJn/view?usp=sharing). 
 
 The corresponding face encodings can be downloaded [here](https://drive.google.com/file/d/1D-Z5L9VWYcTciMjsyFIAu2ZWY5_amxzG/view?usp=sharing). 

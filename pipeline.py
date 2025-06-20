@@ -2,7 +2,6 @@ import os
 
 os.environ["TF_USE_LEGACY_KERAS"] = "1"
 
-
 from pathlib import Path
 from argparse import ArgumentParser
 
@@ -14,6 +13,8 @@ from metadata import get_metadata
 from find_faces_dev import find_faces
 from match_faces import match_faces
 from save_faces import save_faces
+
+from Visage.visage import run_visage
 
 
 def pull_if_not_exists(image_name):
@@ -48,11 +49,11 @@ def add_metadata(df, metadata):
 
 def pipeline(file,
              client,
-             num_threads=4,
              frameskip=24,
-             detection_backend='SCRFD',
              encoding_col='encoding',
              image='astaileyyoung/visage',
+             log_level='info',
+             show=False,
              recognition_model='Facenet',
              threshold=0.5,
              timeout=60,
@@ -61,7 +62,7 @@ def pipeline(file,
     if not metadata:
         metadata = get_metadata(file)
     
-    find_faces(file, 'temp.csv', image=image, frameskip=frameskip)
+    run_visage(file, 'temp.csv', image, frameskip, log_level, show)
     df = pd.read_csv('temp.csv')
     
     df = add_metadata(df, metadata)
@@ -89,10 +90,9 @@ def main(args):
             client,
             encoding_col=args.encoding_col,
             image=args.image,
-            num_threads=args.num_threads,
             frameskip=args.frameskip,
-            detection_backend=args.detection_backend,
-            recognition_model=args.recognition_model,
+            log_level=args.log_level,
+            show=args.show,
             threshold=args.threshold,
             timeout=args.timeout,
             batch_size=args.batch_size,
@@ -113,10 +113,9 @@ if __name__ == '__main__':
     ap.add_argument('--faces_dir', default=None)
     ap.add_argument('--encoding_col', default='embedding')
     ap.add_argument('--image', default='astaileyyoung/visage', type=str)
-    ap.add_argument('--num_threads', '-n', default=4, type=int)
     ap.add_argument('--frameskip', default=24, type=int)
-    ap.add_argument('--detection_backend', '-db', default='yolov11m')
-    ap.add_argument('--recognition_model', '-rm', default='Facenet')
+    ap.add_argument('--log_level', default='info', type=str)
+    ap.add_argument('--show', action='store_true')
     ap.add_argument('--threshold', '-t', default=0.5, type=float)
     ap.add_argument('--timeout', default=60, type=int)
     ap.add_argument('--batch_size', default=256, type=int)
