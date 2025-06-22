@@ -13,7 +13,7 @@ from qdrant_client.models import QueryRequest, Filter, FieldCondition, MatchValu
 
 from tmdbv3api import TMDb
 
-from metadata import get_cast, get_headshot
+from cineface.metadata import get_cast, get_headshot
 
 
 tmdb = TMDb()
