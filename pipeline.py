@@ -1,7 +1,9 @@
 import os
 
 os.environ["TF_USE_LEGACY_KERAS"] = "1"
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 
+import logging
 from pathlib import Path
 from argparse import ArgumentParser
 
@@ -23,7 +25,7 @@ def pull_if_not_exists(image_name):
     except docker.errors.ImageNotFound:
         client.images.pull(image_name)
     except docker.errors.APIError as e:
-        print("Docker error: ", e)
+        logger.error(f"Docker error: {e}")
         
 
 def gather_files(d,
@@ -65,6 +67,7 @@ def pipeline(file,
     df = pd.read_csv('temp.csv')
     
     df = add_metadata(df, metadata)
+    logger.info('Matching faces ...')
     df = match_faces(df, 
                      client, 
                      encoding_col=encoding_col,
@@ -72,18 +75,22 @@ def pipeline(file,
                      threshold=threshold, 
                      batch_size=batch_size,
                      timeout=timeout)
+    logger.info('Finished matching.')
     Path('temp.csv').unlink()
     return df
 
 
 def main(args):
     client = QdrantClient(host=args.qdrant_client, port=args.qdrant_port)
+    logger.debug(f'Successfully connected to Qdrant database at {args.qdrant_client}: {args.qdrant_port}')
 
     metadata = {
         'imdb_id': args.imdb_id,
         'season': args.season,
         'episode': args.episode
     }
+    logger.info(f'Running detection on {args.src}')
+    logger.info(f'Saving results to {args.dst}')
     df = pipeline(
             args.src, 
             client,
@@ -103,6 +110,7 @@ def main(args):
     if 'filepath' in df.columns:
         df = df.drop('filepath', axis=1)
     df.to_csv(args.dst)  
+    logger.info(f'Results from {args.src} saved to {args.dst}')
 
 
 if __name__ == '__main__':
@@ -121,7 +129,23 @@ if __name__ == '__main__':
     ap.add_argument('--batch_size', default=256, type=int)
     ap.add_argument('--season', default=None, type=int)
     ap.add_argument('--episode', default=None, type=int)
-    ap.add_argument('--qdrant_client', default='192.168.0.131')
+    ap.add_argument('--qdrant_client', default='localhost')
     ap.add_argument('--qdrant_port', default=6333, type=int)
     args = ap.parse_args()
+
+    levels = {
+        'debug': 10,
+        'info': 20,
+        'warning': 30,
+        'error': 40
+    }
+    level = levels[args.log_level]
+
+    logger = logging.getLogger("pipeline")
+    handler = logging.StreamHandler()
+    handler.setLevel(level)
+    formatter = logging.Formatter('[%(levelname)s]: %(message)s')
+    handler.setFormatter(formatter)
+    logger.addHandler(handler)    
+
     main(args)

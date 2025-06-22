@@ -56,3 +56,9 @@ The dataset can be downloaded [here](https://drive.google.com/file/d/1YO7jiCmMv6
 
 The corresponding face encodings can be downloaded [here](https://drive.google.com/file/d/1D-Z5L9VWYcTciMjsyFIAu2ZWY5_amxzG/view?usp=sharing). 
 The encodings are saved as .npy files corresponding to either an episode or a movie. The filenames are in the form of {imdb_id}\_{season}\_{episode} The encoded faces are in sequence, so the easiest way to join the encodings to the correct face data is simply to load the appropriate .csv file and add the encodings as a column.
+
+A dashboard is available here to view the data [here.](https://app.powerbi.com/view?r=eyJrIjoiMWE4YzViOWMtY2RiYy00ZTk1LWExNTgtMTg5YjZjNTE2NjIzIiwidCI6ImI3Yzk1YTkyLTBlYWQtNDRlOS04YjgzLTdjMGY5NmNiMDUyMSIsImMiOjF9) 
+
+[![Preview](docs/dashboard_preview.png)](https://app.powerbi.com/view?r=eyJrIjoiMWE4YzViOWMtY2RiYy00ZTk1LWExNTgtMTg5YjZjNTE2NjIzIiwidCI6ImI3Yzk1YTkyLTBlYWQtNDRlOS04YjgzLTdjMGY5NmNiMDUyMSIsImMiOjF9)
+
+The dashboard is still a work in progress. Feel free to submit a ticket if some feature is not working as intended.
