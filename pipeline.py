@@ -7,7 +7,6 @@ import logging
 from pathlib import Path
 from argparse import ArgumentParser
 
-import docker
 import pandas as pd
 from qdrant_client import QdrantClient 
 
@@ -17,16 +16,6 @@ from save_faces import save_faces
 
 from Visage.visage import run_visage
 
-
-def pull_if_not_exists(image_name):
-    client = docker.from_env()
-    try:
-        client.images.get(image_name)
-    except docker.errors.ImageNotFound:
-        client.images.pull(image_name)
-    except docker.errors.APIError as e:
-        logger.error(f"Docker error: {e}")
-        
 
 def gather_files(d,
                  ext=None):
