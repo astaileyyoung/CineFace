@@ -21,5 +21,8 @@ dependencies = [
     "tqdm==4.67.1"
 ]
 
+[tool.setuptools]
+packages=["cineface"]
+
 [project.urls]
 Homepage = "https://github.com/astaileyyoung/CineFace"

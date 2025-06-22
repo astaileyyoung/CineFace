@@ -10,11 +10,11 @@ from argparse import ArgumentParser
 import pandas as pd
 from qdrant_client import QdrantClient 
 
-from metadata import get_metadata
-from match_faces import match_faces
-from save_faces import save_faces
+from cineface.metadata import get_metadata
+from cineface.match_faces import match_faces
+from cineface.save_faces import save_faces
 
-from Visage.visage import run_visage
+from visage import run_visage
 
 
 def gather_files(d,
