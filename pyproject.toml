@@ -20,6 +20,15 @@ dependencies = [
     "Cinemagoer==2023.5.1",
     "tqdm==4.67.1"
 ]
+license = {text = "MIT"}
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+[project.scripts]
+cineface = "cineface.pipeline:main"
 
 [tool.setuptools]
 packages=["cineface"]

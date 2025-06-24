@@ -15,17 +15,27 @@ Simply download the source code
 git clone https://github.com/astaileyyoung/CineFace.git
 ```
 
+Then install the required dependencies
+```
+pip install -r requirements.txt
+```
+
+Finally, install CineFace
+```
+pip install -e .
+```
+
 CineFace uses Visage as a backend for accurate, high-performance facial detection and encoding. [Visage](https://github.com/astaileyyoung/Visage) can also be used independently.
 
 **Be advised that the associated docker image is quite large (~17GB) since it relies on heavy ML libraries built from source, so it will take a while to download (~10-15 minutes). 
 
 
 ## Usage
-Running CineFace is straightforward. Simply use the pipeline.py script
+Running CineFace is straightforward.
 
 #### **Basic Command**
 ```
-python pipeline.py <src> <dst> [options]
+cineface <src> <dst> [options]
 ```
 - `<src>`: Path to the input video file
 - `<dst>`: Path to the output file
