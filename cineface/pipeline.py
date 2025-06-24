@@ -3,14 +3,13 @@ import os
 os.environ["TF_USE_LEGACY_KERAS"] = "1"
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 
-import gc
 import logging
+import multiprocessing as mp
 from pathlib import Path
 from argparse import ArgumentParser
 
 import pandas as pd
 from qdrant_client import QdrantClient 
-from tensorflow.keras import backend as K
 
 from cineface.metadata import get_metadata
 from cineface.match_faces import match_faces
@@ -42,6 +41,26 @@ def add_metadata(df, metadata):
     return df
 
 
+def match_faces_worker(df, client_info, encoding_col, recognition_model, threshold, batch_size, timeout):
+    import gc
+    from tensorflow.keras import backend as K
+
+    qdrant_client, qdrant_port = client_info
+    client = QdrantClient(host=qdrant_client, port=qdrant_port)
+    logger.debug(f'Successfully connected to Qdrant database at {qdrant_client}: {qdrant_port}')
+
+    result_df = match_faces(df, 
+                            client, 
+                            encoding_col=encoding_col,
+                            recognition_model=recognition_model,
+                            threshold=threshold,
+                            batch_size=batch_size,
+                            timeout=timeout)
+    K.clear_session()
+    gc.collect()
+    return result_df
+
+
 def pipeline(file,
              client,
              frameskip=24,
@@ -63,18 +82,16 @@ def pipeline(file,
     
     df = add_metadata(df, metadata)
     logger.info('Matching faces ...')
-    df = match_faces(df, 
-                     client, 
-                     encoding_col=encoding_col,
-                     recognition_model=recognition_model, 
-                     threshold=threshold, 
-                     batch_size=batch_size,
-                     timeout=timeout)
+
+    with mp.get_context('spawn').Pool(1) as pool:
+        result = pool.apply_async(
+            match_faces_worker,
+            (df, client, encoding_col, recognition_model, threshold, batch_size, timeout)
+        )
+        df = result.get(timeout=timeout)
+
     logger.info('Finished matching.')
     Path('temp.csv').unlink()
-
-    K.clear_session()
-    gc.collect()
     
     return df
 
@@ -113,9 +130,6 @@ def main():
     handler.setFormatter(formatter)
     logger.addHandler(handler)    
 
-    client = QdrantClient(host=args.qdrant_client, port=args.qdrant_port)
-    logger.debug(f'Successfully connected to Qdrant database at {args.qdrant_client}: {args.qdrant_port}')
-
     metadata = {
         'imdb_id': args.imdb_id,
         'season': args.season,
@@ -125,7 +139,7 @@ def main():
     logger.info(f'Saving results to {args.dst}')
     df = pipeline(
             args.src, 
-            client,
+            (args.qdrant_client, args.qdrant_port),
             encoding_col=args.encoding_col,
             image=args.image,
             frameskip=args.frameskip,
