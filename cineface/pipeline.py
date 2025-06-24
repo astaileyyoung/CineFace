@@ -17,6 +17,9 @@ from cineface.save_faces import save_faces
 from visage import run_visage
 
 
+logger = logging.getLogger("pipeline")
+
+
 def gather_files(d,
                  ext=None):
     import os 
@@ -42,6 +45,7 @@ def pipeline(file,
              frameskip=24,
              encoding_col='encoding',
              image='astaileyyoung/visage',
+             model_dir=Path.home() / '.visage/models',
              log_level='info',
              show=False,
              recognition_model='Facenet',
@@ -52,7 +56,7 @@ def pipeline(file,
     if not metadata:
         metadata = get_metadata(file)
     
-    run_visage(file, 'temp.csv', image, frameskip, log_level, show)
+    run_visage(file, 'temp.csv', image, frameskip, log_level, show, model_dir)
     df = pd.read_csv('temp.csv')
     
     df = add_metadata(df, metadata)
@@ -69,7 +73,40 @@ def pipeline(file,
     return df
 
 
-def main(args):
+def main():
+    ap = ArgumentParser()
+    ap.add_argument('src')
+    ap.add_argument('dst')
+    ap.add_argument('imdb_id')
+    ap.add_argument('--faces_dir', default=None)
+    ap.add_argument('--encoding_col', default='embedding')
+    ap.add_argument('--image', default='astaileyyoung/visage', type=str)
+    ap.add_argument('--frameskip', default=24, type=int)
+    ap.add_argument('--log_level', default='info', type=str)
+    ap.add_argument('--show', action='store_true')
+    ap.add_argument('--threshold', '-t', default=0.5, type=float)
+    ap.add_argument('--timeout', default=60, type=int)
+    ap.add_argument('--batch_size', default=256, type=int)
+    ap.add_argument('--season', default=None, type=int)
+    ap.add_argument('--episode', default=None, type=int)
+    ap.add_argument('--qdrant_client', default='localhost')
+    ap.add_argument('--qdrant_port', default=6333, type=int)
+    args = ap.parse_args()
+
+    levels = {
+        'debug': 10,
+        'info': 20,
+        'warning': 30,
+        'error': 40
+    }
+    level = levels[args.log_level]
+
+    handler = logging.StreamHandler()
+    handler.setLevel(level)
+    formatter = logging.Formatter('[%(levelname)s]: %(message)s')
+    handler.setFormatter(formatter)
+    logger.addHandler(handler)    
+
     client = QdrantClient(host=args.qdrant_client, port=args.qdrant_port)
     logger.debug(f'Successfully connected to Qdrant database at {args.qdrant_client}: {args.qdrant_port}')
 
@@ -103,38 +140,4 @@ def main(args):
 
 
 if __name__ == '__main__':
-    ap = ArgumentParser()
-    ap.add_argument('src')
-    ap.add_argument('dst')
-    ap.add_argument('imdb_id')
-    ap.add_argument('--faces_dir', default=None)
-    ap.add_argument('--encoding_col', default='embedding')
-    ap.add_argument('--image', default='astaileyyoung/visage', type=str)
-    ap.add_argument('--frameskip', default=24, type=int)
-    ap.add_argument('--log_level', default='info', type=str)
-    ap.add_argument('--show', action='store_true')
-    ap.add_argument('--threshold', '-t', default=0.5, type=float)
-    ap.add_argument('--timeout', default=60, type=int)
-    ap.add_argument('--batch_size', default=256, type=int)
-    ap.add_argument('--season', default=None, type=int)
-    ap.add_argument('--episode', default=None, type=int)
-    ap.add_argument('--qdrant_client', default='localhost')
-    ap.add_argument('--qdrant_port', default=6333, type=int)
-    args = ap.parse_args()
-
-    levels = {
-        'debug': 10,
-        'info': 20,
-        'warning': 30,
-        'error': 40
-    }
-    level = levels[args.log_level]
-
-    logger = logging.getLogger("pipeline")
-    handler = logging.StreamHandler()
-    handler.setLevel(level)
-    formatter = logging.Formatter('[%(levelname)s]: %(message)s')
-    handler.setFormatter(formatter)
-    logger.addHandler(handler)    
-
-    main(args)
+    main()
