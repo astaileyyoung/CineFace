@@ -3,12 +3,14 @@ import os
 os.environ["TF_USE_LEGACY_KERAS"] = "1"
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 
+import gc
 import logging
 from pathlib import Path
 from argparse import ArgumentParser
 
 import pandas as pd
 from qdrant_client import QdrantClient 
+from tensorflow.keras import backend as K
 
 from cineface.metadata import get_metadata
 from cineface.match_faces import match_faces
@@ -70,6 +72,10 @@ def pipeline(file,
                      timeout=timeout)
     logger.info('Finished matching.')
     Path('temp.csv').unlink()
+
+    K.clear_session()
+    gc.collect()
+    
     return df
 
 
