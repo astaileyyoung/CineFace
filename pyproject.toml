@@ -18,7 +18,9 @@ dependencies = [
     "numpy==1.26.4",
     "tmdbv3api==1.9.0",
     "Cinemagoer==2023.5.1",
-    "tqdm==4.67.1"
+    "tqdm==4.67.1",
+    "tensorflow==2.19.0",
+    "tf-keras==2.19.0"
 ]
 license = {text = "MIT"}
 classifiers = [

@@ -57,7 +57,7 @@ def match_faces_worker(src, client_info, encoding_col, recognition_model, thresh
                             threshold=threshold,
                             batch_size=batch_size,
                             timeout=timeout)
-
+    # result_df.to_csv('temp_matched.csv', index=False)
     K.clear_session()
     gc.collect()
     return result_df
@@ -94,6 +94,14 @@ def pipeline(file,
         df = async_result.get()
     logger.info('Finished matching.')
     
+    # df = pd.read_csv('temp_matched.csv')
+    # df = match_faces(df, 
+    #                  client,
+    #                  encoding_col=encoding_col,
+    #                  recognition_model=recognition_model,
+    #                  threshold=threshold,
+    #                  batch_size=batch_size,
+    #                  timeout=timeout)
     Path('temp.csv').unlink()
     Path('temp_meta.csv').unlink()
     return df
