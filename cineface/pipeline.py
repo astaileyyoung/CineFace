@@ -41,10 +41,11 @@ def add_metadata(df, metadata):
     return df
 
 
-def match_faces_worker(df, client_info, encoding_col, recognition_model, threshold, batch_size, timeout):
+def match_faces_worker(src, client_info, encoding_col, recognition_model, threshold, batch_size, timeout):
     import gc
     from tensorflow.keras import backend as K
 
+    df = pd.read_csv(src)
     qdrant_client, qdrant_port = client_info
     client = QdrantClient(host=qdrant_client, port=qdrant_port)
     logger.debug(f'Successfully connected to Qdrant database at {qdrant_client}: {qdrant_port}')
@@ -56,13 +57,14 @@ def match_faces_worker(df, client_info, encoding_col, recognition_model, thresho
                             threshold=threshold,
                             batch_size=batch_size,
                             timeout=timeout)
+
     K.clear_session()
     gc.collect()
     return result_df
 
 
 def pipeline(file,
-             client,
+             client_info,
              frameskip=24,
              encoding_col='encoding',
              image='astaileyyoung/visage',
@@ -82,17 +84,18 @@ def pipeline(file,
     
     df = add_metadata(df, metadata)
     logger.info('Matching faces ...')
+    df.to_csv('temp_meta.csv', index=False)
 
     with mp.get_context('spawn').Pool(1) as pool:
-        result = pool.apply_async(
+        async_result = pool.apply_async(
             match_faces_worker,
-            (df, client, encoding_col, recognition_model, threshold, batch_size, timeout)
+            ('temp_meta.csv', client_info, encoding_col, recognition_model, threshold, batch_size, timeout)
         )
-        df = result.get(timeout=timeout)
-
+        df = async_result.get()
     logger.info('Finished matching.')
-    Path('temp.csv').unlink()
     
+    Path('temp.csv').unlink()
+    Path('temp_meta.csv').unlink()
     return df
 
 
@@ -130,11 +133,12 @@ def main():
     handler.setFormatter(formatter)
     logger.addHandler(handler)    
 
-    metadata = {
-        'imdb_id': args.imdb_id,
-        'season': args.season,
-        'episode': args.episode
-    }
+    metadata = {}
+    keys = ('imdb_id', 'season', 'episode')
+    for num, arg in enumerate((args.imdb_id, args.season, args.episode)):
+        if arg is not None:
+            metadata[keys[num]] = arg 
+
     logger.info(f'Running detection on {args.src}')
     logger.info(f'Saving results to {args.dst}')
     df = pipeline(
