@@ -1,6 +1,7 @@
 import os
 
 os.environ["TF_USE_LEGACY_KERAS"] = "1"
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 
 import ast
 import time
@@ -60,12 +61,15 @@ def parse_response(response,
 
 
 def match_faces(df, 
-                client, 
+                client_info, 
                 threshold=0.5, 
                 timeout=60,
                 recognition_model='Facenet', 
                 encoding_col='encoding',
                 batch_size=1024):
+    host, port = client_info
+    client = QdrantClient(host=host, port=port)
+
     imdb_id = df.at[0, 'imdb_id']
     season = df.at[0, 'season'] if 'season' in df.columns else None
     episode = df.at[0, 'episode'] if 'episode' in df.columns else None

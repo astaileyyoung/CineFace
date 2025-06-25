@@ -49,9 +49,7 @@ def add_metadata(df, metadata):
 
 class Pipeline(object):
     def __init__(self, client_info):
-        host, port = client_info
-        self.client = QdrantClient(host=host, port=port)
-        logger.debug(f'Successfully connected to Qdrant database at {host}: {port}')
+        self.client_info = client_info
 
         self.docker_client = docker.from_env()
         self.container = None
@@ -94,7 +92,7 @@ class Pipeline(object):
         logger.info('Matching faces ...')
         
         df = match_faces(df, 
-                         self.client, 
+                         self.client_info, 
                          encoding_col=encoding_col,
                          recognition_model=recognition_model,
                          threshold=threshold,
