@@ -66,19 +66,19 @@ class Pipeline(object):
             print("No container to stop.")
         sys.exit(1)
 
-    def run_pipeline(self,
-                     file,
-                     frameskip=24,
-                     encoding_col='encoding',
-                     image='astaileyyoung/visage',
-                     model_dir=Path.home() / '.visage/models',
-                     log_level='info',
-                     show=False,
-                     recognition_model='Facenet',
-                     threshold=0.5,
-                     timeout=60,
-                     batch_size=256,
-                     metadata=None):
+    def run(self,
+            file,
+            frameskip=24,
+            encoding_col='encoding',
+            image='astaileyyoung/visage',
+            model_dir=Path.home() / '.visage/models',
+            log_level='info',
+            show=False,
+            recognition_model='Facenet',
+            threshold=0.5,
+            timeout=60,
+            batch_size=256,
+            metadata=None):
         if not metadata:
             metadata = get_metadata(file)
         
@@ -105,6 +105,22 @@ class Pipeline(object):
 
         return df
 
+
+def run_pipeline(args, queue):
+    pipe = Pipeline((args['qdrant_client'], args['qdrant_port']))
+    df = pipe.run_pipeline(
+        args['src'],
+        encoding_col=args['encoding_col'],
+        image=args['image'],
+        frameskip=args['frameskip'],
+        log_level=args['log_level'],
+        show=args['show'],
+        threshold=args['threshold'],
+        timeout=args['timeout'],
+        batch_size=args['batch_size'],
+        metadata=args['metadata']
+    )
+    queue.put(df)
 
 
 def main():
@@ -149,18 +165,15 @@ def main():
 
     logger.info(f'Running detection on {args.src}')
     logger.info(f'Saving results to {args.dst}')
-    pipe = Pipeline((args.qdrant_client, args.qdrant_port))
-    df = pipe.run_pipeline(args.src, 
-                           encoding_col=args.encoding_col,
-                           image=args.image,
-                           frameskip=args.frameskip,
-                           log_level=args.log_level,
-                           show=args.show,
-                           threshold=args.threshold,
-                           timeout=args.timeout,
-                           batch_size=args.batch_size,
-                           metadata=metadata
-    )
+
+    ctx = mp.get_context('spawn')
+    queue = ctx.Queue()
+    proc = ctx.Process(target=run_pipeline, args=(dict(args), queue))
+    proc.start()
+    proc.join()
+
+    df = queue.get()
+
     if df is None:
         exit() 
     
