@@ -157,7 +157,7 @@ def run_pipeline(
     metadata=None
 ):
     ctx = mp.get_context('spawn')
-    queue = mp.Queue()
+    queue = ctx.Queue()
     proc = ctx.Process(
         target=run_pipeline_worker,
         args=(
