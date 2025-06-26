@@ -71,7 +71,7 @@ class Pipeline(object):
             frameskip=24,
             encoding_col='encoding',
             image='astaileyyoung/visage',
-            model_dir=Path.home() / '.visage/models',
+            model_dir=None,
             log_level='info',
             show=False,
             recognition_model='Facenet',
@@ -79,6 +79,9 @@ class Pipeline(object):
             timeout=60,
             batch_size=256,
             metadata=None):
+        if model_dir is None:
+            model_dir = Path.home() / '.visage/models'
+
         if not metadata:
             metadata = get_metadata(file)
         
@@ -106,21 +109,78 @@ class Pipeline(object):
         return df
 
 
-def run_pipeline(args, queue):
-    pipe = Pipeline((args['qdrant_client'], args['qdrant_port']))
-    df = pipe.run_pipeline(
-        args['src'],
-        encoding_col=args['encoding_col'],
-        image=args['image'],
-        frameskip=args['frameskip'],
-        log_level=args['log_level'],
-        show=args['show'],
-        threshold=args['threshold'],
-        timeout=args['timeout'],
-        batch_size=args['batch_size'],
-        metadata=args['metadata']
+def run_pipeline_worker(src, 
+                        client_info,
+                        queue,
+                        frameskip=1,
+                        encoding_col='encoding',
+                        image='astaileyyoung/visage',
+                        model_dir=Path.home() / '.visage/models',
+                        log_level='info',
+                        show=False,
+                        recognition_model='Facenet',
+                        threshold=0.5,
+                        timeout=60,
+                        batch_size=256,
+                        metadata=None
+                        ):
+    pipe = Pipeline(client_info)
+    df = pipe.run(src,
+                  encoding_col=encoding_col,
+                  image=image,
+                  frameskip=frameskip,
+                  model_dir=model_dir,
+                  recognition_model=recognition_model,
+                  log_level=log_level,
+                  show=show,
+                  threshold=threshold,
+                  timeout=timeout,
+                  batch_size=batch_size,
+                  metadata=metadata
     )
     queue.put(df)
+
+
+def run_pipeline(
+    src,
+    client_info,
+    frameskip=1,
+    encoding_col='encoding',
+    image='astaileyyoung/visage',
+    model_dir=None,
+    log_level='info',
+    show=False,
+    recognition_model='Facenet',
+    threshold=0.5,
+    timeout=60,
+    batch_size=256,
+    metadata=None
+):
+    ctx = mp.get_context('spawn')
+    queue = mp.Queue()
+    proc = ctx.Process(
+        target=run_pipeline_worker,
+        args=(
+            src,
+            client_info,
+            queue,
+            frameskip,
+            encoding_col,
+            image,
+            model_dir,
+            log_level,
+            show,
+            recognition_model,
+            threshold,
+            timeout,
+            batch_size,
+            metadata
+        )
+    )
+    proc.start()
+    df = queue.get()
+    proc.join()
+    return df 
 
 
 def main():
@@ -141,6 +201,7 @@ def main():
     ap.add_argument('--episode', default=None, type=int)
     ap.add_argument('--qdrant_client', default='localhost')
     ap.add_argument('--qdrant_port', default=6333, type=int)
+    ap.add_argument('--model_dir', default=None)
     args = ap.parse_args()
 
     levels = {
@@ -166,13 +227,22 @@ def main():
     logger.info(f'Running detection on {args.src}')
     logger.info(f'Saving results to {args.dst}')
 
-    ctx = mp.get_context('spawn')
-    queue = ctx.Queue()
-    proc = ctx.Process(target=run_pipeline, args=(dict(args), queue))
-    proc.start()
-    proc.join()
-
-    df = queue.get()
+    client_info = (args.qdrant_client, args.qdrant_port)
+    df = run_pipeline(
+        args.src,
+        client_info,
+        frameskip=args.frameskip,
+        encoding_col=args.encoding_col,
+        image=args.image,
+        model_dir=args.model_dir,
+        log_level=args.log_level,
+        show=args.show,
+        recognition_model='Facenet',
+        threshold=args.threshold,
+        timeout=args.timeout,
+        batch_size=args.batch_size,
+        metadata=metadata
+    )
 
     if df is None:
         exit() 
