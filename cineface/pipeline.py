@@ -69,7 +69,7 @@ class Pipeline(object):
     def run(self,
             file,
             frameskip=24,
-            encoding_col='encoding',
+            encoding_col='embedding',
             image='astaileyyoung/visage',
             model_dir=None,
             log_level='info',
@@ -113,7 +113,7 @@ def run_pipeline_worker(src,
                         client_info,
                         queue,
                         frameskip=1,
-                        encoding_col='encoding',
+                        encoding_col='embedding',
                         image='astaileyyoung/visage',
                         model_dir=Path.home() / '.visage/models',
                         log_level='info',
@@ -141,20 +141,19 @@ def run_pipeline_worker(src,
     queue.put(df)
 
 
-def run_pipeline(
-    src,
-    client_info,
-    frameskip=1,
-    encoding_col='encoding',
-    image='astaileyyoung/visage',
-    model_dir=None,
-    log_level='info',
-    show=False,
-    recognition_model='Facenet',
-    threshold=0.5,
-    timeout=60,
-    batch_size=256,
-    metadata=None
+def run_pipeline(src,
+                 client_info,
+                 frameskip=1,
+                 encoding_col='embedding',
+                 image='astaileyyoung/visage',
+                 model_dir=None,
+                 log_level='info',
+                 show=False,
+                 recognition_model='Facenet',
+                 threshold=0.5,
+                 timeout=60,
+                 batch_size=256,
+                 metadata=None
 ):
     ctx = mp.get_context('spawn')
     queue = ctx.Queue()
