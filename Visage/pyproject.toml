@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "visage-python"
+version = "0.1.1"
+description = "Video facial recognition pipeline with C++ core and Python bindings"
+authors = [
+    { name = "Amos Stailey-Young", email = "amosstaileyyoung@gmail.com" }
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+dependencies = [
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://github.com/astaileyyoung/Visage"
+
+[project.scripts]
+visage = "visage.core:main"
+
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["visage*"]

@@ -1,0 +1,41 @@
+name: Benchmark Results
+description: Submit your Visage benchmark results
+title: "[Benchmark] Results from <Your GPU Model>"
+labels: [benchmark, community]
+body:
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU Model
+      description: What GPU did you run the benchmark on?
+      placeholder: NVIDIA GeForce RTX 4080
+    validations:
+      required: true
+  - type: input
+    id: cpu
+    attributes:
+      label: CPU Model
+      description: (optional)
+      placeholder: Intel i7-12700K
+  - type: input
+    id: os
+    attributes:
+      label: Operating System, CUDA, and cuDNN versions
+      placeholder: Ubuntu 24.04, CUDA 12.8, cuDNN 9.10.1
+    validations:
+      required: true
+  - type: textarea
+    id: results
+    attributes:
+      label: Benchmark Results
+      description: Paste the relevant numbers (e.g., speed, resolution, etc.)
+      placeholder: |
+        - 1920x1080: 120 fps detection, 100 fps embedding
+        - 3840x2160: 40 fps detection, 32 fps embedding
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Anything else you'd like to share? (driver versions, settings, anomalies, etc.)
