@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "CineFace"
+version = "0.1.0"
+description = "CineFace: A Database of Identified Faces in Film and Television"
+authors = [
+    { name="Amos Stailey-Young", email="amosstaileyyoung@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "qdrant_client==1.14.3",
+    "pandas==2.2.3",
+    "deepface>=0.0.93",
+    "numpy==1.26.4",
+    "tmdbv3api==1.9.0",
+    "Cinemagoer==2023.5.1",
+    "tqdm==4.67.1",
+    "tensorflow==2.19.0",
+    "tf-keras==2.19.0"
+]
+license = {text = "MIT"}
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+[project.scripts]
+cineface = "cineface.pipeline:main"
+
+[tool.setuptools]
+packages=["cineface"]
+
+[project.urls]
+Homepage = "https://github.com/astaileyyoung/CineFace"

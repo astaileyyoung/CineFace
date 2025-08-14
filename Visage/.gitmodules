@@ -1,0 +1,9 @@
+[submodule "include/spdlog"]
+	path = include/spdlog
+	url = https://github.com/gabime/spdlog.git
+[submodule "include/indicators"]
+	path = include/indicators
+	url = https://github.com/p-ranav/indicators.git
+[submodule "include/highfive"]
+	path = include/highfive
+	url = https://github.com/highfive-devs/highfive.git

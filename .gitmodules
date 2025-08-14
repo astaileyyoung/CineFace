@@ -1,0 +1,4 @@
+[submodule "Visage"]
+	path = Visage
+	url = https://github.com/astaileyyoung/Visage.git
+	branch = dev
