@@ -6,3 +6,6 @@ Untitled*
 models
 logs
 *.db
+notebooks/research/dataset_cleanup.ipynb
+faces_from_db.py
+*.duckdb
