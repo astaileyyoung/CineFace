@@ -9,3 +9,6 @@ logs
 *.duckdb
 faces_from_db.py
 notebooks/research/dataset_cleanup.ipynb
+temp*
+notebooks/research/newplot.png
+

@@ -135,8 +135,8 @@ class Pipeline(object):
 
         detection_metadata['match_threshold'] = threshold
         detection_metadata['imdb_id'] = metadata['imdb_id']
-        detection_metadata['season'] = metadata['season']
-        detection_metadata['episode'] = metadata['episode']
+        detection_metadata['season'] = metadata.get("season", None)
+        detection_metadata['episode'] = metadata.get("episode", None)
         
         df = pd.DataFrame(data)
         df = add_metadata(df, metadata)
