@@ -10,5 +10,6 @@ logs
 faces_from_db.py
 notebooks/research/dataset_cleanup.ipynb
 temp*
-notebooks/research/newplot.png
-
+research/**/newplot.png
+research/**/data/
+research/**/plots/
