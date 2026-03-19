@@ -1,3 +1,4 @@
+import logging
 import itertools
 
 import cv2
@@ -8,6 +9,16 @@ import plotly.express as px
 import plotly.graph_objs as go
 import scipy.ndimage as ndimage
 from scipy.spatial import distance
+
+
+handler = logging.StreamHandler()
+handler.setLevel(20)
+formatter = logging.Formatter('[%(asctime)s] [utils] [%(levelname)s]: %(message)s',
+                                datefmt='%Y-%m-%d %H:%M:%S')
+handler.setFormatter(formatter)
+logger = logging.getLogger("utils")
+logger.addHandler(handler)
+logger.setLevel(20)
 
 
 layout = {
@@ -72,112 +83,131 @@ def create_gridmap_from_director(name, conn, layout=None, size=600):
     fig.show()
 
 
-def get_sample_grid(conn):
-    query = """
-        SELECT 
-            AVG(pct_faces_top_left) as tl, AVG(pct_faces_top_center) as tc, AVG(pct_faces_top_right) as tr,
-            AVG(pct_faces_mid_left) as ml, AVG(pct_faces_mid_center) as mc, AVG(pct_faces_mid_right) as mr,
-            AVG(pct_faces_bot_left) as bl, AVG(pct_faces_bot_center) as bc, AVG(pct_faces_bot_right) as br
-        FROM factWork
-    """
-    df = conn.execute(query).df()
+def get_sample_grid(engine):
+    with engine.connect() as conn:
+        query = """
+            SELECT 
+                AVG(pct_tl), AVG(pct_tc) as tc, AVG(pct_tr) as tr,
+                AVG(pct_ml), AVG(pct_mc) as mc, AVG(pct_mr) as mr,
+                AVG(pct_bl), AVG(pct_bc) as bc, AVG(pct_br) as br
+            FROM factWork
+        """
+        df = pd.read_sql_query(db.text(query), conn)
     grid = df.values.reshape(3, 3)
     grid_norm = grid / grid.sum()
-    return grid_norm
+    return (grid_norm * 100).round(1)
 
 
-def plot_grid(grid, plot_title=None, size=600, layout=None):
+def plot_grid(grid, plot_title=None, width=600, height=600, layout=None, dst=None, transparent=False):
     # Center the color scale at zero
     limit = max(abs(grid.min()), abs(grid.max()))
     
     fig = px.imshow(
         grid,
-        x=['Left', 'Middle', 'Right'],
-        y=['Top', 'Center', 'Bottom'],
+        x = ['Left', 'Middle', 'Right'],
+        y = ['Top', 'Center', 'Bottom'],
         color_continuous_scale='Aggrnyl', 
-        range_color=[-limit, limit],
-        text_auto=".3f", # This shows the difference value in each box
+        # range_color=[-limit, limit],
+        text_auto=".1f", # This shows the difference value in each box
         title=plot_title if plot_title else "",
         aspect="equal"
     )
 
     if layout:
         fig.update_layout(layout)
-    fig.update_layout(
-        title={
+
+    unified_layout = {
+        "title": {
             "text": plot_title if plot_title else "",
-            "x": 0.5,
-            "xanchor": "center",
-            "yanchor": "top"
+            "x": 0.5, "xanchor": "center", "yanchor": "top"
         },
-        width=size,
-        height=size,
-        xaxis=dict(side="bottom"),
-        yaxis=dict(autorange="reversed"), 
-        margin=dict(l=50, r=50, t=80, b=50),
-        coloraxis_colorbar=dict(title="Delta %"),
-        xaxis_title="Horizontal Position",
-        yaxis_title="Vertical Position",
-        template="plotly_dark"
-    )
+        "width": width,
+        "height": height,
+        "xaxis": dict(side="bottom", title="Horizontal Position"),
+        "yaxis": dict(autorange="reversed", title="Vertical Position"), 
+        "margin": dict(l=50, r=50, t=100, b=50), # Increased top margin for Canva title safety
+        "coloraxis_colorbar": dict(title="%")
+    }
+
+    fig.update_layout(unified_layout)
     
     fig.show()
+    if dst:
+        if transparent:
+            fig.update_layout(
+                paper_bgcolor='rgba(0,0,0,0)', # Transparent outer background
+                plot_bgcolor='rgba(0,0,0,0)',  # Transparent inner plot area
+                font=dict(color="white")       # Good if your Canva theme is dark
+            )
+        fig.write_image(dst, width=width, height=height, scale=2)
 
 
-def plot_sample_grid(conn, plot_title=None, layout=None):
-    grid_norm = get_sample_grid(conn)
-    plot_grid(grid_norm, plot_title=plot_title, layout=layout)
+def plot_sample_grid(engine, plot_title=None, layout=None, dst=None):
+    grid_norm = get_sample_grid(engine)
+    plot_grid(grid_norm, plot_title=plot_title, layout=layout, dst=dst)
 
 
-def compare_director_to_sample_grid(name, conn, plot_title=None, layout=None):
-    query = f"""
-        SELECT 
-            AVG(pct_faces_top_left), AVG(pct_faces_top_center) as tc, AVG(pct_faces_top_right) as tr,
-            AVG(pct_faces_mid_left), AVG(pct_faces_mid_center) as mc, AVG(pct_faces_mid_right) as mr,
-            AVG(pct_faces_bot_left), AVG(pct_faces_bot_center) as bc, AVG(pct_faces_bot_right) as br
-        FROM CineFaceDW.vwGridByJob gbj
-        WHERE gbj.name = '{name}' AND gbj.job_name = 'Director'
-        GROUP BY gbj.name
-        """
-    df = conn.execute(query).df()
+def compare_director_to_sample_grid(name, 
+                                    engine, 
+                                    title=None, 
+                                    layout=None,
+                                    dst=None,
+                                    transparent=False,
+                                    width=600,
+                                    height=600):
+    with engine.connect() as conn:
+        query = f"""
+            SELECT 
+                AVG(pct_tl), AVG(pct_tc) as tc, AVG(pct_tr) as tr,
+                AVG(pct_ml), AVG(pct_mc) as mc, AVG(pct_mr) as mr,
+                AVG(pct_bl), AVG(pct_bc) as bc, AVG(pct_br) as br
+            FROM CineFaceDW.vwGridByJob gbj
+            WHERE gbj.name = '{name}' AND gbj.job_name = 'Director'
+            GROUP BY gbj.name
+            """
+        df = pd.read_sql_query(db.text(query), conn)
+
     temp = df.mean()
-    grid = temp.values.reshape(3, 3)
-    grid_norm = get_sample_grid(conn)
-    diff_grid = grid - grid_norm
-    plot_grid(diff_grid, plot_title=plot_title, layout=layout)
+    grid = temp.values.reshape(3, 3) * 100
+    grid_norm = get_sample_grid(engine)
+    diff_grid = (grid - grid_norm)
+    plot_grid(diff_grid, plot_title=title, layout=layout, dst=dst, width=width, height=height, transparent=transparent)
 
 
-def plot_sample(g, x, y, name_field="name"):
-    fig = px.scatter(g, 
-                    x=x,
-                    y=y,
-                    hover_name=name_field,
-                    color_discrete_sequence=["#79b8b8"],
-                    trendline="ols")
-    fig.update_layout(layout)
-    fig.update_layout(
-        xaxis=dict(title=x),
-        yaxis=dict(title=y)
-    )
-    fig.update_traces(marker=dict(size=8, line=dict(width=1, color="white")))
-    fig.update_traces(selector=dict(mode="lines"), line=dict(dash="dash", color="#d81275", width=5), name="Trend")
-    fig.show()
-
-
-def plot_directors_against_sample(g, x, y, names):
+def plot_directors_against_sample(g, 
+                                  x, 
+                                  y, 
+                                  names, 
+                                  hover_data=["name"], 
+                                  name_field="name", 
+                                  dst=None,
+                                  width=1200,
+                                  height=800,
+                                  title=None,
+                                  x_title=None,
+                                  y_title=None,
+                                  transparent=False,
+                                  margin=dict(t=100, l=50, r=50, b=50)):
     colors = px.colors.qualitative.Bold
     fig = px.scatter(g, 
                     x=x,
                     y=y,
-                    hover_name="name",
+                    hover_data=hover_data,
                     color_discrete_sequence=["#79b8b8"],
                     trendline="ols")
     fig.update_layout(layout)
-    fig.update_layout(xaxis=dict(title=x), yaxis=dict(title=y))
+    fig.update_layout(
+        xaxis=dict(
+            title=x_title if x_title else x), 
+        yaxis=dict(
+            title=y_title if y_title else y), 
+        title=dict(text=title),
+        margin=margin
+    )
     fig.update_traces(marker=dict(size=8, line=dict(width=1, color="white")))
     fig.update_traces(selector=dict(mode="lines"), line=dict(dash="dash", color="#d81275", width=5), name="Trend")
     for num, name in enumerate(names):
-        temp = g[g['name'] == name]
+        temp = g[g[name_field] == name]
         fig.add_trace(go.Scatter(x=temp[x], 
                                 y=temp[y], 
                                 marker=dict(
@@ -189,30 +219,182 @@ def plot_directors_against_sample(g, x, y, names):
                                     )
                                     ), name=name))
     fig.show()
+    
+    if dst:
+        if transparent:
+            fig.update_layout(
+                paper_bgcolor='rgba(0,0,0,0)', # Transparent outer background
+                plot_bgcolor='rgba(0,0,0,0)',  # Transparent inner plot area
+                font=dict(color="white")       # Good if your Canva theme is dark
+            )
+        fig.write_image(dst, width=width, height=height, scale=2)
 
 
-def plot_director_films(df, x, y, name):
+def plot_directors_titles_sample(df, 
+                                 x, 
+                                 y, 
+                                 name, 
+                                 layout=None, 
+                                 title=None,
+                                 x_title=None,
+                                 y_title=None,
+                                 line=False, 
+                                 titles=None, 
+                                 trendline=False,
+                                 trendline_options=None,
+                                 dst=None, 
+                                 transparent=False, 
+                                 width=800, 
+                                 height=600):
     temp = df[df['person_name'] == name]
-    fig = px.scatter(temp, 
-                    x=x,
-                    y=y,
-                    hover_name="person_name",
-                    hover_data="title",
-                    color_discrete_sequence=["#79b8b8"],
-                    trendline="ols")
+    if titles:
+        temp = temp[temp['title'].isin(titles)]
+    sample = df.drop(temp.index)
+    if not line:
+        if trendline:
+            if trendline_options:
+                fig = px.scatter(sample, x=x, y=y,
+                        opacity=0.3,
+                        color_discrete_sequence=["white"],
+                        hover_name="title",
+                        trendline=trendline,
+                        trendline_options=trendline_options)
+            else:
+                fig = px.scatter(sample, x=x, y=y,
+                        opacity=0.3,
+                        color_discrete_sequence=["white"],
+                        hover_name="title",
+                        trendline=trendline)
+                
+            fig.update_traces(selector=dict(mode="lines"), line=dict(dash="dash", color="#d81275", width=5), name="Trend")
+        else:
+            fig = px.scatter(sample, x=x, y=y,
+                    opacity=0.3,
+                    color_discrete_sequence=["white"],
+                    hover_name="title")
+        fig.add_trace(
+            px.scatter(
+                temp, 
+                x=x,
+                y=y,
+                hover_name="title"
+            ).update_traces(
+                marker=dict(size=12, color='red', symbol='circle', line=dict(width=2, color='DarkSlateGrey')),
+                name=name # Label for the legend
+            ).data[0]
+        )
+    else:
+        fig = px.line(sample, x=x, y=y,
+                color_discrete_sequence=["white"],
+                hover_name="title")
+        fig.add_trace(
+            px.line(
+                temp, 
+                x=x,
+                y=y,
+                hover_name="title"
+            ).update_traces(
+                marker=dict(size=12, color='red', symbol='circle', line=dict(width=2, color='DarkSlateGrey')),
+                name=name # Label for the legend
+            ).data[0]
+        )
+    
+    if layout:
+        fig.update_layout(layout)
+    
+    fig.update_layout(xaxis=dict(title=x if not x_title else x_title), 
+                      yaxis=dict(title=y if not y_title else y_title),
+                      title=dict(text=title))
+    
+    if dst:
+        if transparent:
+            fig.update_layout(
+                paper_bgcolor='rgba(0,0,0,0)', # Transparent outer background
+                plot_bgcolor='rgba(0,0,0,0)',  # Transparent inner plot area
+                font=dict(color="white")       # Good if your Canva theme is dark
+            )
+        fig.write_image(dst, width=width, height=height, scale=2)
+    fig.show()
+
+
+def plot_director_films(df, 
+                        x, 
+                        y, 
+                        name, 
+                        hover_data=["title"], 
+                        marker_labels=False,
+                        transparent=None, 
+                        line=False, 
+                        title=None, 
+                        x_name=None, 
+                        y_name=None, 
+                        width=800,
+                        height=600,
+                        text_size=14,
+                        dst=None,
+                        trace_names=None):
+    # Ensure y is a list
+    y_list = [y] if not isinstance(y, list) else y
+    x_col = x[0] if isinstance(x, list) else x
+
+    fig = go.Figure()
+    temp = df[df['person_name'] == name].copy()
+    temp = temp.sort_values(by=x_col)
+
+    # x_spread = temp[x_col].max() - temp[x_col].min()
+    # y_spread = temp[y_val].max() - temp[y_val].min()
+
+    # Manually add a trace for every Y variable
+    for n, y_val in enumerate(y_list):
+        if line:
+            # Use go.Scatter for direct control so traces don't overwrite
+            fig.add_trace(go.Scatter(
+                x=temp[x_col],
+                y=temp[y_val],
+                name=y_val if not trace_names else trace_names[y_val],  # This creates the legend entry
+                mode='lines+markers' if not marker_labels else 'lines+markers+text',
+                hovertext=temp['title'],
+                text=temp['title'] if marker_labels and n == 0 else None,
+                textposition="top right",
+                hovertemplate="<b>%{hovertext}</b><br>Value: %{y}<extra></extra>",
+                textfont=dict(size=text_size, color="white", shadow="auto"))
+            )
+        else:
+            fig.add_trace(go.Scatter(
+                x=temp[x_col],
+                y=temp[y_val],
+                name=y_val if not trace_names else trace_names[y_val],
+                mode='markers',
+                hovertext=temp['title']
+            ))
+
+    # Apply your specific styling
+    fig.update_traces(marker=dict(size=8, line=dict(width=1, color="white")), line=dict(width=6), textposition="top right", cliponaxis=False)
+    
+    # Use your specific pink for the first line, teal for the second
+    if len(fig.data) > 0: fig.data[0].line.color = "#d81275"
+    if len(fig.data) > 1: fig.data[1].line.color = "#79b8b8"
+
     fig.update_layout(layout)
     fig.update_layout(
-        xaxis=dict(title=x), 
-        yaxis=dict(title=y), 
+        xaxis=dict(title=x if not x_name else x_name), 
+        yaxis=dict(title=y if not y_name else y_name), 
         title=dict(
-            text=f"{x} vs. {y}",
+            text=f"{x} vs. {y}" if not title else title,
             y=0.95
         )
     )
-    fig.update_traces(marker=dict(size=8, line=dict(width=1, color="white")))
-    fig.update_traces(selector=dict(mode="lines"), line=dict(dash="dash", color="#d81275", width=5), name="Trend")
+    
     fig.show()
-
+    if dst:
+        if transparent:
+            fig.update_layout(
+                paper_bgcolor='rgba(0,0,0,0)', # Transparent outer background
+                plot_bgcolor='rgba(0,0,0,0)',  # Transparent inner plot area
+                font=dict(color="white")       # Good if your Canva theme is dark
+            )
+        fig.write_image(dst, width=width, height=height, scale=2)
+    
 
 def plot_directors_3d(df, director_names, features=None):
     """
@@ -534,44 +716,121 @@ def create_gridmap_from_title(title, engine, year=None, layout=None, size=600):
     fig.show()
 
 
-def create_gridmap_from_director(title, engine, year=None, layout=None):
-    with engine.connect() as conn:
-        query = f"""
-            SELECT
-                face.imdb_id,
-                face.frame_num,
-                face.x1,
-                face.y1,
-                face.x2,
-                face.y2,
-                video.width AS img_width,
-                video.height AS img_height,
-                work.year
-            FROM face
-            INNER JOIN work ON work.imdb_id = face.imdb_id
-            INNER JOIN video ON video.video_id = work.video_id
-            WHERE work.title LIKE '{title}'
-        """
-        if year:
-            query += f" AND work.year = {year}"
-            
-        df = pd.read_sql_query(query, conn)
-    year = df.at[0, 'year']
+# def create_gridmap_from_director(director, engine, layout=None, size=600):
+#     with engine.connect() as conn:
+#         query = "SELECT * FROM vwFacesByDirector WHERE name = :director"
+#         df = pd.read_sql_query(db.text(query), conn, params={"director": director})
+
+#     if df.empty:
+#         print(f"Could not find {director} in database.")
     
-    mask = process_faces(df)
-    grid = create_grid(mask)
+#     mask = process_faces(df)
+#     grid = create_grid(mask)
+#     fig = px.imshow(np.round(grid, 3),
+#                     x=['Left', 'Center', 'Right'],
+#                     y=['Top', 'Middle', 'Bottom'],
+#                     labels={'color': 'Face Percent by Section'},
+#                     text_auto=True,
+#                     aspect='auto',
+#                     color_continuous_scale='Aggrnyl')
+#     if layout:
+#         fig.update_layout(layout)
+#     fig.update_layout(
+#         title={
+#             "text": f'Gridmap of Face Locations in films of {director})',
+#             "x": 0.5,
+#             "xanchor": "center",
+#             "yanchor": "top"
+#         },
+#         width=size,
+#         height=size,
+#         xaxis=dict(side="bottom"),
+#         yaxis=dict(autorange="reversed"), 
+#         margin=dict(l=50, r=50, t=80, b=50),
+#         coloraxis_colorbar=dict(title="Delta %"),
+#         xaxis_title="Horizontal Position",
+#         yaxis_title="Vertical Position",
+#         template="plotly_dark"
+#     )
+#     fig.show()
+
+
+def create_gridmap_from_director(director, 
+                                 engine, 
+                                 layout=None, 
+                                 width=600,
+                                 height=600,
+                                 transparent=False,
+                                 dst=None):
+    with engine.connect() as conn:
+        query = "SELECT * FROM vwFacesByDirector WHERE name = :director"
+        df = pd.read_sql_query(db.text(query), conn, params={"director": director})
+
+    if df.empty:
+        print(f"Could not find {director} in database.")
+        return
+
+    # --- INTERNAL LOGIC: Normalized Face Processing ---
+    # We use a 1000x1000 internal grid to normalize all aspect ratios
+    res = 1000
+    norm_mask = np.zeros(shape=(res, res), dtype=int)
+    
+    # Calculate normalized centers (0.0 to 1.0) and map to our grid
+    cx = (((df['x1'] + df['x2']) / 2) / df['img_width'] * (res - 1)).astype(int).values
+    cy = (((df['y1'] + df['y2']) / 2) / df['img_height'] * (res - 1)).astype(int).values
+    
+    # Filter valid coordinates inside our 1000x1000 space
+    valid = (cx >= 0) & (cx < res) & (cy >= 0) & (cy < res)
+    np.add.at(norm_mask, (cy[valid], cx[valid]), 1)
+    
+    # --- INTERNAL LOGIC: Create 3x3 Grid ---
+    # Split the 1000x1000 mask into 9 sectors
+    h_chunk = res // 3
+    w_chunk = res // 3
+    grid = np.zeros((3, 3))
+    
+    total_faces = norm_mask.sum()
+    if total_faces > 0:
+        for r in range(3):
+            for c in range(3):
+                sector = norm_mask[r*h_chunk:(r+1)*h_chunk, c*w_chunk:(c+1)*w_chunk]
+                grid[r, c] = (sector.sum() / total_faces) * 100
+    
+    # --- PLOTLY RENDERING ---
     fig = px.imshow(np.round(grid, 3),
-                    x=['Left', 'Center', 'Right'],
-                    y=['Top', 'Middle', 'Bottom'],
-                    labels={'color': 'Face Percent by Section'},
-                    text_auto=True,
+                    x=['Left', 'Middle', 'Right'],
+                    y=['Top', 'Center', 'Bottom'],
+                    labels={'color': '% of Total Faces'},
+                    text_auto=".1f",
                     aspect='auto',
                     color_continuous_scale='Aggrnyl')
+    
     if layout:
         fig.update_layout(layout)
-    fig.update_layout(title={'text': f'Gridmap of Face Locations in {title} ({year})',
-                            'y': 0.95})
+        
+    fig.update_layout(
+        title={
+            "text": f'Normalized Face Locations: {director}',
+            "x": 0.5, "xanchor": "center", "yanchor": "top"
+        },
+        width=width, height=height,
+        xaxis=dict(side="bottom"),
+        yaxis=dict(autorange="reversed"), 
+        margin=dict(l=50, r=50, t=100, b=50),
+        coloraxis_colorbar=dict(title="%"),
+        xaxis_title="Horizontal Position",
+        yaxis_title="Vertical Position",
+        template="plotly_dark"
+    )
     fig.show()
+    if dst:
+        if transparent:
+            fig.update_layout(
+                paper_bgcolor='rgba(0,0,0,0)', # Transparent outer background
+                plot_bgcolor='rgba(0,0,0,0)',  # Transparent inner plot area
+                font=dict(color="white")       # Good if your Canva theme is dark
+            )
+        fig.write_image(dst, width=width, height=height, scale=2)
 
 
 def plot_titles(df, x, y, trendline_options=None):
@@ -584,6 +843,30 @@ def plot_titles(df, x, y, trendline_options=None):
         y=y, 
         color_discrete_sequence=["#79b8b8"], 
         hover_data=["title", "imdb_id", "directors", "year"],
+        trendline='ols',
+        trendline_options=trendline_options
+    )
+    fig.update_layout(layout)
+    fig.update_layout(
+        xaxis=dict(title=x),
+        yaxis=dict(title=y)
+    )
+    # fig.update_traces(line_width=4)
+    fig.update_traces(marker=dict(size=8, line=dict(width=1, color="white")))
+    fig.update_traces(selector=dict(mode="lines"), line=dict(dash="dash", color="#d81275", width=5), name="Trend")
+    fig.show()
+
+
+def plot_directors(df, x, y, trendline_options=None, hover_data=None):
+    if not trendline_options:
+        trendline_options = {}
+
+    fig = px.scatter(
+        df, 
+        x=x, 
+        y=y, 
+        color_discrete_sequence=["#79b8b8"], 
+        hover_data=hover_data,
         trendline='ols',
         trendline_options=trendline_options
     )
