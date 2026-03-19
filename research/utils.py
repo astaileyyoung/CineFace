@@ -98,6 +98,22 @@ def get_sample_grid(engine):
     return (grid_norm * 100).round(1)
 
 
+def get_director_grid(name, engine):
+    with engine.connect() as conn:
+        query = f"""
+            SELECT 
+                AVG(pct_tl), AVG(pct_tc) as tc, AVG(pct_tr) as tr,
+                AVG(pct_ml), AVG(pct_mc) as mc, AVG(pct_mr) as mr,
+                AVG(pct_bl), AVG(pct_bc) as bc, AVG(pct_br) as br
+            FROM vwWorksByDirector
+            WHERE person_name = '{name}'
+        """
+        df = pd.read_sql_query(db.text(query), conn)
+    grid = df.values.reshape(3, 3)
+    grid_norm = grid / grid.sum()
+    return (grid_norm * 100).round(1)
+
+
 def plot_grid(grid, plot_title=None, width=600, height=600, layout=None, dst=None, transparent=False):
     # Center the color scale at zero
     limit = max(abs(grid.min()), abs(grid.max()))
@@ -147,6 +163,11 @@ def plot_sample_grid(engine, plot_title=None, layout=None, dst=None):
     plot_grid(grid_norm, plot_title=plot_title, layout=layout, dst=dst)
 
 
+def plot_director_grid(engine, plot_title=None, layout=None, dst=None):
+    grid_norm = get_director_grid(engine)
+    plot_grid(grid_norm, plot_title=plot_title, layout=layout, dst=dst)
+
+
 def compare_director_to_sample_grid(name, 
                                     engine, 
                                     title=None, 
@@ -161,7 +182,7 @@ def compare_director_to_sample_grid(name,
                 AVG(pct_tl), AVG(pct_tc) as tc, AVG(pct_tr) as tr,
                 AVG(pct_ml), AVG(pct_mc) as mc, AVG(pct_mr) as mr,
                 AVG(pct_bl), AVG(pct_bc) as bc, AVG(pct_br) as br
-            FROM CineFaceDW.vwGridByJob gbj
+            FROM vwGridByJob gbj
             WHERE gbj.name = '{name}' AND gbj.job_name = 'Director'
             GROUP BY gbj.name
             """
