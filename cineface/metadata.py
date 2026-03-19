@@ -9,7 +9,6 @@ import cv2
 import difflib
 import numpy as np
 import pandas as pd
-from deepface import DeepFace
 from imdb import Cinemagoer, IMDbError
 from tmdbv3api import TMDb, TV, Find, Season, Episode, exceptions, Person, Movie
 from qdrant_client.models import Distance, VectorParams, PointStruct
@@ -431,6 +430,8 @@ def get_headshot(tmdb_id,
                  detector_backend='retinaface',
                  recognition_model='Facenet', 
                  collection_name='Headshots'):
+    from deepface import DeepFace
+    
     normalization = {
                 "VGG-Face": "VGGFace2", 
                 "Facenet": "Facenet", 
