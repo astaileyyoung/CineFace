@@ -857,7 +857,7 @@ def plot_titles(df, x, y, trendline_options=None):
     fig.show()
 
 
-def plot_directors(df, x, y, trendline_options=None, hover_data=None):
+def plot_directors(df, x, y, trendline_options=None, hover_data=None, xaxis=None, yaxis=None):
     if not trendline_options:
         trendline_options = {}
 
@@ -872,8 +872,8 @@ def plot_directors(df, x, y, trendline_options=None, hover_data=None):
     )
     fig.update_layout(layout)
     fig.update_layout(
-        xaxis=dict(title=x),
-        yaxis=dict(title=y)
+        xaxis=dict(title=x if not xaxis else xaxis),
+        yaxis=dict(title=y if not yaxis else yaxis)
     )
     # fig.update_traces(line_width=4)
     fig.update_traces(marker=dict(size=8, line=dict(width=1, color="white")))
