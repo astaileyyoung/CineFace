@@ -13,4 +13,4 @@ temp*
 research/**/newplot.png
 research/**/data
 research/**/plots
-
+*.egg*
