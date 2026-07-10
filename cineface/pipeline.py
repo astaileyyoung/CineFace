@@ -8,6 +8,7 @@ import sys
 import json
 import shutil
 import logging
+import tempfile
 import traceback
 import subprocess as sp
 import multiprocessing as mp
@@ -122,6 +123,7 @@ class Pipeline(object):
             metadata = get_metadata(file)
         
         try:
+            with tempfile.TemporaryDirectory() as scratch_dir
             data, detection_metadata, embedding_data, self.container_name = run_visage(file, 'temp', image, frameskip, log_level, show, model_dir)
         except RuntimeError:
             raise
